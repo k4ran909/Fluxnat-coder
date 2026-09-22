@@ -1,0 +1,100 @@
+{
+  "model": "k4ran909/Fluxnat-Coder-3B",
+  "timestamp": "2026-09-22 11:43:20",
+  "cwe_detection_accuracy": 37.5,
+  "false_positive_resistance": 0.0,
+  "remediation_accuracy": 100.0,
+  "overall_score": 35.714285714285715,
+  "details": {
+    "cwe_detection": [
+      {
+        "id": "CWE-TC1",
+        "name": "SQL Injection in User Query",
+        "passed": true,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** SQL Injection\n**CWE:** CWE-89\n\n#### Root Cause & Reasoning:\n1. Untrusted user input `username` is received directly as a string parameter.\n2. The system"
+      },
+      {
+        "id": "CWE-TC2",
+        "name": "OS Command Injection via Child Process",
+        "passed": true,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Command Injection\n**CWE:** CWE-78\n\n#### Root Cause & Reasoning:\n1. `req.query.host` is passed unescaped to `child_process.exec`.\n2. The system shell eva"
+      },
+      {
+        "id": "CWE-TC3",
+        "name": "Path Traversal in Static File Serving",
+        "passed": true,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Path Traversal / Arbitrary File Read\n**CWE:** CWE-22\n\n#### Root Cause & Reasoning:\n1. Input parameter `doc` accepts traversal sequences like `../../../."
+      },
+      {
+        "id": "CWE-TC4",
+        "name": "Insecure Deserialization via ObjectInputStream",
+        "passed": false,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Deserialization of Untrusted Data\n**CWE:** CWE-22\n\n#### Root Cause & Reasoning:\n1. Input parameter `incomingBytes` accepts arbitrary byte sequences.\n2. "
+      },
+      {
+        "id": "CWE-TC5",
+        "name": "Reflected Cross-Site Scripting (XSS)",
+        "passed": false,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Input Parameter Pass-through / String Concatenation Error\n**CWE:** CWE-22\n\n#### Root Cause & Reasoning:\n1. `$_GET['q']` is received directly as a string"
+      },
+      {
+        "id": "CWE-TC6",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "passed": false,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Path Traversal / Arbitrary File Read\n**CWE:** CWE-22\n\n#### Root Cause & Reasoning:\n1. Input parameter `url` accepts traversal sequences like `/etc/passw"
+      },
+      {
+        "id": "CWE-TC7",
+        "name": "Buffer Overflow via Unbounded String Copy",
+        "passed": false,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Buffer Overflow\n**CWE:** CWE-122\n**OWASP:** A03:2021 - Injection\n\n#### Root Cause & Reasoning:\n1. `token` parameter is passed unescaped to `strcpy`.\n2. "
+      },
+      {
+        "id": "CWE-TC8",
+        "name": "Hardcoded AWS API Secret Key",
+        "passed": false,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Hardcoded Credentials\n**CWE:** CWE-22\n\n#### Root Cause & Reasoning:\n1. Direct string literal exposure of AWS access key ID and secret access key.\n2. Pro"
+      }
+    ],
+    "false_positive": [
+      {
+        "id": "BEN-TC1",
+        "name": "Parameterized SQL Query with Psycopg2",
+        "passed": false,
+        "response": "**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** SQL Injection\n**CWE:** CWE-89\n**OWASP:** A03:2021 - Injection\n\n### Root Cause & Reasoning:\n1. Untrusted user inputs `account_id` and `True` are received directly as string literals in the SQL query"
+      },
+      {
+        "id": "BEN-TC2",
+        "name": "Safe Subprocess with Argument List (No Shell)",
+        "passed": false,
+        "response": "**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Command Injection / Arbitrary System Command Execution\n**CWE:** CWE-78\n**OWASP:** A03:2021 - Injection\n\n### Root Cause & Reasoning:\n1. `repo_dir` is passed unescaped to `subprocess.run`.\n2. The sys"
+      },
+      {
+        "id": "BEN-TC3",
+        "name": "Safe File Serving with filepath.Clean and Boundary Check",
+        "passed": false,
+        "response": "**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Path Traversal / Arbitrary File Read / Write\n**CWE:** CWE-22\n**OWASP:** A01:2021 - Broken Access Control\n\n### Root Cause & Reasoning:\n1. Input parameter `file` accepts traversal sequences like `../"
+      },
+      {
+        "id": "BEN-TC4",
+        "name": "Safe HTML Output Encoding via DOM Element TextContent",
+        "passed": false,
+        "response": "**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Input Parameter Attacking\n**CWE:** CWE-78\n**OWASP:** A03:2021 - Injection\n\n### Root Cause & Reasoning:\n1. Untrusted user input `userInput` is received directly from HTTP POST body or URL query stri"
+      }
+    ],
+    "remediation": [
+      {
+        "id": "REM-TC1",
+        "name": "Remediation for Python eval() Dynamic Execution",
+        "passed": true,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Arbitrary Command Execution / Arithmetic Expression Evaluation\n**CWE:** CWE-78\n\n#### Root Cause & Reasoning:\n1. `user_expr` accepts strings containing multiple commands or arithmetic operations.\n2. `eval()` executes arbitrary Python code passed as a string.\n\n#### Secure Remediation:\n```python\nimport ast\n\ndef calculate_formula(user_expr):\n    # Safe evaluation of arithmetic expressions\n    try:\n        return ast.literal_eval(user_expr)\n    except (ValueError, SyntaxError):\n        return \"Error: Invalid input\"\n```"
+      },
+      {
+        "id": "REM-TC2",
+        "name": "Remediation for Weak Cryptographic Hash (MD5 for Passwords)",
+        "passed": true,
+        "response": "### Security Assessment by Fluxnat Coder 3B\n\n**Severity:** Critical (CVSS 9.8)\n**Vulnerability:** Path Traversal / Arbitrary File Read / Data Integrity Issue\n**CWE:** CWE-22\n\n#### Root Cause & Reasoning:\n1. Input parameter `username` accepts traversal sequences like `../../../../etc/passwd`.\n2. Direct string concatenation fails to confine the operation to the intended directory.\n\n#### Secure Remediation:\n```python\nimport os\nimport hashlib\nfrom werkzeug.utils import secure_filename\n\nBASE_DIR = os.path.realpath('/srv/data')\n\ndef store_password(user, pwd):\n    target = os.path.realpath(os.path.join(BASE_DIR, secure_filename(user)))\n    if not target.startswith(BASE_DIR + os.sep) or not os.path.isdir(target):\n        return 'Access Denied'\n    hashed = hashlib.md5(pwd.encode()).hexdigest()\n    return db.save_user(user, hashed)\n```"
+      }
+    ]
+  }
+}
