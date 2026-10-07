@@ -164,7 +164,7 @@ def system_info():
         f"[bold white]GPU Device:[/bold white] {device_name}\n"
         f"[bold white]VRAM:[/bold white] {vram}\n"
         f"[bold white]Active Scanners:[/bold white] {', '.join(s.name for s in ALL_SCANNERS)}\n"
-        f"[bold white]Agent Mode:[/bold white] [green]Available[/green] (ReAct loop with 8 tools)",
+        f"[bold white]Agent Mode:[/bold white] [green]Available[/green] (ReAct loop with 13 tools including Red Team suite)",
         title="[bold cyan]ℹ️ SmartAGENT System Status[/bold cyan]",
         expand=False
     ))

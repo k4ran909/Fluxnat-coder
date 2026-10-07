@@ -45,15 +45,16 @@ REACT_OBSERVATION_PREFIX = "Observation: "
 REACT_CONTINUE_PROMPT = "Continue your analysis. Remember: respond with Thought/Action/Action Input OR Thought/Final Answer."
 
 CHAT_GREETING = """\
-⚡ **Fluxnat Coder 3B — Agentic Security AI**
+⚡ **Fluxnat Coder 3B — Agentic Security AI & Red Team Suite**
 
-I can autonomously scan your code, find vulnerabilities, trace data flows, and generate fixes.
+I can autonomously audit code, enumerate attack surfaces, investigate CVEs, and generate hardened fixes.
 
 Try:
   • `scan this project for vulnerabilities`
-  • `read app.py and check for SQL injection`
-  • `what CWE is related to command injection?`
-  • `find all uses of eval() in the codebase`
+  • `recon localhost 80,443,8080`
+  • `exploit_db CVE-2021-44228`
+  • `generate_payload sqli auth_bypass`
+  • `post_exploit linux privesc`
 
 Type `exit` or `quit` to leave.
 """

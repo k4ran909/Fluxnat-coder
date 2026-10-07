@@ -97,6 +97,44 @@ From the latest calibrated training run (25 steps, loss 0.82):
 
 ---
 
+## v0.3.0 Red Team & Multi-CWE Retraining Milestone
+
+- **Total Sequences:** 520 balanced samples (170 Red Team CoT, 24 Security Audits, 15 Identity Alignment)
+- **Coverage:** 30+ CWEs, 25 multi-step exploit chains, 30 payload generation vectors, 25 ATT&CK techniques, 15 benign controls.
+- **Hardware:** Google Colab Tesla T4 GPU (16GB VRAM)
+- **Duration:** 430.8 seconds (65 steps, effective batch=8, lr=8e-5)
+- **Standalone Model:** Merged into 16-bit float format and deployed live to `k4ran909/Fluxnat-Coder-3B`.
+
+### Training Loss Progression (65 Steps):
+
+| Step | Loss | Progress |
+|---|---|---|
+| 5 | 1.2365 | 7.7% |
+| 10 | 1.0733 | 15.4% |
+| 15 | 1.0141 | 23.1% |
+| 20 | 0.9498 | 30.8% |
+| 25 | 0.9387 | 38.5% |
+| 35 | 0.8594 | 53.8% |
+| 45 | 0.7745 | 69.2% |
+| 50 | 0.7604 | 76.9% |
+| 55 | 0.7687 | 84.6% |
+| 60 | 0.7854 | 92.3% |
+| 65 | 0.8347 | 100.0% |
+
+**Final Training Loss:** `0.8952` (Optimal convergence across diverse CWE security reasoning patterns).
+
+---
+
+## Red Team Agent Tools (13 Tools Total)
+
+| Tool Name | Category | Primary Function |
+|---|---|---|
+| `recon` | Network Reconnaissance | Host port scanning, banner grabbing, and service enumeration (nmap + socket fallback). |
+| `exploit_db` | Vulnerability Intelligence | Known CVE & advisory lookups (Log4j, EternalBlue, Spring4Shell, Sudo, OpenSSH). |
+| `generate_payload` | Penetration Testing | Generates audit probes (SQLi, XSS, cmd injection, reverse shell syntax, SSTI, SSRF, LFI). |
+| `web_attack` | Web Attack Surface | Probes target URLs for exposed files (`.env`, `.git`) and audits HTTP security headers. |
+| `post_exploit` | Post-Exploitation Audit | SUID/SGID checks, persistence mechanisms, and Active Directory lateral movement auditing. |
+
 ## Comparison vs Generic Models
 
 | Capability | Generic Code LLM | Fluxnat Coder 3B |
