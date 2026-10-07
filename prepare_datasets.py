@@ -146,6 +146,32 @@ def main():
         all_data.extend(local_samples * 5)
         print(f"[+] Added {len(local_samples)} local CoT samples (amplified 5x -> {len(local_samples) * 5} total)")
 
+    # 1b. Load red team / offensive security CoT dataset (instruction/input/output format)
+    redteam_path = "./data/custom_cot/redteam_cot.jsonl"
+    redteam_samples = []
+    if os.path.exists(redteam_path):
+        with open(redteam_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    item = json.loads(line)
+                    instruction = item.get("instruction", "")
+                    inp = item.get("input", "")
+                    output = item.get("output", "")
+                    if inp:
+                        instruction = f"{instruction}\n\nCode/Input:\n{inp}"
+                    if instruction and output:
+                        redteam_samples.append(format_qa_to_chat(instruction, output, system_prompt))
+                except Exception as e:
+                    print(f"[!] Error parsing line in {redteam_path}: {e}")
+        print(f"[+] Loaded {len(redteam_samples)} red team CoT samples from {redteam_path}")
+    if redteam_samples:
+        # Lower amplification (2x) since this is a larger dataset (~170 samples)
+        all_data.extend(redteam_samples * 2)
+        print(f"[+] Added {len(redteam_samples)} red team samples (amplified 2x -> {len(redteam_samples) * 2} total)")
+
     identity_path = "./data/custom_cot/identity_alignment.jsonl"
     if os.path.exists(identity_path):
         identity_samples = load_local_cot_data(identity_path, system_prompt)
