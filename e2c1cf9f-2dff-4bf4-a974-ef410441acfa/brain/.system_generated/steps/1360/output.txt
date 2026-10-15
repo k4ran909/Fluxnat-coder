@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+=================================================================
+        Fluxnat Coder 3B - Dataset Preparation Pipeline          
+=================================================================
+[+] Loaded 24 local CoT samples from ./data/custom_cot/security_cot.jsonl
+[+] Added 24 local CoT samples (amplified 5x -> 120 total)
+[+] Loaded 15 local CoT samples from ./data/custom_cot/identity_alignment.jsonl
+[+] Added 15 identity alignment samples (amplified 4x -> 60 total)
+[!] 'datasets' library is not installed. Skipping Hugging Face download.
+
+[+] Total assembled training records: 180
+[*] Writing 171 train samples to data\processed\train_data.jsonl...
+[*] Writing 9 validation samples to data\processed\eval_data.jsonl...
+[OK] Dataset preparation completed successfully!
+    Train: data\processed\train_data.jsonl
+    Eval:  data\processed\eval_data.jsonl
+

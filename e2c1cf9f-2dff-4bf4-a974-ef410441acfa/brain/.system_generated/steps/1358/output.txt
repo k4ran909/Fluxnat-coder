@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+[+] Successfully wrote 24 balanced CoT samples to data\custom_cot\security_cot.jsonl
+

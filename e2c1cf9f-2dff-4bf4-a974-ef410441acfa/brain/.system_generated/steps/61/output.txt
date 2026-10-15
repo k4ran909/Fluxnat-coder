@@ -1,0 +1,22 @@
+The search for "best cybersecurity vulnerability detection dataset fine-tuning LLM 2025 2026 huggingface" returned the following summary:
+For fine-tuning Large Language Models (LLMs) in cybersecurity and vulnerability detection as of late 2025 and 2026, several high-quality datasets are available on Hugging Face. These range from broad cybersecurity knowledge bases to specialized instruction-tuning sets for vulnerability analysis.
+
+### Recommended Datasets for Fine-Tuning
+*   **[CyberLLMInstruct](https://huggingface.co/papers/2503.09334):** A prominent dataset containing ~55,000 instruction-response pairs specifically focused on cybersecurity tasks, including malware analysis, phishing simulations, and zero-day vulnerabilities. It is highly regarded for its applicability to real-world security scenarios.
+*   **[CyberSecurity-1M](https://huggingface.co/WhitzardAgent/CyberSecurity-1M):** A comprehensive, large-scale dataset aggregating diverse security content—including CVE records, threat intelligence, penetration testing, and defensive security materials. It is well-suited for general-purpose security fine-tuning and retrieval-augmented generation (RAG) workflows.
+*   **[Primus](https://huggingface.co/collections/trendmicro-ailab/primus-67b1fd27052b802b4af9d243):** A pioneering suite of open-source datasets covering the full training lifecycle (pre-training, instruction fine-tuning, and reasoning distillation). It is specifically designed to improve LLM performance on security certifications and technical cybersecurity benchmarks.
+*   **[Trendyol Cybersecurity Instruction-Tuning Dataset](https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset):** An active dataset frequently updated for instruction tuning, often used for training models to understand security-specific prompts.
+*   **[soham-dahivalkar/cyber-threat-intelligence](https://huggingface.co/soham-dahivalkar/cyber-threat-intelligence):** A specialized dataset used to train models like the `cyber-threat-analyst-llm`. It includes 5,000+ CVE records and 15,000+ instruction-response pairs focused on vulnerability assessment, remediation, and MITRE ATT&CK mapping.
+
+### Key Evaluation & Benchmark Datasets
+If you are looking to evaluate your fine-tuned models rather than train them, consider these industry-standard benchmarks:
+*   **CyberMetric:** A benchmark of human-verified multiple-choice questions (MCQs) for assessing cybersecurity knowledge.
+*   **SecBench:** Focuses on exploit prediction, vulnerability classification, and defense mapping.
+*   **CTI-Bench:** Tests LLMs across various cyber threat intelligence tasks.
+
+### Recommendations for Success
+1.  **Prioritize Reasoning:** Recent research (e.g., *VulnLLM-R* and *VulnSage*) suggests that models performing "chain-of-thought" reasoning significantly outperform simple classifiers. If possible, use datasets that include step-by-step vulnerability analysis rather than just binary (vulnerable/not-vulnerable) labels.
+2.  **Combine Sources:** For robust performance, many developers use a "mix" strategy—combining large-scale corpora (like *CyberSecurity-1M* or *Primus*) for base knowledge and smaller, highly curated instruction sets (like *CyberLLMInstruct*) for task-specific alignment.
+3.  **Safety Awareness:** Be aware that fine-tuning LLMs on security data can sometimes reduce their built-in safety guardrails. Tools like the **OWASP GenAI Security Project** provide resources to help maintain model safety while optimizing for vulnerability detection tasks.
+
+You can explore these and more by searching the [Hugging Face Datasets](https://huggingface.co/datasets) hub with filters for "cybersecurity" or "vulnerability."

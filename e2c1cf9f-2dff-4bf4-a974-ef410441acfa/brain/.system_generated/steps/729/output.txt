@@ -1,0 +1,1 @@
+{"File":"C:\\Users\\k4ran\\.gemini\\antigravity\\brain\\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\\scratch\\colab_navigator.py","LineNumber":15,"LineContent":"    target_url = \"https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=bBtUZIG4wjco\""}

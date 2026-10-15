@@ -1,0 +1,39 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\cli.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -135,11 +135,17 @@
+     """
+     Display SmartAGENT environment and system status.
+     """
+-    import torch
+-
+-    has_cuda = torch.cuda.is_available()
+-    device_name = torch.cuda.get_device_name(0) if has_cuda else "None (CPU)"
+-    vram = f"{torch.cuda.get_device_properties(0).total_memory / (1024**3):.1f} GB" if has_cuda else "N/A"
++    try:
++        import torch
++        has_cuda = torch.cuda.is_available()
++        device_name = torch.cuda.get_device_name(0) if has_cuda else "None (CPU)"
++        vram = f"{torch.cuda.get_device_properties(0).total_memory / (1024**3):.1f} GB" if has_cuda else "N/A"
++        torch_status = f"Installed (v{torch.__version__})"
++    except ImportError:
++        has_cuda = False
++        device_name = "N/A"
++        vram = "N/A"
++        torch_status = "Not Installed (Install via `pip install torch` for AI reasoning)"
+ 
+     console.print(Panel(
+         f"[bold white]SmartAGENT Version:[/bold white] 0.1.0\n"
+@@ -146,3 +146,4 @@
++        f"[bold white]PyTorch Status:[/bold white] {torch_status}\n"
+         f"[bold white]CUDA Available:[/bold white] {'[green]Yes[/green]' if has_cuda else '[yellow]No[/yellow]'}\n"
+         f"[bold white]GPU Device:[/bold white] {device_name}\n"
+         f"[bold white]VRAM:[/bold white] {vram}\n"
+@@ -149,4 +149,4 @@
+-        title="ℹ️ System Status",
++        title="[bold cyan]ℹ️ SmartAGENT System Status[/bold cyan]",
+         expand=False
+     ))
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,1 @@
+{"id":"5a895292-fc17-4f90-a3a5-6c8362d5483e", "recipient":"e2c1cf9f-2dff-4bf4-a974-ef410441acfa", "sender":"e2c1cf9f-2dff-4bf4-a974-ef410441acfa/task-1792", "priority":"MESSAGE_PRIORITY_HIGH", "timestamp":"2026-10-07T08:09:40.747341100Z", "renderDetails":{"messageTitle":"Wait for training launch: Timer has expired"}, "content":"Check Colab training progress from subagent"}

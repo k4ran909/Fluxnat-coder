@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+ID: k4ran909/Fluxnat-Coder-3B
+Downloads: 813
+Last Modified: 2026-10-07T08:20:03.000Z
+Files Count: 12
+

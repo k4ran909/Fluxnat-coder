@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\export_session.py", line 2
+    """
+    ^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 139-140: truncated \UXXXXXXXX escape
+

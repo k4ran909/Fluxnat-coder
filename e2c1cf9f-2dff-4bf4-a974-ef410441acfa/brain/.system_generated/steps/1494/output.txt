@@ -1,0 +1,1 @@
+{"outputs":[{"output_type":"display_data","data":{"text/plain":["<IPython.core.display.Javascript object>"]}},{"output_type":"stream","name":"stdout","text":["Script evaluated.\n"]}]}

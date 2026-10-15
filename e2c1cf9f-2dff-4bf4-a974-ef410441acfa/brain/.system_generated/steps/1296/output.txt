@@ -1,0 +1,47 @@
+
+The command exited with code 0.
+Output:
+[main (root-commit) 6382559] feat: initial release of SmartAGENT v0.2.0 & Fluxnat Coder 3B suite
+ 41 files changed, 5145 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Fluxnat_Coder_3B_Training.ipynb
+ create mode 100644 MODEL_CARD.md
+ create mode 100644 README.md
+ create mode 100644 benchmark_results.json
+ create mode 100644 benchmark_suite.py
+ create mode 100644 config/training_config.yaml
+ create mode 100644 data/custom_cot/identity_alignment.jsonl
+ create mode 100644 data/custom_cot/security_cot.jsonl
+ create mode 100644 data/processed/eval_data.jsonl
+ create mode 100644 data/processed/train_data.jsonl
+ create mode 100644 evaluate.py
+ create mode 100644 merge_and_export.py
+ create mode 100644 prepare_datasets.py
+ create mode 100644 pyproject.toml
+ create mode 100644 rebrand.py
+ create mode 100644 smartagent/__init__.py
+ create mode 100644 smartagent/agent/__init__.py
+ create mode 100644 smartagent/agent/core.py
+ create mode 100644 smartagent/agent/memory.py
+ create mode 100644 smartagent/agent/prompts.py
+ create mode 100644 smartagent/agent/tools.py
+ create mode 100644 smartagent/ai/__init__.py
+ create mode 100644 smartagent/ai/judge.py
+ create mode 100644 smartagent/ai/model.py
+ create mode 100644 smartagent/ai/prompts.py
+ create mode 100644 smartagent/cli.py
+ create mode 100644 smartagent/config.py
+ create mode 100644 smartagent/reporting/__init__.py
+ create mode 100644 smartagent/reporting/report.py
+ create mode 100644 smartagent/reporting/scorer.py
+ create mode 100644 smartagent/scanners/__init__.py
+ create mode 100644 smartagent/scanners/base.py
+ create mode 100644 smartagent/scanners/config_scanner.py
+ create mode 100644 smartagent/scanners/dependency_scanner.py
+ create mode 100644 smartagent/scanners/pattern_scanner.py
+ create mode 100644 smartagent/scanners/secret_scanner.py
+ create mode 100644 test_local_model.py
+ create mode 100644 test_refusal_free.py
+ create mode 100644 tests/test_scanners.py
+ create mode 100644 train.py
+

@@ -1,0 +1,27 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\quick_test_ws.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -12,11 +12,19 @@
+ 
+ async def main():
+     try:
+-        async with websockets.connect(uri, origin=None, open_timeout=5) as ws:
++        async with websockets.connect(
++            uri,
++            additional_headers={"Host": "localhost:9222"},
++            origin="http://localhost:9222",
++            open_timeout=5
++        ) as ws:
+             print("Connected successfully!")
+             await ws.send(json.dumps({"id": 1, "method": "Target.getTargets"}))
+             msg = await ws.recv()
+-            print("Received:", msg[:150])
++            data = json.loads(msg)
++            for t in data.get("result", {}).get("targetInfos", []):
++                if t.get("type") == "page":
++                    print(f"Page: {t.get('targetId')} | {t.get('title')} | {t.get('url')}")
+     except Exception as e:
+         print("Failed:", type(e), e)
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

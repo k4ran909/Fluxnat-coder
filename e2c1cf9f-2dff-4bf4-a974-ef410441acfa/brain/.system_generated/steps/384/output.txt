@@ -1,0 +1,58 @@
+The search for ""auto_map" huggingface custom model_type AutoConfig AutoModelForCausalLM" returned the following summary:
+To use a custom model architecture with Hugging Face's `Auto` classes (such as `AutoConfig` and `AutoModelForCausalLM`), you must implement an `auto_map` in your `config.json` file. This mapping tells the Transformers library which Python modules and classes to load when `from_pretrained` is called[1][2][3].
+
+### 1. Structure Your Custom Files
+Ensure your model repository includes the necessary Python files for your configuration and model architecture[1][4].
+*   **`configuration_*.py`**: Contains your custom configuration class (e.g., `MyCustomConfig`), which must subclass `PreTrainedConfig` and define a unique `model_type`[5][4].
+*   **`modeling_*.py`**: Contains your custom model class (e.g., `MyCustomModelForCausalLM`), which must reference your custom config class[5][4].
+
+### 2. Configure `config.json`
+Your `config.json` file must include the `auto_map` field[6][2]. This dictionary maps the standard Hugging Face Auto classes to your specific files and class names[7][1].
+
+```json
+{
+  "model_type": "my-custom-model",
+  "architectures": ["MyCustomModelForCausalLM"],
+  "auto_map": {
+    "AutoConfig": "configuration_file_name.MyCustomConfig",
+    "AutoModel": "modeling_file_name.MyCustomModel",
+    "AutoModelForCausalLM": "modeling_file_name.MyCustomModelForCausalLM"
+  }
+}
+```
+*   **`AutoConfig`**: Points to your custom configuration class[1][2].
+*   **`AutoModelForCausalLM`**: Points to the class in your modeling file that implements the causal language modeling task[8][9].
+
+### 3. Loading the Model
+Because your model uses custom, non-standard code, you must explicitly enable the `trust_remote_code=True` flag when loading it[10][2][11].
+
+```python
+from transformers import AutoModelForCausalLM, AutoConfig
+
+# The library will now look at your auto_map in config.json 
+# and import the classes from your .py files.
+model = AutoModelForCausalLM.from_pretrained(
+    "path/to/your/model", 
+    trust_remote_code=True
+)
+```
+
+### Important Tips
+*   **`trust_remote_code=True`**: This is required because the library is executing arbitrary Python code from your repository[10][11]. Only load models from sources you trust.
+*   **Registration**: While you can manually register classes using `AutoConfig.register()` and `AutoModel.register()` in a local script, using the `auto_map` in `config.json` is the standard way to ensure your model works automatically for others when shared on the Hugging Face Hub[12][13].
+*   **File Naming**: Ensure the filenames (e.g., `modeling_file_name.py`) are correct and accessible in the root of your model directory or the path provided[1][2].
+
+Sources:
+[1] [gilesthomas.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCMXJ6LvUZ6IKQeFit0Mcz9D_de0LpaCk1D0sZY5M34SO3UYTUs5NXFXrjJ3Q7vwOe1pX0tsY0d7rDyDIAgKrVPuFlcvJfYZdX94OsX5_2NXaPq-leMxEsj0jIb-r8dfVz2m1lZO6k-ZiKC-kYTGooFVWhM-idEQK4VI_GC049w9PbhhwF9Xiix4TPVe_b_SeeSrPSAF_bfcLLWg==)
+[2] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJoLAoV4Xa1ztkJInJzUtxHrXiieHGPOVLnQA59HdLTww5M14WQ5sH896oarjxcmwh5cq4omzEDXf_SDy9Vg2s3cmRrUv924JtSIHVAtYHJQWIisSg2jn0AHFjX97Ak3nPrAMW3VjguBE8Cy2R28ZXoho3sVU2RLw=)
+[3] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7Be3PJZ64coahSEoix9sA7jDORu3jdSXNXGIIGYVMx55PXOYxIQfT2pYVeTY1y9S1UV1kUFEMDghn5m28y_BmtXzgH7vSPGkItYtFh-r7JRb1kqZ9Fml2AxAfMuuFgJYLOvL77Kiy2LLu-ZveDEHIol5XVY8R9ga3AhbCtbER3jxg8VQxFNB51Z-jJFkgLkXz2A==)
+[4] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-kqy2Wz4uy4Ydirqi9U4P0OP-RZnQY5CoSwIEIQO07CSNtzpqQ1nISr6ZuM3ZKGNeyEB4I0LbmlVxtpHgPnHG4f-vPwFHYGbMPA_VJreV3nOc39FKvITgDCHHHkdNcwihNkNqY9N4oUYXvOlMjuE=)
+[5] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFskhk0pjGntzh6GHL8I24739n0ESzy1O9nmIz9JjETwJMFGii031IT9MgesSFVZQBQ0HIHdj2EEJYlR16EDDa85JEOG7xMbrLgb_6dt-oIjXnmvERO4jmtH_CUo5RfNgeMPkPoizmQ1gYojd7Afipx)
+[6] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7Be3PJZ64coahSEoix9sA7jDORu3jdSXNXGIIGYVMx55PXOYxIQfT2pYVeTY1y9S1UV1kUFEMDghn5m28y_BmtXzgH7vSPGkItYtFh-r7JRb1kqZ9Fml2AxAfMuuFgJYLOvL77Kiy2LLu-ZveDEHIol5XVY8R9ga3AhbCtbER3jxg8VQxFNB51Z-jJFkgLkXz2A==)
+[7] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-kqy2Wz4uy4Ydirqi9U4P0OP-RZnQY5CoSwIEIQO07CSNtzpqQ1nISr6ZuM3ZKGNeyEB4I0LbmlVxtpHgPnHG4f-vPwFHYGbMPA_VJreV3nOc39FKvITgDCHHHkdNcwihNkNqY9N4oUYXvOlMjuE=)
+[8] [gilesthomas.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCMXJ6LvUZ6IKQeFit0Mcz9D_de0LpaCk1D0sZY5M34SO3UYTUs5NXFXrjJ3Q7vwOe1pX0tsY0d7rDyDIAgKrVPuFlcvJfYZdX94OsX5_2NXaPq-leMxEsj0jIb-r8dfVz2m1lZO6k-ZiKC-kYTGooFVWhM-idEQK4VI_GC049w9PbhhwF9Xiix4TPVe_b_SeeSrPSAF_bfcLLWg==)
+[9] [clay-atlas.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmGpAzXIzErjSpVrB_LP2wX-sCIOkU4vQtZ44TrmYNSQVhF2BjtR3KSSYepqp7Udw9QBLNsK5_ySZmgGjMO6rgZZglHt7O84NND3JpNQ20MKLdqpsJXNMSNtiIObcIA_fG4OYqhEtKBYhOIGLfs84rz6BCpO5IarM5rnXciI6vNPnf-8RA_ObGlnw8PXaeC2xABJyItTaqigRHxHE=)
+[10] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-kqy2Wz4uy4Ydirqi9U4P0OP-RZnQY5CoSwIEIQO07CSNtzpqQ1nISr6ZuM3ZKGNeyEB4I0LbmlVxtpHgPnHG4f-vPwFHYGbMPA_VJreV3nOc39FKvITgDCHHHkdNcwihNkNqY9N4oUYXvOlMjuE=)
+[11] [gilesthomas.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCMXJ6LvUZ6IKQeFit0Mcz9D_de0LpaCk1D0sZY5M34SO3UYTUs5NXFXrjJ3Q7vwOe1pX0tsY0d7rDyDIAgKrVPuFlcvJfYZdX94OsX5_2NXaPq-leMxEsj0jIb-r8dfVz2m1lZO6k-ZiKC-kYTGooFVWhM-idEQK4VI_GC049w9PbhhwF9Xiix4TPVe_b_SeeSrPSAF_bfcLLWg==)
+[12] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgWjdsl8KhDiP86tX6Ajjgk4M7rmyPbKAh8JL9hpkCFuPGTTXtjIDonIENriobtTO5cZxCwj5czgsAT7jgglokC2I25s15Qdi8DieBRSg1ffSY3TjVnI_O3EudIOYJg_6Qav-IrN9g34t4t_XJSkYsAZIBfw==)
+[13] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgWjdsl8KhDiP86tX6Ajjgk4M7rmyPbKAh8JL9hpkCFuPGTTXtjIDonIENriobtTO5cZxCwj5czgsAT7jgglokC2I25s15Qdi8DieBRSg1ffSY3TjVnI_O3EudIOYJg_6Qav-IrN9g34t4t_XJSkYsAZIBfw==)

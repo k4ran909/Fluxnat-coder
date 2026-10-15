@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Port: 9222, Path: /devtools/browser/25a8f755-6780-4694-b7aa-32d603640dd1
+Connecting to ws://127.0.0.1:9222/devtools/browser/25a8f755-6780-4694-b7aa-32d603640dd1 with origin=None...
+Response: {"id":1,"result":{"targetInfos":[{"targetId":"E2AB0730B5CDF00677EB01036D187501","type":"shared_worker","title":"github-socket-worker-v3-bcaca9b5e00b79c625cead54f0f23544483214c3b7a56c2a870a4756bf4ea862
+

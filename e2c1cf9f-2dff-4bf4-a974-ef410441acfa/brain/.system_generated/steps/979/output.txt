@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+Cell  0 | ID=cell-9fOhhTfCwjch         | 
+Cell  1 | ID=cell-7rVJ38BAwjck         | 
+Cell  2 | ID=cell-5RkAa-eYwjck         | 
+Cell  3 | ID=cell-R10YaXZWwjcl         | 
+Cell  4 | ID=cell-X5BwP6YLwjcl         | 
+       -> OUT: [✓] Authenticated successfully with Hugging Face Hub! 
+Cell  5 | ID=cell-zY6Slpo1wjcm         | 
+Cell  6 | ID=cell-gZr2azVGwjcm         | from unsloth import FastLanguageModel import torch MAX_SEQ_LENGTH = 4096 BASE_MO
+Cell  7 | ID=cell-zmCpB1Rfwjcn         | 
+Cell  8 | ID=cell-UYZEFcCywjcn         | 
+       -> OUT: [✓] Prepared 90 formatted training sequences! 
+Cell  9 | ID=cell-5CBuTv31wjco         | 
+Cell 10 | ID=cell-bBtUZIG4wjco         | from trl import SFTTrainer from transformers import TrainingArguments from unslo
+Cell 11 | ID=cell-lugB5JZqwjco         | 
+Cell 12 | ID=cell-O9X6PwyFwjcp         | 
+Cell 13 | ID=cell-q4UqwT3Nwjcp         | 
+Cell 14 | ID=cell-s_L78Mv_wjcp         | 
+       -> OUT: [*] Publishing under your personal account: k4ran909/Fluxnat-Coder-3B [*] Creating repository k4ran909/Fluxnat-Coder-3B.
+Cell 15 | ID=cell-Mbb_cgG7wjcq         | 
+Cell 16 | ID=cell-ideEXJ-cwjcq         | # Switch model to inference mode FastLanguageModel.for_inference(model) test_sni
+       -> OUT: The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence
+

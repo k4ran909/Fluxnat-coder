@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+chat_template length in tokenizer_config.json: 2507
+Qwen in chat_template: True
+

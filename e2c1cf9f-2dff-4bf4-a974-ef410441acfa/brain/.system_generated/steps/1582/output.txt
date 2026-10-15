@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+
+LocalAddress                        LocalPort RemoteAddress                       RemotePort State       AppliedSetting
+------------                        --------- -------------                       ---------- -----       --------------
+127.0.0.1                           65149     127.0.0.1                           53037      Established Internet      
+127.0.0.1                           65149     0.0.0.0                             0          Listen                    
+
+
+

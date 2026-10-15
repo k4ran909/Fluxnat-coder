@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+
+LocalAddress LocalPort OwningProcess       State
+------------ --------- -------------       -----
+127.0.0.1         9222             0    TimeWait
+127.0.0.1         9222          8540      Listen
+127.0.0.1         9222          8540 Established
+127.0.0.1         9222             0    TimeWait
+
+
+

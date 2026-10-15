@@ -1,0 +1,25 @@
+The search for ""Phi-4 mini" vs "Qwen 2.5 coder 3B" vs "Gemma 4" coding security benchmark HumanEval MBPP 2026" returned the following summary:
+As of September 2026, comparisons between **Phi-4 mini**, **Qwen 2.5 Coder 3B**, and **Gemma 4** reflect their different design goals—ranging from ultra-compact edge deployment to high-end reasoning and multimodal capabilities.
+
+### Model Overview
+*   **Phi-4 Mini (3.8B):** A Microsoft-developed small language model (SLM) optimized for reasoning and code generation. It is highly regarded for its performance-to-size ratio, often outperforming larger models on STEM and coding benchmarks despite its compact footprint.
+*   **Qwen 2.5 Coder 3B:** Part of Alibaba’s code-specialized series. It is purpose-built for programming tasks, including code generation, repair, and reasoning. It is widely considered one of the strongest "code-first" models in the sub-4B parameter category.
+*   **Gemma 4 (various sizes, including E4B/12B/31B):** Google's 2026 open-weights family. Unlike the others, Gemma 4 is natively multimodal (text, audio, image) and designed for complex agentic workflows and advanced reasoning. The "E" variants (e.g., E4B) are specifically tuned for edge-device efficiency.
+
+### Benchmark Context (HumanEval & MBPP)
+In 2026, experts generally warn that traditional benchmarks like **HumanEval** and **MBPP** are "saturated," with top-tier models scoring 90%+ in many environments, making these scores less predictive of real-world performance than they were in previous years.
+
+*   **HumanEval & MBPP Performance:** 
+    *   **Qwen 2.5 Coder 3B** is consistently cited as a leader for its size on these specific Python coding benchmarks. It is often favored for local, low-latency coding tasks due to its specialized training on massive code repositories.
+    *   **Phi-4 Mini** remains highly competitive and is frequently preferred when the application requires a balance of general reasoning (e.g., math, logic) alongside coding.
+    *   **Gemma 4 (Edge variants):** While Gemma 4 models show strong coding capabilities, their primary differentiation lies in their multimodal support and ability to handle long-context/agentic tasks (like repository-level reasoning) rather than just single-function completion.
+
+### Security and Quality Considerations
+There is a growing consensus in the 2026 AI community that functional correctness (passing a test case) does not equate to secure or maintainable code.
+*   **Security Benchmarks:** Standard benchmarks like HumanEval do not measure vulnerability risks or security flaws. For security-sensitive tasks, specialized evaluations—such as those discussed in the *Sonar LLM Leaderboard*—are used to assess issue density, potential for "hallucinated" vulnerabilities, and adherence to security-conscious coding practices.
+*   **Model Selection:**
+    *   If your priority is **raw performance on Python function-level coding** for a mobile or edge app, **Qwen 2.5 Coder 3B** is a top-tier candidate.
+    *   If you need **broader reasoning capabilities** and efficient performance on edge hardware, **Phi-4 Mini** is a balanced choice.
+    *   If you are building **agentic workflows** that require multimodal input (e.g., screen/UI understanding) or complex reasoning over large contexts, **Gemma 4** provides a more advanced architectural foundation.
+
+For enterprise-grade security and reliability, simply relying on HumanEval or MBPP scores is discouraged. Development teams are increasingly shifting toward **SWE-bench** (which tests model performance on real-world GitHub issues) and custom security evaluation suites to ensure models do not introduce technical debt or vulnerabilities.

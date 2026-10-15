@@ -1,0 +1,20 @@
+
+The command exited with code 1.
+Output:
+[*] Starting export for conversation: e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+[*] Source Brain: C:\Users\k4ran\.gemini\antigravity\brain\e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+[*] Generating human-readable conversation transcript markdown...
+
+[*] Exporting to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\export_session.py", line 166, in <module>
+    export_all()
+    ~~~~~~~~~~^^
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\export_session.py", line 100, in export_all
+    print(f"  [\u2713] Copied full brain directory -> {target_brain}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+

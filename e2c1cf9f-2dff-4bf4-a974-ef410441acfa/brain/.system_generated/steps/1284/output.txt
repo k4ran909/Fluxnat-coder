@@ -1,0 +1,105 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\README.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -6,11 +6,12 @@
+ 
+ ## 🌟 Highlights
+ 
+-- **🧠 Fluxnat Coder 3B:** Specialized cybersecurity Small Language Model (SLM) trained and developed by Fluxnat. Refusal-free for security assessment and vulnerability analysis.
+-- **⚡ 3-Layer Hybrid Architecture:** Deterministic SAST Scanners (Secrets, Patterns, Dependencies, Configs) + AI Chain-of-Thought Judge + Security Scoring.
++- **🤖 Autonomous Agentic Security Mode:** ReAct reasoning loop (Thought → Action → Observation) powered by Fluxnat Coder 3B with 8 security tools and interactive CLI chat.
++- **🧠 Fluxnat Coder 3B:** Specialized cybersecurity Small Language Model (SLM) trained and developed by Fluxnat. Refusal-free for security assessment and vulnerability analysis. Available on Hugging Face at [`k4ran909/Fluxnat-Coder-3B`](https://huggingface.co/k4ran909/Fluxnat-Coder-3B).
++- **⚡ Hybrid Architecture:** Deterministic SAST Scanners (Secrets, Patterns, Dependencies, Configs) + AI Chain-of-Thought Judge + ReAct Agent Tools.
+ - **☁️ 1-Click Google Colab Training:** Includes `Fluxnat_Coder_3B_Training.ipynb` configured with **Unsloth (2x faster, 70% less VRAM)** to train on a **free Tesla T4 GPU (16GB VRAM)**.
+ - **📊 Precision Security Grading:** Computes vulnerability deduction index (0–100) and letter grades (A+ to F).
+-- **🔧 Direct CLI Integration:** Scan local projects or directories with `smartagent scan .`.
++- **🔧 Interactive CLI:** Chat directly with the agent via `smartagent chat` or scan via `smartagent scan .`.
+ 
+ ---
+ 
+@@ -29,9 +29,14 @@
+ ├── data/
+ │   └── custom_cot/
+ │       └── security_cot.jsonl         # Curated Chain-of-Thought security reasoning
+-├── smartagent/                        # Core Scanner CLI Package
+-│   ├── cli.py                         # Typer CLI application
+-│   ├── config.py                      # Scanner configuration
++├── smartagent/                        # Core Scanner & Agent Package
++│   ├── cli.py                         # Typer CLI application (chat, agent, scan, train, info)
++│   ├── config.py                      # Scanner & Agent configuration
++│   ├── agent/                         # Autonomous ReAct Agent Module
++│   │   ├── core.py                    # ReAct reasoning loop (Thought → Action → Observation)
++│   │   ├── tools.py                   # 8 Security tools + CWE knowledge base
++│   │   ├── memory.py                  # Sliding-window conversation memory
++│   │   └── prompts.py                 # ReAct system prompt & templates
+ │   ├── scanners/
+ │   │   ├── secret_scanner.py          # API keys, tokens, private keys
+ │   │   ├── pattern_scanner.py         # SQLi, RCE, Deserialization, XSS
+@@ -38,6 +38,6 @@
+ │   │   └── config_scanner.py          # Dockerfiles, .env misconfigurations
+ │   ├── ai/
+-│   │   ├── model.py                   # Model loader (GPU / 4-bit / CPU)
++│   │   ├── model.py                   # Model loader & token streaming
+ │   │   ├── judge.py                   # AI verification & fix generation
+ │   │   └── prompts.py                 # Chain-of-thought prompt templates
+ │   └── reporting/
+@@ -54,9 +54,9 @@
+ 1. Open [Google Colab](https://colab.research.google.com).
+ 2. Upload `Fluxnat_Coder_3B_Training.ipynb`.
+ 3. Set runtime to **GPU (T4)**.
+-4. Run all cells — it will automatically train, merge, rebrand, and push `fluxnat/Fluxnat-Coder-3B` to Hugging Face!
+-
+-### Option B: Local Training (RTX 3060/4060 or higher)
++4. Run all cells — it will automatically train, merge, and upload `k4ran909/Fluxnat-Coder-3B` to Hugging Face!
++
++### Option B: Local Training
+ ```bash
+ # 1. Install dependencies
+ pip install -e .
+@@ -75,9 +75,21 @@
+ 
+ ---
+ 
+-## 🔍 Using SmartAGENT Scanner
+-
+-### 1. Basic Scan (Fast Static Pass)
++## 🤖 Agentic Mode & Scanning
++
++### 1. Interactive Agent Chat (ReAct Loop)
++Engage in an interactive terminal session where the agent can autonomously think, explore files, run security tools, and remediate flaws:
++```bash
++smartagent chat
++```
++
++### 2. Autonomous One-Shot Task
++Run a direct agentic task from your terminal:
++```bash
++smartagent agent "scan this project for SQL injection and suggest fixes"
++```
++
++### 3. Classic Static Scan (Fast Pass)
+ ```bash
+ smartagent scan /path/to/your/project
+ ```
+@@ -84,5 +84,5 @@
+-### 2. AI-Verified Scan (with Fluxnat Coder 3B)
+-Uses the AI model to eliminate false positives and generate exact fix snippets:
++### 4. AI-Verified Scan
++Uses Fluxnat Coder 3B to eliminate false positives and generate exact fix snippets:
+ ```bash
+ smartagent scan /path/to/your/project --ai
+ ```
+@@ -89,4 +89,4 @@
+-### 3. Export Reports (JSON & Markdown)
++### 5. Export Reports (JSON & Markdown)
+ ```bash
+ smartagent scan /path/to/your/project --json report.json --md report.md
+ ```
+@@ -93,4 +93,4 @@
+-### 4. Check Environment Status
++### 6. Check Environment Status
+ ```bash
+ smartagent info
+ ```
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

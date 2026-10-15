@@ -1,0 +1,23 @@
+
+The command exited with code 0.
+Output:
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\huggingface_hub\file_download.py:138: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+add_prefix_space: False
+backend: tokenizers
+bos_token: None
+clean_up_tokenization_spaces: False
+eos_token: <|im_end|>
+errors: replace
+extra_special_tokens: ['<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>', '<|vision_start|>', '<|vision_end|>', '<|vision_pad|>', '<|image_pad|>', '<|video_pad|>']
+is_local: False
+model_max_length: 32768
+pad_token: <|PAD_TOKEN|>
+padding_side: left
+split_special_tokens: False
+tokenizer_class: Qwen2Tokenizer
+unk_token: None
+added_tokens_decoder: {'151643': {'content': '<|endoftext|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151644': {'content': '<|im_start|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151645': {'content': '<|im_end|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151646': {'content': '<|object_ref_start|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151647': {'content': '<|object_ref_end|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151648': {'content': '<|box_start|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151649': {'content': '<|box_end|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151650': {'content': '<|quad_start|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151651': {'content': '<|quad_end|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151652': {'content': '<|vision_start|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151653': {'content': '<|vision_end|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151654': {'content': '<|vision_pad|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151655': {'content': '<|image_pad|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151656': {'content': '<|video_pad|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}, '151657': {'content': '<tool_call>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151658': {'content': '</tool_call>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151659': {'content': '<|fim_prefix|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151660': {'content': '<|fim_middle|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151661': {'content': '<|fim_suffix|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151662': {'content': '<|fim_pad|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151663': {'content': '<|repo_name|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151664': {'content': '<|file_sep|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': False}, '151665': {'content': '<|PAD_TOKEN|>', 'single_word': False, 'lstrip': False, 'rstrip': False, 'normalized': False, 'special': True}}
+

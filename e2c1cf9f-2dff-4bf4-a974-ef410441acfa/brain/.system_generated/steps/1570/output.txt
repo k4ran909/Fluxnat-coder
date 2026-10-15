@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+
+ProcessId CommandLine                                                                                                  
+--------- -----------                                                                                                  
+     2092 "C:\Users\k4ran\AppData\Local\uv\cache\archive-v0\K-nGJrJoDfzLPpLt\Scripts\python.exe" "C:\Users\k4ran\App...
+
+
+

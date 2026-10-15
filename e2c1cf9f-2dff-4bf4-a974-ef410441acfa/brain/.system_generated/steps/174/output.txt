@@ -1,0 +1,8 @@
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\merge_and_export.py"}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\evaluate.py"}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\train.py"}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\Fluxnat_Coder_3B_Training.ipynb"}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\prepare_datasets.py"}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\rebrand.py"}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\smartagent\\cli.py"}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\smartagent\\reporting\\report.py"}

@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\k4ran\OneDrive\Desktop\smartAGENT
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        07-10-2026     12:47                .claude                                                              
+d-----        22-09-2026     02:19                config                                                               
+d-----        22-09-2026     02:22                data                                                                 
+d-----        22-09-2026     17:43                docs                                                                 
+d-----        07-10-2026     13:38                scripts                                                              
+d-----        22-09-2026     17:08                smartagent                                                           
+d-----        07-10-2026     13:57                tests                                                                
+
+
+

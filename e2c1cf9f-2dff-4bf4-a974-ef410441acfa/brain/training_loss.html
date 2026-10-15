@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-transparent text-[var(--foreground)] antialiased p-4">
+  <div class="bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)] rounded-xl p-5 shadow-sm">
+    <div class="flex items-center justify-between mb-1">
+      <h2 class="font-semibold text-lg">Training Loss Curve</h2>
+      <span class="text-xs text-[var(--muted-foreground)] bg-[var(--secondary)] px-2 py-0.5 rounded-full">Fluxnat Coder 3B</span>
+    </div>
+    <p class="text-[var(--muted-foreground)] text-xs mb-4">Calibrated QLoRA (r=16, α=32) · 25 steps · 2 epochs · LR 1e-4</p>
+
+    <canvas id="chart" style="width:100%; height:220px;"></canvas>
+
+    <div class="flex items-center gap-5 mt-3 text-xs text-[var(--muted-foreground)]">
+      <div class="flex items-center gap-1.5">
+        <span class="inline-block w-3 h-0.5 rounded" style="background:#ef4444"></span>
+        <span>Overfitted (60 steps → 0.003)</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span class="inline-block w-3 h-0.5 rounded" style="background:#22c55e"></span>
+        <span>Calibrated (25 steps → 0.82)</span>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="grid grid-cols-4 gap-3 mt-4">
+      <div class="bg-[var(--secondary)] rounded-lg p-2.5 text-center">
+        <div class="text-lg font-bold text-[var(--foreground)]">2.59</div>
+        <div class="text-[10px] text-[var(--muted-foreground)]">Start Loss</div>
+      </div>
+      <div class="bg-[var(--secondary)] rounded-lg p-2.5 text-center">
+        <div class="text-lg font-bold" style="color:#22c55e">0.82</div>
+        <div class="text-[10px] text-[var(--muted-foreground)]">Final Loss</div>
+      </div>
+      <div class="bg-[var(--secondary)] rounded-lg p-2.5 text-center">
+        <div class="text-lg font-bold text-[var(--foreground)]">82s</div>
+        <div class="text-[10px] text-[var(--muted-foreground)]">Train Time</div>
+      </div>
+      <div class="bg-[var(--secondary)] rounded-lg p-2.5 text-center">
+        <div class="text-lg font-bold" style="color:#22c55e">✓</div>
+        <div class="text-[10px] text-[var(--muted-foreground)]">Healthy</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    const isLight = document.documentElement.classList.contains('light');
+
+    // Data
+    const calibrated = [
+      {step:2,loss:2.593},{step:4,loss:2.3984},{step:6,loss:2.1568},
+      {step:8,loss:1.9017},{step:10,loss:1.7323},{step:12,loss:1.5004},
+      {step:14,loss:1.2762},{step:16,loss:1.0295},{step:18,loss:0.9766},
+      {step:20,loss:0.8306},{step:22,loss:0.7857},{step:24,loss:0.8199}
+    ];
+
+    // Simulated overfitted curve (exponential collapse from ~2.5 to 0.003 over 60 steps)
+    const overfitted = [];
+    for(let s=2; s<=60; s+=2){
+      overfitted.push({step:s, loss: 2.5 * Math.exp(-0.11 * s) + 0.003});
+    }
+
+    function draw() {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      ctx.scale(dpr, dpr);
+      const W = rect.width, H = rect.height;
+
+      const pad = {top:15, right:15, bottom:30, left:42};
+      const gW = W - pad.left - pad.right;
+      const gH = H - pad.top - pad.bottom;
+
+      const maxStep = 60, maxLoss = 3.0;
+      const xScale = s => pad.left + (s / maxStep) * gW;
+      const yScale = l => pad.top + (1 - l / maxLoss) * gH;
+
+      // Grid color
+      const gridColor = isLight ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.08)';
+      const textColor = isLight ? 'rgba(0,0,0,0.45)' : 'rgba(255,255,255,0.45)';
+
+      // Horizontal grid lines
+      ctx.strokeStyle = gridColor;
+      ctx.lineWidth = 1;
+      ctx.setLineDash([3,3]);
+      for(let l=0; l<=3; l+=0.5){
+        const y = yScale(l);
+        ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(W-pad.right, y); ctx.stroke();
+      }
+      ctx.setLineDash([]);
+
+      // Y labels
+      ctx.font = '10px system-ui';
+      ctx.fillStyle = textColor;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      for(let l=0; l<=3; l+=0.5){
+        ctx.fillText(l.toFixed(1), pad.left-6, yScale(l));
+      }
+
+      // X labels
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      for(let s=0; s<=60; s+=10){
+        ctx.fillText(s, xScale(s), H-pad.bottom+6);
+      }
+      ctx.fillText('Step', W/2, H-4);
+
+      // Draw overfitted line (red, dashed)
+      ctx.strokeStyle = '#ef4444';
+      ctx.lineWidth = 2;
+      ctx.setLineDash([6,4]);
+      ctx.globalAlpha = 0.6;
+      ctx.beginPath();
+      overfitted.forEach((p,i) => {
+        const x = xScale(p.step), y = yScale(p.loss);
+        i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+      });
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.globalAlpha = 1;
+
+      // Danger zone (below 0.1)
+      const dangerY = yScale(0.1);
+      ctx.fillStyle = isLight ? 'rgba(239,68,68,0.06)' : 'rgba(239,68,68,0.08)';
+      ctx.fillRect(pad.left, dangerY, gW, yScale(0)-dangerY);
+      ctx.font = '9px system-ui';
+      ctx.fillStyle = '#ef4444';
+      ctx.globalAlpha = 0.6;
+      ctx.textAlign = 'left';
+      ctx.fillText('⚠ Overfit zone', pad.left+4, dangerY+3);
+      ctx.globalAlpha = 1;
+
+      // Draw calibrated line (green, solid)
+      ctx.strokeStyle = '#22c55e';
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      calibrated.forEach((p,i) => {
+        const x = xScale(p.step), y = yScale(p.loss);
+        i===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+      });
+      ctx.stroke();
+
+      // Dots on calibrated
+      calibrated.forEach(p => {
+        const x = xScale(p.step), y = yScale(p.loss);
+        ctx.beginPath();
+        ctx.arc(x, y, 3, 0, Math.PI*2);
+        ctx.fillStyle = '#22c55e';
+        ctx.fill();
+        ctx.strokeStyle = isLight ? '#fff' : '#1a1a1a';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      });
+
+      // Annotations
+      ctx.font = 'bold 10px system-ui';
+      ctx.fillStyle = '#22c55e';
+      ctx.textAlign = 'left';
+      const lastCal = calibrated[calibrated.length-1];
+      ctx.fillText('0.82', xScale(lastCal.step)+6, yScale(lastCal.loss)-2);
+
+      ctx.fillStyle = '#ef4444';
+      ctx.globalAlpha = 0.7;
+      const lastOv = overfitted[overfitted.length-1];
+      ctx.fillText('0.003', xScale(lastOv.step)+6, yScale(lastOv.loss)+2);
+      ctx.globalAlpha = 1;
+    }
+
+    draw();
+    window.addEventListener('resize', draw);
+  </script>
+</body>
+</html>

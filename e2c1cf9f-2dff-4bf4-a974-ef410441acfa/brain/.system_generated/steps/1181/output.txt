@@ -1,0 +1,4 @@
+{"name":"custom_cot", "isDir":true}
+{"name":"processed", "isDir":true}
+
+Summary: This directory contains 2 subdirectories and 0 files.

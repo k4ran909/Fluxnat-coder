@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+/json/version -> Error: HTTP Error 404: Not Found
+/json/list -> Error: HTTP Error 404: Not Found
+/json/protocol -> Error: HTTP Error 404: Not Found
+

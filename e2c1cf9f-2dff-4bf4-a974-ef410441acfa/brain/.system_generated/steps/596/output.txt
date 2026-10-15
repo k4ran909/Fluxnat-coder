@@ -1,0 +1,33 @@
+The search for ""Qwen3.5" 4B benchmarks OR "Qwen 3.5" OR "Qwen2.5-Coder-3B" benchmarks OR "Qwen2.5-Coder-7B"" returned the following summary:
+The **Qwen3.5** series, released by Alibaba Cloud in February and March 2026, represents a major leap in open-weight multimodal model performance, featuring a hybrid architecture (Gated Delta Networks combined with sparse Mixture-of-Experts) and native multimodal capabilities.
+
+### Qwen3.5 Overview & Benchmarks
+The flagship **Qwen3.5-397B-A17B** is designed for high-efficiency, frontier-level performance, activating only 17B parameters per forward pass.
+
+*   **Key Benchmark Highlights:**
+    *   **IFEval:** 92.6
+    *   **MMLU-Pro:** 87.8
+    *   **GPQA Diamond:** 88.4
+    *   **AIME 2026:** 91.3
+*   **Small Models (0.8B, 2B, 4B, 9B):** Released in March 2026, these models are optimized for edge devices and low-compute environments.
+    *   **Qwen3.5-4B:** Recognized as the most intelligent model under 5B parameters, scoring 27 on the Intelligence Index.
+    *   **Qwen3.5-9B:** The most intelligent model under 10B parameters, scoring 32 on the Intelligence Index.
+    *   These models support a 262K context window and are licensed under Apache 2.0.
+
+### Qwen2.5-Coder Series
+The **Qwen2.5-Coder** series (released late 2024) focuses on code generation, reasoning, and repair. It is built on the Qwen2.5 architecture and trained on over 5.5 trillion tokens of code-related data.
+
+*   **Qwen2.5-Coder-3B:** 
+    *   Designed as a lightweight, efficient coding assistant.
+    *   Benchmarks show it performs strongly in code-related tasks (generation, completion, and repair) relative to its size, though it is superseded by the newer Qwen3.5 small series for general multimodal tasks.
+*   **Qwen2.5-Coder-7B:** 
+    *   Known for outperforming larger models like DeepSeek-Coder-V2-Lite and CodeStral-22B at the time of its release.
+    *   It maintains competitive performance in mathematics and general language tasks alongside its specialized coding capabilities.
+
+### Comparison Summary
+| Model Series | Primary Focus | Notable Features |
+| :--- | :--- | :--- |
+| **Qwen3.5** | Native Multimodal, Agentic, General Purpose | MoE architecture, "Thinking" & "Fast" modes, 201 languages, 262K+ context. |
+| **Qwen2.5-Coder** | Code Generation & Reasoning | Specialized code-training, state-of-the-art performance for its era (2024). |
+
+*Note: As of September 2026, the Qwen3.5 series (and subsequent updates like Qwen3.6/3.8) is the current standard for Qwen's open-weight model family, offering significant improvements in intelligence, efficiency, and multimodal integration over the Qwen2.5-Coder series.*

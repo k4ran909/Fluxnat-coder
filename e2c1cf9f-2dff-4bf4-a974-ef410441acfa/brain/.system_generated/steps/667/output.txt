@@ -1,0 +1,24 @@
+Task: e2c1cf9f-2dff-4bf4-a974-ef410441acfa/task-665
+Status: DONE
+Log: C:\Users\k4ran\.gemini\antigravity\brain\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\.system_generated\tasks\task-665.log
+Log output:
+<truncated 35 lines>
+return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\k4ran\.gemini\antigravity\brain\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\scratch\extract_colab_cells.py", line 34, in main
+    async with websockets.connect(uri) as ws:
+               ~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\websockets\asyncio\client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\websockets\asyncio\client.py", line 578, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+
+Last progress: 3s ago

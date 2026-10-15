@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\k4ran\.gemini\antigravity\brain\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\scratch\generate_balanced_cot.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1,5 +1,8 @@
+ import json
+ import os
++import sys
++
++sys.stdout.reconfigure(encoding='utf-8')
+ 
+ SYSTEM_PROMPT = (
+     "You are Fluxnat Coder 3B, an elite AI cybersecurity and secure coding intelligence model created by Fluxnat. "
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

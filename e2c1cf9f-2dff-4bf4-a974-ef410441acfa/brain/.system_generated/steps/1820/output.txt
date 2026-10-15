@@ -1,0 +1,92 @@
+
+The command exited with code 0.
+Output:
+<truncated 251 lines>
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1594:============================================================
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1595:[*] TEST 1: Identity & Creator Alignment
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1596:============================================================
+> C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1915:  uid=1_3711 StaticText "Launched Data Explorer - a new feature that lets you search Kaggle datasets, 
+models, and competitions directly from a Colab notebook!"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1916:  uid=1_3712 StaticText "Gemini 3 is now available in Colab."
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1917:  uid=1_3713 StaticText "In addition to being available in VS Code, Colab is also available for use in 
+Antigravity, Cursor, and Windsurf via the Open VSX Registry!"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1918:  uid=1_3714 StaticText "H100 is being rolled out for more users."
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1919:  uid=1_3715 StaticText "Launched a new modern design for the Colab UI."
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:1920:  uid=1_3716 StaticText "Python package upgrades"
+> C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2088:  uid=1_3884 StaticText "datasets 2.14.4 -> 4.0.0"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2089:  uid=1_3885 StaticText "diffusers 0.34.0 -> 0.35.1"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2090:  uid=1_3886 StaticText "fastai 2.7.19 -> 2.8.4"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2091:  uid=1_3887 StaticText "gcsfs 2025.3.0 -> 2025.7.0"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2092:  uid=1_3888 StaticText "google-genai 1.26.0 -> 1.31.0"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2093:  uid=1_3889 StaticText "gradio 5.38.0 -> 5.43.1"
+> C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2274:  uid=1_4070 StaticText "Now your popular Kaggle datasets are cached for quick retrieval."
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2275:  uid=1_4071 StaticText "Upgraded Colab runtimes to Python 3.11."
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2276:  uid=1_4072 StaticText "Python package upgrades"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2277:  uid=1_4073 StaticText "bigframes 1.29.0 -> 1.42.0"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2278:  uid=1_4074 StaticText "TensorFlow 2.17.1 -> 2.18.0"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2279:  uid=1_4075 StaticText "tensorboard 2.17.1 -> 2.18.0"
+> C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2360:  uid=1_4156 StaticText "Pre-installed California housing dataset README not correct "
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2361:  uid=1_4157 link "#4862 Link will open in a new tab" 
+url="https://github.com/googlecolab/colabtools/issues/4862"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2362:    uid=1_4158 StaticText "#4862"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2363:  uid=1_4159 StaticText "."
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2364:  uid=1_4160 StaticText "Backend execution error for scheduled notebook "
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:2365:  uid=1_4161 link "#4850 Link will open in a new tab" 
+url="https://github.com/googlecolab/colabtools/issues/4850"
+> C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3007:  uid=1_4800 StaticText "tensorflow-datasets 4.8.3 -> 4.9.2"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3008:  uid=1_4801 StaticText "termcolor 2.2.0 -> 2.3.0"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3009:  uid=1_4802 StaticText "zict 2.2.0 -> 3.0.0"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3010:  uid=1_4803 heading "2023-04-14" level="3"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3011:  uid=1_4804 StaticText "Python package updates:"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3012:  uid=1_4805 StaticText "google-api-python-client 2.70.0 -> 2.84.0"
+> C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3356:  uid=1_5149 StaticText "Upgraded ipython from 5.5.0 to 7.9.0, fbprophet 0.7 to prophet 1.1, 
+tensorflow-datasets from 4.0.1 to 4.6.0, drivefs from 60.0.2 to 61.0.3, pytorch from 1.12.0 to 1.12.1, numba from 0.51 
+to 0.56, and lxml from 4.2.0 to 4.9.1"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3357:  uid=1_5150 StaticText "Loosened our "
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3358:  uid=1_5151 StaticText "requests"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3359:  uid=1_5152 StaticText " version requirement ("
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3360:  uid=1_5153 link "GitHub issue Link will open in a new tab" 
+url="https://github.com/deepset-ai/haystack/pull/2921#issuecomment-1199714337"
+  C:\Users\k4ran\.gemini\antigravity\brain\e0dacbea-58f4-44c6-856e-835baef4a9e5\.tempmediaStorage\snapshot_full_1791360
+742317.txt:3361:    uid=1_5154 StaticText "GitHub issue"
+
+
+

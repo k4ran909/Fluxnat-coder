@@ -1,0 +1,16 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\config\training_config.yaml. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -4,8 +4,8 @@
+ project:
+   name: "Fluxnat-Coder-3B"
+   organization: "fluxnat"
+-  hub_model_id: "fluxnat/Fluxnat-Coder-3B"
+-  base_model: "unsloth/Qwen2.5-Coder-3B-Instruct"
++  hub_model_id: "k4ran909/Fluxnat-Coder-3B"
++  base_model: "k4ran909/Fluxnat-Coder-3B"
+   output_dir: "./outputs/Fluxnat-Coder-3B"
+   save_merged: true
+   export_gguf: true
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

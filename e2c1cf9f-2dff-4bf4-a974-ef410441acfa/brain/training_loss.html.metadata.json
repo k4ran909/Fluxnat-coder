@@ -1,0 +1,5 @@
+{
+  "summary":  "Interactive training loss chart comparing the overfitted run (60 steps, loss collapsed to 0.003) vs the calibrated retraining run (25 steps, final loss 0.82). Shows loss curve with data points, overfit danger zone, and key stats (start loss 2.59, final loss 0.82, 82s train time).",
+  "updatedAt":  "2026-09-22T10:28:53.322522600Z",
+  "userFacing":  true
+}

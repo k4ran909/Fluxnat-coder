@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+╭──────────────────────── ℹ️ SmartAGENT System Status ─────────────────────────╮
+│ SmartAGENT Version: 0.1.0                                                    │
+│ Target Model: fluxnat/Fluxnat-Coder-3B                                       │
+│ PyTorch Status: Not Installed (Install via `pip install torch` for AI        │
+│ reasoning)                                                                   │
+│ CUDA Available: No                                                           │
+│ GPU Device: N/A                                                              │
+│ VRAM: N/A                                                                    │
+│ Active Scanners: SecretScanner, PatternScanner, DependencyScanner,           │
+│ ConfigScanner                                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+

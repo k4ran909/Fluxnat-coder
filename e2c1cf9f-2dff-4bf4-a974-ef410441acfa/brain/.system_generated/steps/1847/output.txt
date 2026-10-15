@@ -1,0 +1,34 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\k4ran\OneDrive\Desktop\smartAGENT
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        07-10-2026     12:47                .claude                                                              
+d-----        22-09-2026     02:19                config                                                               
+d-----        22-09-2026     02:22                data                                                                 
+d-----        22-09-2026     17:43                docs                                                                 
+d-----        07-10-2026     13:38                scripts                                                              
+d-----        22-09-2026     17:08                smartagent                                                           
+d-----        22-09-2026     02:21                tests                                                                
+-a----        22-09-2026     17:34            381 .gitignore                                                           
+-a----        22-09-2026     11:43           7133 benchmark_results.json                                               
+-a----        22-09-2026     11:04          16025 benchmark_suite.py                                                   
+-a----        22-09-2026     03:45           5483 evaluate.py                                                          
+-a----        07-10-2026     12:40          16228 Fluxnat_Coder_3B_Training.ipynb                                      
+-a----        22-09-2026     03:45           5351 merge_and_export.py                                                  
+-a----        22-09-2026     03:14           7424 MODEL_CARD.md                                                        
+-a----        07-10-2026     12:37           9259 prepare_datasets.py                                                  
+-a----        22-09-2026     17:13           1055 pyproject.toml                                                       
+-a----        22-09-2026     17:37           4138 README.md                                                            
+-a----        22-09-2026     03:14           6958 rebrand.py                                                           
+-a----        22-09-2026     03:46           4674 test_local_model.py                                                  
+-a----        22-09-2026     11:53           4290 test_refusal_free.py                                                 
+-a----        22-09-2026     12:45           9619 train.py                                                             
+
+
+

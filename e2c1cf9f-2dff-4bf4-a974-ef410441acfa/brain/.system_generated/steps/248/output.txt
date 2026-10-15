@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai\model.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -47,7 +47,7 @@
+         try:
+             self._tokenizer = AutoTokenizer.from_pretrained(target, trust_remote_code=True)
+         except Exception:
+-            fallback = "huihui-ai/Qwen2.5-Coder-3B-Instruct-abliterated"
++            fallback = "unsloth/Qwen2.5-Coder-3B-Instruct"
+             print(f"[!] Target {target} not accessible yet. Falling back to base model: {fallback}...")
+             target = fallback
+             self._tokenizer = AutoTokenizer.from_pretrained(target, trust_remote_code=True)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,1 @@
+{"outputs":[{"output_type":"stream","name":"stdout","text":["Default credentials found! Project: \n","Credentials type: <class 'google.auth.compute_engine.credentials.Credentials'>\n"]}]}

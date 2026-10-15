@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+
+Name     ReceivedBytes SentBytes
+----     ------------- ---------
+Wi-Fi       4002645558 670474630
+Ethernet             0         0
+
+
+

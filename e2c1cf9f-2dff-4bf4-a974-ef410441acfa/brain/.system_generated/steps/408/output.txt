@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+ -V:3.14 *        C:\Python314\python.exe
+ -V:3.12          C:\Users\k4ran\AppData\Local\Programs\Python\Python312\python.exe
+

@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Valid JSON. Cells count: 17
+Cell 6 first line: 'from unsloth import FastLanguageModel\n'
+Cell 8 first line: 'import json\n'
+Cell 10 first line: 'from trl import SFTTrainer\n'
+Cell 10 metadata: {'id': 'bBtUZIG4wjco'}
+

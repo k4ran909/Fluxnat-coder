@@ -1,0 +1,40 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\merge_and_export.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -48,7 +48,7 @@
+         print("[*] Exporting model to GGUF format (q4_k_m and q8_0)...")
+         try:
+             model.save_pretrained_gguf(merged_dir, tokenizer, quantization_method="q4_k_m")
+-            print("[✓] Q4_K_M GGUF exported successfully!")
++            print("[OK] Q4_K_M GGUF exported successfully!")
+         except Exception as e:
+             print(f"[!] GGUF export failed: {e}")
+ 
+@@ -55,6 +55,6 @@
+     from rebrand import rebrand_model_directory
+     rebrand_model_directory(merged_dir)
+-    print("[✓] Standalone merged model ready at:", merged_dir)
++    print("[OK] Standalone merged model ready at:", merged_dir)
+ 
+ 
+ def merge_and_export_standard(config: Dict[str, Any]):
+@@ -83,7 +83,7 @@
+     from rebrand import rebrand_model_directory
+     rebrand_model_directory(merged_dir)
+ 
+-    print("[✓] Standalone merged model ready at:", merged_dir)
++    print("[OK] Standalone merged model ready at:", merged_dir)
+ 
+ 
+ def push_to_huggingface_hub(merged_dir: str = "./outputs/Fluxnat-Coder-3B-Merged", repo_id: str = "fluxnat/Fluxnat-Coder-3B"):
+@@ -104,7 +104,7 @@
+         repo_id=repo_id,
+         repo_type="model",
+     )
+-    print(f"[✓] Successfully published to https://huggingface.co/{repo_id}!")
++    print(f"[OK] Successfully published to https://huggingface.co/{repo_id}!")
+ 
+ 
+ def main():
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

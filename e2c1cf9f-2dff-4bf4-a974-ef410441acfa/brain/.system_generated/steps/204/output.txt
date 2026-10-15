@@ -1,0 +1,25 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\train.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -74,7 +74,8 @@
+ 
+     if not os.path.exists(train_file):
+         print(f"[!] Training data not found at {train_file}. Running dataset preparation first...")
+-        os.system("python prepare_datasets.py")
++        import subprocess
++        subprocess.run([sys.executable, "prepare_datasets.py"], check=True)
+ 
+     print(f"[*] Loading dataset from {train_file}...")
+     dataset = load_dataset("json", data_files={"train": train_file, "eval": eval_file})
+@@ -185,7 +185,8 @@
+ 
+     if not os.path.exists(train_file):
+         print(f"[!] Training data not found at {train_file}. Running dataset preparation first...")
+-        os.system("python prepare_datasets.py")
++        import subprocess
++        subprocess.run([sys.executable, "prepare_datasets.py"], check=True)
+ 
+     dataset = load_dataset("json", data_files={"train": train_file, "eval": eval_file})
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

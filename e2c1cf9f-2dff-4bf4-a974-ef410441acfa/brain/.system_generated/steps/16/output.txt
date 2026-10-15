@@ -1,0 +1,28 @@
+The search for "Qwen 3 coder model 2025 2026 release open source" returned the following summary:
+Alibaba's Qwen series has seen multiple releases within the **Qwen3** family throughout 2025 and 2026. Regarding your specific interest in coding models, there have been several significant developments:
+
+### Qwen3-Coder Release Summary
+*   **Qwen3-Coder (Initial Release):** Officially launched on **July 23, 2025**[1][2][3]. This model was designed as an open-source, agentic AI coding model, with its flagship variant being the `Qwen3-Coder-480B-A35B` (a Mixture-of-Experts model)[2][4]. It was released with support for extensive context windows (256K to 1M tokens)[2][4].
+*   **Qwen3-Coder-Next:** A more recent iteration, **Qwen3-Coder-Next**, was released in **February 2026**[5][6]. This version utilizes an 80B parameter MoE architecture (with 3B active parameters), specifically optimized for local development and coding agents[5][7][8]. It has been noted for its efficiency, allowing it to run on consumer hardware while delivering high-level performance on coding benchmarks like SWE-Bench Pro[5][7].
+
+### Open Source Status
+*   **Open Weights/Source:** Qwen3-Coder and subsequent variants like Qwen3-Coder-Next have been released with **open weights**[5][7][4]. Many of these models are available under the **Apache 2.0 license**, facilitating their use in research and commercial applications[7][4][9].
+*   **Availability:** These models are typically hosted on platforms like **Hugging Face** and **ModelScope**, where you can access the model checkpoints and documentation[10][11][9].
+
+### Evolution Context
+The Qwen family has evolved rapidly. By 2026, the lineup has expanded beyond the initial Qwen3 releases to include newer general-purpose and specialized models (such as `Qwen3.8` released in August 2026)[12][13]. If you are looking for the latest "state-of-the-art" open-weight coding performance from Alibaba, **Qwen3-Coder-Next** is the primary model identified for local and agentic coding workflows as of mid-2026[7][13].
+
+Sources:
+[1] [llmgateway.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_iBhpzXztOxPSfAcb4vdBk1P8odyFvr-HyX-sIpcExZdhLg1Sr-jS7nYpsjgxOL6yB_zHT1mN3zhi0_asCq5N9x1gX5Q3EPTjiZ2RCzCj_dld76oR0U71)
+[2] [cometapi.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEtDoBlQrpB9oaqlNqb9Ve22q2-iY8UDm8DM-j_Kt2s7c1Qxx3VNZEADVqsLOZfxMsLLTC3P3eTYzEzh8y1PMUlk1zmDvIlgHt-QxjcyAfqCeuf8g4Ju4BhS6IPEuhuEHLBQl24V38eOazT6Hku0w-PdSkC2Tn_Mdy-YZkxLNqnrY=)
+[3] [alibabacloud.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHE67rjovq_5PrfMblGeLFEKoS4vQAzyno7alKc5vnxNyXWEkuRYOVcUbfT8J7MjKgGpYXrdszFMlxczOGB_bslqbAJ-4ykE_2pTRAg2em__VrvpKa3lqS4R5zC5oh6xgoY7b1MwA1V-9-qtIoGupFHqvxviUpYsYbfoH0C6sY2PL16HB2PDMm5bffAK5R2qeggQRQtW4D_n_CG)
+[4] [itdoeswhatnow.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuUD-qItF-utqFyoF2MEqlJMs9tTgodCCF-QEURF6Tz2ubsA557GxBllYPTfHSAOsptgGlh8lcrSYl2FRxJfFPiAoYTA-vwt5Lpedm4jGP2qdxVSwxGqdyfWjk-JiSNaudU7QXHeX1G2g4Lo9tR4oc5RAfgxGqT5LE)
+[5] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr7Ns1hXSD8DNnxStcJhHmxJ-ffHqt3PUDy0YCZwdIncNfU6ti82QntrmwYONUM_Z45vTnHb6LMDb0WZkTv3As9r9Ax7PeY0E9z1MChLqv0qM1f7dA0w3FhOjoJttIRLUlcKa6u5Ve7tBEn5eHfXcajb4jUPraMLDDaGhBYswD_gOIb8tyrd7lMld1AUMsaAyrYYgioPwci4BqiBmydksEPEBVVgU=)
+[6] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyKbuGNMu7c7r2of78MQNxQftgB-jsMznlnOBBe_qO_lYPf4v9iJpgdg4AuaANN5A9SHBDtLV5NwcaSX2pDQ__pGiQuO-cQdL8wa1sqzTIqC8SaHlzLb9e2N044icWj5ft)
+[7] [localaimaster.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEza4aRkX_8EBPqLKLDC_rzHTZQ9smNmnGtDDRk_K-WinQHVwFcEi20t9ZUKAXsOWkZVsJT2R2NiRtW6H7KEtcFxN0qqLXtAjr_QLOotcwRiR3Op5LCZKQ0nKtlHdq7DVxswUX_IAOK)
+[8] [openrouter.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElmq5ELwnE1bFOTYrF85YcvMDl0XartvTv6AUuRBP4cQowi2sqZSxNx9wXakL11HyU7ahlhwZfFrXi4SRklra9wpNdHuVVS4q8igVsAJiu2c9XNFYqXYlaR9SgWHQsWzU=)
+[9] [qwen.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2aQFHIX9BmEBhpG2H-WwVe737vR9zok_yL_-2ak0F_oVhfrmJfDx9Z3z4FGE3lr3O5qrrmzmaPN3BdBF3vmD1q_N9FuJil9kKXdBm8C04UXdT)
+[10] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvligNUV0JB5rqOo5nrKER4nOxKgulFzWGZnjpfVcfwqQ306FWBrYzVQjiSsUnQjvPf8IaJF2-cQo-ABgvLix1gz8OrorC1BiMYak6aP6pEBtCA_iKGq8x5UtBH2XE7litKwUGX1rxXA==)
+[11] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEr7t7cxGM4VxTzHpN5nXBpWXiRctnO78utauLoKvJmsPjoYkHoX5N2C3hySQ3XPY8Wdu-6S_Wm3BVBQVohS5DNIjuPwc0LNZp0hbU0PaoJDRxVJVgiBfWb8b0=)
+[12] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSXo5kaQh7FfHMHZ04W1B2xu7wzbLStBG2KbXAIiCmGGPoeMsTKypcXHb4tQpBJWMkjIk5i6Tfk6yeZmZEf08prgf9TwcK3bCd9z92720BNJCKL6rvwkk=)
+[13] [codersera.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE64AiweGqxxbwiMyArSywbbjgGmL2ENdx3X2SgkBgbXp1Ng735k2Wr9ysN_DVUb1ajcrh0_zatOP5JTblTXoqzZLhjVyqa-kDcOadBWk5V4pVpwDGUO-irBP1YRtvKXYMPYOCiGNK79nwjMoU4)

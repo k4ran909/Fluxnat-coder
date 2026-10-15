@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+
+ Port Process   Id Path                   
+ ---- -------   -- ----                   
+65150 python  2092 C:\Python314\python.exe
+65149 python  2092 C:\Python314\python.exe
+
+
+

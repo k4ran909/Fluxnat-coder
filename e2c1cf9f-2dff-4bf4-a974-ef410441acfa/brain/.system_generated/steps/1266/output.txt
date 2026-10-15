@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+
+colab_full_cells.json:41:    "code": "fromunslothimportFastLanguageModel\nimporttorch\nMAX_SEQ_LENGTH=4096\nBASE_MODEL=
+\"unsloth/Qwen2.5-Coder-3B-Instruct\"\nprint(f\"[*]Loadingbasemodel:{BASE_MODEL}...\")\nmodel,tokenizer=
+FastLanguageModel.from_pretrained(\nmodel_name=BASE_MODEL,\nmax_seq_length=MAX_SEQ_LENGTH,\ndtype=None,#Auto-detects
+float16orbfloat16\nload_in_4bit=True,\n)\nprint(\"[*]AttachingLoRAadaptersforcybersecuritydomainshift...\")\nmodel=
+FastLanguageModel.get_peft_model(\nmodel,\nr=64,\nlora_alpha=128,\nlora_dropout=0.05,\nbias=\"none\",\n
+target_modules=[\n\"q_proj\",\"k_proj\",\"v_proj\",\"o_proj\",\n\"gate_proj\",\"up_proj\",\"down_proj\"\n],\n
+use_gradient_checkpointing=\"unsloth\",\nrandom_state=3407,\n)\nprint(\"[�]ModelpreparedwithtrainableLoRAadapters!\")",
+scratch_colab_result.json:63:      "codePreview": "fromunslothimportFastLanguageModel importtorch MAX_SEQ_LENGTH=4096 
+BASE_MODEL=\"unsloth/Qwen2",
+
+
+

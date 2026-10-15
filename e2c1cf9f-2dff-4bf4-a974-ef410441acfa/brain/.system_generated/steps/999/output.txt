@@ -1,0 +1,16 @@
+
+The command exited with code 1.
+Output:
+At line:34 char:14
++ def run_tool():
++              ~
+An expression was expected after '('.
+At line:33 char:1
++ @app.route('/exec')
++ ~~~~
+The splatting operator '@' cannot be used to reference variables in an expression. '@app' can be used only as an 
+argument to a command. To reference variables in an expression use '$app'.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ExpectedExpression
+ 
+

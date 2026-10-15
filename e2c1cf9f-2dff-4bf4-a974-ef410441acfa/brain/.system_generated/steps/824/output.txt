@@ -1,0 +1,12 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "C:\Users\k4ran\.gemini\antigravity\brain\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\scratch\inspect_nb.py", line 12, in <module>
+    print(f"Cell {i:2d} | type={ctype:8s} | id={cid:15s} | len={len(src):5d} | {first_line[:60]}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 61-62: character maps to <undefined>
+

@@ -1,0 +1,2 @@
+You have 1 active subagent(s):
+[{"role":"Colab Inspector","type":"browser","conversationId":"e0dacbea-58f4-44c6-856e-835baef4a9e5","transcript":"file:///C:/Users/k4ran/.gemini/antigravity/brain/e0dacbea-58f4-44c6-856e-835baef4a9e5/.system_generated/logs/transcript.jsonl","state":"running"}]

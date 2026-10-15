@@ -1,0 +1,31 @@
+The search for ""unsloth/Qwen2.5-Coder-3B-Instruct" huggingface" returned the following summary:
+The model **`unsloth/Qwen2.5-Coder-3B-Instruct`** is a popular, optimized version of the Qwen2.5-Coder-3B-Instruct model available on Hugging Face[1][2]. It is maintained by **Unsloth**, a library and ecosystem known for making fine-tuning and inference of large language models significantly faster and more memory-efficient[3][4].
+
+### Key Details:
+*   **Purpose:** Qwen2.5-Coder is a series of code-specific models designed for coding assistance, reasoning, and bug-fixing[1][4]. The 3B version is a lightweight, efficient size suitable for various developer tasks[1].
+*   **Unsloth Optimization:** The `unsloth` organization provides versions of these models (often in formats like `bnb-4bit` or `GGUF`) that are optimized for faster training and efficient local deployment[3][4][2].
+*   **Common Variants:** You will often find multiple versions on Hugging Face under the `unsloth` namespace, including:
+    *   **`unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit`**: Frequently used as a base model for fine-tuning with LoRA[5][6][2].
+    *   **`unsloth/Qwen2.5-Coder-3B-Instruct-GGUF`**: Used for running the model locally on consumer hardware via tools like `llama.cpp` or Ollama[7][8][9].
+    *   **`128K` Context Variants**: Specialized versions (e.g., `unsloth/Qwen2.5-Coder-3B-Instruct-128K-GGUF`) that support extended context windows[3][9].
+
+### How to use it:
+*   **For Fine-Tuning:** You can use the `unsloth` library to load the `bnb-4bit` version to train your own adapters[4][2].
+*   **For Inference:** You can use the GGUF versions with `llama.cpp`, `Ollama`, or other compatible local inference engines[8][9].
+*   **Hugging Face Spaces:** You can often find pre-built spaces (such as Unsloth Studio) that allow you to chat with these models directly without any local setup[10][11][12].
+
+You can view the specific files and documentation on their [Hugging Face organization page](https://huggingface.co/unsloth).
+
+Sources:
+[1] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkoRf6wclKkc_zULXg1QOBPvRNggQ_wRzJ7HUMO6sZnjZCir840G7RvH_wOWgACZHakfycOXBYWFWyj23_xsjpXWJmsx-y2e32r0_J9GaOurRiSPNk3kP1nfXDPI1KUMRTalvhUd2OL8NpNPdK-w==)
+[2] [aquilax.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDVG46ix7Uxb78sHkiXAdI0065bPypYn34sxCCaTMMVJ2Bt67JbcUrIQyLnjj_I13iP3N0WVmgRgCUT67ngj3FXl6BBaDSAI5uAKvCEdBh76xQog==)
+[3] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMbxMAHCo50OCp_qp6bae8EgemXe8iM865sg9UAgVvtsk8m5A8Nue2VitbQqL1avU1xBEI6xytp0WMhK1TxUQRcfTelNuZ1ceXcHIpsSaVgzJTowj--Kbq8y2g1UQvDsS5aDuHqUre9jsQOsSr6g==)
+[4] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5JKM-pfbV-EWFAyKbE0otL8nQj-_BuP8BCkFuE4y6wLtymcKQXcyfVrnOoXmInwzAJzrLF0L58NMzahR1NXhvC9CfpN-WGn7EijbAY0WnJecxQv0TEFk88zp2XJGQH1qgObamPYUMXXsme78FJjJOoA_k)
+[5] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4Z4E2Z8Grk0zprK6hXNOtcGoDt0ustVuMgOqGWb56WkUHclOUBBDycnWxyz11yTtsSS01eoTRXxOinh10vn36BDSaHX6k14WT1LBxg5kqGe3m4sMIt-Sp5y3BxLNi1qhTGxrmSGH9BNQJcwLzUDYdQjuvUaA=)
+[6] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjx0ZMDlr_l2EKnuAn-hJfb7o0dwdC0K0-pNwzeb6yDJr0jauD0JLWpyfMRs89eM-yYmWUDEdEfUoYo1HTG1LQT5ty2ewZmc4gAkB9cWSIeXJ7utKPbIRNJZBPtMOMm7rn5csM)
+[7] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5JKM-pfbV-EWFAyKbE0otL8nQj-_BuP8BCkFuE4y6wLtymcKQXcyfVrnOoXmInwzAJzrLF0L58NMzahR1NXhvC9CfpN-WGn7EijbAY0WnJecxQv0TEFk88zp2XJGQH1qgObamPYUMXXsme78FJjJOoA_k)
+[8] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQPuPqn9mEeiS0VnZpsxUMqkMHN_mPNsXEc0LDScwl1DL4PEA9pPiZoUZOq5McdZC0t4XVsNDPzoBs7U7124sud9TFknYQQ5-EJzKJ88zpiYP-A9Z2rkVm7pTpLu_g4Zi9381KVOEeMxakBczWNSYzSheXt2V7F_mxK7VaFg==)
+[9] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHy3rxTOKSSFKDma2OQ6CFBAIlChaCjY_80OU3Niw0nCxJG_Ojb_xujQYAeMxCipBtOYkvaGZyiUrtKE_DQY9RiiOnhK0iJHSydEw4KhUNW6G2StXVIOIEXEHEHNo2hv9WrwpiTM2zzSgkvrDfAMrnbJg==)
+[10] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtawOarxoQw_SKyCKgjw34CFqBFXx8epa8IeqsrAlqD_81wQaH6S45dBq854sgM6hyRLE-kSan3un9YZ6yGeCqfj--EeZjqBTCH4s-A6xcg3bW3-gxUccaNCCcqS4c7Vam3G7el7Vkk5Wqka-7JOj2ig_dQ364roekBl7mk8A-BGeLF4Bhxxcr)
+[11] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGraHf8Z678204_fQhBXO_dgm5Xt4W_xGJqv_Dpbj-xf0eptVpF3aQTyykMA1pQ8JdWzMEw7RbpgRTdgyE2IlR8yMFj1lnEB6MvOK6-8ZQIAUwmvKhhJG-j-5VmI_U4kM1aMLXW5LtTPrB3wYfZqt86XavF0AFzS3tFpsnZPrr9NgnV-knDgmC5p6MCfuevSrFKOEOvzLAZiEt74Xn1MyUUp2Ez3VbYcV9SrTeYcMiBJ2CM8qfsEC6j)
+[12] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4Z4E2Z8Grk0zprK6hXNOtcGoDt0ustVuMgOqGWb56WkUHclOUBBDycnWxyz11yTtsSS01eoTRXxOinh10vn36BDSaHX6k14WT1LBxg5kqGe3m4sMIt-Sp5y3BxLNi1qhTGxrmSGH9BNQJcwLzUDYdQjuvUaA=)

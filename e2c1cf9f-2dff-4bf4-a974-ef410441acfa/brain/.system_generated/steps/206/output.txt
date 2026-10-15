@@ -1,0 +1,75 @@
+
+The command exited with code 0.
+Output:
+╭────────────────────── ⚡ Initializing Audit ───────────────────────╮
+│ SmartAGENT Vulnerability Audit                                     │
+│ Scanning: C:\Users\k4ran\OneDrive\Desktop\smartAGENT               │
+│ Scanners Active: 4 (Secrets, Code Patterns, Dependencies, Configs) │
+│ AI Verification: Disabled (Static Pass Only)                       │
+╰────────────────────────────────────────────────────────────────────╯
+[*] Analyzing 22 matching project files...
+[✓] Static analysis complete. Identified 7 potential findings.
+╭────────── 🛡️ SmartAGENT Vulnerability Audit Report ──────────╮
+│ Target: C:\Users\k4ran\OneDrive\Desktop\smartAGENT           │
+│ Security Grade:  F   (0.0/100 - CRITICAL HAZARD)             │
+│                                                              │
+│ Active Findings: 7 Critical  0 High  0 Medium  0 Low  0 Info │
+╰──────────────────────────────────────────────────────────────╯
+                           Identified Vulnerabilities                           
+                                                                                
+    Severity        CWE       Finding & Location        Remediation Preview     
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+    CRITICAL      CWE-798     Hardcoded Secret          Move secrets to         
+                              Detected: AWS Access      environment variables   
+                              Key ID                    (.env) or a secret      
+                              evaluate.py:59            manager (HashiCorp      
+                              "code":                   Vault, AWS Secrets      
+                              """AWS_ACCESS_KEY =       Manager)....            
+                              "AKIA************MPLE"…                           
+                                                                                
+    CRITICAL      CWE-798     Hardcoded Secret          Move secrets to         
+                              Detected: AWS Secret      environment variables   
+                              Access Key                (.env) or a secret      
+                              evaluate.py:60            manager (HashiCorp      
+                              AWS_******************…   Vault, AWS Secrets      
+                                                        Manager)....            
+                                                                                
+    CRITICAL       CWE-95     Arbitrary Code            Refactor logic to use   
+                              Evaluation (eval/exec)    safe parsers (e.g.,     
+                              evaluate.py:38            ast.literal_eval or     
+                              exec(`tar -czf            json.loads) instead of  
+                              ${filename}.tar.gz        executing code....      
+                              ${filename}`, (err,                               
+                              out) => {...                                      
+                                                                                
+    CRITICAL      CWE-798     Hardcoded Secret          Move secrets to         
+                              Detected: AWS Access      environment variables   
+                              Key ID                    (.env) or a secret      
+                              tests\test_scanners.py…   manager (HashiCorp      
+                              code = 'aws_key =         Vault, AWS Secrets      
+                              "AKIA************MPLE"…   Manager)....            
+                                                                                
+    CRITICAL       CWE-89     SQL Injection (String     Use parameterized       
+                              Formatting)               queries / prepared      
+                              tests\test_scanners.py…   statements with         
+                              code =                    placeholders (e.g.      
+                              'cursor.execute(f"SELE…   cursor.execute(query,   
+                              * FROM users WHERE id =   (params,)))....         
+                              {uid}")'...                                       
+                                                                                
+    CRITICAL       CWE-78     OS Command Injection      Avoid shell=True. Pass  
+                              (Shell Execution)         arguments as a list to  
+                              tests\test_scanners.py…   subprocess.run or use   
+                              code = 'os.system(f"rm    execFile without shell  
+                              -rf {path}")'...          evaluation....          
+                                                                                
+    CRITICAL       CWE-89     SQL Injection (String     Use parameterized       
+                              Formatting)               queries / prepared      
+                              tests\test_scanners.py…   statements with         
+                              code =                    placeholders (e.g.      
+                              'cursor.execute(f"SELE…   cursor.execute(query,   
+                              * FROM users WHERE id =   (params,)))....         
+                              {uid}")'...                                       
+                                                                                
+✓ Exported JSON report to: test_report.json
+

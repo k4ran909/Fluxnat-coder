@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+Connecting to Chrome CDP: ws://127.0.0.1:9222/devtools/browser/e27481d0-12e8-4400-9296-cd596f83c369
+Target selected: Fluxnat_Coder_3B_Training.ipynb - Colab (3C18718FA3A36C9DF9AB624E51561BAC)
+Attached session: None
+Navigating to: https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=bBtUZIG4wjco
+Navigation response: {"id":2,"result":{"sessionId":"8A02E55455BBC80173B38DC88072CADA"}}
+Waiting 10 seconds for Colab notebook to load...
+Current page: {"id":3,"error":{"code":-32600,"message":"Message may have string 'sessionId' property"}}
+

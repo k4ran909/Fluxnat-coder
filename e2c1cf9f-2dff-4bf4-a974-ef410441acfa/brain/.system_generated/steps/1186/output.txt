@@ -1,0 +1,6 @@
+{"name":"__init__.py", "sizeBytes":"331"}
+{"name":"__pycache__", "isDir":true}
+{"name":"report.py", "sizeBytes":"5975"}
+{"name":"scorer.py", "sizeBytes":"1906"}
+
+Summary: This directory contains 1 subdirectories and 3 files.

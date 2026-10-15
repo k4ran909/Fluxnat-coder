@@ -1,0 +1,41 @@
+The search for "Llama 4 Scout Maverick 2025 2026 open source code model" returned the following summary:
+Meta's **Llama 4** model family, which includes the **Scout** and **Maverick** variants, was released on **April 5, 2025**[1][2]. These models are part of an open-weights release designed to provide high-performance, natively multimodal AI capabilities[3][4][5].
+
+### Key Details of Llama 4 Scout and Maverick
+
+*   **Architecture:** Both models utilize a **Mixture-of-Experts (MoE)** architecture[3][6], which allows them to achieve high intelligence while maintaining computational efficiency by only activating a subset of parameters for each token processed[7][8].
+*   **Llama 4 Scout:**
+    *   **Scale:** 109 billion total parameters (17 billion active)[7][5][8].
+    *   **Strengths:** Designed for efficiency, it can run on a single high-end GPU (such as an NVIDIA H100) using quantization[7][9][10].
+    *   **Context Window:** Features an industry-leading **10 million token context window**, making it exceptionally capable of processing vast amounts of data, such as entire codebases or long documents[7][6][10].
+*   **Llama 4 Maverick:**
+    *   **Scale:** 400 billion total parameters (17 billion active)[7][8].
+    *   **Strengths:** A larger, more versatile model with 128 experts, providing higher reasoning and coding performance comparable to leading proprietary models at the time of its release[7][11][10].
+    *   **Context Window:** Supports a 1 million token context window[7][12][8].
+
+### Availability and Licensing
+*   **Open Source:** The models were released under the **Llama Community License**, allowing for both research and commercial use[3][13][14].
+*   **Access:** They are available for download on **llama.com** and **Hugging Face**[1][11].
+*   **Ecosystem:** The models are supported by various tools and platforms, including Ollama (for local execution)[14][15], AWS SageMaker JumpStart[16][17], and IBM watsonx.ai[18].
+
+A third model, **Llama 4 Behemoth** (a 2 trillion parameter model), was announced alongside Scout and Maverick but remained in the training or preview stage at the time of the initial launch[1][6][11].
+
+Sources:
+[1] [meta.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEE2-pfENvWeJtmvNNlMW-tgSALyh7LpTxTosVzaqgDx7WVYCn5M5ygc7n4zglmEnYaF-h9BbUennpz-GEpxRL3RKsiY7_KsIENdrpgxBTEgi81covo4iPRUfrhUtEetCKveeroSWPYWDCGSFt-lw==)
+[2] [techtarget.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2AI5VMlk_LyelaQvoZ-mesdw6D2PzGQIPhC_Bwb_K-Axq_VKosgPQO08P0uCli6b_RPWYN_p9ifXJQ2j4empBoyxO5To1vX_y4KMbLv2VGClnGQBFaCatgaIPZVn1CjhJt2ZH9jSniEcdl3jozzlzSfXQq01tap40lZAcAYCZoifFfIiQ_rlRQeqp9HPUDUV0)
+[3] [diggibyte.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRITl7rCPq5e3VrzyZVWBaF-D914RqOYSQuUTyKa82eQmjCPFFloqzozuxLXKyWs7pStQaKp8OLdT-JFaT04M5NkkoPoVECkdhP5J4UBYCHMsjd3Q9gdYWfdU-k0v3sD_jwTWnNB3mKq8Bb_ucmE8wDruKhbF9bLgNDOaY5BBQzdCC9ReBkbPF7YWy5zo=)
+[4] [meta.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEE2-pfENvWeJtmvNNlMW-tgSALyh7LpTxTosVzaqgDx7WVYCn5M5ygc7n4zglmEnYaF-h9BbUennpz-GEpxRL3RKsiY7_KsIENdrpgxBTEgi81covo4iPRUfrhUtEetCKveeroSWPYWDCGSFt-lw==)
+[5] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGi_LM8Scg6I4vBNlRRQnQ_-4npkMPzPt6mF0PJ_tjkKgY8ZbHsI-GnjVA1XfU-93ik13qnJqmm5K1CyS_iDbGay6iTU1ctY04yW9C__r-UuT_nwLL9E1BiLw6v1gFndA8mtl0B7JR2gs8Jj4qQ6pUjIhrboho8XkRDnlzenw7AuiV13w_6CjKH7s393XALhVT1MxGwKByjdECLMQuXaWbVEs01cS3xDKO4)
+[6] [pragma-code.de](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGVuzvThi5emml9TScXTPZvIx0xkZo5h7mUdSyB9Zs4XybW7eyF02Qx6F_by38R9TtqhxrQvqIwmb14r0jKeS8ODiHKaHRSU0c27KzkrplO5VQIkfTyUhFsKaRHFE0gNFfDvPcNEECZktNIFJZ8lIUD_SHZnqpzvCaoW91P0AjROMXse0eLXjk)
+[7] [meta.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfdlzNnZu5S44hTVdk0jzEQNohiQbaeRWfienRaY-Zv5PzWXnj9E20UOKnsKJrLxXNQgC87OxTTN_q3xVSFP-pJXX3CZdYdC1BDzxaaSXTPOsowT9crMtlQuDAQEQsMuYMz-2We0FhbuPJ5rMTPg__A1vUEu1XHE9naFwSTd0=)
+[8] [spheron.network](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwNYhXf4xNxxDNuPDpArbxNNJ4BL0o3gq6PQ0qFiz-XVaHGM7YLYBC5KL32Vqf7dOz54lRL9STC1emzRvofeQ7cM-5bWEr3IIdbHf8I0VHe7W1s-YC2XrN7t40rn-fOkz0DBFeRyo6WptFjCoam2Y=)
+[9] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvy_UfezEfMKLzXmxFaWl4WStOn9eVTNIHHDU7udXAFibLUnVKXpJwxdLy4wgJcIQvee02QB4lbGBsDO_rOI1ZfZOmKAPArGtT8mOsI8AM5E1LlP0v3xw5n-BX5PKJnie0S7g2eWxAlblDkqd9VlHdXWX4dHLwJlJIhwaeACsQ2rnEf97R)
+[10] [gocodeo.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxvudako2_HJGQbpZ1kKQEvih1r8y-r2ylFHwvSEinsBZFAeVlHO8uZV0Bs4FpdnhA3kXrLsLrShNx0PSztpswLguz7x7FnATYFBaHQG24ktPABrXNP5_mZlfG090dRyAhx1k8N3Mb4F3lHsDlnd_QXYu31w9xarR17npAzg==)
+[11] [meta.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEE2-pfENvWeJtmvNNlMW-tgSALyh7LpTxTosVzaqgDx7WVYCn5M5ygc7n4zglmEnYaF-h9BbUennpz-GEpxRL3RKsiY7_KsIENdrpgxBTEgi81covo4iPRUfrhUtEetCKveeroSWPYWDCGSFt-lw==)
+[12] [towardsai.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtqINevogNnIqIsW6ux8kyTAF6oeEN0nBdQMxLubDQM4F7jygai-jqEe4h3xN0okP21yZQ9UNiPoadsT2TjrmDooeyLARReYxFsmIQSTzB3yChaB4XFhwYM0KPRQNP0E135HG9X5FbvtW-nQ==)
+[13] [developersdigest.tech](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3h1cA-r8rRXPqeTMsP_PkLW03p4bUruHxQp704mNKM4OYlVwwwtF7kZoHUw_NAJwq2bhcwjVKcCoLjrJ0O2q3Ua41Oze2zea7b8h4ivwm7wxfG1mKemhU3sercBq3EkccMKk0QBrvtNHt7QWIcw==)
+[14] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKqB3BYDzRfbVK_vG37J1TclPM6dJrWwOCPvhUWRWtDc-Q2YsdZwo7aw3tWbZFwjGJKcH9WBS4ZPopxBZaLUFSwLy_jDyRd_D0aNDJ_NbE-1FpFZP92w==)
+[15] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKqB3BYDzRfbVK_vG37J1TclPM6dJrWwOCPvhUWRWtDc-Q2YsdZwo7aw3tWbZFwjGJKcH9WBS4ZPopxBZaLUFSwLy_jDyRd_D0aNDJ_NbE-1FpFZP92w==)
+[16] [amazon.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrVqdS9EYRvt01I3eWxEkI5ieGw7PDVFhzwSye9wMB2sNMVou1lH6bjS28Nc0VhZfyCI0zxYZSuThEky3wnF57nx8uIOiw5Coq4vN9wMMCOA3A_suia5lgJ5ZEsG7FTuNvySgmvS-BJPhLv_7BWM_FZQWSY9CHdwwjXGDSrII8l2WGv_o2yZ5Po7Zy0K9NtWE7RQgVWnlcAbyBVhQQpqU5Ybep5ieoBAJs8uZJnBSi)
+[17] [amazon.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEokByF9IuVUbXChmefJO6FT6cqkRqTKLyjextx56YEL3kHLLCwUdb32CLBLaSrUvYeLPCGaIM_KW2wiBF__SAHxfs8mGPEkmXKUzLKK8YzHl--nO8N1Kyiig==)
+[18] [ibm.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnmlJc3tlWhceJz5Yn5vGR7xPm7krM-GoKOqbueCJYaxY-qmzT1lwmH5zG324pqr5hLZl3mtxr_Angve0var_MInPoeR1FZl9jswCPpcmZL7st15fTj4QmnMmBhpq56oe6ouAcAUBKeY14qdOwAu169fjbItTnJqVznWtkgvwdQbPrmwluGU-_oWha_psI1chpxrr2e4QZCW6iTFOtbw==)

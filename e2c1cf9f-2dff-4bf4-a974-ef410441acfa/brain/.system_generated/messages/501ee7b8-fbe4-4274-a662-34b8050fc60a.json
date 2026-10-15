@@ -1,0 +1,1 @@
+{"id":"501ee7b8-fbe4-4274-a662-34b8050fc60a", "recipient":"e2c1cf9f-2dff-4bf4-a974-ef410441acfa", "sender":"e2c1cf9f-2dff-4bf4-a974-ef410441acfa/task-1754", "priority":"MESSAGE_PRIORITY_HIGH", "timestamp":"2026-10-07T08:05:45.290358Z", "renderDetails":{"messageTitle":"Wait for subagent response: Timer has expired"}, "content":"Check for subagent JS API response"}

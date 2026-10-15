@@ -1,0 +1,24 @@
+The search for ""Qwen2.5-Coder-3B" HumanEval MBPP EvalPlus benchmarks" returned the following summary:
+Qwen2.5-Coder-3B is part of the Qwen2.5-Coder series, a collection of code-specific Large Language Models (LLMs)[1][2]. Below is a summary regarding its benchmark performance on HumanEval, MBPP, and EvalPlus.
+
+### Benchmark Context
+*   **Performance Variability:** Performance results for the 3B model can vary significantly depending on the evaluation framework used (e.g., official technical report results vs. community-run platforms like OpenCompass)[3][4]. 
+*   **Official Metrics:** In the official Qwen2.5-Coder technical report, the 3B model is noted for significant improvements in code generation, reasoning, and fixing compared to its predecessor (CodeQwen1.5)[2]. While the flagship 32B model is frequently highlighted for achieving state-of-the-art results on **EvalPlus**, **HumanEval**, and **MBPP**[1][5], the 3B model is designed as a more lightweight, efficient alternative for developers with constrained resources[5][2].
+*   **Community Reports:** Some community evaluations have reported lower pass@1 scores (e.g., ~45.12 on HumanEval and ~30.20 on MBPP via OpenCompass) compared to the higher figures sometimes associated with the broader series in promotional documentation[3][4]. These discrepancies are common in the open-source LLM community due to differences in prompting strategies, zero-shot/few-shot settings, and execution environments[3][6].
+
+### Key Characteristics
+*   **Model Architecture:** The 3B model features approximately 3.09 billion parameters, with 36 layers and a context length of 32,768 tokens[2].
+*   **Usage:** It is highly recommended to use the **Instruct** version of this model for coding tasks, as the base model is intended for continued pre-training or fine-tuning rather than direct chat or instruction following[2].
+*   **Evaluation Environment:** When evaluating models like Qwen2.5-Coder-3B, factors such as the use of vLLM, quantization (e.g., AWQ/GPTQ), and hardware (e.g., A100 GPUs) can influence both inference speed and accuracy[6].
+
+For the most accurate and up-to-date leaderboard rankings, it is recommended to check the **[EvalPlus Leaderboard](https://evalplus.github.io/leaderboard.html)** directly, as it provides a standardized, rigorous evaluation platform that helps normalize results across different models[7][8].
+
+Sources:
+[1] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnlRksiSwXhL3lUHb-355qgot63-HpFPWgKbKF4Ls-smVutHECfhytm4jFMQnSlIMElqZFxS53KtCJsz3EH107GkHF5ezaHidLn8R4o5lg1I7y7CK5x-K3_arJKeKP6lZz-YTt2ZoEPVPU)
+[2] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdrpYrHLQG_lEKrKbyPt3WyXi62yrqi25G5LWujqz8rrCk2pqeUeW2BsoRVv-3rFQQmwx8zJE0BnYk0OG4ke7pb6zKhS6W6BZj3KfT467ukdb5Kp-bukBkuDm08JjbQNUf)
+[3] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG91NRE8UTFhijm5djX7hcP1RwBp-W0gR8iQ8RKg4n-HLO0e2yBo-2UgR7TxyhKSsDstFUFbYFlfFK2sRIRGTivBX-5atwMLTVj5CuPNJBGRxWQhBWIO8Cl29D-D5yN1571vc2Tbw==)
+[4] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG91NRE8UTFhijm5djX7hcP1RwBp-W0gR8iQ8RKg4n-HLO0e2yBo-2UgR7TxyhKSsDstFUFbYFlfFK2sRIRGTivBX-5atwMLTVj5CuPNJBGRxWQhBWIO8Cl29D-D5yN1571vc2Tbw==)
+[5] [github.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH09cFqhOrkQmU4BHEpBJNorsYKjRXQtcbRw5z5pDqwDZDNA21mwlN0smTbn0U9m7QMGuKha9Dh7o7ePKW3QkuK4NCPZbf0BWGKwk6yOrXBKHlCUlLEzMQGFiHB9BLkCDvPXdq8UsE4qg==)
+[6] [readthedocs.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8m8-pzf3Ckbc0sn4XpWNCrCdS_X6y4olHAbikgRubqEENt6GRh1bN3gn7qLcE6favUDdCAcjX_AlHXoraVySsZsKnZvB7966-EWoOPq7Lb9iZJpvp9dNxOXgMblKwUA--HgbzKUMT0_x4pPqLR_pQi47OHJLtMQ==)
+[7] [github.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYeok8HKtVPqbzDL2V7KwriAPxtOvDp3Cv0nxH2a1hCRUPTNE8Z8o69nu07OYBGleYvl79qtaGnpgtRU-YTlry0N6RSKqzgOG-03XMhuATJ1z0srh1_5tSDAtmo97SkNo=)
+[8] [github.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYeok8HKtVPqbzDL2V7KwriAPxtOvDp3Cv0nxH2a1hCRUPTNE8Z8o69nu07OYBGleYvl79qtaGnpgtRU-YTlry0N6RSKqzgOG-03XMhuATJ1z0srh1_5tSDAtmo97SkNo=)

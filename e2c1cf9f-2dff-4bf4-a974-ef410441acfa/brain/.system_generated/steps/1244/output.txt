@@ -1,0 +1,27 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\config.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -57,8 +57,19 @@
+         description="Max messages to keep in agent conversation memory"
+     )
+     allowed_commands: List[str] = Field(
+-        default=["python", "pip", "git", "cat", "type", "dir", "ls", "find",
+-                 "grep", "rg", "fd", "wc", "head", "tail", "echo", "smartagent"],
++        default=[
++            "python", "python3", "pip", "pip3", "uv", "node", "npm", "npx", "yarn", "pnpm",
++            "git", "cat", "type", "dir", "ls", "find", "tree", "mkdir", "cp", "copy", "mv", "move",
++            "head", "tail", "wc", "sort", "uniq", "cut", "awk", "sed", "echo", "touch",
++            "grep", "rg", "fd", "ag", "findstr",
++            "curl", "wget", "httpie", "http", "ssh", "scp", "rsync",
++            "docker", "docker-compose", "podman",
++            "nmap", "nikto", "sqlmap", "gobuster", "ffuf", "nuclei", "subfinder", "httpx",
++            "semgrep", "bandit", "safety", "trivy", "grype", "syft",
++            "cargo", "go", "rustc", "gcc", "g++", "make", "cmake",
++            "smartagent", "whoami", "hostname", "ping", "tracert", "traceroute",
++            "netstat", "ss", "ip", "ifconfig", "env", "set", "where", "which",
++        ],
+         description="Shell commands allowed in sandboxed agent execution"
+     )
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

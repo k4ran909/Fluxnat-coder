@@ -1,0 +1,28 @@
+The search for "top uncensored model under 3B parameters list 2026 reddit LocalLLaMA comparison ranking" returned the following summary:
+As of September 2026, the landscape for small, uncensored language models (under 3B parameters) in the *r/LocalLLaMA* community has shifted toward highly efficient architectures, particularly those leveraging Mixture-of-Experts (MoE) designs or specialized "abliterated" versions of recent model series.
+
+### **Current Recommendations & Trends (2026)**
+
+While many users in 2026 focus on larger models (such as the Qwen 3.8-27B or various Llama 4 variants), the "sub-3B" category remains highly popular for edge devices, mobile, and low-VRAM setups.
+
+*   **Qwen Series (Active-Parameter Models):** The Qwen 3 family is frequently cited as the top all-around choice. Models using "A3B" (Active 3 Billion) architecture—where a larger model is gated to only use 3B parameters per token—are currently favored because they provide the reasoning capabilities of a much larger model while maintaining the speed and memory footprint of a small one.
+*   **Abliterated Models:** The community standard for "uncensored" performance in 2026 is **Abliteration**. Rather than traditional fine-tuning (which can sometimes degrade base intelligence), abliterated models have the internal "refusal" vector surgically removed from their weights. Look for models labeled as "abliterated" on Hugging Face (often by community builders like *huihui-ai* or *orcarouter*).
+*   **Gemma 4 Family:** Google’s Gemma 4 series (specifically the E2B and E4B variants) is highly regarded for its performance on edge hardware and its multimodal capabilities.
+*   **Phi-4 Mini:** Microsoft’s Phi-4 Mini (typically around 3B parameters) remains a staple for users with tight memory constraints (often running in 2.5–3GB of RAM), though some users note that instruction-following can be hit-or-miss compared to the Qwen or Llama-derivative models.
+
+### **How to Find the "Best" Model for Your Needs**
+
+Because the model landscape changes rapidly, the *r/LocalLLaMA* community suggests focusing on these resources to find current leaders:
+
+1.  **Hugging Face Collections:** Search for user collections specifically tagged "Uncensored" or "Abliterated." Look for the most recently updated "GGUF" (for local CPU/GPU use) files to ensure you are getting a version compatible with 2026 inference engines like LM Studio, Ollama, or KoboldCpp.
+2.  **The "GPU-Poor" Leaderboard:** Keep an eye on community-driven arenas (like the *gpu-poor-llm-arena* on Hugging Face) which rank models specifically by performance on hardware with limited VRAM.
+3.  **Abliteration vs. Fine-tuning:** 
+    *   **Abliterated models** generally retain more of the "base" model's logic and reasoning.
+    *   **Dolphin/Refusal-free fine-tuned models** may be better if you prefer a model that has been specifically trained to be helpful in a chat/assistant format, though this can sometimes impact the base model's original "personality."
+
+### **Quick Reference for 2026 Usage**
+*   **Best for Coding/Logic:** Qwen 3 (A3B variants) or specific "Coder" fine-tunes.
+*   **Best for Memory Constraints:** Phi-4 Mini or Gemma 4 E2B.
+*   **Best for Roleplay/Creative:** Abliterated Llama-based finetunes.
+
+*Disclaimer: "Uncensored" models have no guardrails. As noted by the community, you become the safety layer—outputs are your responsibility.*

@@ -1,0 +1,19 @@
+The search for ""Qwen3.5-4B" benchmarks OR "Qwen3.5" "4B" MMLU HumanEval GSM8K MATH" returned the following summary:
+Qwen3.5-4B is a compact, natively multimodal foundation model from Alibaba Cloud, released in March 2026 as part of the Qwen3.5 small model series. It utilizes a hybrid architecture combining Gated Delta Networks (a form of linear attention) with sparse Mixture-of-Experts.
+
+### Key Specifications
+*   **Parameters:** 4 Billion
+*   **Architecture:** Hybrid (Gated Delta Networks + Gated Attention)
+*   **Capabilities:** Natively multimodal (text, image, and video), 201 languages supported.
+*   **Context Window:** 262,144 tokens (extensible to 1M via YaRN).
+*   **License:** Apache 2.0
+
+### Benchmark Performance
+While specific point-in-time scores can vary based on evaluation frameworks and post-training versions, Qwen3.5-4B has been noted for high performance relative to its size, often cited alongside other models in its class:
+
+*   **MMLU-Pro:** Reported scores around **79.1%**.
+*   **GPQA (Diamond):** Reported scores around **76.2%**.
+*   **Coding & Reasoning:** The model is designed for high-throughput tasks, with DeepInfra (providing the reasoning version) demonstrating efficient latency (0.45s TTFT) and output speeds (approx. 250 tokens/sec).
+*   **Comparison:** It is frequently compared against other small models (such as those in the Gemma or Phi series). Some community benchmarks and discussions (e.g., on Reddit/LocalLLaMA) highlight that while the model is highly efficient, users should be aware that benchmark results on hosting platforms may sometimes reflect full-precision performance rather than the specific quantized (e.g., 4-bit) versions often used locally.
+
+*Note: As of September 2026, newer models in the Qwen series (such as the Qwen3.8 series) have been released with further enhancements to agentic and omnimodal capabilities.*

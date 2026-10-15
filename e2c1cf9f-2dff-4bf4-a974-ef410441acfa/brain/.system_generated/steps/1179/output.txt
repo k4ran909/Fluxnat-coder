@@ -1,0 +1,9 @@
+{"name":"__init__.py", "sizeBytes":"144"}
+{"name":"__pycache__", "isDir":true}
+{"name":"ai", "isDir":true}
+{"name":"cli.py", "sizeBytes":"6745"}
+{"name":"config.py", "sizeBytes":"1786"}
+{"name":"reporting", "isDir":true}
+{"name":"scanners", "isDir":true}
+
+Summary: This directory contains 4 subdirectories and 3 files.

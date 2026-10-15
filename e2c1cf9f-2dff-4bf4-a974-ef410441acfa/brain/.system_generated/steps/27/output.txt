@@ -1,0 +1,42 @@
+The search for "best open source language model under 3B 4B parameters 2025 2026 code understanding" returned the following summary:
+In 2026, the landscape for small, efficient language models—particularly those optimized for code understanding—has evolved significantly. Models in the "under 4B" parameter range (often referred to as Small Language Models or SLMs) are now highly capable due to advancements in architecture, training data quality, and distillation from larger frontier models[1][2][3].
+
+### Top Recommendations for Coding Models (<4B Parameters)
+
+For tasks involving code understanding, generation, and debugging that require running on local or resource-constrained hardware, the following models are currently at the forefront:
+
+*   **Gemma 4 (26B Total, ~3.8B Active):** While it has a larger total parameter count, its **3.8B active parameters** make it a standout for efficiency[4]. It is widely cited as having an excellent capability-to-hardware ratio, making it a powerful "small" model that fits comfortably on modern consumer GPUs while maintaining performance levels typically associated with much larger models[4][3].
+*   **Qwen2.5-Coder-3B:** This remains a highly regarded choice for code-specific tasks[5][6]. It is part of the well-established Qwen2.5-Coder series, which is specifically trained on massive code corpora (over 5.5 trillion tokens) and is known for its strong performance in code generation, reasoning, and repair[7][8][9]. It is frequently used for on-device applications and mobile-side coding assistance[10].
+*   **Newer Iterations (e.g., Qwen 3.5/3.6 variants):** By mid-2026, newer models in the Qwen family (such as 2B or 4B variants) have emerged, offering incremental improvements in coding benchmarks over the 2.5 series[11]. These models are often recommended for users seeking the latest performance gains in a compact size[12][3].
+
+### Why Small Coding Models Excel in 2026
+*   **Efficiency vs. Capability:** Advances in **Mixture-of-Experts (MoE)** architectures allow models to have large "total" parameter counts (e.g., 26B) while only activating a small fraction (e.g., ~4B) during inference[3][13]. This provides the reasoning depth of a larger model with the speed and memory footprint of a smaller one[3][13].
+*   **Distillation:** Many of these models are trained using knowledge distillation from much larger frontier models, which allows them to inherit sophisticated reasoning and coding behaviors while remaining lightweight[1][12].
+*   **Deployment:** These models are easily deployable via engines like **Ollama**, **vLLM**, or **llama.cpp**, making them practical for local IDE integration (e.g., via the Continue extension in VS Code) without requiring expensive infrastructure[14][15].
+
+### Summary Table for Developers
+
+| Model | Active Parameters | Best For |
+| :--- | :--- | :--- |
+| **Gemma 4 (A4B)** | ~3.8B | Exceptional performance-to-hardware ratio[4] |
+| **Qwen2.5-Coder-3B** | ~3B | Proven, stable performance for code generation/repair[6][9] |
+| **Qwen 3 (2B/4B series)** | ~2-4B | State-of-the-art coding improvements in small sizes[11] |
+
+**Recommendation:** For the best coding experience under 4B parameters in 2026, **Gemma 4 (A4B)** is highly recommended for its advanced architectural efficiency[4], while **Qwen series models (2.5 or 3.5/3.6)** remain the industry standard for dedicated, lightweight code-understanding tasks[6][11].
+
+Sources:
+[1] [bentoml.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7llEWllnFCPtZSIrYFWmOaYQLl2y5jYGqPIM2pHu5BTFmKpXuIWBXcGSrM-aGG6VzWqEDU_WHOunzb-2UF7ckQWN6jbd9-XS248eaAF0pKJsGGjlSjNWXA_Nzuhrs2J5dJUUCFEIxkjt9xyB9G47WgL83CxjM-XZ4zuLu)
+[2] [bentoml.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7llEWllnFCPtZSIrYFWmOaYQLl2y5jYGqPIM2pHu5BTFmKpXuIWBXcGSrM-aGG6VzWqEDU_WHOunzb-2UF7ckQWN6jbd9-XS248eaAF0pKJsGGjlSjNWXA_Nzuhrs2J5dJUUCFEIxkjt9xyB9G47WgL83CxjM-XZ4zuLu)
+[3] [turingpost.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf7NOhsU3tP77-yLTfIpRrr_OR6-g_gdFu5REUaUjthsBegSdpKXrlrAU8XI2ZcWrUiG0_ePg_6x2yXpqSdQ7ihVdae4ArmMV3sSWaakoJajIQtHp0ZPUb280=)
+[4] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQBA9f2muPNqdZ_CIszdA_EKF_yDd45wx69PA-R5wsqLDR57zYECK4UMEnOZ5cs2VuW1qo0q8r54WAy2dXdCyox5kKBGLYb9zEmrZrnkGCwMxPM4w6NA_kqDlFGgATtaBYOlQnfdr_Ky32Pk1jVw==)
+[5] [trustedrouter.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsW5Gi491UtH03nF4FXKpo7Jdq52_KLgpDfioVZaydWytEpFGGqxA0WBecRbEw56qV4kWbBKcmQuQSVnwakdKeTqtfqmNoz2UizxkWunh3YvuAEVEkwtvxnzdiC0nQLXQwmsRaKG487sl95Z9jIpWDJOth2DuoQV74PZGScQ49uw==)
+[6] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbBWFmuwEpwazAOD_CYl0dmm8L1qQPwaQskrrNjV_iEPcYfpk0hNa3gP-opcipmqXknUSMYE02nFqwk2DgVNA9njCpUUbIiO6hLk-qZWPC9WLHGIlA9fOi87_hIrlWl66LsSy1bKFOmdLQ)
+[7] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-nmKgz3IiHAeLK2x03bMmn7exBwdwAhwHM1D4N-Xd6aQNg-_NVGI0Pt_HILLEbG4QcBoNu7JppBlFTO1HWbZRxM94IkFaybBpP5MGuXAPbRHWzl-EfVkrHyCK0ua3U45l)
+[8] [researchgate.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvONGTSgNqL_9JiD6ovp7FejG_Wp0-6bynbDB4Sf5YAV2nKkR8eIrPFP3EW8dmo_q8wp91o20GuqZ72tP8jsn6KPjR16VLobv69K-0c3A1icy1EiDPhOxWq-1dH7Dt3Zxl9Z7WIhbkXmvb-ReruruVkAFvU4rp2savlZbjlZ0M0Gw-i4An)
+[9] [github.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFO8c8OWVQqfYepnwpfe9SCEV8DQfgSs5QX8fEUUK9E52ODUmgUgeu-erL4deDD_VM0zi6rzGrko9N3kuyjZFom_uw6BqfDyr8qZ8nXM6m1rrT3J6mzCFdokukTPpUL8y1ZEa5-1pRk4w==)
+[10] [qwen.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEA_qKjds8jl6yT99Icvws7ZnzFMDArwHFxTJ2SFD_YZPFl-wkQCQFGBCJmp8PQ8KZBKwVp3lkmK7Vtq3kNiQpHVOa_NuFH2oQhusIEKbasoVvI6yu7hVyL)
+[11] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGB2S2nH3CWloMflOephG83r0Y_gTmjYa50QI9NLY_9rUPaKaXn_6SiIpb1dk5EJp-cHZkl8jP_WKgemTesqW-Keu42Cothg_I1ix_idBdHzmI_bgXglsLwT4kqMwAD5nMgKca63SUvZbQJcN1usKFN6b5Wa2rb2vtdt-VXbRB7YW_vRHYmHog=)
+[12] [premai.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRMTbpg_wm19xfSWjN-utvJv1v3G6k1VGJthZzptyjNSorsRbWRk4TaFKBXB08qjBAUbu-2XStXuGkTA8LvqMVhwOSlUV3pvROe7deRZAr7sVVoE8940MW2TBkt9KogTpo-ZlECPjqxoHIwIEfDp_Ve9kh4DfpctNcH6Xr791y)
+[13] [atomic.chat](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNKi6pNX1ULatC8hHXg3dpGxV25L8kaAM0evdhFYHRU7GOl_lymAsx4Y7v3smmCuou6LK53xVZgUvljj7ANWnq2tPP-JrahfKdMXMjsTt77xoOg5uQgMBq8gOOthKUE-taxJq2pjQ0Rw74HrgL2fA=)
+[14] [towardsai.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXGWlcckZ85TkzEGPn-fuydpI9nE7JkZMkXhunAywAD__TENPiDupA6B60s4J2xYxauPAzTQSERmLdxtEbE0xChyai2xk-J4goLEG734EO7p9RhxJ5-RB_slYQGRxE_YfFLFBb3wXyrWJfoA==)
+[15] [hakunamatatatech.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq4QdaXg_A6S7RpHj50I1uixCETr4C80dyEdQ9x8q_OzA8IZuFQpNkD1I-f32Y3SpEWx4ya6qC6viPKhJor34QCktND4OzO6NwWm55NvbgOSgIErb9Y0_h3p0KC1boQ1zrEXY71TMVs17wKvTKxVgBhP8Tg8uA_DIJ9dWI7Q==)

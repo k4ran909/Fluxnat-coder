@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+[X] VIOLATION in Fluxnat_Coder_3B_Training.ipynb: found ['Alibaba']
+[OK] Clean: config/training_config.yaml
+[OK] Clean: train.py
+[OK] Clean: prepare_datasets.py
+[OK] Clean: data/custom_cot/security_cot.jsonl
+Total forbidden string violations: 1
+

@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        22-09-2026     17:14                agent                                                                
+d-----        22-09-2026     02:21                ai                                                                   
+d-----        22-09-2026     02:22                reporting                                                            
+d-----        22-09-2026     02:22                scanners                                                             
+d-----        22-09-2026     17:14                __pycache__                                                          
+-a----        22-09-2026     17:13           9964 cli.py                                                               
+-a----        22-09-2026     17:31           3206 config.py                                                            
+-a----        22-09-2026     17:14            130 __init__.py                                                          
+
+
+

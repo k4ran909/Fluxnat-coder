@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+
+CommandLine                                                                             WorkingSetSize
+-----------                                                                             --------------
+"C:\Users\k4ran\AppData\Local\Programs\Python\Python312\python.exe" test_local_model.py      610697216
+
+
+

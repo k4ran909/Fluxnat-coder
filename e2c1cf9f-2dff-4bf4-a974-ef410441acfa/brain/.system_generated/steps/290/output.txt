@@ -1,0 +1,15 @@
+{"name":"Fluxnat_Coder_3B_Training.ipynb", "sizeBytes":"15021"}
+{"name":"MODEL_CARD.md", "sizeBytes":"8722"}
+{"name":"README.md", "sizeBytes":"4357"}
+{"name":"config", "isDir":true}
+{"name":"data", "isDir":true}
+{"name":"evaluate.py", "sizeBytes":"5487"}
+{"name":"merge_and_export.py", "sizeBytes":"5359"}
+{"name":"prepare_datasets.py", "sizeBytes":"7164"}
+{"name":"pyproject.toml", "sizeBytes":"1075"}
+{"name":"rebrand.py", "sizeBytes":"7029"}
+{"name":"smartagent", "isDir":true}
+{"name":"tests", "isDir":true}
+{"name":"train.py", "sizeBytes":"9537"}
+
+Summary: This directory contains 4 subdirectories and 9 files.

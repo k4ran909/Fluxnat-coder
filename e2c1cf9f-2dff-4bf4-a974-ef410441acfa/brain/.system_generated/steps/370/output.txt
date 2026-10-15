@@ -1,0 +1,19 @@
+
+The command exited with code 0.
+Output:
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Exact token IDs for forbidden words:
+  'Qwen': [48, 16948]
+  'qwen': [80, 16948]
+  'QWEN': [48, 54, 953]
+  'Alibaba': [2101, 28260]
+  'alibaba': [278, 28260]
+  'ALIBABA': [969, 3256, 56550]
+  ' Alibaba': [54364]
+  ' alibaba': [452, 28260]
+  ' Qwen': [1207, 16948]
+  ' qwen': [2804, 16948]
+
+bad_words_ids for generation_config.json:
+[[1207, 16948], [2804, 16948], [969, 3256, 56550], [452, 28260], [48, 54, 953], [54364], [278, 28260], [80, 16948], [48, 16948], [2101, 28260]]
+

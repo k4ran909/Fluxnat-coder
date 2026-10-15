@@ -1,0 +1,38 @@
+The search for "uncensored small language model 1B 2B 3B cybersecurity pentesting no guardrails huggingface 2025 2026" returned the following summary:
+For cybersecurity and penetration testing tasks, finding small language models (SLMs) in the 1B–3B parameter range that have had their safety filters (guardrails) removed is a common approach for professionals seeking unrestricted coding and reasoning assistance.
+
+### Finding Uncensored SLMs on Hugging Face
+Because "uncensored" is not a formal model category, searching for them requires specific terminology used by the open-source community.
+
+*   **Search Keywords:** Use terms like **"abliterated"** (models where refusal mechanisms have been mathematically suppressed) and **"heretic"** (often used for specialized unfiltered fine-tunes)[1][2]. These keywords generally yield more consistent results than the generic term "uncensored"[2].
+*   **Filtering Results:** On Hugging Face, search for these terms and sort by **"Downloads"** or **"Most Likes"** to find versions that have been tested and vetted by the community[2].
+*   **Specific Model Families:** Look for uncensored variants of efficient small-model architectures such as **Qwen2.5, Phi-3.5, or Gemma 2/3n**[3][4][5]. 
+    *   *Example:* Projects like `dolphincoder` or specific "abliterated" fine-tunes of Qwen-family models are frequently cited for coding tasks[6][2].
+
+### Notable Models & Approaches
+*   **Abliteration:** This technique is currently the gold standard for creating uncensored models[1]. It identifies the "refusal vector" within a model's weights and suppresses it, allowing the model to function without moralizing guardrails while maintaining its original intelligence[1][7].
+*   **Purpose-Built Models:** While many users rely on general-purpose uncensored models, there are specific collections and fine-tunes focused on security[8][9][10]. For example, searching for "Cybersecurity" alongside "Uncensored" on Hugging Face often leads to collections maintained for Red Team/Blue Team research[7][11].
+*   **Hardware Efficiency:** Models in the 1B–3B range are highly portable and can often be run locally on consumer hardware (laptops with modest GPUs) using tools like **LM Studio, Ollama, or llama.cpp**[6][7][12].
+
+### Implementation Advice for Pentesting
+1.  **Use Local Runtimes:** For security work, running models locally is recommended to ensure privacy and complete control[11][13]. Use tools like **Ollama** or **LM Studio** to load GGUF-format models[6][7][11].
+2.  **Verify Integrity:** Be cautious with models from unknown sources. Stick to well-known creators in the local LLM community (e.g., those associated with "abliteration" or "heretic" fine-tunes) to avoid models that may contain malicious code or "backdoors"[6][14].
+3.  **Authorized Environments Only:** These models have no safety guardrails and can generate destructive code[7]. Always run them in isolated environments (e.g., VMs, air-gapped sandboxes, or dedicated pentesting labs) to prevent accidental execution of harmful payloads on your host machine[7][13].
+
+***Disclaimer:** These models are intended for educational, research, and authorized professional security testing purposes only. Using them for malicious activities is illegal and unethical.*
+
+Sources:
+[1] [xhack.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3gkBPTBBANkXqbJOF-o5eRQtKOFygGw_gZz46Dj27Ew1_BrfSMCEehx9HU8DutyEhoNy1AbKpm-GbuT8RyG7ij4ZiQrf5GzKPUzEZOd0wl6tfscKyPv9uBg00AJBv6Lzu6gHHhg==)
+[2] [bswen.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6_i8jUNUfKO0tJLT5jnIASxgjBspzMJ3xHV01Zv-L0oWNgYEq2PRUWlloWTfGVCKONsw9roLJ3_xsexMSg2_jb0yJ3Iy0K8LqLGhQnSg7fTIWqnBjP953ReGHJIh0p81xRpNtl5jfhYoiHNVGssqrN8R32u4Xk7ie3Jya8pqJlTA=)
+[3] [datacamp.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEH-GbkzfoFX8NLNbQcra-J8woinzH16pt_uo20VSZ23nvQYFjImJ8y3agu9MTqNdMsRAAlL-6Jfn_pLQLGgwa5URblSTdBO378tTDgKrO-zwDwbNfoOeUZVJ4IMz1tjao45S9c7G9EGGt6Qwg9)
+[4] [bentoml.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8e_d9UUCnWM3VUgKgxsxwJIVshR1nsAhksftwymk1uDNKU4dycC4wrDI_8TG-KdNXabV5zTunub0035X0DLAjncGY9mvg_2EmM6xkYaP3FZPsuSkoF_BSQO75NcjYeEhleMKKXDfkRpxKdnHECOh8KqJJtZhLMnnucSBi6A==)
+[5] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdX2U3BmUWlonTwE8cJ3cExx_fKkO6GZcP_h0RKnI96MfOyiPfP7Qg0yRcngyWOAjh8vK8zeWqiBNHI-XgaaU7zXlbyv3lRYYuUrdBZhBTsDa9jAV9a8z-Q2hwbeuLIpu_wqckzA6XoEVttAii)
+[6] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV9xgKjYgxkDby5CqglzEFQuZ6WcJI8qLd_ie4zhgAFcMqSP3q4UddbezfVAYo-iGLEC_ILpO0TTkWk_Rhb5liofXU7CtDfRPNL3jgfmSYIDLLoVf8zamO7p38Bg==)
+[7] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwdcbYLFdCBu8gdod4Ao5dQTaHFaJWyqRRlx1lo2CeqVnKbUF10wMq2SsU6XZVUKSAyjrPyWF_RFMX5POONH_WhMbXWFX61kfEAhnMAYl6bhhe5jFSGsXZtKNBslVeDblCpGlOaP7WQ6oxyowLxcRtGG86uNORJuzG7qeUhFix)
+[8] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDZ-QbxhsO4ou_-VFPFZKMBnxHLgeYEde3UX3GLJd4MHWv22V0a_ZbZix3Nw5bxD7sEOUuCPfPuIuInKhRd6nLzVQ0lpBvmQFAmVPf5CTXU-51xjCW8JjoXC8xqaL08rQAO4tFx6AdRysIbr6FfiZBYA==)
+[9] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW2XWXCl2NXTxM-EMWwLmlipTFXgvQ3zZN_6DfmUUR00ZeV5JgvgsHNfDsDEFLVHhDMt9OKlmefYGcQHm7cDF56vYSI7voTgkILklxWI6Y--YAq9cjXylINYM7CCxGYIc7KTZdU_-83Yllwc8T6vV-vqs=)
+[10] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS6B36_KWTdEDhAIfVAGFQkjebnd4aWmMz8yfq0e9Lqvslb2YyZbLr6-M20bAJNsz2K0v0DVotltTmutmMZmm6qfbXfJMQd48rptSqmUMERCYJLr_rsCEL3gptp4ig0rbRi-wtzJJQ4guva_V0-zbLbHU=)
+[11] [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFh2PyGXjNCGkaBWdEejeY8JVtkNd-noF9MXFBrGkcqiL0djd5VTocfYPzfCFtgqBrBWH4UwphPVIg_-GkdNkIBosiezatF44UjDh-XzFSJ77-r5236VZuH-HTsZd38RW5g)
+[12] [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiBy5yCMsU8E85pYW3hhdespPrifKBoySK98m1RyRGQpM5x93WYeErdOgFb5IrFsingH5xhRNWHjvhCb_j2QmSFiLi616olFSvhAKzeJuRrQSpJotZfngfe5x3-bzR4ddC)
+[13] [penligent.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHApM6_ZCARAElLvHY5Odlz695wGf8vbRjDieriQmHOpheYPVs3h0bynVczKOaTkdJdgwNfyXd0W2bbh1HwZCOnqNPsrjM5SYs6zKw5kSX_K8N2zXUg2k0JnHNaXcFHFtjVflSBzuG-ojqF0ajE)
+[14] [xhack.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3gkBPTBBANkXqbJOF-o5eRQtKOFygGw_gZz46Dj27Ew1_BrfSMCEehx9HU8DutyEhoNy1AbKpm-GbuT8RyG7ij4ZiQrf5GzKPUzEZOd0wl6tfscKyPv9uBg00AJBv6Lzu6gHHhg==)

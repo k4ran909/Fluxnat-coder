@@ -1,0 +1,42 @@
+The search for ""unsloth/Qwen2.5-Coder-3B-Instruct" FastLanguageModel.from_pretrained unsloth colab" returned the following summary:
+To load the **Qwen2.5-Coder-3B-Instruct** model using Unsloth in a Google Colab environment, you should use the `FastLanguageModel.from_pretrained` method[1][2].
+
+### Basic Implementation
+You can use the following code snippet to load the model and tokenizer. Unsloth is optimized for performance, so it is recommended to use `load_in_4bit=True` to save memory[3][2].
+
+```python
+from unsloth import FastLanguageModel
+import torch
+
+max_seq_length = 2048 # Supports RoPE Scaling internally
+dtype = None # None for auto detection
+load_in_4bit = True # Use 4bit quantization to reduce memory usage
+
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name = "unsloth/Qwen2.5-Coder-3B-Instruct",
+    max_seq_length = max_seq_length,
+    dtype = dtype,
+    load_in_4bit = load_in_4bit,
+)
+```
+
+### Key Considerations for Colab
+*   **Installation:** Ensure you have the latest version of Unsloth installed in your Colab environment[4]. You can install it using:
+    ```python
+    !pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+    !pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
+    ```
+*   **Runtime:** Make sure your Colab runtime is set to **T4 GPU** (or better) via *Runtime > Change runtime type*[5][4].
+*   **Official Notebooks:** Unsloth provides dedicated, beginner-friendly Colab notebooks for Qwen 2.5 models[6][7]. You can find links to these notebooks in the [Unsloth Documentation](https://docs.unsloth.ai/) or their [GitHub repository](https://github.com/unslothai/unsloth)[8][9].
+*   **Performance:** The `from_pretrained` function automatically applies Unsloth's optimizations, making the model faster to load and memory-efficient compared to standard Hugging Face implementations[6][7].
+
+Sources:
+[1] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOUcWlcgUMrGe4yNJVGUVL_7bt4T_G2PBjs2R0aCJiJLG6bj8419Y19LGZUigwdtd42JKWDX3aSAxn4f4XVjiWfNb8LMU2KTlrFxQ2fkUUyxhNgH4hlRKBNGh8V0nFbZoC2Q8Y3P4QKnMZ73i0CW50OOdmEVWcoikRQnDu8sI7hRsqtMP3_8msHy9xWgvotKr0MIpCi5I9_By1TnZ9VzgavHlqd6TSGwc=)
+[2] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw09-SVtUEe5Lmb2iuoot6t5YYUxfH-R09zq_3u_QmURfTxhynDVyFS967ZxNNO2To6yAbt-dRxeeoGQ2swwJyW2i0rlT7iqSfRaxutteeocVEIxmdjA5Wvf6I1hJnOdQNTRdbhCNJRVPrcd_kUiuigwKRIGW7EbCRqS1P8rpGjpJ1LEmYK3YQ4F5GRM1EaQlVuMC8h5OH)
+[3] [kaggle.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFezQql1MF94-tHBhiXLszqLChKQ2AIATNW7vjb-9f5QeO34ik1r01K4I51jPsNWuBT7BwxXl6JwxR-tNwYFupS_ra0TlH_aKdWc8nMC78R0AmwGuK-HsvczTTW44yl0AGAnN8QMh_Aev2PT9_uQvdc2cGxeEwqJykGtmaAHtxWQ==)
+[4] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOoQg_AyqdmnDsunu1C0A31TLiztKahMDrEE1dC4ZBVBfTA9OIGsZE58qcgq_ieuHD9f3IRLAwCGw0HSH6NH2byQK1OhakHz63Qx0Gu9SZc84zc2TW2aEKBENauC280oPfKt_meWHIFL-oG1qkvEBq4kPrdnQMSDCZMbR6gnm0yBIjvsrrwBUFJhY9XA==)
+[5] [unsloth.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGulCKOAGSxBDUJdTrfuNXDYU3PNLngiCrorEIcACqPyySlmXzr1z2HyOx0jkabVZvjjrwq0XLnmeIfMxPj-32Resl-ixkPV-u6F8VN3g6fUtF4j9iwmGY6BbPyKkPY-K8HpwOo9ap_xdDTCmDrVg==)
+[6] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-iTocEj8KwMnhdIpSxtEU8rKSsPX9ry1VVRFsFKnfuV4RNJiB32W7A2j2pHdkhVlJs0pKGBaMz3X5x1vhMZDMLHIsCYNKl8IOeDRZgqhYFyhsQBKpuLdUyn6lHswEFVo79Gt48C9N_DPk5Lr59w==)
+[7] [unsloth.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqhiErlZhLM6CGxzaH-MhCTEgxH3XoZ9OXMIQQjb6yU5BDajjozEtTOqi52H8MAlWc4Fj9ahp0oXe-ut1SlW6G9072ZjI1svF1smhtZ3c879aHbWSHvf1B)
+[8] [unsloth.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyBtjnlO6u-1-0rVkDYcb7SD_aQ6y76sVbJX-pYskynRpBlRcSzITaBu7Oj62_Mf8yoi9QrM2xI4EKDvjAZ77GyFYvdnSNRJjbok-KIhsiUz1Esay0TyUWtlr1Fo7sJ3i_J1Ymcdgy9q9xlQ==)
+[9] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuaEUjYwx3gOKwDQHXYPviwYS710mMo-X4j7VUA2oF4mfZ5ja20rsXNAu9KtC3nPwQupcKldLYt4dkA7q5KpnJ6t6vKjHbwWKSA70zBUIrkBe9vjErtwM4AIM=)

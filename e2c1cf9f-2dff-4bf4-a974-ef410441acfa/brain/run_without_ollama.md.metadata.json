@@ -1,0 +1,6 @@
+{
+  "summary":  "Complete guide to running Qwen 2.5 Coder 3B Abliterated WITHOUT Ollama. Covers 6 alternatives:\n\n1. HuggingFace Transformers (Python — best for SmartAGENT integration)\n2. llama-cpp-python (lightweight C++ backend with Python bindings)\n3. vLLM (high-performance inference server)\n4. LM Studio (GUI app, no code needed)\n5. ExLlamaV2 (fastest inference)\n6. Text Generation WebUI (web interface)\n\nEach option includes full install commands, ready-to-run code, and pros/cons. Recommended pick: HuggingFace Transformers for direct integration into the SmartAGENT Python project.",
+  "updatedAt":  "2026-09-21T19:58:41.959760300Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

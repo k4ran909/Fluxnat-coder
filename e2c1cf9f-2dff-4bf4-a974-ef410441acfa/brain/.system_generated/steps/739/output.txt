@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+
+httpx                          0.28.1
+httpx-sse                      0.4.3
+playwright                     1.61.0
+requests                       2.34.2
+
+
+

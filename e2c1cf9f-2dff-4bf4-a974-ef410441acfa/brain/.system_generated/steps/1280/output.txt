@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+
+Name                           
+----                           
+benchmark_results.json         
+benchmark_suite.py             
+evaluate.py                    
+Fluxnat_Coder_3B_Training.ipynb
+merge_and_export.py            
+MODEL_CARD.md                  
+prepare_datasets.py            
+pyproject.toml                 
+README.md                      
+rebrand.py                     
+test_local_model.py            
+test_refusal_free.py           
+train.py                       
+
+
+

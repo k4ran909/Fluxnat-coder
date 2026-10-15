@@ -1,0 +1,9 @@
+{"name":"__init__.py", "sizeBytes":"617"}
+{"name":"__pycache__", "isDir":true}
+{"name":"base.py", "sizeBytes":"1606"}
+{"name":"config_scanner.py", "sizeBytes":"4868"}
+{"name":"dependency_scanner.py", "sizeBytes":"4845"}
+{"name":"pattern_scanner.py", "sizeBytes":"4949"}
+{"name":"secret_scanner.py", "sizeBytes":"4125"}
+
+Summary: This directory contains 1 subdirectories and 6 files.

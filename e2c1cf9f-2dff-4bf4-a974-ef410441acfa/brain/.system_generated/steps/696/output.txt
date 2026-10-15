@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+* Host localhost:9222 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:9222...
+*   Trying 127.0.0.1:9222...
+* Established connection to localhost (127.0.0.1 port 9222) from 127.0.0.1 port 62053 
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0* using HTTP/1.x
+> GET /json/list HTTP/1.1
+> Host: localhost:9222
+> User-Agent: curl/8.21.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+< Content-Length:0
+< Content-Type:text/html
+< 
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0
+* Connection #0 to host localhost:9222 left intact
+

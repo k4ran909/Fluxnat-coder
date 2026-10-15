@@ -1,0 +1,32 @@
+
+The command exited with code 0.
+Output:
+Connecting to ws://127.0.0.1:9222/devtools/browser/25a8f755-6780-4694-b7aa-32d603640dd1...
+Target [shared_worker]: github-socket-worker-v3-bcaca9b5e00b79c625cead54f0f23544483214c3b7a56c2a870a4756bf4ea862 | https://github.com/assets-cdn/worker/chunk-8-1b15c87cf86fcbcf.js
+Target [service_worker]: Service Worker chrome-extension://cmedhionkhpnakcndndgjdbohmhepckk/background.js | chrome-extension://cmedhionkhpnakcndndgjdbohmhepckk/background.js
+Target [service_worker]: Service Worker chrome-extension://epibngeobhgllkfbeghnemppimnljhfb/9df3c9105780.js | chrome-extension://epibngeobhgllkfbeghnemppimnljhfb/9df3c9105780.js
+Target [service_worker]: Service Worker chrome-extension://hehggadaopoacecdllhhajmbjkdcmajg/background.js | chrome-extension://hehggadaopoacecdllhhajmbjkdcmajg/background.js
+Target [service_worker]: Service Worker chrome-extension://omghfjlpggmjjaagoclmmobgdodcjboh/background.js | chrome-extension://omghfjlpggmjjaagoclmmobgdodcjboh/background.js
+Target [service_worker]: Service Worker https://github.com/assets-cdn/worker/service-worker-7be5fd8c882c8d32.js?current_user=k4ran909&errors_url=https%3A%2F%2Fapi.github.com%2F_private%2Fbrowser%2Ferrors&release=ac6f20afa13662b49bcd7101ff120a88af0c5aec&actor_id=179626329&is_staff=false&issues_index_data_router=0&analytics_collector_url=https%3A%2F%2Fcollector.github.com%2Fgithub%2Fcollect | https://github.com/assets-cdn/worker/service-worker-7be5fd8c882c8d32.js?current_user=k4ran909&errors_url=https%3A%2F%2Fapi.github.com%2F_private%2Fbrowser%2Ferrors&release=ac6f20afa13662b49bcd7101ff120a88af0c5aec&actor_id=179626329&is_staff=false&issues_index_data_router=0&analytics_collector_url=https%3A%2F%2Fcollector.github.com%2Fgithub%2Fcollect
+Target [service_worker]: Service Worker chrome-extension://hobcgchhmiclhpkbepinlcggljnaejma/background.js | chrome-extension://hobcgchhmiclhpkbepinlcggljnaejma/background.js
+Target [service_worker]: Service Worker chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/background.js | chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/background.js
+Target [service_worker]: Service Worker chrome-extension://cclelndahbckbenkjhflpdbgdldlbecc/background.mjs | chrome-extension://cclelndahbckbenkjhflpdbgdldlbecc/background.mjs
+Target [service_worker]: Service Worker chrome-extension://hlkenndednhfkekhgcdicdfddnkalmdm/cookie-editor.js | chrome-extension://hlkenndednhfkekhgcdicdfddnkalmdm/cookie-editor.js
+Target [service_worker]: Service Worker chrome-extension://cjaoelofecdipdkihihjgpndanncpmfe/background.js | chrome-extension://cjaoelofecdipdkihihjgpndanncpmfe/background.js
+Target [worker]: editorWorkerService | blob:https://colab.research.google.com/da2d1557-9a3f-4d34-8bcd-033d4f98cc46
+Target [worker]: https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=zqB-6Xpbd3lCIvi7Tr2D0pob | https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=zqB-6Xpbd3lCIvi7Tr2D0pob
+Target [worker]: https://colab.research.google.com/v2/external/worker_binary.js | https://colab.research.google.com/v2/external/worker_binary.js
+Target [worker]: https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=zqB-6Xpbd3lCIvi7Tr2D0pob | https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=zqB-6Xpbd3lCIvi7Tr2D0pob
+Target [worker]: editorWorkerService | blob:https://colab.research.google.com/bffb214f-f9ab-4fa7-8c33-09873d9897bc
+Target [browser_ui]: Omnibox Popup | chrome://omnibox-popup.top-chrome/
+Target [page]: NandhaKishorM/laya | https://github.com/NandhaKishorM/laya
+Target [page]: Fixes the CWE misclassification problem - Google Search | https://www.google.com/search?q=Fixes+the+CWE+misclassification+problem&sourceid=chrome&ie=UTF-8
+Target [iframe]: https://accounts.google.com/RotateCookiesPage?og_pid=1&rot=3&origin=https%3A%2F%2Fwww.google.com&exp_id=0 | https://accounts.google.com/RotateCookiesPage?og_pid=1&rot=3&origin=https%3A%2F%2Fwww.google.com&exp_id=0
+Target [page]: Google Colab | https://colab.research.google.com/
+Attaching to target: C03ECEA6081E40A6F37E5985851F3101
+Session ID: None
+Navigating to https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=wj3SCRn_aJF3...
+Navigation result: {'id': 3, 'error': {'code': -32600, 'message': "Message may have string 'sessionId' property"}}
+Waiting 5 seconds for page load...
+Navigation complete!
+

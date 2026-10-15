@@ -1,0 +1,53 @@
+
+The command exited with code 0.
+Output:
+import asyncio
+import json
+import sys
+import websockets
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+async def main():
+    target_id = "3C18718FA3A36C9DF9AB624E51561BAC"
+    ws_url = f"ws://127.0.0.1:9222/devtools/page/{target_id}"
+    print(f"Connecting directly to page ws: {ws_url}...")
+
+    try:
+        async with websockets.connect(ws_url) as ws:
+            print("[+] Connected to page ws!")
+            
+            # 1. Get window.location
+            js = "window.location.href"
+            await ws.send(json.dumps({
+                "id": 1,
+                "method": "Runtime.evaluate",
+                "params": {"expression": js, "returnByValue": True}
+            }))
+            resp = json.loads(await ws.recv())
+            print("[+] Page URL:", resp.get("result", {}).get("result", {}).get("value"))
+
+            # 2. Get all cell text / search for ideEXJ-cwjcq
+            search_js = """
+            (() => {
+                // Find element with ideEXJ
+                const target = document.querySelector('[id*="ideEXJ"], [data-cell-id*="ideEXJ"]');
+                
+                // Let's get text of all cells in notebook
+                const cells = Array.from(document.querySelectorAll('div.cell, colab-cell, .notebook-cell'));
+                const results = [];
+                
+                for (let i = 0; i < cells.length; i++) {
+                    const c = cells[i];
+                    results.push({
+                        idx: i,
+                        id: c.id || c.getAttribute('data-cell-id') || 'no-id',
+                        text: (c.innerText || '').substring(0, 300)
+                    });
+                }
+                
+                // Also check if any element on page contains ideEXJ-cwjcq
+                const allWithId = Array.from(document.querySelectorAll('*')).filter(el => (el.id && el.id.includes('ideEXJ')) || (el.getAttribute('data-cell-id') && el.getAttribute('data-cell-id').includes('ideEXJ')));
+                
+        
+

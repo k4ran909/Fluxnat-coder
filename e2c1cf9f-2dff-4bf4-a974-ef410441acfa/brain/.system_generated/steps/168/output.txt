@@ -1,0 +1,34 @@
+
+The command exited with code 1.
+Output:
+Running SmartAGENT unit tests...
+  [OK] test_secret_scanner_detects_aws_key passed
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\tests\test_scanners.py", line 78, in <module>
+    test_pattern_scanner_detects_sqli()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\tests\test_scanners.py", line 28, in test_pattern_scanner_detects_sqli
+    findings = scanner.scan_file("test.py", code)
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\pattern_scanner.py", line 90, in scan_file
+    if re.search(rule["pattern"], line):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\re\__init__.py", line 177, in search
+    return _compile(pattern, flags).search(string)
+           ~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\re\__init__.py", line 350, in _compile
+    p = _compiler.compile(pattern, flags)
+  File "C:\Python314\Lib\re\_compiler.py", line 766, in compile
+    code = _code(p, flags)
+  File "C:\Python314\Lib\re\_compiler.py", line 599, in _code
+    _compile(code, p.data, flags)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\re\_compiler.py", line 181, in _compile
+    _compile(code, av, flags)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\re\_compiler.py", line 181, in _compile
+    _compile(code, av, flags)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\re\_compiler.py", line 160, in _compile
+    raise PatternError("look-behind requires fixed-width pattern")
+re.PatternError: look-behind requires fixed-width pattern
+

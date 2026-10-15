@@ -1,0 +1,37 @@
+The search for "Gemma 4 A4B model 2026 release open source parameters active" returned the following summary:
+Gemma 4 was released by Google DeepMind on **April 2, 2026**[1][2]. The entire family of Gemma 4 models is released under the **Apache 2.0 license**, making them fully open-source and permissible for commercial use[1][2][3].
+
+### The 26B A4B Model
+The **26B A4B** (often referred to as 26B-A4B) is a **Mixture-of-Experts (MoE)** model[2][4]. Its "A4B" designation refers to its active parameter count[5]:
+
+*   **Total Parameters:** 26 billion[6][4] (specifically 25.2 billion)[6][7].
+*   **Active Parameters:** 3.8 billion (often rounded to 4B) active per token during inference[5][6][7].
+*   **Architecture:** This MoE architecture allows the model to deliver performance comparable to much larger dense models while maintaining the computational efficiency of a smaller model[7].
+
+### Gemma 4 Family Overview
+The Gemma 4 family includes four primary sizes designed for different hardware constraints[2][4]:
+
+| Model | Architecture | Best Use Case |
+| :--- | :--- | :--- |
+| **E2B** | Dense (Effective 2B) | Edge devices, smartphones[2][8] |
+| **E4B** | Dense (Effective 4B) | Edge devices, laptops[2][8] |
+| **26B A4B** | Mixture-of-Experts | Workstations, cost-efficient inference[2][8] |
+| **31B** | Dense | Frontier intelligence/workstations[2][8] |
+
+### Key Features
+*   **Multimodal:** All models in the Gemma 4 family support native text and image input[4][8]. Larger models (26B and 31B) also support video, while edge variants (E2B and E4B) include native audio support[2][9].
+*   **Context Window:** Up to 256K tokens for medium/workstation models, with 128K for edge variants[2][8].
+*   **Capabilities:** Features include native function calling, structured output, and configurable "thinking" modes for advanced reasoning[10][8][11].
+
+Sources:
+[1] [buildfastwithai.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEj-2_jdAVIKH-5vUcSmKllk7JradORmr9VD5TyNs6UMmc1crajrO6-8zU3pDVmJ7CBoDEvRZPU55tdOKpbVVEQ_LefZPnexhK7zWdaEQmVOCkMKhw8JeqGhBlf8_SpdUu_ny9-Hy3P3Gi00o83wfksxrqH3w==)
+[2] [cloudinsight.cc](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJxGzhebzK1MkZ00uRWUOeg1gLHIb5yhnyjw0HnRsXWnli4rbT9HowciRFREWWRLOuRrn-1SseOA4fhf3hl-Krm-BbFLRCSSP9gFzwA7wb_0lN8HhTzzP44VDA_OcTCYDniw==)
+[3] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7orJIKlH7HHttg2wwMEh_HowJ40_eFU7_O3IfD1Ah5gjgPm6rI7uY64wg77zMY4Y7IJ9VbmTVoWb4POj4OVOs6ePHjjHbiR4hRYymbwhHvuDrUDjHkjDAxav5kG_HiM9RCRP0KjKaAlwnJE9_jsCoeOPq-Scfn7AonyORT8UouAYlUjm59f0NZt7mvywzoQ==)
+[4] [maartengrootendorst.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5LRHutzRGzPXknD7sk814SmzzlITqdHOWqE_HdQpIqRUo6OSjwUejyXqKPzgDMo_d7XPtYNEeZC2CXXbvgVhn8iZwN2gUG3bx2ajIqgJJAA7iQBk9gC6NBa7Oy-tgWC33iYskszF2ANnhiS2ocJ9cy3sI9mMQAdHn-Lg=)
+[5] [arxiv.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1GvW29lyjmXQD_w6OOO4Nnrrx1tgyeENooUdT_ZCprc6lswvFQE-JNqPE3Ian2VOwee3RcKUTZmI1tZ3CakqmvGufgljcY3YXiH3YVii6xyz2nxIE)
+[6] [amazon.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEblkHVAcZ1TkL42RRFbkks039mMDrmWbXodJFO5sGLpNyuugYzXinBvqY3BohkD3Q1IPCOhW1G0wX5DxQZVQ0Vw624r6-PJNDijLjbxmVz_umZArpVxl_-h-r4mUQ0AtjFCap9b8kKvx6P93Aqn92t8agE37pNnENvKyVKLnw-a5hmwC8Yvhym2XZTG54NwZU=)
+[7] [openrouter.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSM_2G1IYgPdEtKwloxabM6JLrrEaVyjw5B-bc-qgHmVCdYUlmc-vLSXG_quj49QBopwPtYwFoK90AAaAfZlE1HaXukhqKxKomX2pKgwUwWXIT3erZnIN5jxGCMybEyE8y0VMZJC4k5wI=)
+[8] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyHOgwPfv-PiBN89wQiWmTTYxMaeWCNzqQCD4WgrtZzPRiFgFpAtvkvxtkVbRYS6bkMRvPmFzJgBpG-xFW_KhGYYDrmq6qnfJF4z4MCzNrFKh2Ce19eg==)
+[9] [labellerr.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8j3BWTdPM9pmts4XUNcE8edhQ0LH6HzphAJ8FS8VAgxVARZRGWVN8rKuXR97mkH5r9AdLRbAoxQ6obyL-cOYtLkikRAvQL9LKNKpKsi8zNzSsCw6dG0TOcZjWFwAhL-7D2uodv9pDp1EfN7l8KoT8SaOFdO94vxhJlg==)
+[10] [google.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsV1bK-2VNgeKvOljgjvZLZi_jLo_Y2vHpzFWDhfALz19N5yiTRTeyQqU9711iWVKJP-WdJ6JV2c4MQ1Z0VslCodjPTRuPYPEQORggL4InisRe9svxLYhSMPZRNl88yrJaCzaBQDxzakkTVgz85EuaBWRKPqvQbXCUgL4E-fEt5o8b-Q1ne6exa-w7Ix5g6meDUXzoQYbfd1A=)
+[11] [lmstudio.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESMmxH1ozYD5z5LFWt6g-KJVJA0HBw2xLU7xEP1W3hSBeonJitgCpowq9XFcznqHdxIGOIl9ZZPeZ-kweh0isRSNZDiGI-QtAax6tP1Vo1mI-2AxnWajU=)

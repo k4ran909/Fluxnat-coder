@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Launching Playwright to load: https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=bBtUZIG4wjco...
+Page Title: Sign in - Google Accounts
+Final URL: https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17%23scrollTo%3DbBtUZIG4wjco&hl=en&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1732003964:1790060281348016
+[!] Redirected to Google Login. The notebook is not publicly shared.
+

@@ -1,0 +1,55 @@
+
+The command exited with code 1.
+Output:
+Connecting to ws://127.0.0.1:9222/devtools/browser/25a8f755-6780-4694-b7aa-32d603640dd1...
+Traceback (most recent call last):
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\websockets\asyncio\client.py", line 543, in __await_impl__
+    await self.connection.handshake(
+    ...<2 lines>...
+    )
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\websockets\asyncio\client.py", line 104, in handshake
+    await asyncio.wait(
+    ...<2 lines>...
+    )
+  File "C:\Python314\Lib\asyncio\tasks.py", line 432, in wait
+    return await _wait(fs, timeout, return_when, loop)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\tasks.py", line 521, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\websockets\asyncio\client.py", line 539, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\open_notebook_target.py", line 98, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\open_notebook_target.py", line 19, in main
+    async with websockets.connect(BROWSER_WS, origin=None) as ws:
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\websockets\asyncio\client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\websockets\asyncio\client.py", line 578, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+

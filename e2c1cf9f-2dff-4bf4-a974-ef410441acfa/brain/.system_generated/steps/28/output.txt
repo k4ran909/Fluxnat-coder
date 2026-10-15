@@ -1,0 +1,28 @@
+The search for "Qwen 2.5 coder 3B vs Phi-4 mini 3.8B vs Gemma 3 4B vs StarCoder2 3B benchmark comparison 2026" returned the following summary:
+As of September 2026, the landscape for small, efficient coding models (approximately 3B–4B parameters) has evolved significantly. Below is a comparison based on their performance, capabilities, and release status.
+
+### **Model Overview**
+
+| Model | Size | Primary Focus | Notable Features |
+| :--- | :--- | :--- | :--- |
+| **Qwen 2.5 Coder 3B** | 3B | Code Generation | Excellent coding/math performance; very strong open-source contender. |
+| **Phi-4 Mini** | 3.8B | Reasoning & Math | High-quality synthetic data training; excels in complex reasoning tasks. |
+| **Gemma 3 4B** | 4B | Multimodal (Text/Image) | Google's multimodal model; part of a family with diverse sizes. |
+| **StarCoder2 3B** | 3B | Code Completion | Designed for edge/embedded; optimized for FIM (Fill-in-the-Middle) tasks. |
+
+---
+
+### **Performance & Benchmarking Insights**
+
+*   **Qwen 2.5 Coder 3B:** Widely regarded as one of the best-performing models in the sub-4B category for pure coding tasks. It consistently ranks high on benchmarks like HumanEval and MBPP. It is frequently cited as a leader in "coding-specific" open-source models for its size, often outperforming older models significantly larger than itself.
+*   **Phi-4 Mini (3.8B):** Microsoft’s model is heavily focused on reasoning. While it is highly capable in coding, its architecture is specifically tuned for high-quality, reasoning-dense tasks. It often matches or exceeds the performance of models twice its size on math and logic-heavy coding challenges.
+*   **Gemma 3 4B:** Released in March 2025, this model serves a broader purpose than the code-specialized variants. Its primary advantage is its native multimodal capability (supporting both text and image inputs). While it performs well in general tasks, it is typically chosen when multimodal flexibility is required alongside text generation. Note that Google has since released the **Gemma 4** family (as of March 2026), which generally supersedes Gemma 3 in reasoning and coding scores.
+*   **StarCoder2 3B:** Released by the BigCode project, this model is a workhorse for code completion. It is specifically trained for **FIM (Fill-in-the-Middle)** objectives, making it exceptionally well-suited for autocomplete tools and IDE plugins. While Qwen 2.5 Coder may edge it out in complex instruction-following/chat benchmarks, StarCoder2 remains a preferred choice for pure code-filling scenarios due to its architectural optimization for that specific task.
+
+### **Summary Recommendation**
+*   **For pure coding assistance and chat-based code generation:** **Qwen 2.5 Coder 3B** is generally considered the top performer in this size class.
+*   **For complex logic, math, and reasoning:** **Phi-4 Mini** offers superior reasoning capabilities.
+*   **For IDE code completion (autocomplete):** **StarCoder2 3B** remains a highly efficient and effective choice due to its FIM training.
+*   **For multimodal needs (e.g., analyzing images of code or UIs):** **Gemma 3 4B** (or the newer **Gemma 4** variants) is the most capable option.
+
+*Note: Benchmarking in the 3B-4B range is highly sensitive to the specific prompt and task. For real-world use, these models are often used with quantization (e.g., Q4_K_M) to run efficiently on consumer hardware.*

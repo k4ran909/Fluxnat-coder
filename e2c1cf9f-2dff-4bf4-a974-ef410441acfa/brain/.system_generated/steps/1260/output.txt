@@ -1,0 +1,76 @@
+
+The command exited with code 0.
+Output:
+<truncated 14 lines>
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\extract_colab_full.py                                              2744  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\Fluxnat_Coder_3B_Training.ipynb                                    33213 
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\merge_and_export.py                                                5351  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\MODEL_CARD.md                                                      7424  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\prepare_datasets.py                                                7908  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\pyproject.toml                                                     1055  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\README.md                                                          4349  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\rebrand.py                                                         6958  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scratch_colab_direct.py                                            2952  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scratch_colab_eval.py                                              3804  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scratch_colab_result.json                                          7189  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\test_colab_js_api.py                                               3481  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\test_local_model.py                                                4674  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\test_refusal_free.py                                               4290  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\train.py                                                           9619  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\config\training_config.yaml                                        1925  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\data\custom_cot                                                          
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\data\processed                                                           
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\data\custom_cot\identity_alignment.jsonl                           6128  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\data\custom_cot\security_cot.jsonl                                 28936 
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\data\processed\eval_data.jsonl                                     11315 
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\data\processed\train_data.jsonl                                    172757
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent                                                         
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai                                                            
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting                                                     
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners                                                      
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\__pycache__                                                   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\cli.py                                                  9964  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\config.py                                               3206  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\__init__.py                                             130   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\__pycache__                                             
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\core.py                                           8828  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\memory.py                                         2266  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\prompts.py                                        2057  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\tools.py                                          21645 
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\__init__.py                                       182   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\__pycache__\core.cpython-314.pyc                  10071 
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\__pycache__\memory.cpython-314.pyc                5217  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\__pycache__\prompts.cpython-314.pyc               2264  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\__pycache__\tools.cpython-314.pyc                 29545 
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\__pycache__\__init__.cpython-314.pyc              376   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai\judge.py                                             3741  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai\model.py                                             4305  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai\prompts.py                                           1103  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai\__init__.py                                          250   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting\__pycache__                                         
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting\report.py                                     5975  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting\scorer.py                                     1906  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting\__init__.py                                   331   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting\__pycache__\report.cpython-314.pyc            9586  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting\__pycache__\scorer.cpython-314.pyc            2654  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\reporting\__pycache__\__init__.cpython-314.pyc          476   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__pycache__                                          
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\base.py                                        1606  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\config_scanner.py                              4868  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\dependency_scanner.py                          4845  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\pattern_scanner.py                             4949  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\secret_scanner.py                              4125  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__init__.py                                    617   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__pycache__\base.cpython-314.pyc               3430  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__pycache__\config_scanner.cpython-314.pyc     6308  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__pycache__\dependency_scanner.cpython-314.pyc 7103  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__pycache__\pattern_scanner.cpython-314.pyc    5595  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__pycache__\secret_scanner.cpython-314.pyc     4569  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners\__pycache__\__init__.cpython-314.pyc           761   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\__pycache__\cli.cpython-314.pyc                         14496 
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\__pycache__\config.cpython-314.pyc                      3443  
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\__pycache__\__init__.cpython-314.pyc                    319   
+C:\Users\k4ran\OneDrive\Desktop\smartAGENT\tests\test_scanners.py                                             2966  
+
+
+

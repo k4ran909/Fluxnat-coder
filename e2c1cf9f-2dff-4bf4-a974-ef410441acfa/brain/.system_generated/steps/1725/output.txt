@@ -1,0 +1,92 @@
+
+The command exited with code 0.
+Output:
+<truncated 17 lines>
+761991.txt:3032:        uid=1_2683 button "Show/hide output"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3033:        uid=1_2684 button "Code cell output actions" expandable haspopup="menu"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3034:        uid=1_2685 Iframe
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3035:          uid=1_2686 RootWebArea url="https://rxoyc1o5wqs-496ff2e9c6d22116-0-colab.googleusercontent.co
+m/outputframe.html?vrz=colab-external_20261002-060058_RC00_992223064"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3036:            uid=1_2687 StaticText "[*] Merging LoRA adapters into standalone 16-bit model: 
+./Fluxnat-Coder-3B-Merged...
+> C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3084:    uid=1_2715 region "Cell 13: Text cell: Step 7: Push Model to Hugging Face Hub 
+(fluxnat/Fluxnat-Coder-3B)"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3085:      uid=1_2716 button "Collapse 1 child cell under Step 7: Push Model to Hugging Face Hub 
+(fluxnat/Fluxnat-Coder-3B) (Press <Shift> to also collapse sibling sections)"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3086:      uid=1_2717 heading "Step 7: Push Model to Hugging Face Hub (fluxnat/Fluxnat-Coder-3B)" level="2"
+> C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3087:    uid=1_2718 region "Cell 14: Code cell: "
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3088:      uid=1_2719 button "Run cell" description="Run cell (Ctrl+Enter) cell executed since last change 
+executed by Karan 12:55?PM (0 minutes ago) executed in 91.783s"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3089:      uid=1_2720 StaticText "[7]"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3090:      uid=1_2721 StaticText "1m"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3091:      uid=1_2722 generic
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3092:        uid=1_2723 StaticText "import"
+> C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3320:      uid=1_2914 region "Cell 14 output"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3321:        uid=1_2915 button "Show/hide output"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3322:        uid=1_2916 button "Code cell output actions" expandable haspopup="menu"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3323:        uid=1_2917 group
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3324:          uid=1_2918 StaticText "[*] Publishing under your personal account: k4ran909/Fluxnat-Coder-3B
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3325:[*] Creating repository k4ran909/Fluxnat-Coder-3B...
+> C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3335:    uid=1_2925 region "Cell 15: Text cell: Print training progression if available"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3336:      uid=1_2926 StaticText "import os import torch import warnings warnings.filterwarnings("ignore") 
+from unsloth import FastLanguageModel"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3337:      uid=1_2927 button "Collapse 1 child cell under Print training progression if available (Press 
+<Shift> to also collapse sibling sections)"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3338:      uid=1_2928 heading "Print training progression if available" level="1"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3339:      uid=1_2929 StaticText "if "trainer" in globals() and hasattr(trainer, "state"): print("=" * 60) 
+print("[*] Training Loss Progression") print("=" * 60) for log in trainer.state.log_history: if "loss" in log: 
+print(f"Step {log['step']:2d} / 25 | Loss: {log['loss']:.4f}") print()"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3340:      uid=1_2930 heading "1. Restore & guarantee system prompt" level="1"
+> C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3414:    uid=1_2983 region "Cell 16: Code cell: "
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3415:      uid=1_2984 button "Run cell" description="Run cell (Ctrl+Enter) cell executed since last change 
+executed by Karan 12:56?PM (0 minutes ago) executed in 45.438s"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3416:      uid=1_2985 StaticText "[8]"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3417:      uid=1_2986 StaticText "45s"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3418:      uid=1_2987 generic
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3419:        uid=1_2988 StaticText "import"
+> C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3995:      uid=1_3477 region "Cell 16 output"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3996:        uid=1_3478 button "Show/hide output"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3997:        uid=1_3479 button "Code cell output actions" expandable haspopup="menu"
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3998:        uid=1_3480 group
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:3999:          uid=1_3481 StaticText "============================================================
+  C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_1791358
+761991.txt:4000:[*] Training Loss Progression
+
+
+

@@ -1,0 +1,10 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+    from tests.test_scanners import (
+    ...<6 lines>...
+    )
+ModuleNotFoundError: No module named 'tests.test_scanners'
+

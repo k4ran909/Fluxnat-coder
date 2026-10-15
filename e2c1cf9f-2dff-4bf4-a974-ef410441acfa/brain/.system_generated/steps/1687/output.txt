@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+warning: in the working copy of 'prepare_datasets.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/generate_redteam_dataset.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/update_notebook_v2.py', LF will be replaced by CRLF the next time Git touches it
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   Fluxnat_Coder_3B_Training.ipynb
+	new file:   data/custom_cot/redteam_cot.jsonl
+	modified:   data/processed/eval_data.jsonl
+	modified:   data/processed/train_data.jsonl
+	modified:   prepare_datasets.py
+	new file:   scripts/generate_redteam_dataset.py
+	new file:   scripts/update_notebook_v2.py
+
+

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Connecting to ws://127.0.0.1:9222/devtools/page/C03ECEA6081E40A6F37E5985851F3101...
+Failed: <class 'websockets.exceptions.InvalidStatus'> server rejected WebSocket connection: HTTP 403
+

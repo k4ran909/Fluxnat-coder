@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+C:\Users\k4ran/.cache/huggingface/hub\models--k4ran909--Fluxnat-Coder-3B\.no_exist\abc702e2e3b7781787562a52811d523dd6acc62f\model.safetensors 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub\models--k4ran909--Fluxnat-Coder-3B\blobs\bb5e8476c89d2f804d8d0054f082ee72451fd191f28ce8553e90898f9473220d.cd72c91f.incomplete 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub\models--k4ran909--Fluxnat-Coder-3B\blobs\e0754ac158a594782b083b06c9a7147a62ab144abd89227fe85e52be597e2503.a652d8f2.incomplete 0.00 MB
+

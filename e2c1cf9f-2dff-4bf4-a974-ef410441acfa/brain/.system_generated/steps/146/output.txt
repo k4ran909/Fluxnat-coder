@@ -1,0 +1,5 @@
+
+The command exited with code 1.
+Output:
+C:\Python314\python.exe: No module named pytest
+

@@ -1,0 +1,26 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+    print(f'[{idx}] {ts}: {msg.strip()!r}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9a5' in position 45: character maps to <undefined>
+Total user messages: 84
+[0] 2026-09-21T11:30:25Z: '<USER_REQUEST>\nhii\n</USER_REQUEST>\n<ADDITIONAL_METADATA>\nThe current local time is: 2026-09-21T17:00:25+05:30.\n</ADDITIO'
+[2] 2026-09-21T19:40:28Z: "<USER_REQUEST>\ni wanna build next generation of AI in which \n\ni'll train a model at which which is used for cyber securi"
+[2] 2026-09-21T19:41:08Z: "<USER_REQUEST>\ni wanna build next generation of AI in which \n\ni'll train a model at which which is used for cyber securi"
+[13] 2026-09-21T19:46:03Z: '<USER_REQUEST>\nbest open source SLM can consider new one tooo\n</USER_REQUEST>\n<ADDITIONAL_METADATA>\nThe current local ti'
+[25] 2026-09-21T19:48:57Z: '<USER_REQUEST>\nlike under under 3b  - 4b parameter with out of best \n</USER_REQUEST>\n<ADDITIONAL_METADATA>\nThe current l'
+[36] 2026-09-21T19:52:22Z: '<USER_REQUEST>\nfind best uncenserd model under 3b parameters \n</USER_REQUEST>\n<ADDITIONAL_METADATA>\nThe current local ti'
+[49] 2026-09-21T19:57:59Z: "<USER_REQUEST>\ni don't wanna use ollama to run \nollama run huihui-ai/qwen2.5-coder-abliterated:3b\n</USER_REQUEST>\n<ADDIT"
+[53] 2026-09-21T20:03:29Z: '<USER_REQUEST>\nselect this \n\n- Best for SmartAGENT: HuggingFace Transformers (Python)\n</USER_REQUEST>\n<ADDITIONAL_METADA'
+[57] 2026-09-21T20:11:30Z: '<USER_REQUEST>\ni wanna fine tune this model completely with best way !\nto finetune it \n</USER_REQUEST>\n<ADDITIONAL_METAD'
+[57] 2026-09-21T20:13:16Z: '<USER_REQUEST>\ni wanna fine tune this model completely with best way !\nto finetune it \n\nrename it copletely deeply from'
+[68] 2026-09-21T20:33:39Z: '<USER_REQUEST>\n1. yes i do have huggingface account \n2. Will you train on Colab (free) or local GPU which is best ?\n3. y'
+[74] 2026-09-21T20:38:07Z: '<USER_REQUEST>\nhere is my hugging face token - hf_REDACTED_TOKEN_SECURED\n</USER_REQUEST>\n<ADDITIONAL_METADAT'
+[88] 2026-09-21T20:48:50Z: '<USER_REQUEST>\ncontinue\n</USER_REQUEST>\n<ADDITIONAL_METADATA>\nThe current local time is: 2026-09-22T02:18:50+05:30.\n</AD'
+

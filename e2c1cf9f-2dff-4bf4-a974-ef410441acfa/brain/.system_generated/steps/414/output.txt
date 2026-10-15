@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+    resp = client.text_generation('Who are you?', max_new_tokens=50)
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\huggingface_hub\inference\_client.py", line 2383, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+  File "C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\huggingface_hub\inference\_providers\__init__.py", line 276, in get_provider_helper
+    provider = next(iter(provider_mapping)).provider
+               ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+

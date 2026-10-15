@@ -1,0 +1,86 @@
+The search for "Unsloth fine-tune Qwen 2.5 3B complete tutorial code 2025 2026 step by step" returned the following summary:
+To fine-tune a **Qwen 2.5 3B** model using Unsloth, you can leverage the library's highly optimized kernels which provide 2x faster training and 60-70% less VRAM usage compared to standard methods[1][2][3].
+
+Below is the step-by-step approach and code structure to perform this fine-tuning[4].
+
+### 1. Prerequisites and Environment Setup
+You can run this on a free **Google Colab Tesla T4 GPU**[1][5]. Install the necessary dependencies first:
+
+```bash
+pip install unsloth
+pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+pip install --no-deps xformers trl peft accelerate bitsandbytes
+```
+
+### 2. Implementation Code
+This script demonstrates how to load the model, apply LoRA (Low-Rank Adaptation), and prepare for training[4].
+
+```python
+from unsloth import FastLanguageModel
+from datasets import load_dataset
+from trl import SFTTrainer
+from transformers import TrainingArguments
+
+# 1. Load Model and Tokenizer
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name="Qwen/Qwen2.5-3B-Instruct",
+    max_seq_length=2048,
+    load_in_4bit=True, # Enables efficient memory usage
+)
+
+# 2. Add LoRA Adapters
+model = FastLanguageModel.get_peft_model(
+    model,
+    r=16, # Rank: higher = more parameters to train
+    lora_alpha=32,
+    lora_dropout=0.1,
+    target_modules=["q_proj", "k_proj", "v_proj", "o_proj", 
+                    "gate_proj", "up_proj", "down_proj"],
+)
+
+# 3. Load and Format Dataset
+# Ensure your dataset is in a chat format (e.g., {"messages": [...]})
+dataset = load_dataset("your-dataset-name", split="train")
+
+# 4. Initialize Trainer
+trainer = SFTTrainer(
+    model=model,
+    train_dataset=dataset,
+    dataset_text_field="text", # Or use data_collator for chat formats
+    max_seq_length=2048,
+    args=TrainingArguments(
+        per_device_train_batch_size=2,
+        gradient_accumulation_steps=4,
+        warmup_steps=5,
+        max_steps=60,
+        learning_rate=2e-4,
+        fp16=True,
+        logging_steps=1,
+        output_dir="outputs",
+    ),
+)
+
+# 5. Train
+trainer.train()
+```
+
+### Key Considerations for Qwen 2.5
+*   **Chat Templates:** Qwen 2.5 models use specific chat templates. Ensure your data is formatted correctly using the model's tokenizer (e.g., using `apply_chat_template`) to maintain instruction-following capabilities[1][4].
+*   **Tokenization:** Avoid using `<|endoftext|>` as the `pad_token` as it can cause infinite generation loops[2][6]. Unsloth typically handles these configuration nuances automatically, but it is good to be aware of the standard Qwen 2.5 tokenization requirements[2].
+*   **Inference:** Once trained, you can easily export your model to **GGUF** format for local use in Ollama or llama.cpp, or push it directly to the Hugging Face Hub[1][7].
+
+### Recommended Resources
+*   **Unsloth Notebooks:** The official Unsloth GitHub and documentation provide pre-made Google Colab notebooks for Qwen 2.5 that you can simply copy and run[1][3][8].
+*   **Kaggle:** There are community-maintained notebooks specifically for "Qwen 2.5 4-bit 3B Fine-tuning" on platforms like Kaggle that include WandB (Weights & Biases) integration for tracking training metrics[9][10].
+
+Sources:
+[1] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_mJ2rSkIy8SONxIywEZWnhyYAiSpO_JMd2bgwArtKadFbd8uHgmvvwc9PwhCRwt4PyYSNkrzF3qeP0vpQ0tDOk7KpipraVavlro8EZIjYLtGEu9Xt1qU9EWng5LZHSJ-xAGYxGXxLPw==)
+[2] [unsloth.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF26cOA-Lsc-YcdfJad09USoHVIVPw2Q2o2F6rhZyX6PdaxRyM4qTxRq08PlAKQX8Z-1zRyBSGqajZCCUwYhUqMYuScqu70ijrExtm3uQvbB0WOiWh3idmR)
+[3] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_mJ2rSkIy8SONxIywEZWnhyYAiSpO_JMd2bgwArtKadFbd8uHgmvvwc9PwhCRwt4PyYSNkrzF3qeP0vpQ0tDOk7KpipraVavlro8EZIjYLtGEu9Xt1qU9EWng5LZHSJ-xAGYxGXxLPw==)
+[4] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHT4DJWgrcIMOcVd8QtNhcTeFpUEm5qi6a4QjoQsB7lJ6IMcaGXKZYpi7u2dW58V7xqVYSmezkK77NjqWHsXDEaKcPc14SqD3WY5t2pKmd4NznEB2wNdaHbeCNevQ9o1maIn47v6A==)
+[5] [towardsai.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGehBRCAhytxjOMiykKRL3sP80WSNg6ZiB-l_3XQZlv2t4-k64SZiBDOEccE4O2fHHjwJSTnzpmDl73G3Ecas8PJpk8OJEakHD4fv2xrRHnFoKOe1kqfNKaVhEYKNfMXJxi6QcAPFi_D6YJ804EDAlSOkH19yRoq26jfreGQ4U0POvgdGMVPLKGym2r)
+[6] [unsloth.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF26cOA-Lsc-YcdfJad09USoHVIVPw2Q2o2F6rhZyX6PdaxRyM4qTxRq08PlAKQX8Z-1zRyBSGqajZCCUwYhUqMYuScqu70ijrExtm3uQvbB0WOiWh3idmR)
+[7] [youtube.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoISnbsKR5zcrVikLnKpUroKhOXPSYeCnWjh2ajmFIqNLT-RCgumJLvEMM3vn6GlpvB1R4m8XXSFUanLCEVnCE8sTYKJgshT3J_usg3cK7qqdteVUxugQorqtcyXsBzTEI)
+[8] [unsloth.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdDkM9BcmH7tcJaG5kJ7Qrft1Hy6gzjfhI19ztQQvAsp5okuUd7eL0p20CzwAm_MLzS6zjdCoOJfEZIYr89zu-Saqnry36O6ikQvEAUT3RFD4XOYPpeED2VMAuQKxzAA9VFZI1ExTCp25Msg==)
+[9] [kaggle.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAMRBxR7o8cJa3FmnYG2rRKsK3W63vtkU_ohQkRrNl6EaiFMX-njMFa1i0OHH8G-Bvg3CxmHCdy_9eiBq4Q6inL5YYsfghLc1XUxbCbxG3kRW1s9BRS6f9bcs5wgM07xbmez-kVF3n9v9qgA1Qu-MtjLNdzIjZknxEMaC95iVVYemLZagY5yLpi_6s3A==)
+[10] [kaggle.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAMRBxR7o8cJa3FmnYG2rRKsK3W63vtkU_ohQkRrNl6EaiFMX-njMFa1i0OHH8G-Bvg3CxmHCdy_9eiBq4Q6inL5YYsfghLc1XUxbCbxG3kRW1s9BRS6f9bcs5wgM07xbmez-kVF3n9v9qgA1Qu-MtjLNdzIjZknxEMaC95iVVYemLZagY5yLpi_6s3A==)

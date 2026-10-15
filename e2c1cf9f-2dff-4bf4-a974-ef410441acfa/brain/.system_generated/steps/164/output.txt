@@ -1,0 +1,13 @@
+
+The command exited with code 1.
+Output:
+Running SmartAGENT unit tests...
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\tests\test_scanners.py", line 77, in <module>
+    print("  [\u2713] test_secret_scanner_detects_aws_key passed")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
+

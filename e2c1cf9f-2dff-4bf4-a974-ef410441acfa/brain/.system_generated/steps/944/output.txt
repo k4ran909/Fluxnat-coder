@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+C:\Users\k4ran\AppData\Local\Google\Chrome\User Data\DevToolsActivePort True
+C:\Users\k4ran\.gemini\antigravity-browser-profile\DevToolsActivePort False
+

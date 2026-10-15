@@ -1,0 +1,42 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\tools.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -422,6 +422,36 @@
+             usage="fix_code <cwe_id>|||<vulnerable_code_snippet>  (e.g., fix_code CWE-89|||query = f\"SELECT * FROM users WHERE id = '{uid}'\")",
+             func=self._tool_fix_code,
+         ))
++        self.register(ToolSpec(
++            name="recon",
++            description="Network reconnaissance & port scanner. Scans host for open TCP ports, banners, and services. Uses nmap if available, or fast socket scanner fallback.",
++            usage="recon <host> [ports]  (e.g., recon 127.0.0.1 or recon example.com 80,443,8080 or recon 192.168.1.1 1-1024)",
++            func=self._tool_recon,
++        ))
++        self.register(ToolSpec(
++            name="exploit_db",
++            description="Query vulnerability database by CVE identifier or service keyword. Returns CVSS, attack vector, exploit prerequisites, and mitigations.",
++            usage="exploit_db <cve_or_service_query>  (e.g., exploit_db CVE-2021-44228 or exploit_db apache or exploit_db ssh)",
++            func=self._tool_exploit_db,
++        ))
++        self.register(ToolSpec(
++            name="generate_payload",
++            description="Generate security audit verification payloads and test templates (SQLi, XSS, cmd injection, reverse shell syntax, SSTI, SSRF, LFI).",
++            usage="generate_payload <type> <params>  (e.g., generate_payload sqli auth_bypass, generate_payload revshell 10.10.14.5:4444 bash, generate_payload xss reflected)",
++            func=self._tool_generate_payload,
++        ))
++        self.register(ToolSpec(
++            name="web_attack",
++            description="Web attack surface assessment: probes target URLs for exposed endpoints, sensitive files, and missing security headers.",
++            usage="web_attack <url> [mode]  (e.g., web_attack http://localhost:8000 endpoints or web_attack https://target.com headers or web_attack http://127.0.0.1:5000 all)",
++            func=self._tool_web_attack,
++        ))
++        self.register(ToolSpec(
++            name="post_exploit",
++            description="Post-exploitation & privilege auditing advisor: provides enumeration checklists, persistence detection rules, and lateral movement audits for Linux/Windows/AD.",
++            usage="post_exploit <os_type> [category]  (e.g., post_exploit linux privesc or post_exploit windows persistence or post_exploit ad lateral_movement)",
++            func=self._tool_post_exploit,
++        ))
+ 
+     def _tool_list_files(self, directory: str) -> str:
+         target = os.path.abspath(os.path.join(self.working_dir, directory))
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

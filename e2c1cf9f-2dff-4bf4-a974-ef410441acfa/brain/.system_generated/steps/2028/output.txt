@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+Step 0 source: USER_EXPLICIT type: USER_INPUT
+Step 1 source: MODEL type: PLANNER_RESPONSE
+Step 2 source: USER_EXPLICIT type: USER_INPUT
+Step 3 source: SYSTEM type: SYSTEM_MESSAGE
+Step 2 source: USER_EXPLICIT type: USER_INPUT
+Step 4 source: MODEL type: GENERIC
+Step 3 source: MODEL type: PLANNER_RESPONSE
+Step 5 source: MODEL type: GENERIC
+Step 6 source: MODEL type: PLANNER_RESPONSE
+Step 7 source: MODEL type: GENERIC
+

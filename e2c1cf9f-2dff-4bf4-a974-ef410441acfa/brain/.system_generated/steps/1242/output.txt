@@ -1,0 +1,36 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent\tools.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -112,9 +112,27 @@
+ 
+ # Allowed shell commands (prefix allowlist for sandboxing)
+ ALLOWED_COMMANDS = [
+-    "python", "pip", "git", "cat", "type", "dir", "ls",
+-    "find", "grep", "rg", "fd", "wc", "head", "tail",
+-    "echo", "smartagent",
++    # Core
++    "python", "python3", "pip", "pip3", "uv", "node", "npm", "npx", "yarn", "pnpm",
++    # Git
++    "git",
++    # File ops
++    "cat", "type", "dir", "ls", "find", "tree", "mkdir", "cp", "copy", "mv", "move",
++    "head", "tail", "wc", "sort", "uniq", "cut", "awk", "sed", "echo", "touch",
++    # Search
++    "grep", "rg", "fd", "ag", "findstr",
++    # Network / HTTP
++    "curl", "wget", "httpie", "http", "ssh", "scp", "rsync",
++    # Docker
++    "docker", "docker-compose", "podman",
++    # Security tools
++    "nmap", "nikto", "sqlmap", "gobuster", "ffuf", "nuclei", "subfinder", "httpx",
++    "semgrep", "bandit", "safety", "trivy", "grype", "syft",
++    # Package managers
++    "cargo", "go", "rustc", "gcc", "g++", "make", "cmake",
++    # Misc
++    "smartagent", "whoami", "hostname", "ping", "tracert", "traceroute",
++    "netstat", "ss", "ip", "ifconfig", "env", "set", "where", "which",
+ ]
+ 
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

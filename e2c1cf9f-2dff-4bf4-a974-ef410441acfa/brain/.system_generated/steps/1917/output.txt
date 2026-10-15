@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+smartagent/agent/core.py:from smartagent.agent.tools import ToolRegistry
+smartagent/agent/core.py:        self.tools = ToolRegistry(working_dir=working_dir)
+smartagent/agent/tools.py:class ToolRegistry:
+

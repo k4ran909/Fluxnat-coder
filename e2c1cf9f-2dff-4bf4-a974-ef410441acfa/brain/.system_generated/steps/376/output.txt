@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[*] Fetching generation_config.json for k4ran909/Fluxnat-Coder-3B...
+[*] Uploading updated generation_config.json with hard token ban...
+[OK] generation_config.json updated with hard mathematical token ban!
+

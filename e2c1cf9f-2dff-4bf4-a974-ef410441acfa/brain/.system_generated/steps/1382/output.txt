@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\update_notebook.py", line 15, in <module>
+    from scripts.generate_cwe_dataset import DATASET, SYSTEM_PROMPT
+ModuleNotFoundError: No module named 'scripts.generate_cwe_dataset'
+

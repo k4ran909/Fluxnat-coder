@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+108:     "## Step 4: Prepare Cybersecurity Training Dataset"
+541:     "train_dataset = Dataset.from_dict({\"text\": formatted_texts})\n",
+542:     "print(f\"[OK] Prepared {len(train_dataset)} balanced training sequences!\")\n",
+553:     "## Step 5: Execute Fine-Tuning"
+571:     "# - max_steps=35: Trains ~2 epochs over 148 samples (effective batch size = 8)\n",
+579:     "    max_steps=35,             # 2 full epochs over 148 balanced samples (~90-120s on Tesla T4)\n",
+593:     "    train_dataset=train_dataset,\n",
+

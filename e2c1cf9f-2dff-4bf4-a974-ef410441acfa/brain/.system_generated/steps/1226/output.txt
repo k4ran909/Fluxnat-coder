@@ -1,0 +1,85 @@
+
+The command exited with code 0.
+Output:
+### list_files
+List all code files in a directory (respects .git/node_modules/venv ignore rules).
+Usage: `list_files <directory_path>  (e.g., list_files . or list_files src/)`
+
+### read_file
+Read the contents of a file. Optionally specify line range with :start-end suffix.
+Usage: `read_file <path>  or  read_file <path>:10-50`
+
+### search_code
+Search for a regex pattern across all code files in the project. Returns matching lines.
+Usage: `search_code <pattern>  (e.g., search_code eval\(  or  search_code password)`
+
+### scan_code
+Run static vulnerability pattern scanners on a specific file. Returns all findings.
+Usage: `scan_code <file_path>  (e.g., scan_code app.py)`
+
+### get_cwe_info
+Look up detailed information about a CWE vulnerability class.
+Usage: `get_cwe_info <cwe_id>  (e.g., get_cwe_info CWE-89)`
+
+### write_report
+Write accumulated findings to a JSON or Markdown report file.
+Usage: `write_report <format>  (format: json or markdown, e.g., write_report markdown)`
+
+### run_command
+Execute a shell command (sandboxed to safe commands like git, python, grep, etc.).
+Usage: `run_command <command>  (e.g., run_command git log -5 --oneline)`
+
+### fix_code
+Generate a secure code fix suggestion for a given code snippet and vulnerability type.
+Usage: `fix_code <cwe_id>|||<vulnerable_code_snippet>  (e.g., fix_code CWE-89|||query = f"SELECT * FROM users WHERE id = '{uid}'")`
+
+---
+Found 41 files in '.':
+  benchmark_results.json  (7133 bytes)
+  benchmark_suite.py  (16025 bytes)
+  check_cell16_state.py  (1955 bytes)
+  colab_full_cells.json  (6136 bytes)
+  evaluate.py  (5483 bytes)
+  extract_colab_cell.py  (5698 bytes)
+  extract_colab_full.py  (2744 bytes)
+  merge_and_export.py  (5351 bytes)
+  prepare_datasets.py  (7908 bytes)
+  pyproject.toml  (1055 bytes)
+  rebrand.py  (6958 bytes)
+  scratch_colab_direct.py  (2952 bytes)
+  scratch_colab_eval.py  (3804 bytes)
+  scratch_colab_result.json  (7189 bytes)
+  test_colab_js_api.py  (3481 bytes)
+  test_local_model.py  (4674 bytes)
+  test_refusal_free.py  (4290 bytes)
+  train.py  (9619 bytes)
+  config\training_config.yaml  (1925 bytes)
+  smartagent\__init__.py  (130 bytes)
+  smartagent\cli.py  (9964 bytes)
+  smartagent\config.py  (2501 bytes)
+  smartagent\agent\__init__.py  (182 bytes)
+  smartagent\agent\core.py  (8828 bytes)
+  smartagent\agent\memory.py  (2266 bytes)
+  smartagent\agent\prompts.py  (2057 bytes)
+  smartagent\agent\tools.py  (20892 bytes)
+  smartagent\ai\__init__.py  (250 bytes)
+  smartagent\ai\judge.py  (3741 bytes)
+  smartagent\ai\model.py  (4305 bytes)
+  smartagent\ai\prompts.py  (1103 bytes)
+  smartagent\reporting\__init__.py  (331 bytes)
+  smartagent\reporting\report.py  (5975 bytes)
+  smartagent\reporting\scorer.py  (1906 bytes)
+  smartagent\scanners\__init__.py  (617 bytes)
+  smartagent\scanners\base.py  (1606 bytes)
+  smartagent\scanners\config_scanner.py  (4868 bytes)
+  smartagent\scanners\dependency_scanner.py  (4845 bytes)
+  smartagent\scanners\pattern_scanner.py  (4949 bytes)
+  smartagent\scanners\secret_scanner.py  (4125 bytes)
+  tests\test_scanners.py  (2966 bytes)
+---
+CWE-89: SQL Injection
+OWASP: A03:2021 - Injection
+CVSS: 9.8
+Description: The software constructs SQL commands using externally-influenced input without proper neutralization.
+Remediation: Use parameterized queries / prepared statements. Never concatenate user input into SQL strings.
+

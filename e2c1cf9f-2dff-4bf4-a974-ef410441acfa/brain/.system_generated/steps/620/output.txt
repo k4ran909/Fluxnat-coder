@@ -1,0 +1,2 @@
+You have 2 active subagent(s):
+[{"role":"Cybersecurity SLM researcher","type":"research","conversationId":"8f1d6f42-1848-40b8-a147-8622731ef004","transcript":"file:///C:/Users/k4ran/.gemini/antigravity/brain/8f1d6f42-1848-40b8-a147-8622731ef004/.system_generated/logs/transcript.jsonl","state":"idle"},{"role":"Colab Browser Inspector","type":"browser","conversationId":"c3610a8f-a8d6-4f60-afa5-c66cb04f7aac","transcript":"file:///C:/Users/k4ran/.gemini/antigravity/brain/c3610a8f-a8d6-4f60-afa5-c66cb04f7aac/.system_generated/logs/transcript.jsonl","state":"running"}]

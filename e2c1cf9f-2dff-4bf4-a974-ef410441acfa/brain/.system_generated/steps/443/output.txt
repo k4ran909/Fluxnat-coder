@@ -1,0 +1,36 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai\model.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -14,7 +14,7 @@
+     _model = None
+     _tokenizer = None
+ 
+-    def __init__(self, model_id: str = "fluxnat/Fluxnat-Coder-3B", load_in_4bit: bool = True):
++    def __init__(self, model_id: str = "k4ran909/Fluxnat-Coder-3B", load_in_4bit: bool = True):
+         self.model_id = model_id
+         self.load_in_4bit = load_in_4bit
+         self.device = "cuda" if torch.cuda.is_available() else "cpu"
+@@ -21,5 +21,5 @@
+     @classmethod
+-    def get_instance(cls, model_id: str = "fluxnat/Fluxnat-Coder-3B", load_in_4bit: bool = True) -> "ModelManager":
++    def get_instance(cls, model_id: str = "k4ran909/Fluxnat-Coder-3B", load_in_4bit: bool = True) -> "ModelManager":
+         if cls._instance is None:
+             cls._instance = cls(model_id, load_in_4bit)
+         return cls._instance
+@@ -42,13 +42,7 @@
+ 
+         print(f"[*] Initializing Fluxnat Coder 3B from: {target} on {self.device}...")
+ 
+-        try:
+-            self._tokenizer = AutoTokenizer.from_pretrained(target, trust_remote_code=True)
+-        except Exception:
+-            fallback = "unsloth/Qwen2.5-Coder-3B-Instruct"
+-            print(f"[!] Target {target} not accessible yet. Falling back to base model: {fallback}...")
+-            target = fallback
+-            self._tokenizer = AutoTokenizer.from_pretrained(target, trust_remote_code=True)
++        self._tokenizer = AutoTokenizer.from_pretrained(target, trust_remote_code=True)
+ 
+         if self._tokenizer.pad_token is None:
+             self._tokenizer.pad_token = self._tokenizer.eos_token
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 22
+    print(f'[{t.get(" type\)}]
+                    ^
+SyntaxError: unterminated string literal (detected at line 22)
+

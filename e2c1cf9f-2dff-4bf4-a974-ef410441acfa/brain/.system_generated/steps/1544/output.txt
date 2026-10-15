@@ -1,0 +1,4 @@
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\scripts\\open_notebook_target.py","LineNumber":8,"LineContent":"TARGET_URL = \"https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=wj3SCRn_aJF3\""}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\scripts\\nav_correct.py","LineNumber":9,"LineContent":"TARGET_URL = \"https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=wj3SCRn_aJF3\""}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\scripts\\navigate_colab.py","LineNumber":9,"LineContent":"TARGET_URL = \"https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=wj3SCRn_aJF3\""}
+{"File":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\scripts\\test_page_ws.py","LineNumber":26,"LineContent":"            target_url = \"https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=wj3SCRn_aJF3\""}

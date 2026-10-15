@@ -1,0 +1,1 @@
+{"outputs":[{"output_type":"stream","name":"stdout","text":["CWD: /content\n","Files in /content: ['.config', 'sample_data']\n"]}]}

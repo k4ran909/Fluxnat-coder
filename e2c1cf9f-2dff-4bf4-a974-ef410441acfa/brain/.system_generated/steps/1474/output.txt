@@ -1,0 +1,1 @@
+{"outputs":[{"output_type":"stream","name":"stdout","text":["/bin/bash: line 1: nvidia-smi: command not found\n"]}]}

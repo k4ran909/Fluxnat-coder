@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+Connecting to Chrome CDP: ws://127.0.0.1:9222/devtools/browser/e27481d0-12e8-4400-9296-cd596f83c369
+Colab Target: Fluxnat_Coder_3B_Training.ipynb - Colab | URL: https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=bBtUZIG4wjco
+Attached Session ID: None
+{}
+

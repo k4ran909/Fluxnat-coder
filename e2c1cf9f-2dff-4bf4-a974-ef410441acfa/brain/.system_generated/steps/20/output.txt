@@ -1,0 +1,42 @@
+The search for "DeepSeek V3 R1 coder 2025 2026 open source small model" returned the following summary:
+DeepSeek has maintained a consistent strategy of releasing **open-weight models** under permissive licenses (typically MIT) since its rise to prominence. As of September 2026, the company continues to release both large-scale models and smaller, efficient variants[1][2][3][4].
+
+### Key Details for 2025–2026
+*   **Model Availability:** DeepSeek's core models—including the **V3** and **R1** series, as well as the newer **V4** architecture—are released with open weights[1][2][4]. You can download these checkpoints from platforms like Hugging Face to run them on your own hardware[5][4][6].
+*   **"Small" Models & Distillation:** DeepSeek famously utilizes **knowledge distillation** to create smaller, highly efficient models by transferring reasoning capabilities from its large R1 models into more compact dense models[7][8][9].
+    *   Examples include the **DeepSeek-R1-Distill-Qwen** series (ranging from 1.5B to 70B parameters), which are designed to be lightweight and accessible for researchers and developers[9][10].
+    *   The latest **DeepSeek-V4.1-Flash** (released September 2026) is currently marketed as the smallest model in their newest architecture family, featuring native multimodal capabilities and optimized for high throughput and fast inference[11][12][13].
+*   **Coding Capabilities:** DeepSeek has a long history of specialized coding models, dating back to the original **DeepSeek Coder** (2023)[14][15]. The newer V3 and R1 architectures, as well as the V4-Flash models, incorporate advanced reasoning and tool-use capabilities that significantly outperform earlier dedicated coding models in tasks like Codeforces benchmarks and repository-level assistance[11][16][17][12].
+*   **Open Source Status:** While the model weights and inference code are open, the original training datasets are generally not public[1][18][19]. However, community projects like **Open R1** have emerged to provide open-source implementations of the training pipelines (such as GRPO and SFT) to help the community replicate the performance of these models[18][19].
+
+### Summary of Recent Flagship Models
+| Model Series | Key Focus | Open Weights? |
+| :--- | :--- | :--- |
+| **DeepSeek-V3 / V3.1** | General Purpose / Mixture-of-Experts | Yes[5][20] |
+| **DeepSeek-R1** | Reasoning (Chain-of-Thought) | Yes[16][21] |
+| **DeepSeek-V4-Flash/Pro** | Multimodal / Efficiency / Agentic Tasks | Yes[11][12][4] |
+
+For developers looking for a "small" coder model, the **DeepSeek-R1-Distill** series or the **V4-Flash** variants are generally recommended due to their balance of performance, lower hardware requirements, and native support for coding/reasoning tasks[12][9].
+
+Sources:
+[1] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEaJz2aJ32uCmaOk3Nk4eJ82BGfgshx-eP6kIomFugFRuAddLfk4RTiVPqEiohWVsvDk6zZojTzyBkclI_IllxmeFjOnpUxG2FjMZCWxBnxPuPqEUgZ3ifCUsSnw==)
+[2] [aireleasetracker.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe_WNIMum71yW1PwqF_wW-GmhhZ2OP1NE0cczSz9URRcr0yWYG3yNzS46qyCg27hPfmOrfk_jUmj4Ee-1lvFIBkOzMdVxrE4PJ__xBougbgF6ZppjWTTsZklebBXrVtMVfSp4=)
+[3] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXBku6TW7jy90uY1u8psSCxKXbo99CrWzcYG8GTlHkMjdCkzfeABqJcw7KzbDPdjtNHAitOehhMTMxBBdatQSwBS9fwqzZIIzEA13mrUTaglc130i8KQtmiabwMDJ-A91L)
+[4] [secondtalent.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBt6aJA-8-xQmZn880BDEHK72WzmVvR2TJGqx1FYmmPC3G6dUWfN6fX1URN9TbDSmIV3X-WQWJgKSLeHO6QNS4IiOtxOeVYFQp2lcXU7SFkxlrJk8XBYpLTifg_MZk-vzf9VWAFNXD__38tRum_eCD7Gky2AeLtPGwXP_kzFklzijBJOSmZjK0)
+[5] [deepseek.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENP8jmg8jiIuy_JKTDSjGKcRhSyRer9XVQ1i4xvnXxjZfioLd5gf7_6F6YSGFGV0XQP8amc0F1pmrGr2np-9ORBIkEJmWFx0pmso_fUcsL6PUrCVzRDQjVypVjL_su46gvQBzE)
+[6] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwdhqsEckFzPKdC_KgMLKrE5kwI9F8eDREsgMgJEYVur5z-jlVgkL5c9Cuo1pIfXfVB5c5G-zybLrJga9snvwkoazHA1Jdmog9Ll1skQh75dl1Sz5npYIND2XEtFnzpElq9k_QdmQ4Rugr1r6T8p8=)
+[7] [leanware.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIsgfAD9LXuAQB05hmSSaLed45NSO41l8s-bVIXO8x3KZ6fjXRDB4xseOWaCwZ4rVsv3v7Qd0GQyTFZ_fMilyPme-JanaHokepTf_-r8YXuQ52eB5UU7AskfWqtvsh-HipfpA=)
+[8] [arxiv.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEtSq7ezaRRlEZDf2uRKe0i_PM-BSwg39lXTT_VZN4dXRng9N0ZBZKSQhjgnM6fx6V8EnYy5MigiAOQQywtxdtNAr-HT8U54qknt2XwYHKuHtk9Qblww==)
+[9] [bentoml.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu2_x_DjSgteKIh4TQ_Fi0jx7_JTpC_unOT8b8qyE8HcPKZ4OLn0n1Fq6VFWy-hyAL2s-V-FadfBCzTY4JiToIFYh9hxpaYD_7ysFS6mZ1-K60DlridQPEFTay2AXqDNufGsGYdwSIsXchj6vTA63bLuQUTnOf4w_5kB1WTiYKvk8zfvJNVhiDnmzDb0-AOner)
+[10] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPCrBmgdKS5FsrUn49Yt4lUvBA31A_bdU3KmvR0W-gtuRB6SbfTYvuKBL8qY0ysR9--WCGiXUrEXG1Okn0bK0CX27VM3wYcdM-7wnU2v6oyu9YpAOE29T9SrJ51yFWc5Y=)
+[11] [deepseek.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhBHauGperZQ5JOrrza-PuLEGeK1m4JLWwBJC8wWCUr7eFteMJp1SxguAetrJPZ4fxJ5Mi9hhdUbWxtnsjg-lZXj1vky8Lv1IOUq2tb_zdIoldIyWYczL5d3CW6Q==)
+[12] [deepseek.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE68yk7qJqg7Hf2iC2GKZEbgtxu4sx3mdR8O1Y7vu1QKi_965r-OrJooBfKqaDzflLueYkfMrHOLBItYDecmDJ8np_OtTQSk5Ud7rC-GrtjAkKgAe9pxORbDsocMkHL-b4J1PwDIWN8D1XXRA==)
+[13] [deepseek.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhBHauGperZQ5JOrrza-PuLEGeK1m4JLWwBJC8wWCUr7eFteMJp1SxguAetrJPZ4fxJ5Mi9hhdUbWxtnsjg-lZXj1vky8Lv1IOUq2tb_zdIoldIyWYczL5d3CW6Q==)
+[14] [scriptbyai.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfX619GltpS-gevW6Dr_SmLwJaMmvMp073bDk3_372FNs04YfLoihD5mQBEo5QV7nF3uHfZzdhFG-igCpfyKluHA1gHWqsQ96Itpj0T20OIbKfZpJvi4VKAw8onoufnHotFY3FDN5HYCMjVx28BfJluw==)
+[15] [github.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsfIutVCMvviVHTeRdrcyiA90h0ba2zZghkcCHTPv8tWZdAdsLmhsfUdukDhY_f1FNycKKPCSr-Ba2Y75JSaACEhlPkVsngz7XdLPnxtkdq1EjBAosfw==)
+[16] [bentoml.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu2_x_DjSgteKIh4TQ_Fi0jx7_JTpC_unOT8b8qyE8HcPKZ4OLn0n1Fq6VFWy-hyAL2s-V-FadfBCzTY4JiToIFYh9hxpaYD_7ysFS6mZ1-K60DlridQPEFTay2AXqDNufGsGYdwSIsXchj6vTA63bLuQUTnOf4w_5kB1WTiYKvk8zfvJNVhiDnmzDb0-AOner)
+[17] [nebius.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYb4snXmShh-8kfC4Iy-LctAhbKtr6zqf4B-Z0-JeM4ikvqpg6WrIBKHlPduK0NDUYKOcz2jJnv-sAssA71Gsnd8mZyxKAZ8y8P08Rb6Hz07lvAJzRjtojtRJESo6Dtcyz33oZF8-MgUXQu7gUN1cjuUf_tVu6WKOR4lXLJLcAly1RDf4=)
+[18] [open-r1.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2NJ_8XxeiKiErwLQU0H89yo0SEgdK06V3qGXOBIhEhgwrVJqEOpgfo9y8bP2O2YffrQxku5zCpjEcaFgt5Js49I82cVQB0P0cww==)
+[19] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTyBGNP2o4QsGJpmQU0BveER0DWWsoai8tYpn1ievPISFLEKPQxIAb4_xk6Hjacy6Bp6sNxuGikWGF9lg2B60Tw01VifX389TuQNyRZ8iAAc_qYP_RpTL8p72WiH4alQXcO14p1XZOrxao2VQSgXXo4Iuppxa8uGLELzh6vTlevX3faH9irkR2ZkKRCy_p0zTQKyq5YjRyvIdzKp1B)
+[20] [promptlayer.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2pCuxUN04_1m_AFgF8t3sxEV6i0Zpk8yOuON81ESNeYTKSo2kmwhmRz8pvmR224LY94LwvB0fa3DXukLsVhe3ahGOr4uE3fMRv79b4Q1L9gOG94XbGajZ-OnUmQpWbcgQAxPbxw==)
+[21] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEi6AHy6Gw8IuGzvqf_cJwWxj0KTJBxAxy_0m6EwMfDUxkAOOldnL3k7oFQScfx6A49KxkExw983poXttUldQnpvZGZmp_8Wln_z6bu1Vfsge4ZxQrcvL3eEuF1fkNj5gktQ6YF)

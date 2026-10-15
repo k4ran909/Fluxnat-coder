@@ -1,0 +1,38 @@
+The search for "SmolLM2 Qwen3 1.7B 4B 2025 2026 smallest best coding model open source" returned the following summary:
+As of September 2026, the landscape for small, open-source coding models has evolved significantly beyond the earlier 2025 releases. Here is the current state of these models based on your criteria:
+
+### **Current Model Landscape (2026)**
+*   **SmolLM2:** Released in early 2025, this remains a highly regarded "ultra-small" family (135M–1.7B parameters)[1][2]. It is widely used for edge and mobile deployments where hardware resources are severely constrained[3][2]. While it was a state-of-the-art "small" model upon release[4], it is now considered a foundational choice for minimal-footprint tasks rather than a specialized coding powerhouse compared to newer, larger-context models[1][3].
+*   **Qwen3 Series:** As of September 2026, the Qwen3 family has been superseded by more advanced iterations. The current flagship general-purpose generation is **Qwen3.8**[5]. Earlier versions like Qwen3-4B were praised in 2025 for their "thinking mode" and strong performance in coding and reasoning relative to their size[3], but current workflows have shifted toward the 3.8 series (including variants like *Qwen3.8-Omni-Flash*) for state-of-the-art agentic and coding tasks[5][6][7].
+
+### **Choosing the "Best" Model for Coding**
+The "best" model in 2026 is no longer determined solely by parameter count, but by **hardware tier** and **task complexity**[8][9]:
+
+| Hardware / Use Case | Recommended Class | Examples / Context |
+| :--- | :--- | :--- |
+| **Ultra-Low / Mobile** | 1B–2B (e.g., SmolLM2) | Best for basic text, simple RAG, and extreme edge constraints[1][3]. |
+| **Standard Laptop** | 4B–8B | The "safest default" for local coding assistance and general chat[1]. |
+| **Dedicated GPU (16GB+)** | 20B–30B (e.g., Qwen3.8-27B) | Generally considered the "sweet spot" for high-quality local coding and debugging[10][8]. |
+| **Advanced Agents** | 48B+ / MoE Models | Necessary for multi-file repository tasks and long-horizon coding agents[8][9]. |
+
+### **Key Takeaways for 2026**
+*   **"Small" vs. "Capable":** For serious coding (refactoring, repository-level tasks), developers now prefer models in the 20B–30B range[1][8]. While 1B–4B models are excellent for "on-the-go" tasks[3][11], they often fall short of the reasoning capabilities required for complex software engineering[1].
+*   **Thinking Mode:** Modern Qwen models (Qwen3.8 series) emphasize "thinking" or "reasoning" modes, which have become the industry standard for improving code generation accuracy without needing massive model size increases[12][13].
+*   **Recommendation:** If you are building a coding assistant:
+    *   **For pure efficiency:** Use **SmolLM2-1.7B** for basic autocomplete or on-device integration[3][2].
+    *   **For coding performance:** Look for **Qwen3.8-27B** (if you have the VRAM)[10] or consider the latest **Qwen3.8-Flash** variants for a balance of speed and reasoning[5].
+
+Sources:
+[1] [codersera.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHW-uCVjWPGFDsenwV_RdqARSMJAJxDILapVkK_05qsHclPlLkJgfZGuPyNVu91UaBc9J66cV8KrXhY9bXUmA-a0ooT-KxPlcrWigIDJK1a1BmdwI9IkrLpP7ANk64sbWdo6UtRjD_qAZsM4KliCWjY9yUEsROhYMOuuM1VYt7VpMTXf8AQVw==)
+[2] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsUELJCWEzY4_acWmZuaIxQ2b_BFqDu03XFBapknxDgooHuzLQR867J-HdEsRaBGE5QPio3oRfn0K01ZWFo7hEhIa7ZFUHzCZniCCseJO1wNX54YegF7rQOLGAJqIU4OMhtHhhoujYGXRFI6xljDMKBJ7UV7qOiZA0pZuRxG4LBfqvIJhMbgjiY2-Y)
+[3] [ecitis.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDJ64IIAz-HGuZ1Ecxqk6CY8XLcVD1UrPngJC1z9rjTXWIytzBDTguZWHyq-y7iK6Gn0SyWPfxghMRdN4XnSUlo61e7Ghxi-rSwMbU0IS7YHyZ87niIdZ6Uor1AQDg8wdITp0R)
+[4] [arxiv.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFppkThkdtZpwJrPjhLiFo6xy42FyIe2KIMRpDfdN0fYo5Rc1UG7Gvc78v37_7ll68kbyqFw6PYlONEzugpkiRunluyLqbUhw4slPdRW08qSrDaZixMQtoaPA==)
+[5] [try-qwen-ai.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWBUf-sSLRfaXkYtBQTf-sW1fiwgi8w2XisWeWdm9MHaCw_9eHd6KzMTr-BfDUsVZFcmHzP4OLzIjdAWKMY-WYg_prR_Dkn4GwZNhY-7tp_VNlJfImCF_btUUYklhlNk7AU9zhV2UsUQ==)
+[6] [marktechpost.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUfH-ypL0luZnL2GRGwhNweUiBj2DZrMi2-zWTFih2B17wssFwrioDxtKL01DexqZJUJG8ekuZl5S4PmAh9RpSHxTrQoe1jv1blViERArvaMZEPlU3BIKeDkB7Zp0QGMP_McDShhvCrAFZ1qVpsGVMO7AZt2l9UVRPyLrIA3YG28ElPce_hlE=)
+[7] [qwen.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKimph7eIZ-GN4Yl7EKTjkD94YgDCaciakaj6OO-WbSFf3k2doZu0dzGODWA-64ouy8ZZ2Y9AWVPQxYt4KIe4Azo1co--yCYMft9kAKu8=)
+[8] [medium.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4Doe1iUwesVsnLWUhC8UNZFZSFqPHLmXdkxOYT1mZUn5jcBi4f-g09_V28PXwDka0cEgjQ5ADFKR2DYdnmayp9M1v0JMJYmy2YaB7e08eSzNzH0NGMGlYo46xB660bTsR270_Fe01-xv2xJuAEy5RVYwpiSvWosnXN9u1dJrAOWr-UuxQ1V4Xd-ZrmDlv3BJI6a_HPx810ehn60zaXryTT_lPnXLMU7_JLtyB9FfXev3MOZKwyoAN2c4=)
+[9] [plainenglish.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUZsOYgo4QYPmS43tCJM_ZCkOEx3-mGQ3U1CTmmBTD2yGDNRMVFdqCA29mn8dZvz5CHs0EGFUGhQ8HYUqJilPVtfPC38E1ZBxru5Bc62NFB2y8J4t6xILX7VdBYutbuvt9HGn3tCNVYrH6wPneu6QzpPCf7ziinal2mrzUX0HRUBq-DRPkF5YZB3Z7k5-295I-tFPU4ENiR1F2_6RmVegeAcIKSZ1B)
+[10] [codersera.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeK4RGF71U1dEEU4UqlJHVgMF5MMhBPFR0v0OhT3k-bEqJgpf5L0nr0PIJIUYsOqiUlRgHHreXMvfSqhC-1CDgV5nyskNTgssJEe0SsWrWBqyNIDXaWwnCN4IJq8cvxm0zo1DGoA2OD61km-_gcg==)
+[11] [skywork.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-XeqsE0TLglpbOV922H7Z9vqSuSI3w6x1j9fJst-p1xEWlm0lFzhaQ2xSci-1TZM9cX5jSR80wD4amcvIGr_Dq58z5eiY09nA8j3KyldQ7m3fRTpD-ijQeC117jNMls9SFvqqynWP55Vzrp71AWPp0bBtNtY0rbByRZYvliFJAjksbg==)
+[12] [evolink.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1Dtzrgf2MK2DCrZKSLiUkbCefNyG8tEKThIRMv3NGXn-Yxt49xlJQpDbVVIQjyY_242ObcM6Hd5vl1gc9dILZmrWru_EFyyO-dIYmCi2sYMimaaJvIzougPmBBs1BRezHc08a0t2aqVpO)
+[13] [openrouter.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpdDmf7CZvMqeWKb0nrLqpmVM_rQBS5-HaPMb0SEuW-jp-IQHcGAWd9XI_gEZaubaG5T8RdQ27J2gRfeTiewmERNLJUU83TVQNvc4TWOojD6D9Vzh-XT8_2E-MGMq03KQX)

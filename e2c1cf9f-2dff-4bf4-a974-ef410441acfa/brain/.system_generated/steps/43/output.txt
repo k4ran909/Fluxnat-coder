@@ -1,0 +1,50 @@
+The search for "Qwen 2.5 coder 3B abliterated OR Phi-4 mini abliterated OR Gemma 4 abliterated uncensored huggingface model" returned the following summary:
+For the models you mentioned, there are several "abliterated" (uncensored) versions available on Hugging Face. These models have undergone weight-editing processes to remove the internal "refusal" directions typically present in instruction-tuned LLMs.
+
+### **Qwen 2.5 Coder 3B Abliterated**
+There are multiple versions and formats of this model available, often maintained by community members:
+*   **Hugging Face Search:** You can find various implementations by searching for `Qwen2.5-Coder-3B-Instruct-abliterated`[1][2][3].
+*   **Formats:** Versions exist in **GGUF** (for local CPU/GPU inference via `llama.cpp`)[4][1][3], **EXL2**[2], and even **MNN** for on-device mobile deployment[5].
+*   **Creator/Source:** Notable contributors include `bartowski`[4], `criscar22`[1], and `huihui-ai`[2][6].
+
+### **Phi-4 Mini Abliterated**
+Because Phi-4-mini has a specific architecture that can make standard abliteration difficult (often requiring a "layer sweep" to locate the refusal crystallization point), specialized versions have been developed:
+*   **Hugging Face:** Search for `Phi-4-Mini-Abliterated`[7][8].
+*   **Key Repositories:**
+    *   `DuoNeural/Phi-4-Mini-Abliterated`[7]
+    *   `huihui-ai/Phi-4-mini-reasoning-abliterated`[9]
+    *   Various GGUF quantizations are also available from community uploaders[10][8][11].
+
+### **Gemma 4 Abliterated**
+Gemma 4 models (including the 12B and larger variants) have several abliterated/uncensored versions. Because these are multimodal models, some versions are specifically noted for preserving vision/audio capabilities alongside the text-based abliteration[12][13][14].
+*   **Hugging Face:** Look for `gemma-4-*-abliterated-uncensored`[12][15].
+*   **Key Repositories:**
+    *   `aoiandroid/gemma-4-12B-it-abliterated-uncensored`[12]
+    *   `mradermacher` provides widespread GGUF support for these models[15].
+    *   `huihui-ai` also offers various Gemma 4 abliterated models[16][17].
+
+### **Important Considerations**
+*   **Safety Warning:** Abliterated models have had their safety filters significantly reduced[6][16][18]. They may produce controversial, sensitive, or inappropriate content. They are generally intended for research, testing, or controlled environments[6][19].
+*   **Refusal Patterns:** Some researchers note that certain models (like Gemma 4) may exhibit "delayed refusal," where they provide a helpful introduction before refusing. Verify the documentation on the specific model card if you encounter unexpected behavior[14].
+*   **Verification:** Always check the "Model Card" on the Hugging Face page to ensure the model was abliterated using a methodology you trust (e.g., orthogonalization of the refusal direction)[19].
+
+Sources:
+[1] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEfRGhfnniSdH_rqMTJSfKJoe96nZH_TWW13_XpaxMo0Jpe393Z7h4Ol8jKLiERHaCf_uaH6lsqeYav77A87IAp_nDM3GTuiBq7nPtZDJtBqnTjQN-lAC_CXe1jkvXFhgiCVcHSqQsxto9ybPw5f_9cXQ=)
+[2] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzexp33WrrZFBqeY77BPkeqT_Jcog6C4tAPULElVMqETx5tbIk9NfvgACuwYVJvcfov5JVfzHGyVMWRbBoIaFK_ct0t_pv1ZnD2d90gJ6R1zLaIF0KT3vi011-XNW8ZaroKagPR7PY6khI_1cPWt4ub2HBO5mK26LQS5z3Ib7nP0mNeMH2AmNGaGLYmg0llv0=)
+[3] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsPJfg30MaceKKo8IN9BBEV9rRb0O09sJl1P9BqBA1eJsolHW45e0Phemak50QoUNNSUvlGxKXqbme4PJIpJ8crceAyVhHjpy3s_tHvvau0S6XqWpgyfb2QTP4ltejQsRsRBM7k1IhyhqnGad-cnj0XFlg0o7I5ZMBHDe7Mw==)
+[4] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkSVmf0tqingZFTFibHCSFL0lxMKpd4_M-M3jq9yHZH4myGxNCmNqWlABB48jee6Homnw7Us2Ic10DktHB1B4Kp9SS1y93DZs_AHhsMwgFXCBoWrsynma6iIMGAKUq3dt6ZB9AVPfZAp_e6cve1c9kg_3LtZ8AQOROlTyHAMzsbA==)
+[5] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDALZAtXP3YhC3J1GAxJhYP4nQb2nTCg30VP4OCKsLK2s74nZI7oX4wGuzEvrrTTboQpZcDb3tIDQoBe1oOV6d76mWhWJusKUnhOubUrK7vgSSEkibgZ80Hanet3LaYUU8o53Z5gyaQpj7_t_gNBGu_WEtp421Dkiwal1A)
+[6] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQTAY95k3IrClQLcl-9VPVrs04oX7lO94q7CfntgeFejiiVSzUyd3dDlLxD8fuhPeD3tjMb305_GuTNFp0Oy3KRC_Bc5Oc8ccorp2Y_y57dv5JLANzqMkm-DUIfnc3yGYXemhgwUhlJpjUgE7S)
+[7] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0F2nJ77u-uXDuwK1yXbMRBeRFcy5SKnQ1kUCImnR1_z1YDPqajp6HER7SpKsOISEAa1bJGXq8Pu5eQdW9Ecloy6RBaFjAQeClrIBK1TreQVHYNqwu06S1-XBr1flWWVHyNVwK2OX9ASqtmko=)
+[8] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbhsUTurPTj8FxabZ1EAKq1umW5FXxHgw0G_W0p5TOAerBzWMak5647BqtE4k2FUmloSZqdxGBrTeLRYZtDRNFWo_sqTEgdRmwWPc16S2ywJ7Cd4MHy7BcYIeB2TaQeN3knFgs4FY_NTQu0PVOY0cCZhT-8WF1er3idcQ=)
+[9] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2vKUL171G2QVDX_7jW789IpnUbQaJXp5NuKshwILIsDzOdWdGZC5y0RYp8dT9-n1fcd613aeye9hlzUqjUHlNx_2s7TmrvDYGuVKhEH3rIX0oo8ANWEAhswjSdDnAsIPP7thiTnn0zPvWF28ALnBW5CDQDgI3)
+[10] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcsCEyRLdUZzA94PjKH4l_JaQJu9JePWPe4oKlAVxk9IRnsNQcd_wLt_wJEAHvKHKsgApGYohXSvXndtsbYZXayWQuaUT-5fMasFDN3PKBmznaNSAQuo3TDqMWdRq7dFaEmooEebj1O1sZHfifCPZ2HC55it_EYA==)
+[11] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnTM7r2lpliAFHTpVjkfUTd1IdGrIS3CwFAQC-WVS57Y1wCUJB1sYEV_pJYdP1BvExJkdcZtYPBkVCCMXsAMYaY23mWibRpUJHuuZNgdDqra5dl8rmD0SSzhgWY2k6P5e367mDVm7HQyR2CUIhGmaxc3V9UPpvdLTA)
+[12] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbO7mC87J-KPbFPW2JmsKe5SyGXmOVqzf_fy_wqi8QQXVh7clIIO1bnmW3bFBzGOraevwtrGLEv5kX7h3Q1XI0-0qSqqkGEkPtyaU8yQnWLqMXM_j6kN4ES3ha5gVf_Sgoy8iLF3GU-1zRkMZSaxCcM5KvqOUuziz7ooJz)
+[13] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFs_xeXd20E-fPZehG1Wyz4AJlTwhDQAztza6OVT3Vs5DjWEyV_JjnYRt7ElifKwhnDncTWuULeFiAdXlsVlYTj5VxPn9wdJU7urGr1CFpM-JjG5I4sniUjyEzBV1M_lWrihgi18-4J1urWe9ci6KSFB5Wx)
+[14] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8OUg5jx8mGBHjsMJyiCiJ_qIkp48n8QEWH9F4KuVKsnL9N8OT4sq7A4trxwJd2m49fX37PuES9vXOgz-gwXNOyYxGTRdzeRJ7Yid9Kg2VCNMtI1_jfXPo0AiIwJQT9YQE-_7Fk2wHSyNKDzUcfp8w)
+[15] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0c2_Z8cBHEB1ckTCA7CbHxXDGkg7rqxC0a-k_308ngGkKvmwHxCouZ_S09Z0EqgbTcUB9YgUxjgcy04AIfca_84THR-_LOnA68oakz85sM9KckcnUNFpgbKfwRcIzT42fuizgULi9WH2HC3uhTlVOLVnwkIr7_2LTiWOCN5UrxgjHvQ==)
+[16] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7XIZnSrBZJ7zte8T1aJedSSTJjMQGfXqlteTbengOEbTL8ORugfUW5LQ7U-Flj6ht_8KwIScIz3AwqSy0UnNH7u34ZpPlRohjSWJbWK2tgQlZSP9-9hm2Nv5-reoTTVhKIv6GcgTJu2qUOe2lN3EbgXmECbABdg==)
+[17] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH16W72d1BgBfuHiaRgm6P0fEpvLDBu5CdsIqvy8f0sHAwwY_2X4o9gq9Ypj_tNM5TsdN3Q6NaXKt4xopUtBaRKp4As4iQ0Y0u9MOqq8USCxyUFJ5jyBza-XQ_E_kqSwKdXzyVA5g==)
+[18] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQTAY95k3IrClQLcl-9VPVrs04oX7lO94q7CfntgeFejiiVSzUyd3dDlLxD8fuhPeD3tjMb305_GuTNFp0Oy3KRC_Bc5Oc8ccorp2Y_y57dv5JLANzqMkm-DUIfnc3yGYXemhgwUhlJpjUgE7S)
+[19] [locallyuncensored.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmz4lrYILpo5BxO0BDwVP_1q4B4pvjGqnD5P9DFc1yBdlkY84a1cBF8JrpCBT8ZvUwEtxs4Wr0L1PEApPJW2PzvsB7PT5rjGmdWam7aFRP5uilkm5mPstDpyl_h5Vjtr893KQ3pCx95figpG5SVBlZxlEKcr8=)

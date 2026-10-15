@@ -1,0 +1,2 @@
+You have 1 active subagent(s):
+[{"role":"Colab Notebook Runner","type":"browser","conversationId":"8001e4f5-e986-47d4-806f-db213de61a87","transcript":"file:///C:/Users/k4ran/.gemini/antigravity/brain/8001e4f5-e986-47d4-806f-db213de61a87/.system_generated/logs/transcript.jsonl","state":"errored","stateDetail":"execution error: generating and executing: RESOURCE_EXHAUSTED (code 429): Resource has been exhausted (e.g. check quota)."}]

@@ -1,0 +1,38 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\config.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -43,6 +43,25 @@
+         description="Output format: rich, json, markdown, html"
+     )
+ 
++    # Agent configuration
++    max_agent_iterations: int = Field(
++        default=15,
++        description="Maximum ReAct reasoning steps per task"
++    )
++    agent_temperature: float = Field(
++        default=0.3,
++        description="Temperature for agent reasoning (slightly higher for diversity)"
++    )
++    memory_window: int = Field(
++        default=20,
++        description="Max messages to keep in agent conversation memory"
++    )
++    allowed_commands: List[str] = Field(
++        default=["python", "pip", "git", "cat", "type", "dir", "ls", "find",
++                 "grep", "rg", "fd", "wc", "head", "tail", "echo", "smartagent"],
++        description="Shell commands allowed in sandboxed agent execution"
++    )
++
+ 
+ def get_default_config() -> ScannerConfig:
+     """Retrieve scanner configuration from environment or defaults."""
+@@ -49,5 +49,5 @@
+     local_merged = Path("./outputs/Fluxnat-Coder-3B-Merged")
+-    model_path = str(local_merged) if local_merged.exists() else os.getenv("SMARTAGENT_MODEL", "fluxnat/Fluxnat-Coder-3B")
++    model_path = str(local_merged) if local_merged.exists() else os.getenv("SMARTAGENT_MODEL", "k4ran909/Fluxnat-Coder-3B")
+ 
+     return ScannerConfig(model_id=model_path)
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

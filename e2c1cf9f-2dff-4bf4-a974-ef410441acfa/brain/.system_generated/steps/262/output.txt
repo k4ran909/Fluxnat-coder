@@ -1,0 +1,25 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\merge_and_export.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -96,9 +96,18 @@
+         print("    To upload later: set HF_TOKEN=<your_token> and run push_to_hub.")
+         return
+ 
+-    print(f"[*] Authenticating with Hugging Face Hub for {repo_id}...")
+     from huggingface_hub import HfApi
+     api = HfApi(token=hf_token)
++    user_info = api.whoami()
++    username = user_info.get("name", "")
++    orgs = [org.get("name") for org in user_info.get("orgs", [])]
++
++    # If repo_id specifies fluxnat but user doesn't belong to fluxnat org, fallback to user namespace
++    if "fluxnat/" in repo_id and "fluxnat" not in orgs:
++        print(f"[!] Token does not belong to org 'fluxnat'. Using your personal namespace '{username}'...")
++        repo_id = f"{username}/Fluxnat-Coder-3B"
++
++    print(f"[*] Authenticating with Hugging Face Hub for {repo_id}...")
+     api.create_repo(repo_id=repo_id, repo_type="model", exist_ok=True)
+ 
+     print(f"[*] Uploading all model weights, configs, and tokenizer to {repo_id}...")
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

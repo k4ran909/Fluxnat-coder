@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+  TCP    127.0.0.1:9222         0.0.0.0:0              LISTENING       1732
+  TCP    127.0.0.1:9222         127.0.0.1:56258        ESTABLISHED     1732
+  TCP    127.0.0.1:56258        127.0.0.1:9222         ESTABLISHED     13704
+  TCP    127.0.0.1:61677        127.0.0.1:9222         TIME_WAIT       0
+  TCP    127.0.0.1:61683        127.0.0.1:9222         TIME_WAIT       0
+  TCP    127.0.0.1:61684        127.0.0.1:9222         TIME_WAIT       0
+  TCP    127.0.0.1:61685        127.0.0.1:9222         TIME_WAIT       0
+

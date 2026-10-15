@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+warning: in the working copy of 'docs/benchmarks.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/model.md', LF will be replaced by CRLF the next time Git touches it
+[main 936feda] docs: add model documentation and benchmarks
+ 2 files changed, 262 insertions(+)
+ create mode 100644 docs/benchmarks.md
+ create mode 100644 docs/model.md
+To https://github.com/k4ran909/Fluxnat-coder.git
+   31f143e..936feda  main -> main
+

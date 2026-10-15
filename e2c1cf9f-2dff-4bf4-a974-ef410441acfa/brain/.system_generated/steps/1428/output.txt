@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+FAILED http://127.0.0.1:9222/json/version: HTTP Error 404: Not Found
+FAILED http://127.0.0.1:9222/json/list: HTTP Error 404: Not Found
+FAILED http://127.0.0.1:9222/json: HTTP Error 404: Not Found
+

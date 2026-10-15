@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 9
+    print(f'Cell {idx} ({nb[" cells\][idx][\cell_type\]})')
+                            ^
+SyntaxError: unterminated string literal (detected at line 9)
+

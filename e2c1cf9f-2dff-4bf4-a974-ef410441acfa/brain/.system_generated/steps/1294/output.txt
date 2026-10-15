@@ -1,0 +1,40 @@
+
+The command exited with code 0.
+Output:
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MODEL_CARD.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark_suite.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'config/training_config.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/custom_cot/identity_alignment.jsonl', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'evaluate.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'merge_and_export.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'prepare_datasets.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pyproject.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'rebrand.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/__init__.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/agent/__init__.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/agent/core.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/agent/memory.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/agent/prompts.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/agent/tools.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/ai/__init__.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/ai/judge.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/ai/model.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/ai/prompts.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/cli.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/config.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/reporting/__init__.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/reporting/report.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/reporting/scorer.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/scanners/__init__.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/scanners/base.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/scanners/config_scanner.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/scanners/dependency_scanner.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/scanners/pattern_scanner.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/scanners/secret_scanner.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test_local_model.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test_refusal_free.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_scanners.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'train.py', LF will be replaced by CRLF the next time Git touches it
+

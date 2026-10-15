@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+[*] Authenticated as: k4ran909
+[*] Uploading MODEL_CARD.md to k4ran909/Fluxnat-Coder-3B/README.md...
+[OK] Successfully uploaded README.md to https://huggingface.co/k4ran909/Fluxnat-Coder-3B!
+

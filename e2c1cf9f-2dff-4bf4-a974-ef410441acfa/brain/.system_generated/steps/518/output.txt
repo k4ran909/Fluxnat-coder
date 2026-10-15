@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\refs\main 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\146024ea46ddf1c9890910ec121d36eb3064855e\tokenizer_config.json 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\17b3f3b95a72b33aa2a524860e08f4c1f5597544\config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\chat_template.jinja 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\generation_config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\model.safetensors.index.json 0.03 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\README.md 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\tokenizer.json 10.89 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\tokenizer_config.json 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\2138d916549ea600f77679b49a91321ba07664ee\tokenizer_config.json 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\chat_template.jinja 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\generation_config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\model.safetensors.index.json 0.03 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\README.md 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\tokenizer.json 10.89 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\tokenizer_config.json 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\chat_template.jinja 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\configuration_fluxnat.py 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\generation_config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\model.safetensors.index.json 0.03 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\modeling_fluxnat.py 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\README.md 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\tokenizer.json 10.89 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\tokenizer_config.json 0.01 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\generation_config.json 0.00 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\model.safetensors.index.json 0.03 MB
+C:\Users\k4ran/.cache/huggingface/hub/models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\tokenizer_config.json 0.01 MB
+

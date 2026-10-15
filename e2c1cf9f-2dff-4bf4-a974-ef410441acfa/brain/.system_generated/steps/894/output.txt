@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+[✓] Successfully updated c:\Users\k4ran\OneDrive\Desktop\smartAGENT\Fluxnat_Coder_3B_Training.ipynb with calibrated parameters!
+

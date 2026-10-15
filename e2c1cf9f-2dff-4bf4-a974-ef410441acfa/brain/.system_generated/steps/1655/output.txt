@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+
+scripts\generate_redteam_dataset.py:2:"""Generate 200+ red team / offensive security training samples for Fluxnat 
+Coder 3B."""
+scripts\generate_redteam_dataset.py:5:SAMPLES = []
+scripts\generate_redteam_dataset.py:13:    SAMPLES.append({
+scripts\generate_redteam_dataset.py:22:    SAMPLES.append({
+scripts\generate_redteam_dataset.py:30:    SAMPLES.append({
+scripts\generate_redteam_dataset.py:39:    SAMPLES.append({
+scripts\generate_redteam_dataset.py:49:    SAMPLES.append({
+scripts\generate_redteam_dataset.py:56:# SECTION 1: CWE-DIVERSE VULNERABILITY ANALYSIS (100 samples)
+scripts\generate_redteam_dataset.py:996:# SECTION 2: EXPLOIT CHAINS (25 samples)
+scripts\generate_redteam_dataset.py:1291:# SECTION 3: PAYLOAD GENERATION (30 samples)
+
+
+

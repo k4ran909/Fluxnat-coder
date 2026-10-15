@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+C:\Users\k4ran\AppData\Roaming\Python\Python314\site-packages\huggingface_hub\file_download.py:138: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+architectures: ['Qwen2ForCausalLM']
+attention_dropout: 0.0
+bos_token_id: 151643
+torch_dtype: bfloat16
+eos_token_id: 151645
+hidden_act: silu
+hidden_size: 2048
+initializer_range: 0.02
+intermediate_size: 11008
+layer_types: ['full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention', 'full_attention']
+max_position_embeddings: 32768
+max_window_layers: 70
+model_type: qwen2
+num_attention_heads: 16
+num_hidden_layers: 36
+num_key_value_heads: 2
+pad_token_id: 151665
+rms_norm_eps: 1e-06
+rope_parameters: {'rope_theta': 1000000.0, 'rope_type': 'default'}
+sliding_window: None
+tie_word_embeddings: True
+unsloth_fixed: True
+use_cache: True
+use_sliding_window: False
+vocab_size: 151936
+_name_or_path: fluxnat/Fluxnat-Coder-3B
+model_name: Fluxnat-Coder-3B
+model_author: Fluxnat
+

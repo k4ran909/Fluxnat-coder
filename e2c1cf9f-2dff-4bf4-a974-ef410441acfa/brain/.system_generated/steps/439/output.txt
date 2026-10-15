@@ -1,0 +1,21 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\config.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -11,12 +11,12 @@
+ class ScannerConfig(BaseModel):
+     # Model configuration
+     model_id: str = Field(
+-        default="fluxnat/Fluxnat-Coder-3B",
++        default="k4ran909/Fluxnat-Coder-3B",
+         description="Model ID on Hugging Face Hub or local path to merged weights"
+     )
+     fallback_model_id: str = Field(
+-        default="unsloth/Qwen2.5-Coder-3B-Instruct",
+-        description="Fallback base model if fine-tuned checkpoint is not yet available"
++        default="k4ran909/Fluxnat-Coder-3B",
++        description="Model checkpoint ID on Hugging Face"
+     )
+     load_in_4bit: bool = Field(
+         default=True,
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

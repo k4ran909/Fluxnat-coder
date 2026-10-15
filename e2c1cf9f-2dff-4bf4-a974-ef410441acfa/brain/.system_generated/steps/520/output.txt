@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Remote repo files: ['.gitattributes', 'README.md', 'chat_template.jinja', 'config.json', 'configuration_fluxnat.py', 'generation_config.json', 'model-00001-of-00002.safetensors', 'model-00002-of-00002.safetensors', 'model.safetensors.index.json', 'modeling_fluxnat.py', 'tokenizer.json', 'tokenizer_config.json']
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+['9222', '/devtools/browser/e27481d0-12e8-4400-9296-cd596f83c369']
+

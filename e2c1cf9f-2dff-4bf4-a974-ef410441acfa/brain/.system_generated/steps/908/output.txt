@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+[OK] Clean: Fluxnat_Coder_3B_Training.ipynb
+[OK] Clean: config/training_config.yaml
+[OK] Clean: train.py
+[OK] Clean: prepare_datasets.py
+[OK] Clean: data/custom_cot/security_cot.jsonl
+[OK] Clean: data/custom_cot/identity_alignment.jsonl
+Total forbidden string violations: 0
+

@@ -1,0 +1,44 @@
+
+The command exited with code 0.
+Output:
+commit c2b136ea7f2721250a09416e18d566f5e2c64470
+Author: k4ran909 <k4ran909@users.noreply.github.com>
+Date:   Wed Oct 7 12:40:35 2026 +0530
+
+    feat: add 170 red team training samples (exploit chains, payloads, attack techniques)
+    
+    - scripts/generate_redteam_dataset.py: Generator for 170 offensive security samples
+      - CWE-diverse vulnerability analysis (100 samples, 30+ CWEs, 13 languages)
+      - Exploit chains (25 multi-step chains: SQLi->RCE, SSRF->Cloud, XXE->SSRF, etc.)
+      - Payload generation (30 samples: reverse shells, web shells, injection payloads)
+      - Attack techniques (25 MITRE ATT&CK mapped techniques)
+      - Benign controls (15 secure code samples)
+    - data/custom_cot/redteam_cot.jsonl: 170 generated training samples
+    - prepare_datasets.py: Now loads redteam_cot.jsonl with 2x amplification
+      - Total dataset: 520 samples (494 train / 26 eval)
+    - Fluxnat_Coder_3B_Training.ipynb: Updated Step 4 (GitHub download) and Step 5 (max_steps=65, lr=8e-5)
+    - scripts/update_notebook_v2.py: Notebook update helper
+
+ Fluxnat_Coder_3B_Training.ipynb     |  495 ++--------
+ data/custom_cot/redteam_cot.jsonl   |  170 ++++
+ data/processed/eval_data.jsonl      |   35 +-
+ data/processed/train_data.jsonl     |  577 ++++++++---
+ prepare_datasets.py                 |   26 +
+ scripts/generate_redteam_dataset.py | 1784 +++++++++++++++++++++++++++++++++++
+ scripts/update_notebook_v2.py       |  195 ++++
+ 7 files changed, 2725 insertions(+), 557 deletions(-)
+
+commit c639b6952169d5ecfd6862271f287f00afc12b84
+Author: k4ran909 <k4ran909@users.noreply.github.com>
+Date:   Wed Sep 23 13:36:28 2026 +0530
+
+    feat: expand multi-language CWE dataset and update Colab training pipeline
+
+ Fluxnat_Coder_3B_Training.ipynb    | 426 +++++++++++++++----
+ data/custom_cot/security_cot.jsonl |  40 +-
+ data/processed/eval_data.jsonl     |  16 +-
+ data/processed/train_data.jsonl    | 260 +++++++-----
+ scripts/generate_cwe_dataset.py    | 836 +++++++++++++++++++++++++++++++++++++
+ scripts/update_notebook.py         | 134 ++++++
+ 6 files changed, 1495 insertions(+), 217 deletions(-)
+

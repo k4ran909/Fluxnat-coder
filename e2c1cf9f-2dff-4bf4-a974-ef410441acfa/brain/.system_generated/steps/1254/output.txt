@@ -1,0 +1,31 @@
+
+The command exited with code 0.
+Output:
+
+Name                            Length
+----                            ------
+downloaded_colab.ipynb          942260
+Fluxnat_Coder_3B_Training.ipynb  33213
+benchmark_suite.py               16025
+train.py                          9619
+prepare_datasets.py               7908
+MODEL_CARD.md                     7424
+scratch_colab_result.json         7189
+benchmark_results.json            7133
+rebrand.py                        6958
+colab_full_cells.json             6136
+extract_colab_cell.py             5698
+evaluate.py                       5483
+merge_and_export.py               5351
+test_local_model.py               4674
+README.md                         4349
+test_refusal_free.py              4290
+scratch_colab_eval.py             3804
+test_colab_js_api.py              3481
+scratch_colab_direct.py           2952
+extract_colab_full.py             2744
+check_cell16_state.py             1955
+pyproject.toml                    1055
+
+
+

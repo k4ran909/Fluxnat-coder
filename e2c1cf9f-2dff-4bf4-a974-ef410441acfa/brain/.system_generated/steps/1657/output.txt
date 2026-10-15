@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 1
+    import json; lines = open('data/custom_cot/redteam_cot.jsonl','r',encoding='utf-8').readlines(); print(f'Total samples: {len(lines)}'); valid=0; for l in lines: d=json.loads(l); valid+=1; print(f'Valid JSON: {valid}'); print('First sample instruction:', d.get('instruction','')[:80])
+                                                                                                                                                     ^^^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,25 @@
+
+The command exited with code 0.
+Output:
+                                                                               
+ Usage: python -m smartagent.cli [OPTIONS] COMMAND [ARGS]...                   
+                                                                               
+ SmartAGENT - AI-Powered Cybersecurity Vulnerability Scanner & Fluxnat Coder   
+ 3B Suite                                                                      
+                                                                               
+┌─ Options ───────────────────────────────────────────────────────────────────┐
+│ --help          Show this message and exit.                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌─ Commands ──────────────────────────────────────────────────────────────────┐
+│ scan   Perform an automated vulnerability audit on a project codebase.      │
+│ train  Launch local training or view Google Colab training instructions for │
+│        Fluxnat Coder 3B.                                                    │
+│ info   Display SmartAGENT environment and system status.                    │
+│ chat   Launch interactive agentic chat with Fluxnat Coder 3B.               │
+│        The agent can autonomously scan code, find vulnerabilities, and      │
+│        generate fixes.                                                      │
+│ agent  Run a one-shot agentic task. The agent executes autonomously and     │
+│        prints the result.                                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+

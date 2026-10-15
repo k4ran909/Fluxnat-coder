@@ -1,0 +1,30 @@
+
+The command exited with code 0.
+Output:
+0 markdown no-id # 🛡️ Fluxnat Coder 3B - Automated Google Colab Training Suit
+1 markdown no-id ## Step 1: Install Unsloth & Dependencies
+2 code no-id %%capture
+
+3 markdown no-id ## Step 2: Hugging Face Authentication
+
+4 code no-id import os
+
+5 markdown no-id ## Step 3: Load Model with Unsloth (4-bit QLoRA)
+6 code no-id from unsloth import FastLanguageModel
+
+7 markdown no-id ## Step 4: Prepare Cybersecurity Training Dataset
+8 code no-id import json
+
+9 markdown no-id ## Step 5: Execute Fine-Tuning
+10 code no-id from trl import SFTTrainer
+
+11 markdown no-id ## Step 6: Deep Rebranding & Standalone 16-Bit Model Merge
+12 code no-id import json
+
+13 markdown no-id ## Step 7: Push Model to Hugging Face Hub (`k4ran909/Fluxnat
+14 code no-id from huggingface_hub import HfApi
+
+15 markdown no-id ## Step 8: Interactive Test Drive
+16 code no-id # Switch model to inference mode
+
+

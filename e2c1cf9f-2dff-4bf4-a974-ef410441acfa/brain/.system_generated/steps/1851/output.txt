@@ -1,0 +1,33 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\agent
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        22-09-2026     17:14                __pycache__                                                          
+-a----        22-09-2026     17:10           8828 core.py                                                              
+-a----        22-09-2026     17:08           2266 memory.py                                                            
+-a----        22-09-2026     17:08           2057 prompts.py                                                           
+-a----        22-09-2026     17:31          21645 tools.py                                                             
+-a----        22-09-2026     17:08            182 __init__.py                                                          
+
+
+    Directory: C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\scanners
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        22-09-2026     02:22                __pycache__                                                          
+-a----        22-09-2026     02:20           1606 base.py                                                              
+-a----        22-09-2026     02:20           4868 config_scanner.py                                                    
+-a----        22-09-2026     02:20           4845 dependency_scanner.py                                                
+-a----        22-09-2026     02:22           4949 pattern_scanner.py                                                   
+-a----        22-09-2026     02:20           4125 secret_scanner.py                                                    
+-a----        22-09-2026     02:20            617 __init__.py                                                          
+
+
+

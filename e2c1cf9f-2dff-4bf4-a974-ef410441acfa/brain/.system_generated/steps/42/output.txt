@@ -1,0 +1,31 @@
+The search for "Dolphin 3.0 Qwen 2.5 3B uncensored ollama huggingface specific model name 2025 2026" returned the following summary:
+The **Dolphin 3.0 Qwen 2.5 3B** model is part of the Dolphin 3.0 collection curated and trained by Cognitive Computations (led by Eric Hartford)[1][2].
+
+### Hugging Face Repository
+The primary (base) model can be found on Hugging Face under the organization `dphn`:
+*   **Model Name:** `dphn/Dolphin3.0-Qwen2.5-3b`[1][3]
+
+For users looking for pre-quantized versions (GGUF format) suitable for local inference engines like LM Studio or llama.cpp, you can typically find them under these accounts:
+*   `bartowski/Dolphin3.0-Qwen2.5-3b-GGUF`[2][4]
+*   `QuantFactory/Dolphin3.0-Qwen2.5-3b-GGUF`[5][6]
+
+### Ollama
+To run this model directly in **Ollama**, you can use community-provided ports. One common repository for this model on Ollama is:
+*   **Command:** `ollama run nchapman/dolphin3.0-qwen2.5:3b`[2][7]
+*   Alternatively, other users have uploaded versions such as `sam860/dolphin3-qwen2.5:3b-Q4_K_M`[8][9].
+
+### Key Characteristics
+*   **Uncensored:** As part of the Dolphin series, this model is designed to be "uncensored" and steerable, meaning it is intended to follow the user's instructions without imposing external moralizing, disclaimers, or alignment guidelines[1][10].
+*   **Purpose:** It is optimized for general-purpose tasks, including coding, mathematics, agentic workflows, and function calling[1][7].
+
+Sources:
+[1] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFm2UZlO5USvYDxqeb79mT69p91Ujsk2qPDOxtF14lNCn6A2H2bQKd7mIeAe7xUlE1UjTP0NLpcNsDgS7tybeoMUAdVVyDOs0gOP-BiUaB58yl9d9Mf5g_tU_OiYiiZN_66RUlDgZLl)
+[2] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9FrHDacXs4vM3HRjE2DzmBlEA3MnjIJROLJpBPD17awDwc_6Z4PC-4DBIR8ZnNM-sPRmRBd2aDL6UPuYFmpz-ROuJYjojOz6aAQ1-0AKTp8zt6Wfuo0oiIxnxXTCzd6eYKwrLEeY2)
+[3] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPRWzWXhmGJ4E4sMXacPOwLhUUaOr84eMUwfO8SBsRelR_cxfA0uyJvHJNBuZn1wB5p6bY3vTN5Uihp3PyLcYJZjhO-38D3GsQLMMFzI_ww0W9AYB_xMGQ9IvGPF8PYGCp9XoEdPBLQ8DoqEzySKVEZQ==)
+[4] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKwJT1WNFTqVjOQ9zGOqOPbtD0Uty54SWtyKeMaY586HZ0RlOG56nvH6G1GV-JBDhCsVbXxHJTBP0pVFpuwo-i930TaoPEGD494oW0s97hl4Z1D3PiLiRn89kfhhh2hG9B5K1IxdgdIVJG9Ntv2Vn9ZQ==)
+[5] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5TYwuOOTeOlFM1UaKyMY6my6YcfbNrYpZ-WGbctc-jbdQLK6YuRwVzpFOAMjFD9KxpLd4oD1fCkCvQeW_jpxX119td33gAyYE-L9pClrWQXTLGooGQT09abV7NexLGj-_uHplCZJextykdN-pVrg3igaiKQ==)
+[6] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5TYwuOOTeOlFM1UaKyMY6my6YcfbNrYpZ-WGbctc-jbdQLK6YuRwVzpFOAMjFD9KxpLd4oD1fCkCvQeW_jpxX119td33gAyYE-L9pClrWQXTLGooGQT09abV7NexLGj-_uHplCZJextykdN-pVrg3igaiKQ==)
+[7] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9FrHDacXs4vM3HRjE2DzmBlEA3MnjIJROLJpBPD17awDwc_6Z4PC-4DBIR8ZnNM-sPRmRBd2aDL6UPuYFmpz-ROuJYjojOz6aAQ1-0AKTp8zt6Wfuo0oiIxnxXTCzd6eYKwrLEeY2)
+[8] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh_cCyVuF8dZRG3k3-s8hEjf_W6iCg_-xJFZMlEXziCJhem6R0jrc7M8ZNvYo0F2t2o85hP2CF0ZM2F2iQNiQa0F342s8QUbkvn09xoSBRStx2oYGJekHKKBv-yeCzezd-kE5GvLT5u6VF)
+[9] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHn-qVh4ukmbeNtbXArLUkflF76R-JmfXCmP2WU5yQl-oRSTLjeKLpnmXJqmJ7uJDFJ13bDxFf89ISt1o69qfAP4zY112OqJzPcZHNKWxOFm9iX1kGS0pHFUvr_1MYcrLGbva0=)
+[10] [ollama.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8peuSBR3BI1ZcD-9_r2WUYRO4QG9hZJ8T5De1zfuHv7fFyST3SBLF4sh6-95o2Cfe4wll-p5eWwAvomMH1sEhISw5aOg-cYH5FczgKJuT3Bk2CgGCjulWIDistlUibuQOh3c4la7ie8b1D764M5fgi28XuDMhTH1PSQ==)

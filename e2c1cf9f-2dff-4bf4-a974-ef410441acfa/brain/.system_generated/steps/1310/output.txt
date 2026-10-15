@@ -1,0 +1,15 @@
+
+The command exited with code 1.
+Output:
+At line:1 char:19
++ git add README.md && git commit -m "fix: rewrite README to focus on S ...
++                   ~~
+The token '&&' is not a valid statement separator in this version.
+At line:1 char:100
++ ...  rewrite README to focus on SmartAGENT as agentic product" && git pus ...
++                                                                ~~
+The token '&&' is not a valid statement separator in this version.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine
+ 
+

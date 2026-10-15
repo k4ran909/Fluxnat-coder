@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Connecting directly to page ws: ws://127.0.0.1:9222/devtools/page/3C18718FA3A36C9DF9AB624E51561BAC...
+Error: server rejected WebSocket connection: HTTP 403
+

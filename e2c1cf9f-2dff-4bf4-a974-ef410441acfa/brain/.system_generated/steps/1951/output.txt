@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\cli.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -164,7 +164,7 @@
+         f"[bold white]GPU Device:[/bold white] {device_name}\n"
+         f"[bold white]VRAM:[/bold white] {vram}\n"
+         f"[bold white]Active Scanners:[/bold white] {', '.join(s.name for s in ALL_SCANNERS)}\n"
+-        f"[bold white]Agent Mode:[/bold white] [green]Available[/green] (ReAct loop with 8 tools)",
++        f"[bold white]Agent Mode:[/bold white] [green]Available[/green] (ReAct loop with 13 tools including Red Team suite)",
+         title="[bold cyan]ℹ️ SmartAGENT System Status[/bold cyan]",
+         expand=False
+     ))
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

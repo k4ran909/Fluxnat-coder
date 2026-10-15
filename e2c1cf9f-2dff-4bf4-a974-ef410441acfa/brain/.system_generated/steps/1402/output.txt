@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+[main c639b69] feat: expand multi-language CWE dataset and update Colab training pipeline
+ 6 files changed, 1495 insertions(+), 217 deletions(-)
+ create mode 100644 scripts/generate_cwe_dataset.py
+ create mode 100644 scripts/update_notebook.py
+

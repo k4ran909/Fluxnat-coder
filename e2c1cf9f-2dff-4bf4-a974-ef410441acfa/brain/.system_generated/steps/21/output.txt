@@ -1,0 +1,33 @@
+The search for "best open source SLM cybersecurity fine-tuned model 2026 vulnerability scanner" returned the following summary:
+In 2026, the landscape for open-source cybersecurity models and vulnerability scanners has shifted toward **specialized fine-tuned Small Language Models (SLMs)** and **agentic frameworks** that can execute security tools autonomously.
+
+Because vulnerability scanning is a multi-step process (discovery, analysis, and validation), there is no "single" model that acts as a standalone scanner. Instead, the current "best practice" involves using an **agentic platform** or **fine-tuned SLM** integrated with traditional security engines.
+
+### 1. Fine-Tuned SLMs for Cybersecurity
+Recent advances have made smaller models (typically 7B to 30B parameters) highly effective for cybersecurity, often outperforming general-purpose frontier models on specific tasks due to their ability to be fine-tuned for specialized, private, or local deployments.
+
+*   **Qwen-3.5 (27B) & Gemma-4 (26B/31B) Variants:** These are frequently cited as the top base architectures for cybersecurity fine-tuning. Research indicates that fine-tuning these models (e.g., as seen in projects like *Novee*) allows them to achieve up to 80% of the exploit-rate performance of massive frontier models at a fraction of the cost.
+*   **Cisco's Foundation-Sec-8B:** A notable example of a model further trained specifically on cybersecurity material (threat intelligence and vulnerability mapping), showing stronger performance on domain-specific tasks than its base architecture.
+*   **Kimi K2.6 / K3:** Recognized in 2026 for high-end reasoning and coding capabilities, often used as the "brains" in automated security workflows.
+
+### 2. Best Open-Source "Vulnerability Scanning" Agents
+Rather than just "models," the industry is using **agentic tools** that leverage LLMs/SLMs to drive traditional scanners (like `nmap`, `Burp Suite`, or `sqlmap`) and interpret the results.
+
+*   **OpenAnt:** An open-source, LLM-powered vulnerability discovery tool that goes beyond flagging by attempting to "attack" the code to verify findings, reducing false positives.
+*   **Darkmoon:** A popular open-source autonomous AI pentest platform. It operates as an MCP (Model Context Protocol) host and can orchestrate over 80 security tools with a focus on Active Directory and Kubernetes.
+*   **Garak:** The standard open-source "vulnerability scanner" specifically for LLMs. It probes models for weaknesses like prompt injection, jailbreaks, and data leakage, functioning similarly to how `nmap` functions for networks.
+*   **Augustus:** A tool designed to run 210+ adversarial probes against LLMs to test the robustness of their safety training against real-world exploits.
+
+### 3. Comparison of Approaches
+
+| Use Case | Recommended Approach |
+| :--- | :--- |
+| **Local Vulnerability Analysis** | Use a fine-tuned **Qwen-3.5 27B** or **Gemma-4 31B** on your own hardware to avoid API costs and data privacy risks. |
+| **AI/LLM Application Security** | Use **Garak** or **Augustus** to perform adversarial testing on your own AI models. |
+| **Autonomous Pentesting** | Use **Darkmoon** or **OpenAnt** to automate the end-to-end process of discovery, exploitation, and validation. |
+
+### Summary Recommendation
+For 2026, do not look for a single model to "scan" vulnerabilities. Instead:
+1.  **Select a Base SLM:** Choose **Qwen-3.6 (27B)** (Apache 2.0 license) or **Gemma-4 (31B)** if you need to perform local, private analysis.
+2.  **Use an Agentic Framework:** Integrate that model with an agentic orchestration tool like **Darkmoon** or **OpenAnt** to handle the actual tool execution, tool-use, and state-management required for effective vulnerability scanning.
+3.  **Evaluate via Benchmarks:** For the latest performance data on how these models handle specific security tasks, refer to the **[Cyber Benchmarks Compared](https://benchlm.ai/)** site, which tracks model performance across *CyberGym*, *CWE-Bench*, and other relevant security protocols.

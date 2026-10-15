@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Found Step 4 at cell index: 8
+

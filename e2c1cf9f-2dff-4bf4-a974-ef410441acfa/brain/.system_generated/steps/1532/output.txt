@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Connecting to ws://127.0.0.1:9222/devtools/browser/25a8f755-6780-4694-b7aa-32d603640dd1...
+Failed: <class 'websockets.exceptions.InvalidStatus'> server rejected WebSocket connection: HTTP 500
+

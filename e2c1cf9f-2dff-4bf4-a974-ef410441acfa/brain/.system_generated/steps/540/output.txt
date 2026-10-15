@@ -1,0 +1,152 @@
+
+The command exited with code 0.
+Output:
+
+
+LocalAddress  : ::
+LocalPort     : 58481
+RemoteAddress : ::
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : ::
+LocalPort     : 58476
+RemoteAddress : ::
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 2405:201:6813:10ea:bcbe:a2d0:cabf:5f4e
+LocalPort     : 58481
+RemoteAddress : 2600:9000:213c:f000:17:b174:6d00:93a1
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 2405:201:6813:10ea:bcbe:a2d0:cabf:5f4e
+LocalPort     : 58476
+RemoteAddress : 2600:9000:213c:f000:17:b174:6d00:93a1
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58491
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58490
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58489
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58488
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58487
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58486
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58485
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58484
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58483
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 58482
+RemoteAddress : 0.0.0.0
+RemotePort    : 0
+State         : Bound
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58491
+RemoteAddress : 52.221.162.66
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58490
+RemoteAddress : 52.221.162.66
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58489
+RemoteAddress : 52.221.162.66
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58488
+RemoteAddress : 52.221.162.66
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58487
+RemoteAddress : 100.57.180.108
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58486
+RemoteAddress : 100.57.180.108
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58485
+RemoteAddress : 100.57.180.108
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58484
+RemoteAddress : 100.57.180.108
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58483
+RemoteAddress : 100.57.180.108
+RemotePort    : 443
+State         : Established
+
+LocalAddress  : 192.168.29.57
+LocalPort     : 58482
+RemoteAddress : 100.57.180.108
+RemotePort    : 443
+State         : Established
+
+
+
+

@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+
+TotalVisibleMemorySize FreePhysicalMemory
+---------------------- ------------------
+              16610168            6010956
+
+
+

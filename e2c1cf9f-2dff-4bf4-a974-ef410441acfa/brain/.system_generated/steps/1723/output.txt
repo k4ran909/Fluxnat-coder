@@ -1,0 +1,60 @@
+
+The command exited with code 0.
+Output:
+
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:68:    uid=1_62 link "Step 5: Execute Fine-Tuning" 
+url="https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=Step_5_Execute_Fine_Tuning"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:69:      uid=1_63 StaticText "Step 5: Execute Fine-Tuning"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:71:    uid=1_65 button "Open menu for Step 5: Execute Fine-Tuning" expandable haspopup="menu"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:72:    uid=1_66 link "Step 6: Deep Rebranding & Standalone 16-Bit Model Merge" url="https://colab.research.goo
+gle.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=Step_6_Deep_Rebranding_Standalone_16_Bit_Model_Merge"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:73:      uid=1_67 StaticText "Step 6: Deep Rebranding & Standalone 16-Bit Model Merge"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:75:    uid=1_69 button "Open menu for Step 6: Deep Rebranding & Standalone 16-Bit Model Merge" expandable 
+haspopup="menu"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:76:    uid=1_70 link "Step 7: Push Model to Hugging Face Hub (fluxnat/Fluxnat-Coder-3B)" url="https://colab.re
+search.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=Step_7_Push_Model_to_Hugging_Face_Hub_fluxnat_Fluxna
+t_Coder_3B_"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:77:      uid=1_71 StaticText "Step 7: Push Model to Hugging Face Hub ("
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:81:    uid=1_75 button "Open menu for Step 7: Push Model to Hugging Face Hub (fluxnat/Fluxnat-Coder-3B)" 
+expandable haspopup="menu"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:124:      uid=1_118 button "Run cell" description="Run cell (Ctrl+Enter) cell executed since last change 
+executed by Karan 12:45?PM (0 minutes ago) executed in 70.741s"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:152:      uid=1_142 button "Run cell" description="Run cell (Ctrl+Enter) cell executed since last change 
+executed by Karan 12:45?PM (0 minutes ago) executed in 1.617s"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:248:      uid=1_221 button "Run cell" description="Run cell (Ctrl+Enter) cell executed since last change 
+executed by Karan 12:47?PM (0 minutes ago) executed in 100.094s"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:733:      uid=1_660 button "Run cell" description="Run cell (Ctrl+Enter) cell executed since last change 
+executed by Karan 12:47?PM (0 minutes ago) executed in 0.085s"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:2654:    uid=1_2387 region "Cell 9: Text cell: Step 5: Execute Fine-Tuning"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:2655:      uid=1_2388 button "Collapse 1 child cell under Step 5: Execute Fine-Tuning (Press <Shift> to also 
+collapse sibling sections)"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:2656:      uid=1_2389 heading "Step 5: Execute Fine-Tuning" level="2"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:2658:      uid=1_2391 button "Run cell" description="Run cell (Ctrl+Enter) cell executed since last change 
+executed by Karan 12:49?PM (0 minutes ago) executed in 132.74s"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:2882:    uid=1_2553 region "Cell 11: Text cell: Step 6: Deep Rebranding & Standalone 16-Bit Model Merge"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:2883:      uid=1_2554 button "Collapse 1 child cell under Step 6: Deep Rebranding & Standalone 16-Bit Model 
+Merge (Press <Shift> to also collapse sibling sections)"
+C:\Users\k4ran\.gemini\antigravity\brain\8001e4f5-e986-47d4-806f-db213de61a87\.tempmediaStorage\snapshot_full_179135876
+1991.txt:2884:      uid=1_2555 heading "Step 6: Deep Rebranding & Standalone 16-Bit Model Merge" level="2"
+
+
+

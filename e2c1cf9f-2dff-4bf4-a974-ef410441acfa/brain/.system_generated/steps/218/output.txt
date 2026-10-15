@@ -1,0 +1,34 @@
+The search for ""Qwen2.5-Coder-3B-Instruct" abliterated huggingface" returned the following summary:
+Yes, there are several "abliterated" versions of the **Qwen2.5-Coder-3B-Instruct** model available on Hugging Face[1][2][3].
+
+### What "Abliterated" Means
+In the context of AI models, **"abliterated"** refers to a model that has undergone a specific post-training modification to remove its refusal behavior (often called "safety alignment")[4].
+*   **The Technique:** Researchers have identified a specific "refusal direction" in the model's activation space[5][6]. By surgically projecting the model's weights to be orthogonal to this direction, the model loses its tendency to refuse or deflect certain prompts while typically retaining its core knowledge and reasoning capabilities[7][4].
+*   **Purpose:** These models are often used by researchers for red-teaming, security analysis, or by developers who want to remove the model's "guardrails" to improve instruction-following for tasks that are sometimes falsely flagged as harmful by standard models[8][7][9].
+
+### Where to Find Them
+You can find various versions of this model on Hugging Face, including different quantizations (such as GGUF or EXL2) suitable for running locally on consumer hardware[10][3][11].
+
+*   **Search Query:** To see all available versions, you can go to [Hugging Face](https://huggingface.co/) and search for `Qwen2.5-Coder-3B-Instruct abliterated`[6].
+*   **Notable Repositories:**
+    *   **huihui-ai** has created various abliterated versions of the Qwen series[3][12].
+    *   **bartowski** and **mradermacher** often provide GGUF (quantized) versions which are highly convenient for running in tools like Ollama or llama.cpp[10][11].
+    *   **criscar22** also hosts versions of this specific model[1][13].
+
+When using these models, keep in mind that they are modified versions of the base `Qwen/Qwen2.5-Coder-3B-Instruct` model and are generally intended for research and analytical purposes[14][9].
+
+Sources:
+[1] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-PiUGYwTb3TZEETy9hRMuCpQfUHHi_e-GQ2IqgwoVRhX66CHMJ_FhJEZIAUbsaXQ_xl1KgIISw3GLDOYyKRgy3pRuFpsVlyKGyBqbAvsCa4HMtK6j7zErl_Rj6K_Yni_DHODe9kIz5hM-k_hqaA4oQSnQ)
+[2] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzhgfjbIFldfnLEPVePxRCXmTHqQnAdpQXZlHNlDQw9VC9N1CihqPqNN9swOTADpMSxRo5YNJABgmdbZ4r8QR6-ZfORQsfQKt1Dlqd36YMR3f7QXAB9hNH574tyRuRyD4_1lXb8aAPUNtchaeXs5i8qqK0r47HrtLQ4RdmIQ==)
+[3] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkj1HfxWpGYUFLB0vqC7FMdxPN4CyY8GYlEQxuLoxPWK3ZGB3bWRYlFZ3OurGCXYVosz5RRzJ7wPMOhnamoZ4MYCf4aG7BXmlE8uyoHqlndUiA8Hf3z69sFoS6wAVGcB1f9QogZ0V5Mj7XZcX_AIy4qM8jmnsO5VJB5fLpLMZuJO-lTZsq5aRCLL4RXezhJtLJ)
+[4] [webdecoy.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFUcS9hzmuWneojfAJTHrZbmJV7MVyBF6SpBo01r6sFn2JPWxmcq7lalSbZYN7RaIc6Bm8YYRUou1DBpfZcIvC82UCQK3F149tkB0AeYhdH449NchKjunceWksKX3GA7xlMF4lFgrj7RTKcs19B23gcH9pEeQIqOyhsurWTuiFbC-qKJ3I)
+[5] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKbtj9J6YLJC7aZwKmnGnqAVTlVWrmnLVPBaGVmFI7LOJJA7eGgp4PSPlurHJ4kYyNjSZjkAbxLkbgyvVM2GzDhuEr-F_FJWcgbKjcqfOwDxOKJU2O2OXb17O7boS_iThVG_X6twkL)
+[6] [bswen.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFblyR-WCfsnM8xWS855UW1Vwn52NP2UiSzuEBMuOw6Fn14IK1n0Vw-6_R3T_s6h1ZGA6jGpvb0xfKmvuuYAaFtVl6qz2UIIMQAqtsmrl5wrNl6ytPiN0rlq4B-nFFQJGbWNhLqzwXiKdwBAWG4ZMEEXA-uZH2WgZEw8aY=)
+[7] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGj5XP18T0_FTibH_7brvH3KtULYRFL4X3TgxuCmkJ1j47md7H_p97r5PeLisDG6H7IYOIxyRT0VxZDLusv5CBxWw-wib796et6RLiNV0eq8kmpRJME0cD6Hy666CkjFbdL8EpUpn5VvWtZAbUPZ6SjCNtv)
+[8] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0gQBYgsLRExHVTRNASQsr2wsuY__yTJOKNf6L5tw3mmSpiEP7NevSecF-7UZmrjAOCKxxSRLLf8oo6gUqrCCkib_uXpybBh0LqL7_U8QORswm9rpj8wFX1Es74XAnujBTfJwuilxbk31NeKJJykZt)
+[9] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZYhoOUdmkhe611AzQyq5GHR7bCoLFlDh8TWVHzyfGYeD_9d54YV_a0jrK9BqLBJ-efhDQ_rNUtfXL_9DxpDNWUnM_5E8XwKsOCafY-l8Mz58HLtNiJbwxjyAIpbopOrTqS59KEp6luxl-4dqjtlhPdk7Unao=)
+[10] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4Svbvl_OGEXQwL_u_oSbv3g1d3k4rXf4CX_U7itQiHCj1R4GYKutsXa1aKIL8lwhx1n4RCkhSOUUjSITIkJmp83pBeZq162q4MqAvymTFvJ-xfs_vBlPOyRxUaMVnacmiAETErzTYvgDKrS2vGE6c_JaI7caruxxs_Bhu30EE_EM=)
+[11] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9v3EnDsQCTW0XuwNIpZb62kdxW7rlgYA_AQsFgqFipwdgAp47za28DhTkpLGBtOLF7fKkqrzP4PiatxLHsigFVRXqAgFZmdPPr-iet5I05V742vee-qMkYBgFGGZTTApdZHzN9BH6YjH4khKBlF0J6vhunZH-HvjGkVPWQZZkawHMxoxIEhLC9sxCVjW7Jntg3tpHww0dMqb_li8N)
+[12] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAY76zqcZz2IrCRVZXEdA-BrUp0frak4FrEUUTr-_CkmUyaavaPPxuDJeQkKOpmQbIKahhAWf6UqnCfzSK51v2kJEeMAANLJ3pRvfFaAMxXdIQDqm7I0wRtlB8J0tAXQpe-N7CFvwdyflwYuK4h1RX6ZafqlZUiKW1pA==)
+[13] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-PiUGYwTb3TZEETy9hRMuCpQfUHHi_e-GQ2IqgwoVRhX66CHMJ_FhJEZIAUbsaXQ_xl1KgIISw3GLDOYyKRgy3pRuFpsVlyKGyBqbAvsCa4HMtK6j7zErl_Rj6K_Yni_DHODe9kIz5hM-k_hqaA4oQSnQ)
+[14] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpPX676Ph30d0WeNqzow82l2EPmvZW8yZm64yPs7AMycpifE4ptQiRX6tYzWd6d2p_EfXJ_ejYtiwmRtft6X77jJtjDE3kIjb7CZGeC7yEp3WUxijPsjA2zoQf6NPo82u-0Dxh8NhSQMfT2w==)

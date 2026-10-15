@@ -1,0 +1,23 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\nav_correct.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -28,9 +28,14 @@
+             "method": "Target.attachToTarget",
+             "params": {"targetId": colab_id, "flatten": True}
+         }))
+-        attach_res = json.loads(await ws.recv())
+-        print("Attach response:", attach_res)
+-        session_id = attach_res["result"]["sessionId"]
++        session_id = None
++        while not session_id:
++            msg = json.loads(await ws.recv())
++            if msg.get("method") == "Target.attachedToTarget":
++                session_id = msg["params"]["sessionId"]
++            elif msg.get("id") == 2:
++                session_id = msg.get("result", {}).get("sessionId")
++        print(f"Extracted session_id: {session_id}")
+         
+         # Navigate using sessionId
+         await ws.send(json.dumps({
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

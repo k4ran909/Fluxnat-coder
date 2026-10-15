@@ -1,0 +1,20 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\test_page_ws.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -13,7 +13,13 @@
+     ws_url = f"ws://127.0.0.1:9222/devtools/page/{target_id}"
+     print(f"Connecting to {ws_url}...")
+     try:
+-        async with websockets.connect(ws_url, origin=None, open_timeout=5) as ws:
++        # In modern Chrome, CDP requires Host: localhost:9222 or 127.0.0.1:9222
++        async with websockets.connect(
++            ws_url,
++            additional_headers={"Host": "localhost:9222"},
++            origin="http://localhost:9222",
++            open_timeout=5
++        ) as ws:
+             print("[+] Connected successfully to page WS!")
+             
+             # Navigate to target URL
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

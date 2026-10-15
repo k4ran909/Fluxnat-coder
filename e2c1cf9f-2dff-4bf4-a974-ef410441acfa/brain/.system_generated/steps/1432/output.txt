@@ -1,0 +1,11 @@
+
+The command exited with code 0.
+Output:
+
+   Id ProcessName Path                                                             
+   -- ----------- ----                                                             
+13704 Antigravity C:\Users\k4ran\AppData\Local\Programs\antigravity\Antigravity.exe
+ 1732 chrome      C:\Program Files\Google\Chrome\Application\chrome.exe            
+
+
+

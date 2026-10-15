@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+"C:\Users\k4ran\AppData\Local\uv\cache\archive-v0\K-nGJrJoDfzLPpLt\Scripts\python.exe" "C:\Users\k4ran\AppData\Local\uv\cache\archive-v0\K-nGJrJoDfzLPpLt\Scripts\colab-mcp.exe"
+

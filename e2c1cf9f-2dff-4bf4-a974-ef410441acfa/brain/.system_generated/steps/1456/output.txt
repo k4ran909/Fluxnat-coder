@@ -1,0 +1,23 @@
+
+The command exited with code 1.
+Output:
+Found existing Colab target: C03ECEA6081E40A6F37E5985851F3101
+Attach response: {'method': 'Target.attachedToTarget', 'params': {'sessionId': 'F16B0AAE4AADEAC9C8267DF37ED1C94B', 'targetInfo': {'targetId': 'C03ECEA6081E40A6F37E5985851F3101', 'type': 'page', 'title': 'Google Colab', 'url': 'https://colab.research.google.com/', 'attached': True, 'canAccessOpener': False, 'browserContextId': 'FA63897C0BD88F699278223229687E52'}, 'waitingForDebugger': False}}
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\nav_correct.py", line 67, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\nav_correct.py", line 33, in main
+    session_id = attach_res["result"]["sessionId"]
+                 ~~~~~~~~~~^^^^^^^^^^
+KeyError: 'result'
+

@@ -1,0 +1,114 @@
+
+The command exited with code 0.
+Output:
+<truncated 13 lines>
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=250) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=400) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=400) and `max_length`(=32768) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+
+[+] Model successfully initialized for benchmarking.
+
+
+================================================================================
+ BENCHMARK SUITE 1: Multi-Language CWE Vulnerability Detection & Identification
+================================================================================
+ID        | Lang     | Test Scenario                  | Expected  | Result     | Status
+--------------------------------------------------------------------------------
+CWE-TC1   | Python   | SQL Injection in User Query    | CWE-89    | CWE-89     | PASSED [OK] (120.0s)
+CWE-TC2   | JavaScri | OS Command Injection via Child | CWE-78    | CWE-78     | PASSED [OK] (209.5s)
+CWE-TC3   | Go       | Path Traversal in Static File  | CWE-22    | CWE-22     | PASSED [OK] (194.6s)
+CWE-TC4   | Java     | Insecure Deserialization via O | CWE-502   | DETECTED   | FAILED [X] (165.9s)
+CWE-TC5   | PHP      | Reflected Cross-Site Scripting | CWE-79    | DETECTED   | FAILED [X] (154.6s)
+CWE-TC6   | Python   | Server-Side Request Forgery (S | CWE-918   | DETECTED   | FAILED [X] (173.4s)
+CWE-TC7   | C        | Buffer Overflow via Unbounded  | CWE-120   | DETECTED   | FAILED [X] (138.5s)
+CWE-TC8   | Python   | Hardcoded AWS API Secret Key   | CWE-798   | DETECTED   | FAILED [X] (165.9s)
+
+================================================================================
+ BENCHMARK SUITE 2: False Positive Resistance Benchmark (Clean & Safe Code)
+================================================================================
+ID        | Lang     | Scenario                            | Classification  | Status
+--------------------------------------------------------------------------------
+BEN-TC1   | Python   | Parameterized SQL Query with Psycop | FALSE POSITIVE  | FAILED [X] (151.7s)
+BEN-TC2   | Python   | Safe Subprocess with Argument List  | FALSE POSITIVE  | FAILED [X] (162.1s)
+BEN-TC3   | Go       | Safe File Serving with filepath.Cle | FALSE POSITIVE  | FAILED [X] (182.2s)
+BEN-TC4   | JavaScri | Safe HTML Output Encoding via DOM E | FALSE POSITIVE  | FAILED [X] (158.2s)
+
+================================================================================
+ BENCHMARK SUITE 3: Secure Code Remediation & Patch Generation Benchmark
+================================================================================
+
+[*] Evaluating: Remediation for Python eval() Dynamic Execution
+Result: PASSED [OK] (Completed in 122.9s)
+------------------------------------------------------------
+### Security Assessment by Fluxnat Coder 3B
+
+**Severity:** Critical (CVSS 9.8)
+**Vulnerability:** Arbitrary Command Execution / Arithmetic Expression Evaluation
+**CWE:** CWE-78
+
+#### Root Cause & Reasoning:
+1. `user_expr` accepts strings containing multiple commands or arithmetic operations.
+2. `eval()` executes arbitrary Python code passed as a string.
+
+#### Secure Remediation:
+```python
+import ast
+
+def calculate_formula(user_expr):
+    # Safe evaluation of arithmetic expressions
+    try:
+        return ast.literal_eval(user_expr)
+    except (ValueError, SyntaxError):
+        return "Error: Invalid input"
+```
+------------------------------------------------------------
+
+[*] Evaluating: Remediation for Weak Cryptographic Hash (MD5 for Passwords)
+Result: PASSED [OK] (Completed in 181.9s)
+------------------------------------------------------------
+### Security Assessment by Fluxnat Coder 3B
+
+**Severity:** Critical (CVSS 9.8)
+**Vulnerability:** Path Traversal / Arbitrary File Read / Data Integrity Issue
+**CWE:** CWE-22
+
+#### Root Cause & Reasoning:
+1. Input parameter `username` accepts traversal sequences like `../../../../etc/passwd`.
+2. Direct string concatenation fails to confine the operation to the intended directory.
+
+#### Secure Remediation:
+```python
+import os
+import hashlib
+from werkzeug.utils import secure_filename
+
+BASE_DIR = os.path.realpath('/srv/data')
+
+def store_password(user, pwd):
+    target = os.path.realpath(os.path.join(BASE_DIR, secure_filename(user)))
+    if not target.startswith(BASE_DIR + os.sep) or not os.path.isdir(target):
+        return 'Access Denied'
+    hashed = hashlib.md5(pwd.encode()).hexdigest()
+    return db.save_user(user, hashed)
+```
+------------------------------------------------------------
+
+================================================================================
+                  FINAL BENCHMARK SCORECARD - FLUXNAT CODER 3B             
+================================================================================
+1. Multi-Language CWE Detection Benchmark : 3/8  (37.5%)
+2. False Positive Resistance Benchmark    : 0/4  (0.0%)
+3. Secure Code Remediation Benchmark      : 2/2  (100.0%)
+--------------------------------------------------------------------------------
+OVERALL BENCHMARK ACCURACY               : 5/14 (35.7%)
+================================================================================
+[+] Detailed benchmark metrics saved to benchmark_results.json
+

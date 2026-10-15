@@ -1,0 +1,17 @@
+
+The command exited with code 0.
+Output:
+
+ProcessId Name            CommandLine                                                                                  
+--------- ----            -----------                                                                                  
+    18320 uvx.exe         uvx git+https://github.com/googlecolab/colab-mcp                                             
+     4972 uv.exe          "C:\Users\k4ran\.local\bin\uv.exe" tool uvx git+https://github.com/googlecolab/colab-mcp     
+    16300 colab-mcp.exe   "C:\Users\k4ran\AppData\Local\uv\cache\archive-v0\oFhiRsyBIh6CPQz0\Scripts\colab-mcp.exe"    
+     7004 python.exe      "C:\Users\k4ran\AppData\Local\uv\cache\archive-v0\oFhiRsyBIh6CPQz0\Scripts\python.exe" "C:...
+    10344 python.exe      "C:\Users\k4ran\AppData\Local\uv\cache\archive-v0\oFhiRsyBIh6CPQz0\Scripts\python.exe" "C:...
+    23232 cmd.exe         C:\WINDOWS\system32\cmd.exe /c agy-node C:\Users\k4ran\AppData\Local\Programs\antigravity\...
+    23468 Antigravity.exe "C:\Users\k4ran\AppData\Local\Programs\antigravity\Antigravity.exe"  C:\Users\k4ran\AppDat...
+     7836 powershell.exe  powershell -Command "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -like \...
+
+
+

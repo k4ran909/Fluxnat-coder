@@ -1,0 +1,28 @@
+The search for "best open source small language models 2025 2026 code security vulnerability detection" returned the following summary:
+In 2026, the landscape for using small language models (SLMs) in code security and vulnerability detection has matured significantly. Rather than relying solely on massive frontier models, developers are increasingly using smaller, highly efficient models—often fine-tuned for specific security tasks—to power local or resource-constrained analysis tools.
+
+### Top Small Language Models for Code & Security (2026)
+While model performance evolves rapidly, the following families are currently recognized for their balance of efficiency and reasoning capabilities suitable for code analysis:
+
+*   **Llama 3 (8B) / Llama Series:** Widely regarded as a workhorse for developers. Its 8B parameter version provides strong reasoning and coding performance, making it a popular choice for fine-tuning on security-specific datasets (e.g., vulnerability patterns or secure coding standards).
+*   **Mistral NeMo (12B):** A highly capable model developed by Mistral AI and NVIDIA. It features a large context window (128K), which is critical for analyzing entire code files or repository contexts for vulnerabilities, rather than just isolated snippets.
+*   **Gemma 2 (2B, 9B, 27B):** Google’s open-weight models are highly optimized for efficiency. The 9B variant is particularly popular for developers who need high performance on consumer-grade hardware or private cloud environments.
+*   **Qwen2 (0.5B – 7B):** Offers a range of sizes, including ultra-lightweight options. The 7B version is excellent for tasks where latency is a concern, such as real-time IDE integrations for security linting.
+*   **Phi-4 (and variants):** Often cited for high reasoning capabilities relative to their size, making them effective for detecting logic-based vulnerabilities that traditional pattern-matching scanners might miss.
+
+### Key Trends in Vulnerability Detection
+*   **Beyond Pattern Matching:** Traditional static analysis (SAST) tools are increasingly being augmented by SLMs. While deterministic scanners are still essential for finding known patterns, SLMs are being deployed to filter out false positives and understand complex, cross-file logic flaws.
+*   **Agentic Workflows:** Security teams are moving toward "agentic" vulnerability detection, where an SLM acts as part of a multi-agent system. These agents can analyze a snippet, generate a Proof of Concept (PoC) to validate if a bug is truly exploitable, and even suggest a fix.
+*   **Domain-Specific Fine-Tuning:** Off-the-shelf models often lack the depth required for security. The most effective deployments in 2026 involve fine-tuning these SLMs on curated datasets of vulnerabilities (CVEs), secure code samples, and specialized security specifications.
+
+### Recommended Security Frameworks
+If you are building or integrating these models, consider aligning your work with these resources:
+*   **OWASP GenAI Security Project:** The primary authority on securing LLM-powered applications. Their [2026 Top 10 list](https://genai.owasp.org/llm-top-10/) is essential for understanding the risks involved in building AI-driven security tools.
+*   **Garak (Generative AI Red-teaming & Assessment Kit):** An Apache 2.0-licensed tool used to probe models for vulnerabilities (like jailbreaks or data leakage), essential for testing the security of the models themselves.
+*   **Evaluation Frameworks:** Research and tools like *VulnGym* or *VulTriage* are gaining traction in 2026 to help developers benchmark how well their models actually detect vulnerabilities compared to traditional tools.
+
+### Implementation Strategy
+For production-grade vulnerability detection, experts recommend a **layered approach**:
+1.  **Deterministic Scanners:** Use tools like Semgrep or SonarQube for high-precision, low-latency detection of known vulnerability patterns.
+2.  **SLM Augmentation:** Use a fine-tuned SLM (e.g., Llama 3 or Mistral NeMo) to review findings, provide context, and identify complex logical flaws that static tools miss.
+3.  **Human-in-the-loop:** Always treat model outputs as advisory, as even the best 2026 models are prone to "automation bias" and may produce noisy or non-exploitable findings.

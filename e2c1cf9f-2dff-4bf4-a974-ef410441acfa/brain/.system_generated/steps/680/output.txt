@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+
+   Id ProcessName Path                                                              CommandLine
+   -- ----------- ----                                                              -----------
+23468 Antigravity C:\Users\k4ran\AppData\Local\Programs\antigravity\Antigravity.exe            
+
+
+

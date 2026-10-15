@@ -1,0 +1,6 @@
+{
+  "summary":  "Definitive ranking of the best uncensored/abliterated open-source models under 3B parameters for cybersecurity use (September 2026). Two approaches covered:\n\n1. Abliterated models (refusal vector surgically removed) - recommended\n2. Dolphin fine-tunes (trained without refusal data)\n\nTop picks:\n- #1: Qwen 2.5 Coder 3B Abliterated (best for code security)\n- #2: Dolphin 3.0 Qwen 2.5 3B (best all-rounder uncensored)\n- #3: Phi-4 Mini Abliterated (best reasoning per param)\n- #4: DeepSeek-R1-Distill 1.5B (ultra-lightweight chain-of-thought)\n- #5: SmolLM2 1.7B (ultra-edge)\n\nIncludes exact HuggingFace repo names, Ollama pull commands, and GGUF quantization options for each model.",
+  "updatedAt":  "2026-09-21T19:54:08.979169100Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

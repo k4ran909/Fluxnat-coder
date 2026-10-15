@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+Connecting to ws://127.0.0.1:9222/devtools/browser/e27481d0-12e8-4400-9296-cd596f83c369...
+[+] Attached session: None
+
+[+] Page evaluation result:
+null
+

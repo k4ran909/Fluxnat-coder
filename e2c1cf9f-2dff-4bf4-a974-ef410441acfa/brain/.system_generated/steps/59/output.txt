@@ -1,0 +1,44 @@
+The search for "best way to fine-tune Qwen 2.5 Coder 3B 2025 2026 Unsloth vs Axolotl vs TRL SFT trainer" returned the following summary:
+To determine the best way to fine-tune **Qwen 2.5 Coder 3B** in 2026, you should choose your framework based on your specific infrastructure and project needs. The consensus among current development practices is as follows:
+
+### Quick Decision Guide
+| Framework | Best For | Why? |
+| :--- | :--- | :--- |
+| **Unsloth** | **Single-GPU / Efficiency** | Provides the fastest training speeds and lowest VRAM usage (up to 80% reduction) via optimized CUDA/Triton kernels. |
+| **Axolotl** | **Production / Multi-GPU** | Offers high flexibility, configuration-driven (YAML) workflows, and robust support for distributed/multi-GPU training. |
+| **TRL (SFTTrainer)** | **Research / Custom Control** | The underlying reference implementation. Best if you need raw control or are building custom training loops. |
+
+---
+
+### Why Unsloth is Often the Top Choice for 3B Models
+For a model as compact as Qwen 2.5 Coder 3B, **Unsloth** is widely considered the most efficient starting point for most users[1][2].
+*   **VRAM Efficiency:** Because 3B models are already lightweight, Unsloth’s ability to drastically reduce VRAM overhead allows you to use much larger batch sizes or longer sequence lengths on modest consumer hardware (even on free-tier Colab instances)[3][4][5].
+*   **Speed:** It typically achieves 2x or greater speedups over standard Hugging Face/TRL setups by rewriting backward passes and key attention operations[6][4].
+*   **Ease of Use:** It integrates directly with the `SFTTrainer` from Hugging Face’s `trl` library, meaning you get the speed of custom kernels while maintaining a familiar, Python-native workflow[3][7].
+
+### When to Choose Others
+*   **Choose Axolotl** if your project is moving from experimentation to production. It excels at managing complex, multi-stage training pipelines and distributed training across multiple GPUs, which is often harder to manage in a simple Unsloth script[6][1].
+*   **Choose TRL (directly)** if you are experimenting with advanced alignment techniques (like DPO, GRPO, or PPO) and need to modify the trainer's behavior at a granular level beyond what pre-built wrappers provide[8][9].
+
+### Key Recommendations for Qwen 2.5 Coder 3B
+1.  **Don't Over-Engineer:** In 2026, fine-tuning is considered the "nuclear option." Before starting, ensure your task cannot be solved more effectively with **RAG (Retrieval-Augmented Generation)** for knowledge, or **prompt engineering/structured outputs** for formatting[10][2][11].
+2.  **Data Quality Over Quantity:** Since you are using a 3B model, focus on high-quality, curated datasets (500–2,000 examples are often sufficient)[2]. Use techniques like data rephrasing or synthetic augmentation to maximize the impact of your small, efficient model[12][5].
+3.  **Training Setup:** Use **QLoRA (4-bit quantization)**. It is the industry standard for fine-tuning on consumer hardware, offering near-identical performance to full fine-tuning with a fraction of the hardware requirements[2][12][13].
+4.  **Watch the "Loss Head" Tensor:** If you encounter VRAM issues, remember that the cross-entropy loss head can consume a disproportionate amount of memory, especially with larger vocabularies[14][15]. Frameworks like Unsloth are specifically designed to optimize these structural memory costs[14].
+
+Sources:
+[1] [spheron.network](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaKEpF6l_Loc4YwLnbwxm6v7xuaCpqhKp6ajYZCWLrmmWF2fmRykSCN5X1w-kYsAnoue1uF_HlrY-GOOO8KPS9RKqUw64qEtWgkAfToKalk9xVjZiS3KAJfKKfuFE-i9Cpp8LQQADFesZZRc7NfFGNGD7TmgPEWA==)
+[2] [codersera.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8Zy26Lx3OICactKJUUrsJgxJZB6UjYN53aZAiLnJqiT4mPWGcKNx9QCwWnb5c-8M523J3P5OUMORJ-HeSUNYXv7_ZTRPo1cjq981ouFU4AwulR2EjO_KQWOL-hyqL2bVpZeM7UEyGEDVis7K_rD72PVkQIYxF)
+[3] [plainenglish.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUJiukhZ_aTJ_ZF7Kd_vVihxpusarWAMoezuyJj2xy7AT8wLjKBQSYqCrwjpspSh3C4N9HcmpDtKjBKD04JgN0MuLf1qKR67ggFCiy9HtqegIK8-H43OBLjYVRrGxgKQd_OS6_UGGZseSn2ust1XUMvtGW8DEnHkVsiv1-Pf1u28yntDH01cghDPdQbKvRe49CSqcyJohwqUgCiohCogX7VEMC_A==)
+[4] [unsloth.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdFUWDaI4k2AISoH733yxmnOHFx7yZRH2cSF37TdEXuZa8CvsOcGtoaQh3sxAOxY_Y43c4h1saFnl5Sy7uYs5iMdAxzNmqIwADpxMKBKsw9N2a_jvp8wi8)
+[5] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq8EVqWq2N3PuOx7npuc_qFM55f3OgdV882N_lOo5SlZWDkdV6AbBBFqMYHyFMMr8Uzu6G5Qd0rIjeHR5btD0DaGQYKX6sDfJh3JRy9kCu5wDVmO4BD9JtLORrJMpZP36tEsBE2wcKr_DH3xUvrUpNShbeWgn5LNX9DU7-I18wj28QXUtx8JXyl4DyqKOoJymfMykBx_BjnmCctr7E9lRjdlrCvcmhEpywByxL4azxGV5HXdu-)
+[6] [clore.ai](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjADTH9zXgo2W2cjC9ZpFdOq8T2ESqK1ickGe4fZ7xEZVxHQKtElBGXvYt0uWcJr5Y4RhCT-_ZnLAHAR4b12zumHf76lxT_GvA5Sjq_VDknX39F8cEhs-uwQnBVbYRrzpCWYgvqjUpUYbz7RYnj_YeJ9zY2Q==)
+[7] [plainenglish.io](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUJiukhZ_aTJ_ZF7Kd_vVihxpusarWAMoezuyJj2xy7AT8wLjKBQSYqCrwjpspSh3C4N9HcmpDtKjBKD04JgN0MuLf1qKR67ggFCiy9HtqegIK8-H43OBLjYVRrGxgKQd_OS6_UGGZseSn2ust1XUMvtGW8DEnHkVsiv1-Pf1u28yntDH01cghDPdQbKvRe49CSqcyJohwqUgCiohCogX7VEMC_A==)
+[8] [menuagentic.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsGTojKEcuRqOrk4fz1tjgcSm1fErLhgpGrhdXdgVNtYmS-95sImEV2QiEvsolY90Sv5xutS8CY3sF73A2QqhBDB9q6Ctjp_d77UPBsB3wj7b01puM07LdfUAtMI4lkwpbDrQrTNYnU-rFAvHFumYNQ-KdkAAiqm939wJljJw2)
+[9] [futureagi.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtkrDrlPsCxD8nCuaTydR11KsbO_yshZP90HG5suHFU7AtVmfTPx99xg4EmeJ83K0uglkw-RtwUnJeMF9IbMo5AGSFjlEES_Sk3Wr7knDKrGBLaT_2tYJ1F2mxrFe2Gl1-O4rmnnKGlvhagPI=)
+[10] [dev.to](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFar-t0qdX2oAxY5klIBayy6wxIgW-t0X8xsGD3paHDrL5n9SEyGHyy7SvvMBC5UqBDMk7dasqYqof0cDZOAoM5buGGG7qDQ-bU7VirprYr3OKlYgY0HpL5Nv0z2AtuItEwqY4QP4oLgX5IwLpSHM7Xmqaq7t9RDUcKqAOgVc58Y_rxRn6bqKJetYBs4C5ImZh-XV11Mp81zloq4bcD)
+[11] [daily.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkRjSHb39prpf8UIaubsCqZQWSkOgYYjylt4eXSMyPC_D-7JyE3Lx4NFQ1-1rCjhLYCWTfKMZ5K0Tlyx0y_JpP3ORFogu3ThUEoOxAmi8wPHirgYetIxtHwb2dkS6L9Z-4PHy7o3I8h0hsdt4_zbAyl6DMuzq7oLddxkK5624ZAj9xFi_LvrmzBkjM7pVF_FyPgRo=)
+[12] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3MzVFrhtXtzVE9ym8PaJRwA7ekGbxuzz9oep0pIwHOP5R0yKkDDW1jMGmzS1QRSzxXKgNyZWAEcIPKbhpn-W7hndZQWWEhZzn3WUvm8j_sW-TZH11Sn4mZdxit_X3V4kRtfsqtBy80VvNXgOo4zqoYnSBCiBTZzJt)
+[13] [f22labs.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfSTn4d047nMzG8i5qjuPXP4vpm3u2zn7SwdZNMvAONpDWMC_8_DDDC-VKIW7t3rDhrUa8V9YCOP2XBV1VLff9JEJs_1UPuITDrVbm4-Hq-g5hHukTw0c8MJFbewIB4a72pfW_9lRf1KSSBtFJe63oLBW1cFZm4UXsrGKEQuFphMJb1A==)
+[14] [towardsai.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7DqU1d4wbEO3Sr6GpALgsN1cVfTQICBAfn7AMl5f1_nm8uLWWtYJXbPGFSf1Wva0oq1nxhIfnvGJs3zi9MIwFskvroYq0T9nX2pmYz09YYzTjO6OMOmFCgqNezTDkOk_S9w8T9jsnJHs3thqEbsB3nOdq7WYTfVI3QIJIqN8P-Spv-ypRFQqlr3mf2iYoqMt1ShwrS2YHao-tZvyP0fprLvaVIzyvvxEBWSBF9aDkfprGyw==)
+[15] [towardsai.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7DqU1d4wbEO3Sr6GpALgsN1cVfTQICBAfn7AMl5f1_nm8uLWWtYJXbPGFSf1Wva0oq1nxhIfnvGJs3zi9MIwFskvroYq0T9nX2pmYz09YYzTjO6OMOmFCgqNezTDkOk_S9w8T9jsnJHs3thqEbsB3nOdq7WYTfVI3QIJIqN8P-Spv-ypRFQqlr3mf2iYoqMt1ShwrS2YHao-tZvyP0fprLvaVIzyvvxEBWSBF9aDkfprGyw==)

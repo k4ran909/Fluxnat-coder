@@ -1,0 +1,28 @@
+{"name":"Fluxnat_Coder_3B_Training.ipynb", "sizeBytes":"33213"}
+{"name":"MODEL_CARD.md", "sizeBytes":"7424"}
+{"name":"README.md", "sizeBytes":"4349"}
+{"name":"benchmark_results.json", "sizeBytes":"7133"}
+{"name":"benchmark_suite.py", "sizeBytes":"16025"}
+{"name":"check_cell16_state.py", "sizeBytes":"1955"}
+{"name":"colab_full_cells.json", "sizeBytes":"6136"}
+{"name":"config", "isDir":true}
+{"name":"data", "isDir":true}
+{"name":"downloaded_colab.ipynb", "sizeBytes":"942260"}
+{"name":"evaluate.py", "sizeBytes":"5483"}
+{"name":"extract_colab_cell.py", "sizeBytes":"5698"}
+{"name":"extract_colab_full.py", "sizeBytes":"2744"}
+{"name":"merge_and_export.py", "sizeBytes":"5351"}
+{"name":"prepare_datasets.py", "sizeBytes":"7908"}
+{"name":"pyproject.toml", "sizeBytes":"1075"}
+{"name":"rebrand.py", "sizeBytes":"6958"}
+{"name":"scratch_colab_direct.py", "sizeBytes":"2952"}
+{"name":"scratch_colab_eval.py", "sizeBytes":"3804"}
+{"name":"scratch_colab_result.json", "sizeBytes":"7189"}
+{"name":"smartagent", "isDir":true}
+{"name":"test_colab_js_api.py", "sizeBytes":"3481"}
+{"name":"test_local_model.py", "sizeBytes":"4674"}
+{"name":"test_refusal_free.py", "sizeBytes":"4290"}
+{"name":"tests", "isDir":true}
+{"name":"train.py", "sizeBytes":"9619"}
+
+Summary: This directory contains 4 subdirectories and 22 files.

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Testing InferenceClient with k4ran909/Fluxnat-Coder-3B...
+InferenceClient error: 
+

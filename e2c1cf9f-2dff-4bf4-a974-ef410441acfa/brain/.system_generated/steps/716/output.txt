@@ -1,0 +1,43 @@
+
+The command exited with code 0.
+Output:
+<truncated 181 lines>
+URL: https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fhuggingface.co%2Fsettings%2Ftokens&title=Hugging%20Face%20%E2%80%93%20The%20AI%20community%20building%20the%20future.&referrer=https%3A%2F%2Fhuggingface.co%2Fsettings%2Ftokens%2Fnew%3FownUserPermissions%3Drepo.content.read%26ownUserPermissions%3Drepo.access.read%26ownUserPermissions%3Drepo.write%26ownUserPermissions%3Dinference.serverless.write%26ownUserPermissions%3Dinference.endpoints.infer.write%26ownUserPermissions%3Dinference.endpoints.write%26ownUserPermissions%3Duser.webhooks.read%26ownUserPermissions%3Duser.webhooks.write%26ownUserPermissions%3Dcollection.read%26ownUserPermissions%3Dcollection.write%26ownUserPermissions%3Ddiscussion.write%26ownUserPermissions%3Duser.billing.read%26ownUserPermissions%3Djob.write%26ownUserPermissions%3Duser.notifications.read%26ownUserPermissions%3Duser.notifications.write%26globalPermissions%3Ddiscussion.write%26globalPermissions%3Dpost.write%26canReadGatedRepos%3Dtrue%26tokenType%3DfineGrained%26preset%3Dcustom&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=1a6e344a-65e4-4a27-b12c-b95b55208618922c00&version=6&preview=false&__shared_params__[version]=v3
+
+Type: iframe | ID: 1EB3D458066C67961889BB714DE99A0E
+Title: https://m.stripe.network/inner.html#url=https%3A%2F%2Fhuggingface.co%2Fsettings%2Ftokens&title=Hugging%20Face%20%E2%80%93%20The%20AI%20community%20building%20the%20future.&referrer=https%3A%2F%2Fhuggingface.co%2Fsettings%2Ftokens%2Fnew%3FownUserPermissions%3Drepo.content.read%26ownUserPermissions%3Drepo.access.read%26ownUserPermissions%3Drepo.write%26ownUserPermissions%3Dinference.serverless.write%26ownUserPermissions%3Dinference.endpoints.infer.write%26ownUserPermissions%3Dinference.endpoints.write%26ownUserPermissions%3Duser.webhooks.read%26ownUserPermissions%3Duser.webhooks.write%26ownUserPermissions%3Dcollection.read%26ownUserPermissions%3Dcollection.write%26ownUserPermissions%3Ddiscussion.write%26ownUserPermissions%3Duser.billing.read%26ownUserPermissions%3Djob.write%26ownUserPermissions%3Duser.notifications.read%26ownUserPermissions%3Duser.notifications.write%26globalPermissions%3Ddiscussion.write%26globalPermissions%3Dpost.write%26canReadGatedRepos%3Dtrue%26tokenType%3DfineGrained%26preset%3Dcustom&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=1a6e344a-65e4-4a27-b12c-b95b55208618922c00&version=6&preview=false&__shared_params__[version]=v3
+URL: https://m.stripe.network/inner.html#url=https%3A%2F%2Fhuggingface.co%2Fsettings%2Ftokens&title=Hugging%20Face%20%E2%80%93%20The%20AI%20community%20building%20the%20future.&referrer=https%3A%2F%2Fhuggingface.co%2Fsettings%2Ftokens%2Fnew%3FownUserPermissions%3Drepo.content.read%26ownUserPermissions%3Drepo.access.read%26ownUserPermissions%3Drepo.write%26ownUserPermissions%3Dinference.serverless.write%26ownUserPermissions%3Dinference.endpoints.infer.write%26ownUserPermissions%3Dinference.endpoints.write%26ownUserPermissions%3Duser.webhooks.read%26ownUserPermissions%3Duser.webhooks.write%26ownUserPermissions%3Dcollection.read%26ownUserPermissions%3Dcollection.write%26ownUserPermissions%3Ddiscussion.write%26ownUserPermissions%3Duser.billing.read%26ownUserPermissions%3Djob.write%26ownUserPermissions%3Duser.notifications.read%26ownUserPermissions%3Duser.notifications.write%26globalPermissions%3Ddiscussion.write%26globalPermissions%3Dpost.write%26canReadGatedRepos%3Dtrue%26tokenType%3DfineGrained%26preset%3Dcustom&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=1a6e344a-65e4-4a27-b12c-b95b55208618922c00&version=6&preview=false&__shared_params__[version]=v3
+
+Type: page | ID: D6D78C0D8E84A488402396BB9ADA84A7
+Title: ornith-ai/Ornith-1.5-9B-NVFP4 � Hugging Face
+URL: https://huggingface.co/ornith-ai/Ornith-1.5-9B-NVFP4
+
+Type: iframe | ID: CA78BD218BAF888101BF0C4AA844EEFE
+Title: https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=1a6e344a-65e4-4a27-b12c-b95b55208618922c00&version=6&preview=false&__shared_params__[version]=v3
+URL: https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=1a6e344a-65e4-4a27-b12c-b95b55208618922c00&version=6&preview=false&__shared_params__[version]=v3
+
+Type: iframe | ID: B68CF032352DEE7E1F6B96F50CBF6FFC
+Title: https://m.stripe.network/inner.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=1a6e344a-65e4-4a27-b12c-b95b55208618922c00&version=6&preview=false&__shared_params__[version]=v3
+URL: https://m.stripe.network/inner.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=1a6e344a-65e4-4a27-b12c-b95b55208618922c00&version=6&preview=false&__shared_params__[version]=v3
+
+Type: page | ID: 82B9A8DF7456281DA17395A908A7AE7B
+Title: 3.5 vs 2.5 qwen 3b and 4b - Google Search
+URL: https://www.google.com/search?q=3.5+vs+2.5+qwen+3b+abd+4b&oq=3.5+vs+2.5+qwen+3b+abd+4b&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAjIHCAIQIRiPAtIBCTE0NjE4ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8
+
+Type: iframe | ID: 07362D353AC118CC8215DB2E53AC74A0
+Title: https://accounts.google.com/RotateCookiesPage?og_pid=1&rot=3&origin=https%3A%2F%2Fwww.google.com&exp_id=0
+URL: https://accounts.google.com/RotateCookiesPage?og_pid=1&rot=3&origin=https%3A%2F%2Fwww.google.com&exp_id=0
+
+Type: page | ID: 0A84129046EE81B66E7496AACD830654
+Title: ornith-ai/Ornith-1.5-9B-NVFP4 � Hugging Face
+URL: https://huggingface.co/ornith-ai/Ornith-1.5-9B-NVFP4
+
+Type: iframe | ID: 0867F97918B15F1387097EB3AD7151D8
+Title: https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=NA&version=6&preview=false&__shared_params__[version]=v3
+URL: https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=NA&version=6&preview=false&__shared_params__[version]=v3
+
+Type: iframe | ID: 9645C7927D65D64BF64BEBEBA5CE9EC2
+Title: https://m.stripe.network/inner.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=NA&version=6&preview=false&__shared_params__[version]=v3
+URL: https://m.stripe.network/inner.html#url=https%3A%2F%2Fhuggingface.co%2Fornith-ai%2FOrnith-1.5-9B-NVFP4&title=ornith-ai%2FOrnith-1.5-9B-NVFP4%20%C2%B7%20Hugging%20Face&referrer=&muid=a521c264-74ef-44bc-8f57-73aa7ce3ca408bd3b6&sid=NA&version=6&preview=false&__shared_params__[version]=v3
+
+

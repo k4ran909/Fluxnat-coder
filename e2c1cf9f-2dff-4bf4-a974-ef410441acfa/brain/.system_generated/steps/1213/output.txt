@@ -1,0 +1,49 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\ai\model.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -4,9 +4,10 @@
+ 
+ import os
+ from pathlib import Path
+-from typing import Optional, Tuple
++from typing import Any, Optional, Tuple, Generator
+ import torch
+-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
++from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TextIteratorStreamer
++from threading import Thread
+ 
+ 
+ class ModelManager:
+@@ -86,4 +86,30 @@
+             )
+ 
+         return tokenizer.decode(outputs[0][inputs.input_ids.shape[1]:], skip_special_tokens=True).strip()
++
++    def generate_stream(self, messages: list, max_tokens: int = 512, temperature: float = 0.2) -> Generator[str, None, None]:
++        """Stream tokens one at a time for real-time chat display."""
++        model, tokenizer = self.load()
++        text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
++        inputs = tokenizer(text, return_tensors="pt").to(model.device)
++
++        streamer = TextIteratorStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
++
++        gen_kwargs = {
++            **{k: v for k, v in inputs.items()},
++            "max_new_tokens": max_tokens,
++            "temperature": temperature,
++            "top_p": 0.95,
++            "repetition_penalty": 1.05,
++            "do_sample": temperature > 0.0,
++            "streamer": streamer,
++        }
++
++        thread = Thread(target=model.generate, kwargs=gen_kwargs)
++        thread.start()
++
++        for token in streamer:
++            yield token
++
++        thread.join()
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

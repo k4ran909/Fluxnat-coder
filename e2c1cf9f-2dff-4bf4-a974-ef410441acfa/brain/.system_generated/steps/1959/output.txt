@@ -1,0 +1,15 @@
+
+The command exited with code 1.
+Output:
+Running SmartAGENT Red Team Tool tests...
+  [OK] test_tool_registry_has_13_tools passed
+  [OK] test_recon_tool passed
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\tests\test_redteam_tools.py", line 116, in <module>
+    test_exploit_db_direct_cve()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\tests\test_redteam_tools.py", line 42, in test_exploit_db_direct_cve
+    assert "CVSS: 10.0" in res
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError
+

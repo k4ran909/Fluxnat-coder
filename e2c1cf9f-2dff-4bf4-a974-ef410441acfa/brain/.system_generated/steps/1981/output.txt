@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+warning: in the working copy of 'docs/benchmarks.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/agent/prompts.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/agent/tools.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/cli.py', LF will be replaced by CRLF the next time Git touches it
+

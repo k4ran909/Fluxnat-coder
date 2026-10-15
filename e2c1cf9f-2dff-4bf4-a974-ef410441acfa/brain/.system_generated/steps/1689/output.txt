@@ -1,0 +1,9 @@
+
+The command exited with code 0.
+Output:
+[main c2b136e] feat: add 170 red team training samples (exploit chains, payloads, attack techniques)
+ 7 files changed, 2725 insertions(+), 557 deletions(-)
+ create mode 100644 data/custom_cot/redteam_cot.jsonl
+ create mode 100644 scripts/generate_redteam_dataset.py
+ create mode 100644 scripts/update_notebook_v2.py
+

@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\update_notebook_v2.py", line 23
+    "    \\"You are Fluxnat Coder 3B, an elite AI cybersecurity and secure coding intelligence model created by Fluxnat. \\"\\n",
+                                  ^
+SyntaxError: invalid decimal literal
+

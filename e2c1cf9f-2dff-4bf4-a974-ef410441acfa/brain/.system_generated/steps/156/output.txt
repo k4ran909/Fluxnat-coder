@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\tests\test_scanners.py", line 5, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+

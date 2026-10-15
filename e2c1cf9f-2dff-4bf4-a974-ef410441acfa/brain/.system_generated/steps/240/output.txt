@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\merge_and_export.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -62,7 +62,7 @@
+     """Merge and export using standard Hugging Face + PEFT."""
+     output_dir = config.get("project", {}).get("output_dir", "./outputs/Fluxnat-Coder-3B")
+     merged_dir = "./outputs/Fluxnat-Coder-3B-Merged"
+-    base_model_name = config.get("project", {}).get("base_model", "huihui-ai/Qwen2.5-Coder-3B-Instruct-abliterated")
++    base_model_name = config.get("project", {}).get("base_model", "unsloth/Qwen2.5-Coder-3B-Instruct")
+ 
+     print(f"[*] Loading base model: {base_model_name} in float16...")
+     base_model = AutoModelForCausalLM.from_pretrained(
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

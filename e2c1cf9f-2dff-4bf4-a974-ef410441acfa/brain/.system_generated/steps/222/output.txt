@@ -1,0 +1,29 @@
+The search for ""huihui-ai" "Qwen2.5-Coder-3B" huggingface" returned the following summary:
+The user **huihui-ai** is a contributor on Hugging Face known for providing "abliterated" versions of various Large Language Models (LLMs)[1][2][3].
+
+### About the Model
+The model **`huihui-ai/Qwen2.5-Coder-3B-Instruct-abliterated`** is a fine-tuned, "abliterated" version of the official `Qwen/Qwen2.5-Coder-3B-Instruct` model[2][4]. 
+
+*   **Abliteration:** This process typically involves modifying the model's internal weights to remove or reduce the "refusal" behaviors often present in base instruction-tuned models, aiming to make them less prone to declining requests or giving "AI assistant" style refusals[5][6].
+*   **Base Architecture:** It is based on the Qwen2.5-Coder-3B series, which is a code-specific model developed by the Qwen team at Alibaba Cloud, designed for high-performance coding tasks[7][8].
+*   **Usage:** You can find this model and its derivatives (such as quantized versions for specific hardware) on Hugging Face[9][10].
+
+### Related Resources
+*   **Official Base Model:** [Qwen/Qwen2.5-Coder-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct)[4]
+*   **Hugging Face Profile:** You can browse all models contributed by [huihui-ai on Hugging Face](https://huggingface.co/huihui-ai) to see other abliterated variants[11][3].
+*   **Quantized Versions:** Because the model is popular in the local LLM community, third-party creators often provide GGUF or other quantized formats (e.g., for `llama.cpp` or mobile deployment) under their own namespaces, often referencing the `huihui-ai` original[10][12][13].
+
+Sources:
+[1] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkdtOSJSiO4386YLR61Pyd4UZx9xhYn1BHniEPDZ2OQvtn5C_GerJ7uNYIec6VPah92Y_Q8MHk5jB2Rd0pmQMPrMUYEdoeSgqr4qzPan8wozlsjcjok7zhpfvnfPrMBaN97ldMhLfJW7fdDxoDvGC_engjx-B3BhjfphGtHsUDvMX78E5L0Bfgrco=)
+[2] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLqZERFbBLyppIx4tHTUr7AVokUx42uMlBZgBxt8-apaztWEeVdT00QZTvTM4ETIiFsywLd7CQIgNA62X0OY-lPBYfiUO_sc_6BE5qsMS5VfCRnBUzJahQ1bJYtJhuz7G7JSFm9hrVAdh2hnuwfGDiONnuJiRf0QZFZMii1dPnKKgvhpkENjXgsakx1hzXjiCAR6c=)
+[3] [aimodels.fyi](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgYGIjcuqUj5XqhyfuGBm3ySmdJY6SLmT1xi6RViYvbCHQPBxKx1DRKCr1DLbTCx2Uae3R8Iq-yTEM-7JzNHaJOMeyK9QkmhxukSQDM-jw4ov1Y6KcLFBkf64Jh9BgzeKCbm5queRJlsnaf-NX)
+[4] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqerSuCa5MVAn4NvKOp5YSQzTJ5cNlScyXc1rT0aAVbGg3UmoRqrPrQ0p7pAwD2vd0KBoP-fc1Q9pZpDvd8_ZLk7WFojhwvPabOMqmB5VZav810QzqqXcTG9_IDW9bTqA-t3DUSYZJrPS76g==)
+[5] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNCUFijYhCL22MyvDaCHYQ2Rb1UlH_LI0gzARWpZNvRv06SMPHv6ZKudzVbtMCloarqvA5GKr2q-J0p8fEJY_jHKRnfniyq0vNKwxTMEjOFH7x65uW2-5G_Aayd5Xeg-Vuv5WINoZUjvomWhtNoC_NccezvAfzKLHW0_UL8ZlfFfrbQAhnobKg4JhAaAK_z6r2oUxNr53ZhpEVzgFR)
+[6] [towardsai.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHovFwFTBjHZ9iS1S19nulLksmoXyHpIMgPetU49dY5o1brA3UGsGeJKSaYYKRZJErc776yk4irbHozyxajhhKth8FJktq1uopZTZXMzQtZSPTxJSUJyNbnVxpWYSMoA6iWe9Nc04tFO1yEvWwazUFjFEIs0SgIYSsWPTnTr85FayScALsDl63YUtoZnYkgnLiiFW5jiUwAdEtPEJLPjvk=)
+[7] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyUEYNE-XA_0VI5yKRhga-GoLtfcTrqBm_D6sDobI35lIx1UQMdnYXq7Reo18VedExtA6PxV5lxXYe2Yi7f8xPcSTraC_KdlwbY3Giryvp95D-hns9HEGGpzkeokt4Y5tqYg==)
+[8] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMASgvsXmVEa-FVimJ3NCgjuBO78tYe0s5iIlwdQuBDct4-cLtaH5XvZmfhJ1LKbKSDpB3rIGNbVYolEF5hZg8uad-9jvB9Ij2Ku-3qx-__P-K25M6vbyA47sBjbJB8X-QqQ==)
+[9] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoYM_GDmv9mwK4bfiJvhUtn9xZ5xPId42wPEo38JnQR775ZGDaR1oaamnRzjnczHFi_y5-LLfLDkDQwsMMB2Uu51UDt06U-aGqe_W0Z1J1R-PLLgzx7fG1l45dvveeILlLIByo00AkP6KJrvSxMTNfwPdw4bBuFvG9mm6n7G2ZHWI=)
+[10] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEKSdfni8GW-bxzq8qx7injV6HYAvOMnAZNRW7ZOqYfvx_U-89rISaXZs7tmZVxJXrrTJa5ibmOVpOL2suKgUSo1-Tf4Kj2c_nyF9x0LaWJUGUhjGM3Mq5vF6yyKATSgyYNvM7bxjS1kscWfjCq2Y1IAAwNsTsCPi1FCZ72Q==)
+[11] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLHMeJT2aStoJBi9RYsJXWd8VifHFCN3nU3HyOt_ZOA4LHojQoGe4BMglUFaB6uGvJM47WOi4oS4G0Cd9kS1nN6pD6lM4NhrwoVSg44k6tiZWb3AJqDA==)
+[12] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpA9jI7GwPMRyMa6JteeqIbURdWZTrurDx3Jc2dz1p2Tq4Gil3ycUXNqQ-lWzj3UeSj8b6d3Hjdgnswp26oKeI_6Smu2vAVi1vDElM_RCcYWLok5uE7POVGXpKepC3hjnLx40xGLqkXvpy4Q_-OMnb3ZIkfWiRPhKO)
+[13] [huggingface.co](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCnEbETDV6ktEwcx2Y-xOY58aPUoGZt-d0mr0NBZuW0aw5fcLqrXQ85TSo5tQRA4z7W7xFbNk28X5i9pC6GA92b2DdmIGh2IKlr7Bz0lu3yZmgnnOB0GvAgQG0nNAiMuiXqLaxckkBsDOmkHSrkLk3w5pIu1lhO0FrA4eL_9Od)

@@ -1,0 +1,15 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\generate_redteam_dataset.py", line 1784, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\generate_redteam_dataset.py", line 1772, in main
+    print(f"\u2713 Generated {len(SAMPLES)} red team training samples")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
+

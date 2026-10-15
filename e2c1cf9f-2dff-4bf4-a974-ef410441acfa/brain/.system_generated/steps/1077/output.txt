@@ -1,0 +1,5 @@
+{"name":"21st", "isDir":true}
+{"name":"chrome_devtools", "isDir":true}
+{"name":"colab-mcp", "isDir":true}
+
+Summary: This directory contains 3 subdirectories and 0 files.

@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Recv: {'method': 'Target.attachedToTarget', 'params': {'sessionId': '091B36CB2C484C9C8C7EC5189D6F724C', 'targetInfo': {'targetId': '3C18718FA3A36C9DF9AB624E51561BAC', 'type': 'page', 'title': 'Fluxnat_Coder_3B_Training.ipynb - Colab', 'url': 'https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#scrollTo=ideEXJ-cwjcq', 'attached': True, 'canAccessOpener': False, 'browserContextId': 'FD05C25DBF2BC06D4DA143BA702FDF5D'}, 'waitingForDebugger': False}}
+Recv: {'id': 1, 'result': {'sessionId': '091B36CB2C484C9C8C7EC5189D6F724C'}}
+

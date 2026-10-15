@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+[✓] Wrote 9 vulnerability CoT + 7 benign CoT records to c:\Users\k4ran\OneDrive\Desktop\smartAGENT\data\custom_cot\security_cot.jsonl
+

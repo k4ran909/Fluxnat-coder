@@ -1,0 +1,40 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\export_session.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -97,7 +97,7 @@
+         if target_brain.exists():
+             shutil.rmtree(target_brain)
+         shutil.copytree(SOURCE_BRAIN, target_brain)
+-        print(f"  [✓] Copied full brain directory -> {target_brain}")
++        print(f"  [OK] Copied full brain directory -> {target_brain}")
+ 
+         # 2. Write conversation transcript markdown
+         conv_dir = target / "conversation"
+@@ -105,7 +105,7 @@
+         md_file = conv_dir / "CONVERSATION_TRANSCRIPT.md"
+         with open(md_file, "w", encoding="utf-8") as f:
+             f.write(md_transcript)
+-        print(f"  [✓] Saved human-readable transcript -> {md_file}")
++        print(f"  [OK] Saved human-readable transcript -> {md_file}")
+ 
+         # 3. Copy raw transcript logs
+         if compact_transcript_path.exists():
+@@ -112,6 +112,6 @@
+         if full_transcript_path.exists():
+             shutil.copy2(full_transcript_path, conv_dir / "transcript_full.jsonl")
+-        print(f"  [✓] Copied raw JSONL transcript logs -> {conv_dir}")
++        print(f"  [OK] Copied raw JSONL transcript logs -> {conv_dir}")
+ 
+         # 4. Generate Root README.md
+         readme_content = f"""# Session Backup: `{CONV_ID}`
+@@ -155,7 +155,7 @@
+ """
+         with open(target / "README.md", "w", encoding="utf-8") as f:
+             f.write(readme_content)
+-        print(f"  [✓] Created root README.md -> {target / 'README.md'}")
++        print(f"  [OK] Created root README.md -> {target / 'README.md'}")
+ 
+     print("\n[ALL EXPORTS COMPLETED SUCCESSFULLY!]")
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

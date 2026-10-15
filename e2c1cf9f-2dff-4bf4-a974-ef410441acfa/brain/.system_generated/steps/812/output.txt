@@ -1,0 +1,13 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json; nb=json.load(open('Fluxnat_Coder_3B_Training.ipynb', 'r', encoding='utf-8')); print('Cell count:', len(nb['cells'])); [print(i, c['cell_type'], c.get('id', c.get('metadata', {}).get('id', 'no-id')), c['source'][:1]) for i, c in enumerate(nb['cells'])]
+                                                                                                                                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 4-5: character maps to <undefined>
+Cell count: 17
+0 markdown no-id 

@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+  File "<string>", line 13
+    cur.execute(" SELECT url title last_visit_time FROM urls WHERE url LIKE %mcpProxy% ORDER BY last_visit_time DESC LIMIT 5\)
+                ^
+SyntaxError: unterminated string literal (detected at line 13)
+

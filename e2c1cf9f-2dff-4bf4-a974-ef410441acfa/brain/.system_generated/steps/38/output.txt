@@ -1,0 +1,23 @@
+The search for "best uncensored language model under 3B parameters 2025 2026 open source ollama" returned the following summary:
+As of September 2026, the landscape for "uncensored" small language models (SLMs) has shifted toward more efficient architectures, particularly **Mixture-of-Experts (MoE)** models and highly capable base models that have been "abliterated" (a technique to remove refusal behaviors without retraining).
+
+While many older 7B–13B models are still discussed in legacy forums, the best performance for small-scale local deployment now favors models that use advanced quantization or MoE architectures to fit into lower VRAM while providing reasoning capabilities once reserved for much larger models.
+
+### Recommended Approaches for "Under 3B" Parameters
+In the current ecosystem, "under 3B" is a very tight constraint. Most users seeking high performance in 2026 are gravitating toward **MoE models with low active parameters** or **highly efficient 3B-class models**.
+
+*   **Look for MoE Efficiency:** Models like those in the **Qwen 3** or **Gemma 4** families often provide "active" parameter counts around 3B, even if the total parameter count is higher. These effectively act like a 3B model in terms of speed and VRAM requirements while offering the intelligence of a larger model.
+*   **Abliterated Variants:** Rather than looking for specific "uncensored" legacy models (which may be several generations behind), the current best practice is to search for **"abliterated"** versions of modern models (e.g., Qwen 3 or Gemma 4 variants). Abliteration removes the "refusal" activation direction in the model's weights, which is generally more effective and intelligence-preserving than traditional fine-tuning for censorship removal.
+
+### Where to Find Them
+You can find the most recent versions of these models by searching the Ollama library or Hugging Face for the following tags:
+*   **"Abliterated":** This is the modern standard for removing guardrails.
+*   **"Dolphin":** The Dolphin series (e.g., Dolphin 3.0) remains a gold standard for models trained specifically without refusal data.
+*   **"Qwen3" or "Gemma4":** These are currently the strongest base model families for local, efficient execution.
+
+### Practical Tips for Ollama
+1.  **Use `ollama pull`:** Check the [Ollama Library](https://ollama.com) directly. Search for terms like "uncensored," "dolphin," or "abliterated" to see community-maintained tags.
+2.  **Verify the Active Parameter Count:** If you are restricted by hardware, prioritize MoE models (like those described as "30B-A3B," where "3B" is the active parameter count) as they provide the speed and VRAM footprint of a 3B model while outperforming traditional dense 3B models.
+3.  **Community Hubs:** For the most up-to-date "uncensored" builds, platforms like Reddit (r/LocalLLaMA, r/SillyTavernAI) and Hugging Face (specifically community-created "abliterated" repos) are currently the fastest sources for new releases, often appearing days after a base model is published.
+
+**Note:** Always ensure you are using the latest version of Ollama (v0.33+ as of late 2026), as recent updates have significantly improved performance for MoE models and handling of complex context windows, which is crucial for these smaller, high-efficiency models.

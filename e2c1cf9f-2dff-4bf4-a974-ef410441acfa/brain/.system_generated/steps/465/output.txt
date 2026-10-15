@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\train.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -40,7 +40,7 @@
+     lora_cfg = config.get("lora", {})
+     train_cfg = config.get("training", {})
+     output_dir = config.get("project", {}).get("output_dir", "./outputs/Fluxnat-Coder-3B")
+-    base_model_name = config.get("project", {}).get("base_model", "unsloth/Qwen2.5-Coder-3B-Instruct")
++    base_model_name = config.get("project", {}).get("base_model", "k4ran909/Fluxnat-Coder-3B")
+ 
+     max_seq_length = model_cfg.get("max_seq_length", 4096)
+     load_in_4bit = model_cfg.get("load_in_4bit", True)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

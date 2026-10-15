@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Total files: 922, Total size: 15.91 MB
+

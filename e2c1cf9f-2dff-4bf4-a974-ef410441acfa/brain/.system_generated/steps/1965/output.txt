@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+Running SmartAGENT Red Team Tool tests...
+  [OK] test_tool_registry_has_13_tools passed
+  [OK] test_recon_tool passed
+  [OK] test_exploit_db_direct_cve passed
+  [OK] test_exploit_db_keyword_search passed
+  [OK] test_generate_payload_sqli passed
+  [OK] test_generate_payload_xss passed
+  [OK] test_generate_payload_revshell passed
+  [OK] test_web_attack_headers passed
+  [OK] test_post_exploit_linux passed
+  [OK] test_post_exploit_windows passed
+  [OK] test_post_exploit_ad passed
+
+[ALL RED TEAM TOOL TESTS PASSED SUCCESSFULLY!]
+

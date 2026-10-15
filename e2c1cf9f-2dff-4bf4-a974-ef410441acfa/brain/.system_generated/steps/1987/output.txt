@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+[main 02414f7] feat(agent): add red team security tools and update benchmarks for v0.3.0
+ 5 files changed, 886 insertions(+), 6 deletions(-)
+ create mode 100644 tests/test_redteam_tools.py
+

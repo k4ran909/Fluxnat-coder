@@ -1,0 +1,25 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\prepare_datasets.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -138,7 +138,7 @@
+ 
+     all_data: List[Dict[str, Any]] = []
+ 
+-    # 1. Load curated local CoT
++    # 1. Load curated local CoT & Identity Alignment datasets
+     cot_path = config.get("datasets", {}).get("sources", [{}])[2].get("path", "./data/custom_cot/security_cot.jsonl")
+     local_samples = load_local_cot_data(cot_path, system_prompt)
+     all_data.extend(local_samples)
+@@ -145,3 +145,10 @@
++    identity_path = "./data/custom_cot/identity_alignment.jsonl"
++    if os.path.exists(identity_path):
++        identity_samples = load_local_cot_data(identity_path, system_prompt)
++        # Amplify identity samples to firmly overwrite base model identity in weights
++        all_data.extend(identity_samples * 10)
++        print(f"[+] Added {len(identity_samples)} identity alignment samples (amplified 10x) to overwrite base model identity")
++
+     # 2. Load online datasets if network/HF token available
+     hf_samples = download_and_format_hf_datasets(config, system_prompt)
+     all_data.extend(hf_samples)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,17 @@
+The search for "Gemma 3 model 2025 code understanding open source small language model" returned the following summary:
+**Gemma 3** is a family of lightweight, open-weight language models released by Google DeepMind in March 2025. It is designed to provide high-performance AI capabilities that can run efficiently on consumer-grade hardware, including laptops, workstations, and smartphones.
+
+### Key Features and Capabilities
+*   **Multimodality:** Unlike earlier text-only versions of Gemma, Gemma 3 is natively multimodal, capable of processing both text and image inputs.
+*   **Model Sizes:** It is available in a range of sizes to suit different hardware constraints: **270M, 1B, 4B, 12B, and 27B** parameters.
+*   **Code and Reasoning:** The models are trained on diverse datasets, including code, mathematics, and web text. They show strong performance in code generation, logic, and reasoning tasks, making them effective for developers building coding assistants or automated programming tools.
+*   **Long Context Window:** The 4B, 12B, and 27B variants support a **128K-token context window**, allowing them to process large documents, long codebases, or multiple images in a single prompt. (The 1B model supports a 32K context window).
+*   **Efficiency:** Google utilized a novel "interleaved local/global attention" architecture to significantly reduce KV-cache memory usage, enabling long-context inference on hardware with limited VRAM.
+
+### Why It Matters for Developers
+*   **Open Availability:** You can download the model weights for free (under the Gemma Terms of Use) and run them locally or deploy them via cloud platforms like Google Cloud Run or GKE.
+*   **Optimization:** The models are highly optimized for single-accelerator (GPU/TPU) environments, delivering state-of-the-art performance for their size class.
+*   **Tooling:** Gemma 3 is supported by popular local LLM tools like **Ollama** and **llama.cpp**, making it easy to integrate into local development environments.
+*   **Multilingual Support:** The family offers out-of-the-box support for over 35 languages, with pre-training coverage for over 140 languages.
+
+If you are looking to perform code-related tasks, the **instruction-tuned (IT)** variants are generally recommended for their improved ability to follow coding instructions and structured output requirements.

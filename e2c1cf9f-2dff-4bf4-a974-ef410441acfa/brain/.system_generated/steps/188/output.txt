@@ -1,0 +1,18 @@
+
+The command exited with code 1.
+Output:
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\cli.py:138 in         |
+| system_info                                                                 |
+|                                                                             |
+|   135     """                                                               |
+|   136     Display SmartAGENT environment and system status.                 |
+|   137     """                                                               |
+| > 138     import torch                                                      |
+|   139                                                                       |
+|   140     has_cuda = torch.cuda.is_available()                              |
+|   141     device_name = torch.cuda.get_device_name(0) if has_cuda else      |
+|       "None (CPU)"                                                          |
++-----------------------------------------------------------------------------+
+ModuleNotFoundError: No module named 'torch'
+
