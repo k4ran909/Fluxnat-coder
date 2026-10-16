@@ -25,7 +25,7 @@ SYSTEM_PROMPT = (
     "explain attack surfaces and root causes using detailed step-by-step reasoning, and provide production-ready secure remediations."
 )
 
-REPO_RAW = "https://raw.githubusercontent.com/k4ran909/Fluxnat-coder/main"
+REPO_RAW = "https://raw.githubusercontent.com/k4ran909/smartAGENT/main"
 
 def download_jsonl(url):
     name = url.split('/')[-1]
@@ -76,8 +76,12 @@ for item in identity_raw:
         identity_records.append(item)
 print(f"[+] Loaded {len(identity_records)} identity alignment samples")
 
-# 2. Build balanced training pool: 24*5 + 170*2 + 15*4 = 520 samples
-all_training = (security_records * 5) + (redteam_records * 2) + (identity_records * 4)
+react_raw = download_jsonl(f"{REPO_RAW}/data/custom_cot/react_tool_cot.jsonl")
+react_records = [item for item in react_raw if 'messages' in item]
+print(f"[+] Loaded {len(react_records)} ReAct tool-calling trajectories")
+
+# 2. Build balanced training pool: 24*5 + 170*2 + 15*4 + 16*3 = 568 samples
+all_training = (security_records * 5) + (redteam_records * 2) + (identity_records * 4) + (react_records * 3)
 random.seed(3407)
 random.shuffle(all_training)
 
@@ -90,6 +94,7 @@ print(f"\n[OK] Prepared {len(train_dataset)} balanced training sequences!")
 print(f"     - Security Audits: {len(security_records) * 5} ({len(security_records)} cases)")
 print(f"     - Red Team & ATT&CK: {len(redteam_records) * 2} ({len(redteam_records)} cases)")
 print(f"     - Identity Alignment: {len(identity_records) * 4} ({len(identity_records)} cases)")
+print(f"     - ReAct Tool Trajectories: {len(react_records) * 3} ({len(react_records)} cases)")
 
 # 3. Fine-tuning with SFTTrainer
 OUTPUT_DIR = "./Fluxnat-Coder-3B-Adapters"

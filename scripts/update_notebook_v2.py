@@ -24,7 +24,7 @@ SYSTEM_PROMPT = (
     "explain attack surfaces and root causes using detailed step-by-step reasoning, and provide production-ready secure remediations."
 )
 
-REPO_RAW = "https://raw.githubusercontent.com/k4ran909/Fluxnat-coder/main"
+REPO_RAW = "https://raw.githubusercontent.com/k4ran909/smartAGENT/main"
 
 def download_jsonl(url):
     """Download a JSONL file and return list of parsed dicts."""
@@ -76,9 +76,13 @@ for item in identity_raw:
         identity_records.append(item)
 print(f"[+] Loaded {len(identity_records)} identity alignment samples")
 
-# 4. Build balanced training mix
-# Security CoT (24) x5 = 120, Red Team (170) x2 = 340, Identity (15) x4 = 60 => ~520 total
-all_training = (security_records * 5) + (redteam_records * 2) + (identity_records * 4)
+# 4. Download ReAct multi-turn tool-calling trajectories
+react_raw = download_jsonl(f"{REPO_RAW}/data/custom_cot/react_tool_cot.jsonl")
+react_records = [item for item in react_raw if 'messages' in item]
+print(f"[+] Loaded {len(react_records)} ReAct tool-calling trajectories")
+
+# 5. Build balanced training mix (24x5 + 170x2 + 15x4 + 16x3 = 568 sequences)
+all_training = (security_records * 5) + (redteam_records * 2) + (identity_records * 4) + (react_records * 3)
 random.seed(3407)
 random.shuffle(all_training)
 
@@ -91,6 +95,7 @@ print(f"\n[OK] Prepared {len(train_dataset)} expanded training sequences!")
 print(f"     - Security Audits: {len(security_records) * 5} ({len(security_records)} distinct CWE cases)")
 print(f"     - Red Team / Offensive: {len(redteam_records) * 2} ({len(redteam_records)} exploit chains, payloads, attack techniques)")
 print(f"     - Identity Alignment: {len(identity_records) * 4} ({len(identity_records)} identity prompts)")
+print(f"     - ReAct Tool Trajectories: {len(react_records) * 3} ({len(react_records)} multi-turn tool workflows)")
 '''
 
 # New Step 5 training config — increased steps for 520 samples

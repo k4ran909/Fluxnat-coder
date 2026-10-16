@@ -57,11 +57,12 @@ Unlike generic code models that frequently trigger false safety refusals when au
 
 ---
 
-## 🚀 Key Capabilities
+## 🚀 Key Capabilities (`v0.3.0` Red Team Edition)
 
 - **🔍 Taint Flow & Root Cause Analysis:** Tracks untrusted input from **Source $\rightarrow$ Sanitizer $\rightarrow$ Sink** with explicit causality.
-- **🏷️ Deterministic CWE & OWASP Mapping:** Maps discovered flaws directly to MITRE CWE identifiers (CWE-89, CWE-78, CWE-22, CWE-79, CWE-502, CWE-918, etc.) and OWASP Top 10 categories.
-- **📊 Objective CVSS Scoring:** Computes vulnerability severity ratings (Critical, High, Medium, Low) and estimated CVSS base metrics.
+- **🏷️ 30+ CWE & OWASP Top 10 Mapping:** Maps discovered flaws across 30+ MITRE CWE identifiers (`CWE-89`, `CWE-78`, `CWE-22`, `CWE-79`, `CWE-502`, `CWE-918`, `CWE-611`, `CWE-798`, `CWE-1321`, `CWE-1336`, `CWE-362`, `CWE-416`, etc.) and OWASP categories.
+- **🔴 Offensive Security & Red Team Reasoning:** Analyzes multi-step exploit chains, payload construction (`SQLi`, `XSS`, `SSTI`, `SSRF`, `LFI`, reverse shells), and MITRE ATT&CK techniques (`T1558.003` Kerberoasting, `T1068` Privilege Escalation, `T1547` Persistence, `T1550` Lateral Movement).
+- **🤖 Autonomous ReAct Agent Integration:** Powers the [**SmartAGENT**](https://github.com/k4ran909/smartAGENT) 13-tool security agent (`recon`, `exploit_db`, `generate_payload`, `web_attack`, `post_exploit`, `scan_code`, `fix_code`, etc.).
 - **🛡️ Production-Ready Secure Fixes:** Generates drop-in replacements with parameterized queries, safe execution APIs, and canonicalized path operations.
 - **⚡ Ultra-Low Latency & Minimal Footprint:** At 3 billion parameters, it fits comfortably into consumer GPUs (4 GB VRAM in 4-bit) and edge environments.
 
@@ -71,13 +72,13 @@ Unlike generic code models that frequently trigger false safety refusals when au
 
 | Ecosystem | Vulnerabilities Covered |
 | :--- | :--- |
-| **Python** | SQLi, Command Injection, Path Traversal, Insecure Deserialization (`pickle`/`yaml`), SSRF, Hardcoded Secrets |
-| **JavaScript / TypeScript / Node.js** | DOM XSS, `child_process.exec`, Prototype Pollution, Unsafe Regex (ReDoS), JWT misconfigurations |
-| **Go** | Unchecked errors, SSRF (`http.Get`), Unsafe Pointer arithmetic, Command execution, Race conditions |
-| **C / C++** | Buffer overflows, Use-After-Free, Format string vulnerabilities, Memory leaks, Integer overflows |
-| **Java** | JNDI injection, XML External Entity (XXE), SQLi via Hibernate/JDBC, Deserialization |
-| **PHP** | File inclusion (`LFI`/`RFI`), SQLi, `eval` injection, Object injection |
-| **Infrastructure / DevOps** | Dockerfile root user, exposed ports, unpinned images, `.env` secret leaks |
+| **Python** | SQLi, Command Injection, Path Traversal, Insecure Deserialization (`pickle`/`yaml`), SSRF, SSTI (`Jinja2`), Hardcoded Secrets |
+| **JavaScript / TypeScript / Node.js** | DOM/Reflected XSS, `child_process.exec`, Prototype Pollution (`CWE-1321`), NoSQL Injection (`CWE-943`), ReDoS, JWT |
+| **Go** | Unchecked errors, SSRF (`http.Get`), Path Traversal, Command execution, Race conditions (`CWE-362`) |
+| **C / C++** | Stack/Heap Buffer Overflows (`CWE-120`/`122`/`787`), Use-After-Free (`CWE-416`), Format Strings (`CWE-134`), Integer Overflows (`CWE-190`) |
+| **Java** | JNDI / Log4Shell (`CVE-2021-44228`), XML External Entity / XXE (`CWE-611`), SQLi via Hibernate/JDBC, `ObjectInputStream` Deserialization (`CWE-502`) |
+| **PHP** | File inclusion (`LFI`/`RFI`), SQLi, `eval` injection, PHP Object Injection (`unserialize`), Type Juggling |
+| **Infrastructure / Active Directory** | Dockerfile root user, `.env` secret leaks, Linux SUID/Sudo Privesc, Windows Service/Token Privesc, AD Kerberoasting & ACL abuse |
 
 ---
 
@@ -151,20 +152,21 @@ python -m vllm.entrypoints.openai.api_server \
 
 ---
 
-## ⚙️ Training Details
+## ⚙️ Training Details (`v0.3.0`)
 
 | Hyperparameter | Value |
 | :--- | :--- |
 | **Architecture** | 3B Parameter Dense Decoder-Only Transformer |
 | **Fine-Tuning Framework** | **Unsloth** + TRL `SFTTrainer` |
-| **Method** | QLoRA (4-bit Base Model with 16-bit LoRA Adapters) |
+| **Method** | QLoRA (4-bit Quantization with 16-bit LoRA Adapters, Merged to 16-bit Float) |
+| **Dataset Composition** | 568 balanced sequences (170 Red Team CoT, 24 Multi-Lang Audits, 16 ReAct Tool Trajectories, 15 Identity Alignment) |
 | **LoRA Rank ($r$)** | `64` |
 | **LoRA Alpha ($\alpha$)** | `128` |
 | **Target Modules** | `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj` |
-| **Learning Rate** | `2e-4` (Cosine Scheduler) |
-| **Effective Batch Size** | `16` (Batch size 2 $\times$ Gradient Accumulation 4 $\times$ 2) |
+| **Learning Rate** | `8e-5` (Cosine Scheduler, 65 Steps, Final Loss `0.8952`) |
+| **Effective Batch Size** | `8` (Batch size 2 $\times$ Gradient Accumulation 4) |
 | **Sequence Length** | `4,096` tokens |
-| **Hardware** | 1x NVIDIA Tesla T4 GPU (Google Colab Free Tier) |
+| **Hardware** | 1x NVIDIA Tesla T4 GPU (16 GB VRAM) |
 | **Optimizer** | `adamw_8bit` |
 
 ---

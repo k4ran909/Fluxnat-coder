@@ -148,7 +148,12 @@ def system_info():
         import torch
         has_cuda = torch.cuda.is_available()
         device_name = torch.cuda.get_device_name(0) if has_cuda else "None (CPU)"
-        vram = f"{torch.cuda.get_device_properties(0).total_mem / (1024**3):.1f} GB" if has_cuda else "N/A"
+        if has_cuda:
+            props = torch.cuda.get_device_properties(0)
+            mem_bytes = getattr(props, "total_memory", getattr(props, "total_mem", 0))
+            vram = f"{mem_bytes / (1024**3):.1f} GB"
+        else:
+            vram = "N/A"
         torch_status = f"Installed (v{torch.__version__})"
     except (ImportError, AttributeError):
         has_cuda = False
@@ -157,7 +162,7 @@ def system_info():
         torch_status = "Not Installed (Install via `pip install torch` for AI reasoning)"
 
     console.print(Panel(
-        f"[bold white]SmartAGENT Version:[/bold white] 0.2.0 (Agentic)\n"
+        f"[bold white]SmartAGENT Version:[/bold white] 0.3.0 (Agentic & Red Team Suite)\n"
         f"[bold white]Target Model:[/bold white] k4ran909/Fluxnat-Coder-3B\n"
         f"[bold white]PyTorch Status:[/bold white] {torch_status}\n"
         f"[bold white]CUDA Available:[/bold white] {'[green]Yes[/green]' if has_cuda else '[yellow]No[/yellow]'}\n"
