@@ -1,0 +1,87 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\README.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -8,10 +8,11 @@
+ 
+ ## 🌟 Highlights
+ 
+-- **🤖 Agentic Mode:** ReAct reasoning loop (Thought → Action → Observation) with 8 security tools and interactive CLI chat.
+-- **🧠 Fluxnat Coder 3B:** Custom fine-tuned 3B cybersecurity SLM. Uncensored. No safety filters. Built by Fluxnat.
++- **🤖 Agentic Mode (`v0.3.0`):** ReAct reasoning loop (`Thought` → `Action` → `Observation`) with **13 security & red-team tools** and interactive CLI chat.
++- **🧠 Fluxnat Coder 3B:** Custom fine-tuned 3B cybersecurity SLM trained on 568 multi-CWE, exploit chain, payload generation, ATT&CK, and ReAct tool-use sequences. Uncensored. Zero safety refusals. Built by Fluxnat.
++- **🔴 Red Team Suite:** Built-in network reconnaissance (`recon`), CVE/exploit intelligence (`exploit_db`), payload generator (`generate_payload`), web attack surface auditor (`web_attack`), and post-exploitation advisor (`post_exploit`).
+ - **⚡ Hybrid Scanning:** 4 deterministic SAST scanners + AI Chain-of-Thought reasoning + security scoring (A+ to F).
+-- **🔧 60+ Terminal Commands:** The agent can run git, curl, nmap, docker, semgrep, and more — sandboxed.
++- **🔧 60+ Terminal Commands:** The agent can run `git`, `curl`, `nmap`, `docker`, `semgrep`, and more — sandboxed.
+ - **💻 Runs Locally:** 4-bit quantization fits on a GTX 1650 (4GB VRAM). No cloud API needed.
+ 
+ ---
+@@ -64,18 +64,28 @@
+ ✅ Final Answer: Found 3 vulnerabilities...
+ ```
+ 
+-### Agent Tools
+-
+-| Tool | Description |
+-|---|---|
+-| `list_files` | List code files in a directory |
+-| `read_file` | Read file contents (with line ranges) |
+-| `search_code` | Regex search across the codebase |
+-| `scan_code` | Run static vulnerability scanners |
+-| `get_cwe_info` | Look up CWE vulnerability details |
+-| `write_report` | Generate JSON/Markdown reports |
+-| `run_command` | Execute sandboxed shell commands |
+-| `fix_code` | Generate secure code remediations |
++### Agent Tools (13 Tools Total)
++
++#### Defensive & Code Analysis Tools (8)
++| Tool | Description |
++|---|---|
++| `list_files` | List code files in a directory (respects ignore rules) |
++| `read_file` | Read file contents (with optional `:start-end` line ranges) |
++| `search_code` | Regex search across the entire codebase |
++| `scan_code` | Run all 4 static vulnerability scanners on a file |
++| `get_cwe_info` | Look up detailed CWE vulnerability & remediation guidance |
++| `write_report` | Generate structured JSON or Markdown vulnerability reports |
++| `run_command` | Execute sandboxed shell commands (`git`, `python`, `nmap`, `curl`, etc.) |
++| `fix_code` | Generate production-ready secure code remediations |
++
++#### Red Team & Offensive Security Tools (5)
++| Tool | Description |
++|---|---|
++| `recon` | Network reconnaissance & TCP port scanner (`nmap` wrapper + fast socket banner grabber) |
++| `exploit_db` | Query known CVEs and exploit intelligence (`CVE-2021-44228`, `CVE-2017-0144`, `apache`, `ssh`, etc.) |
++| `generate_payload` | Generate verification payloads (`sqli`, `xss`, `cmdi`, `revshell`, `ssti`, `ssrf`, `lfi`) |
++| `web_attack` | Probe URLs for exposed sensitive files (`.env`, `.git`, `/swagger.json`) & missing HTTP security headers |
++| `post_exploit` | Privilege escalation, persistence, and lateral movement auditing (`linux`, `windows`, `ad`) |
+ 
+ ---
+ 
+@@ -87,9 +87,9 @@
+ │   ├── config.py               # Configuration
+ │   ├── agent/                  # ReAct Agent
+ │   │   ├── core.py             # Reasoning loop
+-│   │   ├── tools.py            # 8 security tools + CWE database
+-│   │   ├── memory.py           # Conversation memory
+-│   │   └── prompts.py          # System prompts
++│   │   ├── tools.py            # 13 security & red team tools + CWE/CVE databases
++│   │   ├── memory.py           # Sliding-window conversation memory
++│   │   └── prompts.py          # ReAct system prompts
+ │   ├── scanners/               # Static Analysis
+ │   │   ├── pattern_scanner.py  # SQLi, RCE, XSS, Deserialization
+ │   │   ├── secret_scanner.py   # API keys, tokens, credentials
+@@ -101,6 +101,12 @@
+ │   └── reporting/              # Output
+ │       ├── report.py           # Rich terminal UI & exports
+ │       └── scorer.py           # Security grading (A+ to F)
++├── data/
++│   └── custom_cot/             # Security, Red Team, Identity & ReAct datasets
++├── docs/
++│   ├── model.md                # Model documentation & usage
++│   └── benchmarks.md           # Evaluation scorecard & training metrics
++├── scripts/                    # Dataset generation & Colab training pipelines
+ ├── pyproject.toml
+ └── tests/
+ ```
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

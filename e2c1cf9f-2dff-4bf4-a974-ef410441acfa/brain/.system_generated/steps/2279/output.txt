@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+ M Fluxnat_Coder_3B_Training.ipynb
+ M MODEL_CARD.md
+ M README.md
+ M data/processed/eval_data.jsonl
+ M data/processed/train_data.jsonl
+ M docs/model.md
+ M prepare_datasets.py
+ M pyproject.toml
+ M scripts/run_colab_training.py
+ M scripts/update_notebook_v2.py
+ M smartagent/__init__.py
+ M smartagent/cli.py
+?? data/custom_cot/react_tool_cot.jsonl
+?? scripts/generate_react_dataset.py
+

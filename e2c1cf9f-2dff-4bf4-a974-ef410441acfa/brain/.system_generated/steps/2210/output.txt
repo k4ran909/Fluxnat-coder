@@ -1,0 +1,9 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import torch; print(torch.__version__, torch.cuda.is_available(), getattr(torch.cuda.get_device_properties(0), 'total_memory', None) if torch.cuda.is_available() else None)
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'torch'
+

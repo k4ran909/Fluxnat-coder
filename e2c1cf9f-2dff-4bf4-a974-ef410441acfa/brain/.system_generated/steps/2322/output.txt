@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+model-00001-of-00002.safetensors 4957560304 7f8b7a3a2454ad3234343bb058e3c727cc6932747dc1753390d26a8ef23ad9b7
+model-00002-of-00002.safetensors 1214366696 7e59b49bae3c2534d19a9e67417c1888e26a49eb340030bd6dcc4cc075d9c8cf
+model.safetensors.index.json 35581 None
+

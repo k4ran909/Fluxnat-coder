@@ -1,140 +1,82 @@
-# SmartAGENT v0.2.0 — Agentic Build Walkthrough
+# SmartAGENT v0.3.0 — Agentic Security & Red Team Suite Walkthrough
 
-## What Changed
+## Overview
 
-Transformed SmartAGENT from a **static regex scanner with optional AI verification** into a **fully autonomous agentic security AI** with a ReAct reasoning loop.
+SmartAGENT (`v0.3.0`) combines a **4-scanner deterministic SAST engine**, a **13-tool autonomous ReAct security & red-team agent**, and **Fluxnat Coder 3B** (`k4ran909/Fluxnat-Coder-3B`) — a 3.09B-parameter uncensored cybersecurity LLM trained on **568 balanced Chain-of-Thought sequences**.
 
-### Before (v0.1.0)
 ```
-smartagent scan . → regex patterns → findings list → (optional) AI verify each
-```
-
-### After (v0.2.0)
-```
-smartagent chat → interactive agent that thinks, plans, uses tools, and acts autonomously
-smartagent agent "scan for SQL injection" → one-shot autonomous task
-smartagent scan . → still works (unchanged)
+smartagent chat                          → interactive ReAct agent with 13 offensive & defensive tools
+smartagent agent "audit this project"    → one-shot autonomous security task execution
+smartagent scan . --ai                   → 4 static scanners + AI deep verification + A+ to F security grade
+smartagent info                          → system, CUDA/VRAM, scanner, and agent tool status
 ```
 
 ---
 
-## New Files (5)
+## 1. Complete 13-Tool ReAct Registry ([`smartagent/agent/tools.py`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/smartagent/agent/tools.py))
 
-### 1. `smartagent/agent/__init__.py`
-Package init exposing `SmartAgent` class.
-
-### 2. `smartagent/agent/prompts.py`
-ReAct system prompt that teaches the model to:
-- Think step-by-step before acting
-- Use tools with `Action: tool_name` / `Action Input: args` format
-- Return `Final Answer:` when reasoning is complete
-- Lists all 8 available tools with descriptions
-
-### 3. `smartagent/agent/memory.py`
-Sliding-window conversation memory:
-- Preserves system prompt (always first message)
-- Keeps last 20 messages (configurable)
-- Tracks which files have been scanned
-- Accumulates findings across tool calls
-
-### 4. `smartagent/agent/tools.py`
-8 security-focused tools:
-
+### Defensive & Code Auditing Tools (8)
 | Tool | Description |
 |---|---|
-| `list_files` | Lists code files in a directory, respects ignore patterns |
-| `read_file` | Reads file contents with optional line range (`:10-50`) |
-| `search_code` | Regex search across all code files (capped at 50 results) |
-| `scan_code` | Runs all 4 existing static scanners on a file |
-| `get_cwe_info` | Looks up CWE details from embedded 12-entry knowledge base |
-| `write_report` | Writes findings to JSON or Markdown report file |
-| `run_command` | Sandboxed shell execution (allowlist: git, python, grep, etc.) |
-| `fix_code` | Generates remediation template for a CWE + code snippet |
+| `list_files` | Recursively lists source code and config files in a project directory |
+| `read_file` | Reads file contents with line numbers and optional `:start-end` range |
+| `search_code` | Regex search across all code files (capped at 50 matches) |
+| `scan_code` | Runs all 4 static scanners (`SecretScanner`, `PatternScanner`, `DependencyScanner`, `ConfigScanner`) |
+| `get_cwe_info` | Queries embedded CWE knowledge base (CVSS, OWASP Top 10 mapping, remediation) |
+| `write_report` | Writes structured Markdown or JSON vulnerability audit reports |
+| `run_command` | Sandboxed shell execution (`git`, `python`, `pip`, `npm`, `bandit`, `semgrep`) |
+| `fix_code` | Generates drop-in remediation templates for a CWE + vulnerable snippet |
 
-Also includes an embedded CWE knowledge base (12 entries covering the most common web/code vulns) so the agent can look up vulnerability details without network access.
-
-### 5. `smartagent/agent/core.py`
-The **ReAct agent loop** — the brain:
-- Parses LLM output with regex for `Thought:`, `Action:`, `Action Input:`, `Final Answer:`
-- Dispatches tool calls to the `ToolRegistry`
-- Injects `Observation:` back into the conversation
-- Handles malformed outputs gracefully (nudges the model to retry)
-- Enforces 15-iteration safety limit
-- Lazy-loads the model (fast startup if model not needed)
-- Rich terminal output: colored panels for Thought/Action/Observation/Answer
+### Offensive & Red Team Tools (5)
+| Tool | Description |
+|---|---|
+| `recon` | Network reconnaissance & TCP port scanner (`nmap -sV` wrapper + fast socket banner-grabbing fallback) |
+| `exploit_db` | Offline CVE & exploit advisory lookup (20+ critical CVEs: Log4Shell, EternalBlue, Spring4Shell, Zerologon, regreSSHion, PrintNightmare, Dirty Pipe, ProxyLogon) |
+| `generate_payload` | Security audit verification payload generator across 7 categories (`sqli`, `xss`, `cmdi`, `revshell`, `ssti`, `ssrf`, `lfi`) |
+| `web_attack` | Web attack surface discovery (`endpoints` probing for `/.env`, `/.git/HEAD`, `/actuator/env`, `/swagger.json` + HTTP security `headers` audit) |
+| `post_exploit` | Post-exploitation enumeration, persistence detection, and lateral movement audit checklists for `linux`, `windows`, and `ad` (MITRE ATT&CK mapped) |
 
 ---
 
-## Modified Files (4)
+## 2. Dataset & Retraining Pipeline (`v0.3.0`)
 
-### `smartagent/ai/model.py`
-- Fixed `Tuple[Any, Any]` type hint (was missing `Any` import)
-- Added `generate_stream()` method for real-time token streaming via `TextIteratorStreamer`
-- Added `Generator` import
+### 4-Pillar Dataset ([`prepare_datasets.py`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/prepare_datasets.py))
+- **[`data/custom_cot/security_cot.jsonl`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/data/custom_cot/security_cot.jsonl):** 24 deep vulnerability audit cases $\times 5 = 120$ sequences
+- **[`data/custom_cot/redteam_cot.jsonl`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/data/custom_cot/redteam_cot.jsonl):** 170 offensive security, exploit chain, payload, 30+ CWE, MITRE ATT&CK & benign control cases $\times 2 = 340$ sequences
+- **[`data/custom_cot/react_tool_cot.jsonl`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/data/custom_cot/react_tool_cot.jsonl):** 16 multi-turn ReAct tool-calling trajectories across all 13 tools $\times 2 = 32$ sequences
+- **[`data/custom_cot/identity_alignment.jsonl`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/data/custom_cot/identity_alignment.jsonl):** 19 Fluxnat Coder 3B identity & zero-refusal alignment cases $\times 4 = 76$ sequences
+- **Total:** **568 balanced sequences** (`539` train + `29` eval)
 
-### `smartagent/config.py`
-Added 4 agent config fields:
-- `max_agent_iterations: int = 15`
-- `agent_temperature: float = 0.3`
-- `memory_window: int = 20`
-- `allowed_commands: list` (sandboxed shell allowlist)
-- Fixed default model ID to `k4ran909/Fluxnat-Coder-3B`
-
-### `smartagent/cli.py`
-Added 2 new CLI commands:
-- **`smartagent chat`** — Interactive REPL with Rich formatting. Supports `exit`, `quit`, `reset`.
-- **`smartagent agent "task"`** — One-shot autonomous task execution
-- Updated version display to `0.2.0 (Agentic)`
-- Shows "Agent Mode: Available" in system info
-
-### `pyproject.toml`
-- Version bumped to `0.2.0`
-- Updated description
+### Cloud Training & Hub Deployment
+- **Colab Notebook:** [`Fluxnat_Coder_3B_Training.ipynb`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/Fluxnat_Coder_3B_Training.ipynb) & [`scripts/run_colab_training.py`](file:///c:/Users/k4ran/OneDrive/Desktop/smartAGENT/scripts/run_colab_training.py)
+- **Live Hugging Face Hub:** [`k4ran909/Fluxnat-Coder-3B`](https://huggingface.co/k4ran909/Fluxnat-Coder-3B) (`FluxnatForCausalLM`, `model_type: "fluxnat"`, `PreTrainedTokenizerFast`, zero base-model references)
 
 ---
 
-## Verification Results
+## 3. Verification Results
 
-All tests pass:
+All unit tests and CLI checks pass 100%:
 ```
-PASS: Final Answer parsing
-PASS: Action parsing
-PASS: Memory sliding window
-PASS: search_code tool
-PASS: Command sandboxing blocks dangerous commands
-PASS: git status allowed
+Running SmartAGENT unit tests...
+  [OK] test_secret_scanner_detects_aws_key passed
+  [OK] test_pattern_scanner_detects_sqli passed
+  [OK] test_pattern_scanner_detects_command_injection passed
+  [OK] test_pattern_scanner_clean_code_no_findings passed
+  [OK] test_config_scanner_dockerfile_root passed
+  [OK] test_security_scorer passed
+[ALL TESTS PASSED SUCCESSFULLY!]
 
-ALL TESTS PASSED
+Running SmartAGENT Red Team Tool tests...
+  [OK] test_tool_registry_has_13_tools passed
+  [OK] test_recon_tool passed
+  [OK] test_exploit_db_direct_cve passed
+  [OK] test_exploit_db_keyword_search passed
+  [OK] test_generate_payload_sqli passed
+  [OK] test_generate_payload_xss passed
+  [OK] test_generate_payload_revshell passed
+  [OK] test_web_attack_headers passed
+  [OK] test_post_exploit_linux passed
+  [OK] test_post_exploit_windows passed
+  [OK] test_post_exploit_ad passed
+[ALL RED TEAM TOOL TESTS PASSED SUCCESSFULLY!]
 ```
-
-CLI shows all 5 commands:
-```
-Commands:
-  scan    Perform an automated vulnerability audit
-  train   Launch training for Fluxnat Coder 3B
-  info    Display system status
-  chat    Launch interactive agentic chat        ← NEW
-  agent   Run a one-shot agentic task            ← NEW
-```
-
----
-
-## How to Use
-
-### Interactive Chat
-```bash
-python -m smartagent.cli chat
-```
-
-### One-Shot Agent
-```bash
-python -m smartagent.cli agent "scan this project for SQL injection"
-```
-
-### Classic Static Scan (unchanged)
-```bash
-python -m smartagent.cli scan .
-```
-
-> [!NOTE]
-> The agent requires the Fluxnat Coder 3B model (loaded in 4-bit on your GTX 1650). First run will download from `k4ran909/Fluxnat-Coder-3B` on HuggingFace (~1.8GB quantized).

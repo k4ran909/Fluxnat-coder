@@ -1,0 +1,58 @@
+
+The command exited with code 0.
+Output:
+
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:490:here is my hugging face token - 
+hf_REDACTED_TOKEN_SECURED
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:500:Let me start building everything now. 
+I'll use `HF_TOKEN` environment variable throughout.
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:739:4. Set your Hugging Face write token 
+in the Colab Secrets tab (`HF_TOKEN`) or enter it when prompted.
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:777:[/usr/local/lib/python3.13/dist-packag
+es/transformers/utils/hub.py](https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in 
+cached_files(path_or_repo_id, filenames, cache_dir, force_download, proxies, token, revision, local_files_only, 
+subfolder, repo_type, user_agent, _raise_exceptions_for_gated_repo, _raise_exceptions_for_missing_entries, 
+_raise_exceptions_for_connection_errors, _commit_hash, tqdm_class, **deprecated_kwargs) 421 # This is slightly better 
+for only 1 file --> 422 hf_hub_download( 423 path_or_repo_id,
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:780:[/usr/local/lib/python3.13/dist-packag
+es/huggingface_hub/file_download.py](https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in 
+hf_hub_download(repo_id, filename, subfolder, repo_type, revision, library_name, library_version, cache_dir, 
+local_dir, user_agent, force_download, etag_timeout, token, local_files_only, headers, endpoint, tqdm_class, dry_run) 
+1026 else: -> 1027 return _hf_hub_download_to_cache_dir( 1028 # Destination
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:781:[/usr/local/lib/python3.13/dist-packag
+es/huggingface_hub/file_download.py](https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in 
+_hf_hub_download_to_cache_dir(cache_dir, repo_id, filename, repo_type, revision, endpoint, etag_timeout, headers, 
+token, local_files_only, force_download, tqdm_class, dry_run) 1173 if head_call_error is not None: -> 1174 
+_raise_on_head_call_error(head_call_error, force_download, local_files_only) 1175
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:928:[/usr/local/lib/python3.13/dist-packag
+es/huggingface_hub/utils/_http.py](https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in 
+hf_raise_for_status(response, endpoint_name) 797 try: --> 798 response.raise_for_status() 799 except 
+httpx.HTTPStatusError as e:
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:934:[/tmp/ipykernel_1559/943959236.py](htt
+ps://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in <cell line: 0>() 4 5 api = 
+HfApi(token=os.environ['HF_TOKEN']) ----> 6 api.create_repo(repo_id=HUB_MODEL_ID, repo_type="model", exist_ok=True) 7 
+8 print(f"[*] Uploading {MERGED_DIR} to 
+[https://huggingface.co/{HUB_MODEL_ID}...](https://huggingface.co/%7BHUB_MODEL_ID%7D...)")
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:937:[/usr/local/lib/python3.13/dist-packag
+es/huggingface_hub/hf_api.py](https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in 
+create_repo(self, repo_id, token, private, visibility, repo_type, exist_ok, resource_group_id, region, space_sdk, 
+space_hardware, space_storage, space_sleep_time, space_secrets, space_variables, space_volumes, space_template) 4849 
+return RepoUrl(f"{self.endpoint}/{constants.REPO_TYPES_URL_PREFIXES[repo_type]}{repo_id}") 4850 except HfHubHTTPError: 
+-> 4851 raise err 4852 else: 4853 raise
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:938:[/usr/local/lib/python3.13/dist-packag
+es/huggingface_hub/hf_api.py](https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in 
+create_repo(self, repo_id, token, private, visibility, repo_type, exist_ok, resource_group_id, region, space_sdk, 
+space_hardware, space_storage, space_sleep_time, space_secrets, space_variables, space_volumes, space_template) 4833 
+4834 try: -> 4835 hf_raise_for_status(r) 4836 except HfHubHTTPError as err: 4837 if exist_ok and 
+err.response.status_code == 409:
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:939:[/usr/local/lib/python3.13/dist-packag
+es/huggingface_hub/utils/_http.py](https://colab.research.google.com/drive/1u6mCyiyeT45QW6O0L-95tJ-csN6VEC17#) in 
+hf_raise_for_status(response, endpoint_name) 897 + "\nMake sure your token has the correct permissions." 898 ) --> 899 
+raise _format(HfHubHTTPError, message, response) from e 900 901 elif response.status_code == 429:
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:989:api = 
+HfApi(token=os.environ['HF_TOKEN'])
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md:3340:* **Code:** Retrieves `HF_TOKEN` 
+from Google Colab userdata secrets or interactive input and executes `huggingface_hub.login()`.
+
+
+

@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+[OK] Pushed clean v0.3.0 configs & model card to Hugging Face Hub: https://huggingface.co/k4ran909/Fluxnat-Coder-3B/commit/c46cd9ce0b0be4e590fb3fc6fd3b8bd3090bf98b
+

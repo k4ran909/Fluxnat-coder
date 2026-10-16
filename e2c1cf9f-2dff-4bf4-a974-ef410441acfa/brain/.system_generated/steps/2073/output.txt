@@ -1,0 +1,22 @@
+
+The command exited with code 1.
+Output:
+Select-String : The file C:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain cannot 
+be read: Access to the path 'C:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain' is 
+denied.
+At line:1 char:1
++ Select-String -Path 'e2c1cf9f-2dff-4bf4-a974-ef410441acfa\*' -Pattern ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Select-String], ArgumentException
+    + FullyQualifiedErrorId : ProcessingFile,Microsoft.PowerShell.Commands.SelectStringCommand
+ 
+Select-String : The file C:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation 
+cannot be read: Access to the path 
+'C:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation' is denied.
+At line:1 char:1
++ Select-String -Path 'e2c1cf9f-2dff-4bf4-a974-ef410441acfa\*' -Pattern ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Select-String], ArgumentException
+    + FullyQualifiedErrorId : ProcessingFile,Microsoft.PowerShell.Commands.SelectStringCommand
+ 
+

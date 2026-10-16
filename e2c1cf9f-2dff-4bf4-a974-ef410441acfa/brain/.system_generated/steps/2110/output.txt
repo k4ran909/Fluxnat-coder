@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+To https://github.com/k4ran909/smartAGENT.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+

@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+[*] Starting export for conversation: e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+[*] Source Brain: C:\Users\k4ran\.gemini\antigravity\brain\e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+[*] Generating human-readable conversation transcript markdown...
+
+[*] Exporting to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+  [OK] Copied full brain directory -> c:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain
+  [OK] Saved human-readable transcript -> c:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md
+  [OK] Copied raw JSONL transcript logs -> c:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation
+  [OK] Created root README.md -> c:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\README.md
+
+[*] Exporting to: c:\Users\k4ran\OneDrive\Desktop\e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+  [OK] Copied full brain directory -> c:\Users\k4ran\OneDrive\Desktop\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain
+  [OK] Saved human-readable transcript -> c:\Users\k4ran\OneDrive\Desktop\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md
+  [OK] Copied raw JSONL transcript logs -> c:\Users\k4ran\OneDrive\Desktop\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation
+  [OK] Created root README.md -> c:\Users\k4ran\OneDrive\Desktop\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\README.md
+
+[ALL EXPORTS COMPLETED SUCCESSFULLY!]
+

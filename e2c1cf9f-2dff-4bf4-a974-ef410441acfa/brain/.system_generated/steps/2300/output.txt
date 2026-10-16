@@ -1,0 +1,18 @@
+
+The command exited with code 0.
+Output:
+faf3e88c5e 2026-10-07 08:20:03+00:00 Upload folder using huggingface_hub
+5bc795afc0 2026-10-07 07:25:16+00:00 Upload folder using huggingface_hub
+00d242b72b 2026-09-22 10:15:41+00:00 Upload folder using huggingface_hub
+abc702e2e3 2026-09-21 22:12:09+00:00 Update tokenizer_config.json to PreTrainedTokenizerFast
+146024ea46 2026-09-21 22:12:05+00:00 Update config.json to pure Fluxnat architecture with auto_map
+17b3f3b95a 2026-09-21 22:12:01+00:00 Add FluxnatForCausalLM for independent architecture
+687496d51c 2026-09-21 22:11:58+00:00 Add FluxnatConfig for independent architecture
+e10c362ee6 2026-09-21 21:56:29+00:00 Enforce mathematical token ban for forbidden base identity tokens
+1ecbcb7242 2026-09-21 21:48:44+00:00 Update default system prompt in tokenizer_config.json to Fluxnat Coder 3B
+2138d91654 2026-09-21 21:48:42+00:00 Update default system prompt in chat_template.jinja to Fluxnat Coder 3B
+a83e8f2340 2026-09-21 21:44:40+00:00 Update Fluxnat Coder 3B model card with pure Fluxnat branding
+682d46eb7e 2026-09-21 21:42:07+00:00 Update professional Fluxnat Coder 3B model card
+9772fa57bf 2026-09-21 21:22:59+00:00 Upload folder using huggingface_hub
+6edc670c70 2026-09-21 21:21:19+00:00 initial commit
+

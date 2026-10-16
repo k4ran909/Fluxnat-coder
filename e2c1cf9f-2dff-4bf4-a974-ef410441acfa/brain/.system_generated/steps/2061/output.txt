@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----        16-10-2026     01:30         260429 CONVERSATION_TRANSCRIPT.md                                           
+-a----        16-10-2026     01:30        2872209 transcript.jsonl                                                     
+-a----        16-10-2026     01:30        4053321 transcript_full.jsonl                                                
+
+
+

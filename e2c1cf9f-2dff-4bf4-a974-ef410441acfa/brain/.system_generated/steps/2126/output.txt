@@ -1,0 +1,21 @@
+
+The command exited with code 0.
+Output:
+Found token in 16 files:
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\transcript.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\transcript_full.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript\00000001.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript\00000004.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript\00000005.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript\00000006.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript\00000027.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000002.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000006.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000007.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000008.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000050.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\steps\2030\output.txt
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\CONVERSATION_TRANSCRIPT.md
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\transcript.jsonl
+  e2c1cf9f-2dff-4bf4-a974-ef410441acfa\conversation\transcript_full.jsonl
+

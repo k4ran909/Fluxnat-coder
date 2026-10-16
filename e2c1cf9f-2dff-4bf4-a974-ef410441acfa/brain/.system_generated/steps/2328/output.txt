@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+Line 14: 4. **Cloud Training Pipeline:** Developed automated Unsloth QLoRA pipeline and executed 65 steps on Tesla T4 GPU in Google Colab (loss reduced to 0.8952).
+

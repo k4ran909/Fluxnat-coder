@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+=== config.json ===
+  _name_or_path: k4ran909/Fluxnat-Coder-3B
+  model_name: Fluxnat-Coder-3B
+  model_author: Fluxnat
+  architectures: ['Qwen2ForCausalLM']
+  model_type: qwen2
+=== tokenizer_config.json ===
+  tokenizer_class: Qwen2Tokenizer
+

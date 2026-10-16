@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+
+
+Count    : 938
+Average  : 
+Sum      : 24076005
+Maximum  : 
+Minimum  : 
+Property : Length
+
+
+
+

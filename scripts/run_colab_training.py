@@ -142,11 +142,26 @@ cfg_path = Path(MERGED_DIR) / "config.json"
 if cfg_path.exists():
     with open(cfg_path, 'r') as f:
         c = json.load(f)
+    c["architectures"] = ["FluxnatForCausalLM"]
+    c["model_type"] = "fluxnat"
     c["_name_or_path"] = "k4ran909/Fluxnat-Coder-3B"
     c["model_name"] = "Fluxnat-Coder-3B"
     c["model_author"] = "Fluxnat"
+    c["auto_map"] = {
+        "AutoConfig": "configuration_fluxnat.FluxnatConfig",
+        "AutoModel": "modeling_fluxnat.FluxnatModel",
+        "AutoModelForCausalLM": "modeling_fluxnat.FluxnatForCausalLM"
+    }
     with open(cfg_path, 'w') as f:
         json.dump(c, f, indent=2)
+
+tok_cfg_path = Path(MERGED_DIR) / "tokenizer_config.json"
+if tok_cfg_path.exists():
+    with open(tok_cfg_path, 'r', encoding='utf-8') as f:
+        tc = json.load(f)
+    tc["tokenizer_class"] = "PreTrainedTokenizerFast"
+    with open(tok_cfg_path, 'w', encoding='utf-8') as f:
+        json.dump(tc, f, indent=2)
 
 print("[OK] Standalone model merged and rebranded successfully!")
 

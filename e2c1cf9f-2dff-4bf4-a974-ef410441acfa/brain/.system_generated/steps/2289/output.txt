@@ -1,0 +1,15 @@
+
+The command exited with code 1.
+Output:
+warning: in the working copy of 'MODEL_CARD.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'benchmark_suite.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/model.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'prepare_datasets.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pyproject.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/run_colab_training.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/update_notebook_v2.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/__init__.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'smartagent/cli.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/generate_react_dataset.py', LF will be replaced by CRLF the next time Git touches it
+

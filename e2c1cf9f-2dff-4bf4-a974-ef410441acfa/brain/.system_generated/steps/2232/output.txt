@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+[OK] Generated 16 multi-turn ReAct tool-calling trajectories -> data\custom_cot\react_tool_cot.jsonl
+

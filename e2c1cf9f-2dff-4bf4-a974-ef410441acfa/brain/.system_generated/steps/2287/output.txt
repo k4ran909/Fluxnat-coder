@@ -1,0 +1,34 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\benchmark_suite.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -283,9 +283,19 @@
+         dur = time.time() - t0
+ 
+         resp_lower = resp.lower()
+-        is_vuln_detected = ("vulnerable" in resp_lower or "security flaw" in resp_lower or "critical" in resp_lower) and ("not vulnerable" not in resp_lower and "benign" not in resp_lower)
+-        expected_cwe_num = tc["expected_cwe"].split("-")[-1]
+-        cwe_matched = (tc["expected_cwe"].lower() in resp_lower) or (f"cwe {expected_cwe_num}" in resp_lower) or (f"cwe-{expected_cwe_num}" in resp_lower)
++        is_vuln_detected = (
++            any(k in resp_lower for k in ("vulnerable", "vulnerability", "security flaw", "critical", "high", "cwe-"))
++            and ("not vulnerable" not in resp_lower and "status: benign" not in resp_lower and "classification: benign" not in resp_lower)
++        )
++        accepted = tc.get("accepted_cwes", [tc["expected_cwe"]])
++        cwe_matched = False
++        matched_cwe_label = tc["expected_cwe"]
++        for cand in accepted:
++            cnum = cand.split("-")[-1]
++            if (cand.lower() in resp_lower) or (f"cwe {cnum}" in resp_lower) or (f"cwe-{cnum}" in resp_lower):
++                cwe_matched = True
++                matched_cwe_label = cand
++                break
+ 
+         passed = is_vuln_detected and cwe_matched
+         status = "PASSED [OK]" if passed else "FAILED [X]"
+@@ -292,4 +292,4 @@
+-        cwe_found_str = tc["expected_cwe"] if cwe_matched else ("DETECTED" if is_vuln_detected else "MISSED")
++        cwe_found_str = matched_cwe_label if cwe_matched else ("DETECTED" if is_vuln_detected else "MISSED")
+ 
+         print(f"{tc['id']:<9} | {tc['lang'][:8]:<8} | {tc['name'][:30]:<30} | {tc['expected_cwe']:<9} | {cwe_found_str:<10} | {status} ({dur:.1f}s)")
+         overall_results["cwe_detection"].append({
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

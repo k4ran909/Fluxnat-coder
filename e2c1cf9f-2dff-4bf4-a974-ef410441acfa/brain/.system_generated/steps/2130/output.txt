@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Error cleaning c:\Users\k4ran\OneDrive\Desktop\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000036.jsonl: [Errno 22] Invalid argument: 'c:\\Users\\k4ran\\OneDrive\\Desktop\\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\\brain\\.system_generated\\logs\\chunks\\transcript_full\\00000036.jsonl'
+Sanitized 32 files successfully.
+

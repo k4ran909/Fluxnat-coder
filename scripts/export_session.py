@@ -4,6 +4,7 @@ Export script to save the full conversation transcript and brain directory
 for conversation e2c1cf9f-2dff-4bf4-a974-ef410441acfa to:
 1. c:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa
 2. c:\Users\k4ran\OneDrive\Desktop\e2c1cf9f-2dff-4bf4-a974-ef410441acfa
+Automatically sanitizes any raw Hugging Face API tokens (hf_REDACTED_TOKEN_SECURED).
 """
 
 import os
@@ -20,11 +21,41 @@ TARGET_DIRS = [
     Path(r"c:\Users\k4ran\OneDrive\Desktop") / CONV_ID,
 ]
 
+HF_TOKEN_REGEX = re.compile(r"hf_(?!REDACTED_TOKEN_SECURED)[A-Za-z0-9]{20,}")
+
+
+def sanitize_tokens(text: str) -> str:
+    return HF_TOKEN_REGEX.sub("hf_REDACTED_TOKEN_SECURED", text)
+
+
+def sanitize_directory(root_dir: Path) -> int:
+    import time
+    pat_bytes = re.compile(rb"hf_[A-Za-z0-9]{20,}")
+    redacted_files = 0
+    for dirpath, _, filenames in os.walk(root_dir):
+        for fname in filenames:
+            fpath = Path(dirpath) / fname
+            for attempt in range(5):
+                try:
+                    raw = fpath.read_bytes()
+                    if pat_bytes.search(raw):
+                        cleaned = pat_bytes.sub(b"hf_REDACTED_TOKEN_SECURED", raw)
+                        fpath.write_bytes(cleaned)
+                        redacted_files += 1
+                    break
+                except PermissionError:
+                    time.sleep(0.3)
+                except Exception:
+                    break
+    return redacted_files
+
+
 def clean_user_text(raw: str) -> str:
     m = re.search(r'<USER_REQUEST>\s*(.*?)\s*</USER_REQUEST>', raw, re.DOTALL)
     if m:
-        return m.group(1).strip()
-    return raw.strip()
+        return sanitize_tokens(m.group(1).strip())
+    return sanitize_tokens(raw.strip())
+
 
 def build_markdown_transcript(full_transcript_path: Path) -> str:
     lines = []
@@ -36,10 +67,10 @@ def build_markdown_transcript(full_transcript_path: Path) -> str:
     lines.append("## Executive Summary of Tasks & Milestones\n")
     lines.append("1. **Research & Base Model Selection:** Evaluated sub-4B open-source uncensored security models and established zero base model naming constraints.")
     lines.append("2. **Local Architecture & Framework:** Built `smartAGENT` ReAct security agent framework with AST scanning, vulnerability scorer, and CLI.")
-    lines.append("3. **Dataset Engineering:** Authored 170 red-team CoT reasoning cases (exploit chains, payload generation, 30+ CWEs, ATT&CK techniques), amplified into 520 balanced sequences.")
+    lines.append("3. **Dataset Engineering (`v0.3.0`):** Authored 4-pillar dataset (`security_cot.jsonl`, `redteam_cot.jsonl`, `react_tool_cot.jsonl`, `identity_alignment.jsonl`), amplified into **568 balanced sequences** (`539` train + `29` eval).")
     lines.append("4. **Cloud Training Pipeline:** Developed automated Unsloth QLoRA pipeline and executed 65 steps on Tesla T4 GPU in Google Colab (loss reduced to 0.8952).")
-    lines.append("5. **16-Bit Standalone Merge & Publication:** Merged weights into 16-bit standalone model and published to Hugging Face Hub (`k4ran909/Fluxnat-Coder-3B`).")
-    lines.append("6. **Red Team Agent Tool Suite:** Added 5 new tools (`recon`, `exploit_db`, `generate_payload`, `web_attack`, `post_exploit`), expanding agent registry to 13 tools with 100% unit test pass rate.\n")
+    lines.append("5. **16-Bit Standalone Merge & Publication:** Merged weights into 16-bit standalone `FluxnatForCausalLM` model and published to Hugging Face Hub (`k4ran909/Fluxnat-Coder-3B`).")
+    lines.append("6. **Red Team Agent Tool Suite (`v0.3.0`):** Added 5 offensive tools (`recon`, `exploit_db`, `generate_payload`, `web_attack`, `post_exploit`), expanding agent registry to 13 tools with 100% unit test pass rate.\n")
     lines.append("---\n")
     lines.append("## Chronological Dialogue Log\n")
 
@@ -61,7 +92,7 @@ def build_markdown_transcript(full_transcript_path: Path) -> str:
                 lines.append(f"```text\n{user_text}\n```\n")
 
             elif source == "MODEL" and stype == "PLANNER_RESPONSE":
-                content = step.get("content", "")
+                content = sanitize_tokens(step.get("content", ""))
                 tcalls = step.get("tool_calls", [])
                 
                 if content:
@@ -149,16 +180,20 @@ This folder contains a complete backup of the Antigravity conversation and brain
 
 ---
 
-## Session Highlights
-- **Model:** `k4ran909/Fluxnat-Coder-3B`
+## Session Highlights (`v0.3.0`)
+- **Model:** `k4ran909/Fluxnat-Coder-3B` (`FluxnatForCausalLM`)
 - **Training:** 65 QLoRA fine-tuning steps in Google Colab on Tesla T4 GPU (loss 0.8952)
-- **Dataset:** 520 sequences (170 Red Team CoT, 24 Security Audits, 15 Identity Alignment)
+- **Dataset:** 568 sequences across 4 pillars (170 Red Team CoT, 24 Security Audits, 16 ReAct Tool Trajectories, 19 Identity Alignment)
 - **Hugging Face Hub:** https://huggingface.co/k4ran909/Fluxnat-Coder-3B
-- **Red Team Tools:** 13 tools total in SmartAGENT (`recon`, `exploit_db`, `generate_payload`, `web_attack`, `post_exploit`)
+- **Red Team Tools:** 13 tools total in SmartAGENT (`recon`, `exploit_db`, `generate_payload`, `web_attack`, `post_exploit` + 8 defensive tools)
 """
         with open(target / "README.md", "w", encoding="utf-8") as f:
             f.write(readme_content)
         print(f"  [OK] Created root README.md -> {target / 'README.md'}")
+
+        # 5. Sanitize any raw HF tokens in exported files
+        redacted_count = sanitize_directory(target)
+        print(f"  [OK] Sanitized tokens across {redacted_count} file(s) in {target}")
 
     print("\n[ALL EXPORTS COMPLETED SUCCESSFULLY!]")
 

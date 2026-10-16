@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+02414f7727a95b2fc9688b1c6cb0bfc799cda312	HEAD
+02414f7727a95b2fc9688b1c6cb0bfc799cda312	refs/heads/main
+

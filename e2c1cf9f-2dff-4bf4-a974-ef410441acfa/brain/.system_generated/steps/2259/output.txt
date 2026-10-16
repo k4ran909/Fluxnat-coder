@@ -1,0 +1,56 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\docs\model.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -16,19 +16,19 @@
+ 
+ ---
+ 
+-## What It Can Do
+-
+-### Vulnerability Detection
+-- SQL Injection (CWE-89)
+-- OS Command Injection (CWE-78)
+-- Path Traversal (CWE-22)
+-- Cross-Site Scripting / XSS (CWE-79)
+-- Insecure Deserialization (CWE-502)
+-- Server-Side Request Forgery / SSRF (CWE-918)
+-- Buffer Overflow (CWE-122)
+-- Hardcoded Credentials (CWE-798)
+-- Eval/Exec Injection (CWE-95)
+-- Weak Cryptography (CWE-327/328)
++## What It Can Do (`v0.3.0`)
++
++### 1. Multi-CWE Vulnerability Detection (30+ CWEs)
++- **Injection:** SQL Injection (`CWE-89`), OS Command Injection (`CWE-78`), Code/Eval Injection (`CWE-94`/`95`), SSTI (`CWE-1336`), LDAP Injection (`CWE-90`), XPath Injection (`CWE-643`), NoSQL Injection (`CWE-943`)
++- **Web & API:** Cross-Site Scripting / XSS (`CWE-79`), Server-Side Request Forgery / SSRF (`CWE-918`), Path Traversal (`CWE-22`), XXE (`CWE-611`), CSRF (`CWE-352`), Open Redirect (`CWE-601`), IDOR (`CWE-639`), Mass Assignment (`CWE-915`)
++- **Memory & Binary:** Stack/Heap Buffer Overflow (`CWE-120`/`122`/`787`), Use-After-Free (`CWE-416`), Format String (`CWE-134`), Integer Overflow (`CWE-190`)
++- **Auth & Crypto:** Insecure Deserialization (`CWE-502`), Hardcoded Credentials (`CWE-798`), Weak Cryptography (`CWE-327`/`328`), Improper Auth (`CWE-287`), Prototype Pollution (`CWE-1321`), Race Conditions (`CWE-362`)
++
++### 2. Red Team & Offensive Security Reasoning
++- **Multi-Step Exploit Chains:** Traces chained vulnerabilities (e.g., SSRF $\rightarrow$ Cloud Metadata $\rightarrow$ IAM Takeover, SQLi $\rightarrow$ File Read $\rightarrow$ RCE).
++- **Verification Payload Generation:** Constructs targeted security test vectors (`SQLi`, `XSS`, `SSTI`, `SSRF`, `LFI`, `revshell`, `cmdi`).
++- **MITRE ATT&CK Tactics:** Covers Linux/Windows Privilege Escalation (`T1068`, `T1548`), Persistence (`T1547`, `T1053`), and Active Directory Lateral Movement (`T1558.003` Kerberoasting, `T1550` Pass-the-Hash).
++- **13-Tool ReAct Agent Mode:** Autonomously drives `recon`, `exploit_db`, `generate_payload`, `web_attack`, `post_exploit`, `scan_code`, and `fix_code` inside SmartAGENT.
+ 
+ ### Supported Languages
+ 
+@@ -35,11 +35,11 @@
+ |---|---|
+-| **Python** | SQLi, Command Injection, Path Traversal, Pickle/YAML Deserialization, SSRF, Secrets |
+-| **JavaScript / Node.js** | DOM XSS, `child_process.exec`, Prototype Pollution, ReDoS, JWT |
+-| **Go** | SSRF, Unchecked errors, Command execution, Race conditions |
++| **Python** | SQLi, Command Injection, Path Traversal, Pickle/YAML Deserialization, SSRF, SSTI (`Jinja2`), Secrets |
++| **JavaScript / Node.js** | DOM/Reflected XSS, `child_process.exec`, Prototype Pollution, NoSQLi, ReDoS, JWT |
++| **Go** | SSRF, Unchecked errors, Path Traversal, Command execution, Race conditions |
+ | **C / C++** | Buffer overflows, Use-After-Free, Format strings, Integer overflows |
+-| **Java** | JNDI Injection, XXE, SQLi via JDBC/Hibernate, Deserialization |
+-| **PHP** | LFI/RFI, SQLi, `eval`, Object injection |
+-| **DevOps** | Dockerfile misconfigs, exposed ports, `.env` leaks |
++| **Java** | JNDI / Log4Shell (`CVE-2021-44228`), XXE, SQLi via JDBC/Hibernate, `ObjectInputStream` Deserialization |
++| **PHP** | LFI/RFI, SQLi, `eval`, PHP Object Injection (`unserialize`), Type Juggling |
++| **DevOps / AD** | Dockerfile misconfigs, `.env` leaks, Linux SUID/Sudo, Windows Services/Tokens, Active Directory |
+ 
+ ### Output Format
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

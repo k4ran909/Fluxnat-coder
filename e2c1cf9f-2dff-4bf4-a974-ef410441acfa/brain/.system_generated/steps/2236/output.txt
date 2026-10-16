@@ -1,0 +1,23 @@
+The following changes were made by the replace_file_content tool to: c:\Users\k4ran\OneDrive\Desktop\smartAGENT\prepare_datasets.py. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -179,6 +179,17 @@
+         all_data.extend(identity_samples * 4)
+         print(f"[+] Added {len(identity_samples)} identity alignment samples (amplified 4x -> {len(identity_samples) * 4} total)")
+ 
++    # 1c. Load multi-turn ReAct tool-calling trajectories (preserve ReAct system prompt)
++    react_path = "./data/custom_cot/react_tool_cot.jsonl"
++    if os.path.exists(react_path):
++        react_samples = []
++        with open(react_path, "r", encoding="utf-8") as f:
++            for line in f:
++                if line.strip():
++                    react_samples.append(json.loads(line.strip()))
++        all_data.extend(react_samples * 3)
++        print(f"[+] Added {len(react_samples)} ReAct tool-use trajectories (amplified 3x -> {len(react_samples) * 3} total)")
++
+     # 2. Load online datasets if network/HF token available
+     hf_samples = download_and_format_hf_datasets(config, system_prompt)
+     all_data.extend(hf_samples)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

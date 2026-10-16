@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+[main b39b4e6] feat(v0.3.0): add ReAct tool-calling dataset, sync v0.3.0 docs, and update benchmark suite
+ 15 files changed, 1253 insertions(+), 428 deletions(-)
+ create mode 100644 data/custom_cot/react_tool_cot.jsonl
+ create mode 100644 scripts/generate_react_dataset.py
+To https://github.com/k4ran909/smartAGENT.git
+   2070e69..b39b4e6  main -> main
+To https://github.com/k4ran909/Fluxnat-coder.git
+   2070e69..b39b4e6  main -> main
+

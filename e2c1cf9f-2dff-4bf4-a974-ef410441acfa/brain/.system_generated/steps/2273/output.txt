@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+At line:1 char:31
++ python tests/test_scanners.py && python tests/test_redteam_tools.py
++                               ~~
+The token '&&' is not a valid statement separator in this version.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine
+ 
+

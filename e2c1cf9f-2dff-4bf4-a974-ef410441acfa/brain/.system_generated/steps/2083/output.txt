@@ -1,0 +1,87 @@
+
+Encountered error in step execution: context canceled
+Output:
+<truncated 685 lines>
+encoding=\"utf-8\") as f:\n    f.write(modeling_code)\n\napi.upload_file(\n    
+path_or_fileobj=\"modeling_fluxnat.py\",\n    path_in_repo=\"modeling_fluxnat.py\",\n    repo_id=repo_id,\n    
+repo_type=\"model\",\n    commit_message=\"Add FluxnatForCausalLM for independent architecture\"\n)\nprint(\"  [OK] 
+Uploaded modeling_fluxnat.py\")\n\n# 3. Patch config.json\np_cfg = hf_hub_download(repo_id, \"config.json\")\nwith 
+open(p_cfg, \"r\", encoding=\"utf-8\") as f:\n    cfg = json.load(f)\n\ncfg[\"model_type\"] = 
+\"fluxnat\"\ncfg[\"architectures\"] = [\"FluxnatForCausalLM\"]\ncfg[\"auto_map\"] = {\n    \"AutoConfig\": 
+\"configuration_fluxnat.FluxnatConfig\",\n    \"AutoModel\": \"modeling_fluxnat.FluxnatModel\",\n    
+\"AutoModelForCausalLM\": \"modeling_fluxnat.FluxnatForCausalLM\"\n}\ncfg[\"model_name\"] = 
+\"Fluxnat-Coder-3B\"\ncfg[\"model_author\"] = \"Fluxnat\"\n\nwith open(\"config.json\", \"w\", encoding=\"utf-8\") as 
+f:\n    json.dump(cfg, f, indent=2)\n\napi.upload_file(\n    path_or_fileobj=\"config.json\",\n    
+path_in_repo=\"config.json\",\n    repo_id=repo_id,\n    repo_type=\"model\",\n    commit_message=\"Update config.json 
+to pure Fluxnat architecture with auto_map\"\n)\nprint(\"  [OK] Uploaded clean config.json\")\n\n# 4. Patch 
+tokenizer_config.json\np_tok = hf_hub_download(repo_id, \"tokenizer_config.json\")\nwith open(p_tok, \"r\", 
+encoding=\"utf-8\") as f:\n    tok = json.load(f)\n\ntok[\"tokenizer_class\"] = 
+\"PreTrainedTokenizerFast\"\ntok[\"name_or_path\"] = \"k4ran909/Fluxnat-Coder-3B\"\n\nwith 
+open(\"tokenizer_config.json\", \"w\", encoding=\"utf-8\") as f:\n    json.dump(tok, f, 
+indent=2)\n\napi.upload_file(\n    path_or_fileobj=\"tokenizer_config.json\",\n    
+path_in_repo=\"tokenizer_config.json\",\n    repo_id=repo_id,\n    repo_type=\"model\",\n    commit_message=\"Update 
+tokenizer_config.json to PreTrainedTokenizerFast\"\n)\nprint(\"  [OK] Uploaded clean 
+tokenizer_config.json\")\n\nprint(\"\\n[SUCCESS] The repository is now 100% pure Fluxnat with custom 
+architecture!\")\n","Description":"Script to deploy pure Fluxnat architecture to Hugging Face repository","Overwrite":t
+rue,"TargetFile":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT\\_deploy_pure_fluxnat_architecture.py","toolAction":"
+Creating file","toolSummary":"Create _deploy_pure_fluxnat_architecture.py"}}]}
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000008.jsonl:14:{"step_index
+":411,"source":"MODEL","type":"PLANNER_RESPONSE","status":"DONE","created_at":"2026-09-21T22:14:01Z","tool_calls":[{"na
+me":"run_command","args":{"CommandLine":"python -c \"\nimport os\nfrom huggingface_hub import InferenceClient\n\ntoken 
+= os.getenv('HF_TOKEN', 'hf_REDACTED_TOKEN_SECURED')\nclient = 
+InferenceClient(model='k4ran909/Fluxnat-Coder-3B', token=token)\n\nprint('Testing InferenceClient with 
+k4ran909/Fluxnat-Coder-3B...')\ntry:\n    resp = client.text_generation('Who are you?', max_new_tokens=50)\n    
+print('Response:', resp)\nexcept Exception as e:\n    print('InferenceClient error:', 
+e)\n\"","Cwd":"c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT","WaitMsBeforeAsync":10000,"toolAction":"Testing 
+Hugging Face InferenceClient","toolSummary":"Test inference via Hugging Face API"}}]}
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000008.jsonl:16:{"step_index
+":413,"source":"MODEL","type":"PLANNER_RESPONSE","status":"DONE","created_at":"2026-09-21T22:14:05Z","tool_calls":[{"na
+me":"run_command","args":{"CommandLine":"python -c \"\nimport os\nimport traceback\nfrom huggingface_hub import 
+InferenceClient\n\ntoken = os.getenv('HF_TOKEN', 'hf_REDACTED_TOKEN_SECURED')\nclient = 
+InferenceClient(model='k4ran909/Fluxnat-Coder-3B', token=token)\n\ntry:\n    resp = client.text_generation('Who are 
+you?', max_new_tokens=50)\n    print('Response:', resp)\nexcept Exception as e:\n    traceback.print_exc()\n\"","Cwd":"
+c:\\Users\\k4ran\\OneDrive\\Desktop\\smartAGENT","WaitMsBeforeAsync":10000,"toolAction":"Printing detailed 
+traceback","toolSummary":"Check InferenceClient detailed error"}}]}
+Select-String : The file C:\Users\k4ran\OneDrive\Desktop\smartAGENT\e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_
+generated\logs\chunks\transcript_full\00000036.jsonl cannot be read: Operation did not complete successfully because 
+the file contains a virus or potentially unwanted software.
+At line:1 char:77
++ ... 41acfa' -Recurse -File | Select-String -Pattern 'hf_[A-Za-z0-9]{20,}'
++                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Select-String], ArgumentException
+    + FullyQualifiedErrorId : ProcessingFile,Microsoft.PowerShell.Commands.SelectStringCommand
+ 
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\logs\chunks\transcript_full\00000050.jsonl:55:{"step_index
+":2030,"source":"MODEL","type":"GENERIC","status":"DONE","created_at":"2026-10-15T19:58:37Z","content":"Created At: 
+2026-10-16T01:28:37+05:30\nCompleted At: 2026-10-16T01:28:39+05:30\n\nThe command exited with code 
+1.\nOutput:\nTraceback (most recent call last):\r\n  File \"<string>\", line 10, in <module>\r\n    print(f'[{idx}] 
+{ts}: {msg.strip()!r}')\r\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File 
+\"C:\\Python314\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return 
+codecs.charmap_encode(input,self.errors,encoding_table)[0]\r\n           
+~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nUnicodeEncodeError: 'charmap' codec can't encode character 
+'\\U0001f9a5' in position 45: character maps to <undefined>\r\nTotal user messages: 84\r\n[0] 2026-09-21T11:30:25Z: 
+'<USER_REQUEST>\\nhii\\n</USER_REQUEST>\\n<ADDITIONAL_METADATA>\\nThe current local time is: 
+2026-09-21T17:00:25+05:30.\\n</ADDITIO'\r\n[2] 2026-09-21T19:40:28Z: \"<USER_REQUEST>\\ni wanna build next generation 
+of AI in which \\n\\ni'll train a model at which which is used for cyber securi\"\r\n[2] 2026-09-21T19:41:08Z: 
+\"<USER_REQUEST>\\ni wanna build next generation of AI in which \\n\\ni'll train a model at which which is used for 
+cyber securi\"\r\n[13] 2026-09-21T19:46:03Z: '<USER_REQUEST>\\nbest open source SLM can consider new one 
+tooo\\n</USER_REQUEST>\\n<ADDITIONAL_METADATA>\\nThe current local ti'\r\n[25] 2026-09-21T19:48:57Z: 
+'<USER_REQUEST>\\nlike under under 3b  - 4b parameter with out of best 
+\\n</USER_REQUEST>\\n<ADDITIONAL_METADATA>\\nThe current l'\r\n[36] 2026-09-21T19:52:22Z: '<USER_REQUEST>\\nfind best 
+uncenserd model under 3b parameters \\n</USER_REQUEST>\\n<ADDITIONAL_METADATA>\\nThe current local ti'\r\n[49] 
+2026-09-21T19:57:59Z: \"<USER_REQUEST>\\ni don't wanna use ollama to run \\nollama run 
+huihui-ai/qwen2.5-coder-abliterated:3b\\n</USER_REQUEST>\\n<ADDIT\"\r\n[53] 2026-09-21T20:03:29Z: 
+'<USER_REQUEST>\\nselect this \\n\\n- Best for SmartAGENT: HuggingFace Transformers 
+(Python)\\n</USER_REQUEST>\\n<ADDITIONAL_METADA'\r\n[57] 2026-09-21T20:11:30Z: '<USER_REQUEST>\\ni wanna fine tune 
+this model completely with best way !\\nto finetune it \\n</USER_REQUEST>\\n<ADDITIONAL_METAD'\r\n[57] 
+2026-09-21T20:13:16Z: '<USER_REQUEST>\\ni wanna fine tune this model completely with best way !\\nto finetune it 
+\\n\\nrename it copletely deeply from'\r\n[68] 2026-09-21T20:33:39Z: '<USER_REQUEST>\\n1. yes i do have huggingface 
+account \\n2. Will you train on Colab (free) or local GPU which is best ?\\n3. y'\r\n[74] 2026-09-21T20:38:07Z: 
+'<USER_REQUEST>\\nhere is my hugging face token - 
+hf_REDACTED_TOKEN_SECURED\\n</USER_REQUEST>\\n<ADDITIONAL_METADAT'\r\n[88] 2026-09-21T20:48:50Z: 
+'<USER_REQUEST>\\ncontinue\\n</USER_REQUEST>\\n<ADDITIONAL_METADATA>\\nThe current local time is: 
+2026-09-22T02:18:50+05:30.\\n</AD'\r\n\n"}
+e2c1cf9f-2dff-4bf4-a974-ef410441acfa\brain\.system_generated\steps\2030\output.txt:24:[74] 2026-09-21T20:38:07Z: 
+'<USER_REQUEST>\nhere is my hugging face token - 
+hf_REDACTED_TOKEN_SECURED\n</USER_REQUEST>\n<ADDITIONAL_METADAT'
+

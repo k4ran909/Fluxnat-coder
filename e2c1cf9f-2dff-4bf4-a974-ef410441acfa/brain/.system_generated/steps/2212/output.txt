@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+C:\Python314\python.exe
+C:\Users\k4ran\AppData\Local\Programs\Python\Python312\python.exe
+C:\Users\k4ran\AppData\Local\Microsoft\WindowsApps\python.exe
+

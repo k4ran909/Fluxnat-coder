@@ -1,0 +1,8 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\scripts\generate_react_dataset.py", line 11, in <module>
+    from smartagent.agent.tools import ToolRegistry
+ModuleNotFoundError: No module named 'smartagent'
+

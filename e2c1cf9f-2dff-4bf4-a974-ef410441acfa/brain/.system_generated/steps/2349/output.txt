@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+Cache exists: True
+['.locks', 'CACHEDIR.TAG', 'models--Cactus-Compute--needle3', 'models--Cactus-Compute--whistle', 'models--deepdml--faster-whisper-large-v3-turbo-ct2', 'models--FermionResearch--Phonon-2', 'models--k4ran909--Fluxnat-Coder-3B', 'models--Systran--faster-distil-whisper-medium.en', 'models--Systran--faster-whisper-base.en', 'models--Systran--faster-whisper-large-v3', 'models--Systran--faster-whisper-medium.en', 'models--Systran--faster-whisper-small.en', 'models--Systran--faster-whisper-tiny.en']
+

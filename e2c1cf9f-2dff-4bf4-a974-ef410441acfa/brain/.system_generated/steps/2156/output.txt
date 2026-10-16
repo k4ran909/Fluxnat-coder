@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+2070e69 docs: add full conversation transcript and Antigravity brain archive
+6961b38 feat: add session export utility and gitignore rules
+

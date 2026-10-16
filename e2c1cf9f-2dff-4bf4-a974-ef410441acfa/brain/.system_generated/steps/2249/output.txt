@@ -1,0 +1,12 @@
+
+The command exited with code 1.
+Output:
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\cli.py", line 22, in <module>
+    from smartagent.config import get_default_config
+  File "C:\Users\k4ran\OneDrive\Desktop\smartAGENT\smartagent\config.py", line 7, in <module>
+    from pydantic import BaseModel, Field
+ModuleNotFoundError: No module named 'pydantic'
+

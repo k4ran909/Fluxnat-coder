@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+
+Name     
+----     
+logs     
+messages 
+steps    
+subagents
+tasks    
+
+
+

@@ -1,0 +1,42 @@
+
+The command exited with code 0.
+Output:
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\refs\main 40
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\trees\abc702e2e3b7781787562a52811d523dd6acc62f.json 1988
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\.no_exist\abc702e2e3b7781787562a52811d523dd6acc62f\added_tokens.json 0
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\.no_exist\abc702e2e3b7781787562a52811d523dd6acc62f\model.safetensors 0
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\.no_exist\abc702e2e3b7781787562a52811d523dd6acc62f\special_tokens_map.json 0
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\.no_exist\abc702e2e3b7781787562a52811d523dd6acc62f\tokenizer.model 0
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\146024ea46ddf1c9890910ec121d36eb3064855e\tokenizer_config.json 7823
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\17b3f3b95a72b33aa2a524860e08f4c1f5597544\config.json 1658
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\chat_template.jinja 2641
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\config.json 1658
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\generation_config.json 239
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\model.safetensors.index.json 35581
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\README.md 7424
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\tokenizer.json 11422356
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\1ecbcb7242f8d3f9cedced9c20cc1c96a0d8d6ee\tokenizer_config.json 7823
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\2138d916549ea600f77679b49a91321ba07664ee\tokenizer_config.json 7527
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\chat_template.jinja 2507
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\config.json 1658
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\generation_config.json 239
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\model.safetensors.index.json 35581
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\README.md 7424
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\tokenizer.json 11422356
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\a83e8f2340c6ca0cac24d17eff2edb9f93f8e790\tokenizer_config.json 7527
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\chat_template.jinja 2641
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\config.json 1932
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\configuration_fluxnat.py 1860
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\generation_config.json 749
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\model-00001-of-00002.safetensors 4957560304
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\model-00002-of-00002.safetensors 1214366696
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\model.safetensors.index.json 35581
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\modeling_fluxnat.py 1067
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\README.md 7424
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\tokenizer.json 11422356
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\abc702e2e3b7781787562a52811d523dd6acc62f\tokenizer_config.json 7880
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\config.json 1658
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\generation_config.json 749
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\model.safetensors.index.json 35581
+C:\Users\k4ran\.cache\huggingface\hub\models--k4ran909--Fluxnat-Coder-3B\snapshots\e10c362ee6c2c60a4bbb79e69c1881bc388bb747\tokenizer_config.json 7823
+

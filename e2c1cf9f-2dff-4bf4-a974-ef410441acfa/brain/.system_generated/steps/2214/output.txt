@@ -1,0 +1,5 @@
+
+The command exited with code 0.
+Output:
+PyTorch: 2.6.0+cu124 CUDA: True Transformers: 5.17.0
+

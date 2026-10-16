@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+fluxnat	https://github.com/k4ran909/Fluxnat-coder.git (fetch)
+fluxnat	https://github.com/k4ran909/Fluxnat-coder.git (push)
+origin	https://github.com/k4ran909/smartAGENT.git (fetch)
+origin	https://github.com/k4ran909/smartAGENT.git (push)
+
